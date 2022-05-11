@@ -1,5 +1,6 @@
 package com.example.umgrade;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -16,6 +17,7 @@ import com.bumptech.glide.Glide;
 public class MainFragment extends Fragment {
     Button btnFare;
     ImageView imgMypageProfile;
+    Button btnServiceCard;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,6 +26,15 @@ public class MainFragment extends Fragment {
 
         btnFare = view.findViewById(R.id.btnFare);
 
+        btnServiceCard = view.findViewById(R.id.btnServiceCard);
+        // 서비스안내 클릭 시 화면전환
+        btnServiceCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ServiceActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);

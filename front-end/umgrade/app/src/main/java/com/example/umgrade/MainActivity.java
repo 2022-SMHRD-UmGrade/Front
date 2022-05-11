@@ -2,12 +2,21 @@ package com.example.umgrade;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
+import android.app.Activity;
+import android.app.Service;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+
+import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     MainFragment frag_main;
     CommuFragment frag_commu;
     MypageFragment frag_mypage;
+    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         frag_main = new MainFragment();
         frag_commu = new CommuFragment();
         frag_mypage = new MypageFragment();
+
+
+
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
 
@@ -45,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
 
     }
 }
