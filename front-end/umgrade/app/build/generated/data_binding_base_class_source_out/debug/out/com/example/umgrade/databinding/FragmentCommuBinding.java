@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,15 +33,19 @@ public final class FragmentCommuBinding implements ViewBinding {
   public final LinearLayout linearLayout2;
 
   @NonNull
+  public final ListView lvBoard;
+
+  @NonNull
   public final TextView tvCommuTitle;
 
   private FragmentCommuBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCmWrite,
       @NonNull ImageButton btnCommuMenu, @NonNull LinearLayout linearLayout2,
-      @NonNull TextView tvCommuTitle) {
+      @NonNull ListView lvBoard, @NonNull TextView tvCommuTitle) {
     this.rootView = rootView;
     this.btnCmWrite = btnCmWrite;
     this.btnCommuMenu = btnCommuMenu;
     this.linearLayout2 = linearLayout2;
+    this.lvBoard = lvBoard;
     this.tvCommuTitle = tvCommuTitle;
   }
 
@@ -89,6 +94,12 @@ public final class FragmentCommuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.lvBoard;
+      ListView lvBoard = ViewBindings.findChildViewById(rootView, id);
+      if (lvBoard == null) {
+        break missingId;
+      }
+
       id = R.id.tvCommuTitle;
       TextView tvCommuTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvCommuTitle == null) {
@@ -96,7 +107,7 @@ public final class FragmentCommuBinding implements ViewBinding {
       }
 
       return new FragmentCommuBinding((ConstraintLayout) rootView, btnCmWrite, btnCommuMenu,
-          linearLayout2, tvCommuTitle);
+          linearLayout2, lvBoard, tvCommuTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

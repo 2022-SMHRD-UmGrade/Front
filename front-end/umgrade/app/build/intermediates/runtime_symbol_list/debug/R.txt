@@ -2517,6 +2517,7 @@ int drawable common_google_signin_btn_text_light_focused 0x7f070073
 int drawable common_google_signin_btn_text_light_normal 0x7f070074
 int drawable common_google_signin_btn_text_light_normal_background 0x7f070075
 int drawable community 0x7f070076
+int drawable corner_shape 0x7f0700c1
 int drawable design_fab_background 0x7f070077
 int drawable design_ic_visibility 0x7f070078
 int drawable design_ic_visibility_off 0x7f070079
@@ -2687,6 +2688,9 @@ int id beginOnFirstDraw 0x7f08005c
 int id beginning 0x7f08005d
 int id bestChoice 0x7f08005e
 int id blocking 0x7f08005f
+int id boardNick 0x7f08024c
+int id boardTime 0x7f08024d
+int id boardTitle 0x7f08024e
 int id bottom 0x7f080060
 int id bottomNav 0x7f080061
 int id bottomNavigationView 0x7f08023a
@@ -2897,6 +2901,7 @@ int id linear 0x7f08012c
 int id linearLayout2 0x7f08012d
 int id listMode 0x7f08012e
 int id list_item 0x7f08012f
+int id lvBoard 0x7f08024f
 int id lvComment 0x7f08024b
 int id mainLogo 0x7f080130
 int id mainScroll 0x7f080131
@@ -3034,6 +3039,7 @@ int id search_voice_btn 0x7f0801b2
 int id select_dialog_listview 0x7f0801b3
 int id selected 0x7f0801b4
 int id selection_type 0x7f0801b5
+int id shape_my 0x7f080250
 int id sharedValueSet 0x7f0801b6
 int id sharedValueUnset 0x7f0801b7
 int id shortcut 0x7f0801b8
@@ -3269,6 +3275,7 @@ int layout activity_modify 0x7f0b001f
 int layout activity_post 0x7f0b008d
 int layout activity_service 0x7f0b0020
 int layout activity_write 0x7f0b0021
+int layout board_list 0x7f0b0090
 int layout comment_list 0x7f0b008f
 int layout custom_dialog 0x7f0b0022
 int layout design_bottom_navigation_item 0x7f0b0023
@@ -3414,6 +3421,9 @@ int string abc_toolbar_collapse_description 0x7f10001a
 int string androidx_startup 0x7f10001b
 int string app_name 0x7f10001c
 int string appbar_scrolling_view_behavior 0x7f10001d
+int string boardNick 0x7f1000d8
+int string boardTime 0x7f1000d9
+int string boardTitle 0x7f1000da
 int string bottom_sheet_behavior 0x7f10001e
 int string bottomsheet_action_expand_halfway 0x7f10001f
 int string btnCmWrite 0x7f100020

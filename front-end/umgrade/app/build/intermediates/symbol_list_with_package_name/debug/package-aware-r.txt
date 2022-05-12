@@ -2518,6 +2518,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable community
+drawable corner_shape
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2688,6 +2689,9 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id boardNick
+id boardTime
+id boardTitle
 id bottom
 id bottomNav
 id bottomNavigationView
@@ -2898,6 +2902,7 @@ id linear
 id linearLayout2
 id listMode
 id list_item
+id lvBoard
 id lvComment
 id mainLogo
 id mainScroll
@@ -3035,6 +3040,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id shape_my
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3270,6 +3276,7 @@ layout activity_modify
 layout activity_post
 layout activity_service
 layout activity_write
+layout board_list
 layout comment_list
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3415,6 +3422,9 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string boardNick
+string boardTime
+string boardTitle
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string btnCmWrite

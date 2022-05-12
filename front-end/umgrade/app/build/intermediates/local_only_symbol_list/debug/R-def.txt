@@ -25,6 +25,7 @@ drawable arroaright_resize
 drawable arrowright
 drawable closed_umbrella
 drawable community
+drawable corner_shape
 drawable frag_color
 drawable home
 drawable ic_launcher_background
@@ -37,6 +38,9 @@ drawable menu
 drawable more
 drawable mypage
 drawable umbrella
+id boardNick
+id boardTime
+id boardTitle
 id bottomNav
 id bottomNavigationView
 id btnCmWrite
@@ -97,6 +101,7 @@ id imgServiceCard
 id imgSupportCard
 id imgUmb
 id linearLayout2
+id lvBoard
 id lvComment
 id mainLogo
 id mainScroll
@@ -104,6 +109,7 @@ id postBottom
 id scrollView2
 id scrollView3
 id scrollView4
+id shape_my
 id textView3
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -140,6 +146,7 @@ layout activity_modify
 layout activity_post
 layout activity_service
 layout activity_write
+layout board_list
 layout comment_list
 layout fragment_commu
 layout fragment_main
@@ -156,6 +163,9 @@ menu frag_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string boardNick
+string boardTime
+string boardTitle
 string btnCmWrite
 string btnFare
 string btnIdCheck

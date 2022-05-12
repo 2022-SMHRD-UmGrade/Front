@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/btnCommuMenu"
@@ -46,5 +47,14 @@
             android:textColor="#2196F3" />
 
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvBoard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
