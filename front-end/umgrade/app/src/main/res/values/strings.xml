@@ -64,6 +64,9 @@
     <!-- slider_card.xml -->
     <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
 
+    <!-- fragment_commu.xml -->
+    <string name="btnCmWrite">글쓰기</string>
+
     <!-- activity_write.xml -->
     <string name="btnWriteCancel">취소</string>
     <string name="tvWrite">글쓰기</string>
