@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WriteActivity">
-
+    tools:context=".ModifyActivity">
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -14,35 +13,35 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnWriteCancel"
+            android:id="@+id/btnModifyCancel"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:backgroundTint="#00FFFFFF"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:stateListAnimator="@null"
-            android:text="@string/btnWriteCancel"
+            android:text="@string/btnModifyCancel"
             android:textColor="#2196F3" />
 
         <TextView
-            android:id="@+id/tvWrite"
+            android:id="@+id/tvModify"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/tvWrite"
+            android:text="@string/tvModify"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnWriteSend"
+            android:id="@+id/btnModifySend"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:backgroundTint="#00FFFFFF"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:stateListAnimator="@null"
-            android:text="@string/btnWriteSend"
+            android:text="@string/btnModifySend"
             android:textColor="#2196F3" />
 
     </LinearLayout>
@@ -69,11 +68,11 @@
                 android:background="?android:attr/listDivider" />
 
             <EditText
-                android:id="@+id/edtWriteTitle"
+                android:id="@+id/edtModifyTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:hint="@string/edtWriteTitle"
+                android:hint="@string/edtModifyTitle"
                 android:padding="16dp" />
 
             <View
@@ -83,15 +82,21 @@
                 android:background="?android:attr/listDivider" />
 
             <EditText
-                android:id="@+id/edtWriteContent"
+                android:id="@+id/edtModifyContent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
                 android:gravity="top|left"
-                android:hint="@string/edtWriteContent"
+                android:hint="@string/edtModifyContent"
                 android:padding="16dp"
                 android:textSize="15sp" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
 
         </LinearLayout>
     </ScrollView>
