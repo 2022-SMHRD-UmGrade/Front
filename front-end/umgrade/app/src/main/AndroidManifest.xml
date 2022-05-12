@@ -14,7 +14,7 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".WriteActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".ServiceActivity"
             android:exported="false" />

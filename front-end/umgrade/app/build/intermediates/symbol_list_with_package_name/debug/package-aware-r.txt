@@ -2690,7 +2690,6 @@ id bestChoice
 id blocking
 id bottom
 id bottomNav
-id bottomNavigationView
 id bounce
 id bounceBoth
 id bounceEnd

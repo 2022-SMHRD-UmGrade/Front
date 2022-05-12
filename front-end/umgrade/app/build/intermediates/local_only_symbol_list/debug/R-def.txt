@@ -38,7 +38,6 @@ drawable more
 drawable mypage
 drawable umbrella
 id bottomNav
-id bottomNavigationView
 id btnFare
 id btnIdCheck
 id btnJoin
