@@ -16,7 +16,7 @@
             android:name=".CommentActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PostActivity"
             android:exported="false" />
         <activity
             android:name=".ModifyActivity"
@@ -34,7 +34,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".PostActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

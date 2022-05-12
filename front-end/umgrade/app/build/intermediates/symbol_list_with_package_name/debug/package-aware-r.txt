@@ -2898,6 +2898,7 @@ id linear
 id linearLayout2
 id listMode
 id list_item
+id lvComment
 id mainLogo
 id mainScroll
 id masked
@@ -3261,6 +3262,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_comment
 layout activity_join
 layout activity_login
 layout activity_main
@@ -3268,6 +3270,7 @@ layout activity_modify
 layout activity_post
 layout activity_service
 layout activity_write
+layout comment_list
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

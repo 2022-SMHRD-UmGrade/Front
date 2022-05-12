@@ -2897,6 +2897,7 @@ int id linear 0x7f08012c
 int id linearLayout2 0x7f08012d
 int id listMode 0x7f08012e
 int id list_item 0x7f08012f
+int id lvComment 0x7f08024b
 int id mainLogo 0x7f080130
 int id mainScroll 0x7f080131
 int id masked 0x7f080132
@@ -3260,6 +3261,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_comment 0x7f0b008e
 int layout activity_join 0x7f0b001c
 int layout activity_login 0x7f0b001d
 int layout activity_main 0x7f0b001e
@@ -3267,6 +3269,7 @@ int layout activity_modify 0x7f0b001f
 int layout activity_post 0x7f0b008d
 int layout activity_service 0x7f0b0020
 int layout activity_write 0x7f0b0021
+int layout comment_list 0x7f0b008f
 int layout custom_dialog 0x7f0b0022
 int layout design_bottom_navigation_item 0x7f0b0023
 int layout design_bottom_sheet_dialog 0x7f0b0024

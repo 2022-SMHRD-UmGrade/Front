@@ -95,4 +95,9 @@
     <string name="btnPostModify">수정</string>
     <string name="btnPostComment">댓글 보기</string>
 
+    <!-- board_list.xml -->
+    <string name="boardTitle">글 제목</string>
+    <string name="boardNick">작성자 닉네임</string>
+    <string name="boardTime">2022.05.12. 17:21</string>
+
 </resources>

@@ -97,6 +97,7 @@ id imgServiceCard
 id imgSupportCard
 id imgUmb
 id linearLayout2
+id lvComment
 id mainLogo
 id mainScroll
 id postBottom
@@ -131,6 +132,7 @@ id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
 id tvWrite
+layout activity_comment
 layout activity_join
 layout activity_login
 layout activity_main
@@ -138,6 +140,7 @@ layout activity_modify
 layout activity_post
 layout activity_service
 layout activity_write
+layout comment_list
 layout fragment_commu
 layout fragment_main
 layout fragment_mypage

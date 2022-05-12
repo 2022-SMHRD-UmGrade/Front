@@ -26,7 +26,10 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.umgrade.MainActivity"
+            android:name="com.example.umgrade.CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.PostActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.ModifyActivity"
@@ -44,7 +47,7 @@
             android:name="com.example.umgrade.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.PostActivity"
+            android:name="com.example.umgrade.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
