@@ -55,7 +55,8 @@ public class WriteActivity extends AppCompatActivity {
         btnWriteCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, CommuFragment).commit();
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
             }
         });
 

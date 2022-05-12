@@ -65,6 +65,7 @@
     <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
 
     <!-- fragment_commu.xml -->
+    <string name="tvCommuTitle">커뮤니티</string>
     <string name="btnCmWrite">글쓰기</string>
 
     <!-- activity_write.xml -->
@@ -73,4 +74,11 @@
     <string name="btnWriteSend">등록</string>
     <string name="edtWriteTitle">제목</string>
     <string name="edtWriteContent">본문</string>
+
+    <!-- activity_modify.xml -->
+    <string name="btnModifyCancel">취소</string>
+    <string name="tvModify">글수정</string>
+    <string name="btnModifySend">수정</string>
+    <string name="edtModifyTitle">제목</string>
+    <string name="edtModifyContent">본문</string>
 </resources>

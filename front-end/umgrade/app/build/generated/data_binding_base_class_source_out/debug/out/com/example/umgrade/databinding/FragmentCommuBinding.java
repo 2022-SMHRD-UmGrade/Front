@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,16 +23,25 @@ public final class FragmentCommuBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnCmWrite;
 
   @NonNull
-  public final TextView textView2;
+  public final ImageButton btnCommuMenu;
 
-  private FragmentCommuBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull TextView textView2) {
+  @NonNull
+  public final LinearLayout linearLayout2;
+
+  @NonNull
+  public final TextView tvCommuTitle;
+
+  private FragmentCommuBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCmWrite,
+      @NonNull ImageButton btnCommuMenu, @NonNull LinearLayout linearLayout2,
+      @NonNull TextView tvCommuTitle) {
     this.rootView = rootView;
-    this.button = button;
-    this.textView2 = textView2;
+    this.btnCmWrite = btnCmWrite;
+    this.btnCommuMenu = btnCommuMenu;
+    this.linearLayout2 = linearLayout2;
+    this.tvCommuTitle = tvCommuTitle;
   }
 
   @Override
@@ -60,19 +71,32 @@ public final class FragmentCommuBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnCmWrite;
+      Button btnCmWrite = ViewBindings.findChildViewById(rootView, id);
+      if (btnCmWrite == null) {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.btnCommuMenu;
+      ImageButton btnCommuMenu = ViewBindings.findChildViewById(rootView, id);
+      if (btnCommuMenu == null) {
         break missingId;
       }
 
-      return new FragmentCommuBinding((ConstraintLayout) rootView, button, textView2);
+      id = R.id.linearLayout2;
+      LinearLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCommuTitle;
+      TextView tvCommuTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvCommuTitle == null) {
+        break missingId;
+      }
+
+      return new FragmentCommuBinding((ConstraintLayout) rootView, btnCmWrite, btnCommuMenu,
+          linearLayout2, tvCommuTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
