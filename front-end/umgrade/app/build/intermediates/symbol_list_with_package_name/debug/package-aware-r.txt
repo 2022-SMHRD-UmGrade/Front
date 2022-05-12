@@ -2700,6 +2700,7 @@ id btnJoin
 id btnKakaoLogin
 id btnLogin
 id btnMapCard
+id btnNoticeEvent
 id btnServiceCard
 id btnSupportCard
 id buttonPanel
@@ -2854,7 +2855,6 @@ id imgSupportCard
 id imgUmb
 id immediateStop
 id included
-id indicator
 id info
 id invisible
 id inward
@@ -3074,8 +3074,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView2
 id textView3
 id text_input_end_icon
 id text_input_error_icon
@@ -3129,7 +3127,6 @@ id view_transition
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
-id viewpager
 id visible
 id visible_removing_fragment_view_tag
 id west
@@ -3249,10 +3246,8 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_commu
-layout fragment_event
 layout fragment_main
 layout fragment_mypage
-layout fragment_notice
 layout layout_login
 layout layout_register
 layout m3_alert_dialog
@@ -3386,6 +3381,7 @@ string btnJoin
 string btnKakaoLogin
 string btnLogin
 string btnMapCard
+string btnNoticeEvent
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
@@ -3434,7 +3430,6 @@ string fragCommu
 string fragMain
 string fragMore
 string fragMyPage
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

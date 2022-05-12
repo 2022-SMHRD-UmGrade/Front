@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     MainFragment frag_main;
     CommuFragment frag_commu;
     MypageFragment frag_mypage;
-    
+
 
 
     @Override
@@ -37,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
         frag_main = new MainFragment();
         frag_commu = new CommuFragment();
         frag_mypage = new MypageFragment();
-
-
-
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
 
@@ -58,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
             }
-        });
-
+        }); // bottomNav end
 
 
     }

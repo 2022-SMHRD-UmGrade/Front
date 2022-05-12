@@ -75,6 +75,7 @@
                     android:layout_weight="1" />
             </LinearLayout>
 
+
             <include
                 layout="@layout/slider_card"
                 android:layout_width="match_parent"

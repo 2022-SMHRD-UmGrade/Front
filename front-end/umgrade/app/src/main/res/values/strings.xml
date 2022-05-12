@@ -60,6 +60,7 @@
     <string name="tvPointMypageCard">100p</string>
     <string name="tvCouponTextMypageCard">보유 쿠폰</string>
     <string name="tvCouponMypageCard">1개</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- slider_card.xml -->
+    <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
 </resources>

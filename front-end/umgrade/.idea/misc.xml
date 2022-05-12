@@ -20,9 +20,11 @@
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/frag_color.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_commu.xml" value="0.225" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_event.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_eventscroll.xml" value="0.25" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_main.xml" value="0.33" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_mypage.xml" value="0.3074074074074074" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_notice.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/fragment_noticescroll.xml" value="0.25" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/layout_login.xml" value="0.33" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/layout_register.xml" value="0.25" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/layout_resister.xml" value="0.20925925925925926" />
@@ -31,6 +33,7 @@
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/notice_slide.xml" value="0.2517948717948718" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/qr_card.xml" value="0.3375" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/service_card.xml" value="0.3375" />
+        <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/slider.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/slider_card.xml" value="0.27037037037037037" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/layout/support_card.xml" value="0.3375" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/menu/frag_menu.xml" value="0.225" />

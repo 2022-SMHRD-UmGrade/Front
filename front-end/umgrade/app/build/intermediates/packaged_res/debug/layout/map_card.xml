@@ -26,7 +26,7 @@
             android:id="@+id/btnMapCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:backgroundTint="#00FF7474"
+            android:backgroundTint="#FFDDF0FF"
             android:gravity="bottom|center"
             android:insetTop="0dp"
             android:insetBottom="0dp"

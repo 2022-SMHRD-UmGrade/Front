@@ -2699,6 +2699,7 @@ int id btnJoin 0x7f080068
 int id btnKakaoLogin 0x7f080069
 int id btnLogin 0x7f08006a
 int id btnMapCard 0x7f08006b
+int id btnNoticeEvent 0x7f080228
 int id btnServiceCard 0x7f08006c
 int id btnSupportCard 0x7f08006d
 int id buttonPanel 0x7f08006e
@@ -2853,7 +2854,6 @@ int id imgSupportCard 0x7f080101
 int id imgUmb 0x7f080102
 int id immediateStop 0x7f080103
 int id included 0x7f080104
-int id indicator 0x7f080221
 int id info 0x7f080105
 int id invisible 0x7f080106
 int id inward 0x7f080107
@@ -3073,8 +3073,6 @@ int id textSpacerNoButtons 0x7f0801dc
 int id textSpacerNoTitle 0x7f0801dd
 int id textStart 0x7f0801de
 int id textTop 0x7f0801df
-int id textView 0x7f08021f
-int id textView2 0x7f080222
 int id textView3 0x7f080225
 int id text_input_end_icon 0x7f0801e0
 int id text_input_error_icon 0x7f0801e1
@@ -3128,7 +3126,6 @@ int id view_transition 0x7f08020f
 int id view_tree_lifecycle_owner 0x7f080210
 int id view_tree_saved_state_registry_owner 0x7f080211
 int id view_tree_view_model_store_owner 0x7f080212
-int id viewpager 0x7f080224
 int id visible 0x7f080213
 int id visible_removing_fragment_view_tag 0x7f080214
 int id west 0x7f080215
@@ -3248,10 +3245,8 @@ int layout design_navigation_menu_item 0x7f0b002c
 int layout design_text_input_end_icon 0x7f0b002d
 int layout design_text_input_start_icon 0x7f0b002e
 int layout fragment_commu 0x7f0b002f
-int layout fragment_event 0x7f0b008c
 int layout fragment_main 0x7f0b0030
 int layout fragment_mypage 0x7f0b0031
-int layout fragment_notice 0x7f0b008d
 int layout layout_login 0x7f0b0032
 int layout layout_register 0x7f0b0033
 int layout m3_alert_dialog 0x7f0b0034
@@ -3385,6 +3380,7 @@ int string btnJoin 0x7f100022
 int string btnKakaoLogin 0x7f100023
 int string btnLogin 0x7f100024
 int string btnMapCard 0x7f100025
+int string btnNoticeEvent 0x7f1000c1
 int string btnQrCard 0x7f100026
 int string btnServiceCard 0x7f100027
 int string btnSupportCard 0x7f100028
@@ -3433,7 +3429,6 @@ int string fragCommu 0x7f100052
 int string fragMain 0x7f100053
 int string fragMore 0x7f100054
 int string fragMyPage 0x7f100055
-int string hello_blank_fragment 0x7f1000c0
 int string hide_bottom_view_on_scroll_behavior 0x7f100056
 int string icon_content_description 0x7f100057
 int string item_view_role_description 0x7f100058

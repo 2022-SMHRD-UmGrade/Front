@@ -13,6 +13,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
+import me.relex.circleindicator.CircleIndicator3;
+
 
 public class MainFragment extends Fragment {
     Button btnFare;
@@ -49,4 +51,5 @@ public class MainFragment extends Fragment {
 
         return view;
     }
+
 }
