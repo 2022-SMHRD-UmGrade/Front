@@ -47,6 +47,7 @@ id btnMapCard
 id btnNoticeEvent
 id btnServiceCard
 id btnSupportCard
+id button
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -79,6 +80,8 @@ id imgUmb
 id mainLogo
 id mainScroll
 id scrollView2
+id textView
+id textView2
 id textView3
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -99,6 +102,7 @@ layout activity_join
 layout activity_login
 layout activity_main
 layout activity_service
+layout activity_write
 layout fragment_commu
 layout fragment_main
 layout fragment_mypage

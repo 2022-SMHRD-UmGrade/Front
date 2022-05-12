@@ -2703,6 +2703,7 @@ id btnMapCard
 id btnNoticeEvent
 id btnServiceCard
 id btnSupportCard
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3074,6 +3075,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
 id textView3
 id text_input_end_icon
 id text_input_error_icon
@@ -3229,6 +3232,7 @@ layout activity_join
 layout activity_login
 layout activity_main
 layout activity_service
+layout activity_write
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
