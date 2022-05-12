@@ -2690,6 +2690,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomNav
+id bottomNavigationView
 id bounce
 id bounceBoth
 id bounceEnd
@@ -2705,6 +2706,8 @@ id btnMapCard
 id btnModifyCancel
 id btnModifySend
 id btnNoticeEvent
+id btnPostComment
+id btnPostModify
 id btnServiceCard
 id btnSupportCard
 id btnWriteCancel
@@ -2743,6 +2746,8 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id constraintLayout
+id constraintLayout3
 id container
 id content
 id contentPanel
@@ -2863,6 +2868,7 @@ id image
 id imgLogo
 id imgMapCard
 id imgMypageProfile
+id imgPostProfile
 id imgQrCard
 id imgServiceCard
 id imgSupportCard
@@ -2988,6 +2994,7 @@ id peekHeight
 id percent
 id pin
 id position
+id postBottom
 id postLayout
 id progress_circular
 id progress_horizontal
@@ -3012,6 +3019,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollView2
 id scrollView3
+id scrollView4
 id scrollable
 id search_badge
 id search_bar
@@ -3130,6 +3138,15 @@ id tvMoreTwo
 id tvNickMypageCard
 id tvPointMypageCard
 id tvPointTextMypageCard
+id tvPostClicks
+id tvPostCommu
+id tvPostContent
+id tvPostId
+id tvPostNick
+id tvPostPl1
+id tvPostPl2
+id tvPostTime
+id tvPostTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
@@ -3248,6 +3265,7 @@ layout activity_join
 layout activity_login
 layout activity_main
 layout activity_modify
+layout activity_post
 layout activity_service
 layout activity_write
 layout custom_dialog
@@ -3406,6 +3424,8 @@ string btnMapCard
 string btnModifyCancel
 string btnModifySend
 string btnNoticeEvent
+string btnPostComment
+string btnPostModify
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
@@ -3565,6 +3585,15 @@ string tvMore
 string tvNickMypageCard
 string tvPointMypageCard
 string tvPointTextMypageCard
+string tvPostClicks
+string tvPostCommu
+string tvPostContent
+string tvPostId
+string tvPostNick
+string tvPostPl1
+string tvPostPl2
+string tvPostTime
+string tvPostTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvWelcomeMypageCard

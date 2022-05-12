@@ -4,6 +4,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\layout_register.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_post.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_post.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_frag_color.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\frag_color.xml"
     },

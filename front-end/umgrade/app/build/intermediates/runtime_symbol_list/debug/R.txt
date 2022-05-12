@@ -2689,6 +2689,7 @@ int id bestChoice 0x7f08005e
 int id blocking 0x7f08005f
 int id bottom 0x7f080060
 int id bottomNav 0x7f080061
+int id bottomNavigationView 0x7f08023a
 int id bounce 0x7f080062
 int id bounceBoth 0x7f080063
 int id bounceEnd 0x7f080064
@@ -2704,6 +2705,8 @@ int id btnMapCard 0x7f08006d
 int id btnModifyCancel 0x7f08006f
 int id btnModifySend 0x7f080071
 int id btnNoticeEvent 0x7f080072
+int id btnPostComment 0x7f08023b
+int id btnPostModify 0x7f08023c
 int id btnServiceCard 0x7f080073
 int id btnSupportCard 0x7f080074
 int id btnWriteCancel 0x7f080076
@@ -2742,6 +2745,8 @@ int id collapseActionView 0x7f080097
 int id compress 0x7f080098
 int id confirm_button 0x7f080099
 int id constraint 0x7f08009a
+int id constraintLayout 0x7f08023d
+int id constraintLayout3 0x7f08023e
 int id container 0x7f08009b
 int id content 0x7f08009c
 int id contentPanel 0x7f08009d
@@ -2862,6 +2867,7 @@ int id image 0x7f08010f
 int id imgLogo 0x7f080110
 int id imgMapCard 0x7f080111
 int id imgMypageProfile 0x7f080112
+int id imgPostProfile 0x7f08023f
 int id imgQrCard 0x7f080113
 int id imgServiceCard 0x7f080114
 int id imgSupportCard 0x7f080115
@@ -2987,6 +2993,7 @@ int id peekHeight 0x7f08018c
 int id percent 0x7f08018d
 int id pin 0x7f08018e
 int id position 0x7f08018f
+int id postBottom 0x7f080240
 int id postLayout 0x7f080190
 int id progress_circular 0x7f080191
 int id progress_horizontal 0x7f080192
@@ -3011,6 +3018,7 @@ int id scrollIndicatorUp 0x7f0801a4
 int id scrollView 0x7f0801a5
 int id scrollView2 0x7f0801a6
 int id scrollView3 0x7f0801a7
+int id scrollView4 0x7f080241
 int id scrollable 0x7f0801a8
 int id search_badge 0x7f0801a9
 int id search_bar 0x7f0801aa
@@ -3129,6 +3137,15 @@ int id tvMoreTwo 0x7f08021a
 int id tvNickMypageCard 0x7f08021b
 int id tvPointMypageCard 0x7f08021c
 int id tvPointTextMypageCard 0x7f08021d
+int id tvPostClicks 0x7f080242
+int id tvPostCommu 0x7f080243
+int id tvPostContent 0x7f080244
+int id tvPostId 0x7f080248
+int id tvPostNick 0x7f080245
+int id tvPostPl1 0x7f080249
+int id tvPostPl2 0x7f08024a
+int id tvPostTime 0x7f080246
+int id tvPostTitle 0x7f080247
 int id tvRatingMypageCard 0x7f08021e
 int id tvRatingTextMypageCard 0x7f08021f
 int id tvWelcomeMypageCard 0x7f080220
@@ -3247,6 +3264,7 @@ int layout activity_join 0x7f0b001c
 int layout activity_login 0x7f0b001d
 int layout activity_main 0x7f0b001e
 int layout activity_modify 0x7f0b001f
+int layout activity_post 0x7f0b008d
 int layout activity_service 0x7f0b0020
 int layout activity_write 0x7f0b0021
 int layout custom_dialog 0x7f0b0022
@@ -3405,6 +3423,8 @@ int string btnMapCard 0x7f100026
 int string btnModifyCancel 0x7f100027
 int string btnModifySend 0x7f100028
 int string btnNoticeEvent 0x7f100029
+int string btnPostComment 0x7f1000cd
+int string btnPostModify 0x7f1000ce
 int string btnQrCard 0x7f10002a
 int string btnServiceCard 0x7f10002b
 int string btnSupportCard 0x7f10002c
@@ -3564,6 +3584,15 @@ int string tvMore 0x7f1000c5
 int string tvNickMypageCard 0x7f1000c6
 int string tvPointMypageCard 0x7f1000c7
 int string tvPointTextMypageCard 0x7f1000c8
+int string tvPostClicks 0x7f1000cf
+int string tvPostCommu 0x7f1000d0
+int string tvPostContent 0x7f1000d1
+int string tvPostId 0x7f1000d5
+int string tvPostNick 0x7f1000d2
+int string tvPostPl1 0x7f1000d6
+int string tvPostPl2 0x7f1000d7
+int string tvPostTime 0x7f1000d3
+int string tvPostTitle 0x7f1000d4
 int string tvRatingMypageCard 0x7f1000c9
 int string tvRatingTextMypageCard 0x7f1000ca
 int string tvWelcomeMypageCard 0x7f1000cb

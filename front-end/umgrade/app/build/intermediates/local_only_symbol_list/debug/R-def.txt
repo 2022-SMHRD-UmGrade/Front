@@ -38,6 +38,7 @@ drawable more
 drawable mypage
 drawable umbrella
 id bottomNav
+id bottomNavigationView
 id btnCmWrite
 id btnCommuMenu
 id btnFare
@@ -49,6 +50,8 @@ id btnMapCard
 id btnModifyCancel
 id btnModifySend
 id btnNoticeEvent
+id btnPostComment
+id btnPostModify
 id btnServiceCard
 id btnSupportCard
 id btnWriteCancel
@@ -57,6 +60,8 @@ id ckAllCheck
 id ckMarketing
 id ckPersonal
 id ckTerms
+id constraintLayout
+id constraintLayout3
 id container
 id divider
 id divider2
@@ -86,6 +91,7 @@ id guideline4
 id imgLogo
 id imgMapCard
 id imgMypageProfile
+id imgPostProfile
 id imgQrCard
 id imgServiceCard
 id imgSupportCard
@@ -93,8 +99,10 @@ id imgUmb
 id linearLayout2
 id mainLogo
 id mainScroll
+id postBottom
 id scrollView2
 id scrollView3
+id scrollView4
 id textView3
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -110,6 +118,15 @@ id tvMoreTwo
 id tvNickMypageCard
 id tvPointMypageCard
 id tvPointTextMypageCard
+id tvPostClicks
+id tvPostCommu
+id tvPostContent
+id tvPostId
+id tvPostNick
+id tvPostPl1
+id tvPostPl2
+id tvPostTime
+id tvPostTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
@@ -118,6 +135,7 @@ layout activity_join
 layout activity_login
 layout activity_main
 layout activity_modify
+layout activity_post
 layout activity_service
 layout activity_write
 layout fragment_commu
@@ -145,6 +163,8 @@ string btnMapCard
 string btnModifyCancel
 string btnModifySend
 string btnNoticeEvent
+string btnPostComment
+string btnPostModify
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
@@ -186,6 +206,15 @@ string tvMore
 string tvNickMypageCard
 string tvPointMypageCard
 string tvPointTextMypageCard
+string tvPostClicks
+string tvPostCommu
+string tvPostContent
+string tvPostId
+string tvPostNick
+string tvPostPl1
+string tvPostPl2
+string tvPostTime
+string tvPostTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvWelcomeMypageCard

@@ -81,4 +81,18 @@
     <string name="btnModifySend">수정</string>
     <string name="edtModifyTitle">제목</string>
     <string name="edtModifyContent">본문</string>
+
+    <!-- activity_post.xml -->
+    <string name="tvPostCommu">커뮤니티</string>
+    <string name="tvPostTitle">글 제목</string>
+    <string name="tvPostNick">작성자 닉네임</string>
+    <string name="tvPostPl1">(</string>
+    <string name="tvPostPl2">)</string>
+    <string name="tvPostId">ID***</string>
+    <string name="tvPostTime">2022.05.12. 17:21</string>
+    <string name="tvPostClicks">조회 15</string>
+    <string name="tvPostContent">본문 내용</string>
+    <string name="btnPostModify">수정</string>
+    <string name="btnPostComment">댓글 보기</string>
+
 </resources>
