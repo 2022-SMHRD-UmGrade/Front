@@ -21,7 +21,6 @@ import com.google.android.material.navigation.NavigationBarView;
 public class WriteActivity extends AppCompatActivity {
 
     Button btnWriteCancel, btnWriteSend;
-    ImageButton btnWriteCamera, btnWriteGallary;
     Fragment CommuFragment;
 
     @Override
@@ -31,8 +30,7 @@ public class WriteActivity extends AppCompatActivity {
 
         btnWriteCancel = findViewById(R.id.btnWriteCancel);
         btnWriteSend = findViewById(R.id.btnWriteSend);
-        btnWriteCamera = findViewById(R.id.btnWriteCamera);
-        btnWriteGallary = findViewById(R.id.btnWriteGallary);
+
         CommuFragment = new Fragment();
 
         // 취소 버튼 누르면 이전 화면으로
@@ -51,24 +49,6 @@ public class WriteActivity extends AppCompatActivity {
             }
         });
 
-        // 카메라 호출
-        btnWriteCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivity(intent);
-            }
-        });
-
-        // 갤러리 호출
-        btnWriteGallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
-                startActivity(intent);
-            }
-        });
 
     }
 }

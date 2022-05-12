@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 
 public class ModifyActivity extends AppCompatActivity {
     Button btnModifyCancel, btnModifySend;
-    ImageButton btnModifyCamera, btnModifyGallary;
     Fragment CommuFragment;
 
     @Override
@@ -22,8 +21,6 @@ public class ModifyActivity extends AppCompatActivity {
 
         btnModifyCancel = findViewById(R.id.btnModifyCancel);
         btnModifySend = findViewById(R.id.btnModifySend);
-        btnModifyCamera = findViewById(R.id.btnModifyCamera);
-        btnModifyGallary = findViewById(R.id.btnModifyGallary);
         CommuFragment = new Fragment();
 
         // 취소 버튼 누르면 이전 화면으로
@@ -42,23 +39,5 @@ public class ModifyActivity extends AppCompatActivity {
             }
         });
 
-        // 카메라 호출
-        btnModifyCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivity(intent);
-            }
-        });
-
-        // 갤러리 호출
-        btnModifyGallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
-                startActivity(intent);
-            }
-        });
     }
 }

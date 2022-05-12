@@ -93,12 +93,6 @@
                 android:padding="16dp"
                 android:textSize="15sp" />
 
-            <View
-                android:id="@+id/divider4"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="?android:attr/listDivider" />
-
         </LinearLayout>
     </ScrollView>
 
@@ -107,30 +101,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="40dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
-
-        <ImageButton
-            android:id="@+id/btnWriteCamera"
-            android:layout_width="44dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
-
-        <ImageButton
-            android:id="@+id/btnWriteGallary"
-            android:layout_width="44dp"
-            android:layout_height="40dp"
-            android:backgroundTint="#00FFFFFF"
-            app:srcCompat="@android:drawable/ic_menu_gallery" />
-    </LinearLayout>
+        app:layout_constraintGuide_end="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

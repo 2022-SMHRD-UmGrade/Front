@@ -2702,16 +2702,12 @@ id btnJoin
 id btnKakaoLogin
 id btnLogin
 id btnMapCard
-id btnModifyCamera
 id btnModifyCancel
-id btnModifyGallary
 id btnModifySend
 id btnNoticeEvent
 id btnServiceCard
 id btnSupportCard
-id btnWriteCamera
 id btnWriteCancel
-id btnWriteGallary
 id btnWriteSend
 id buttonPanel
 id cache_measures

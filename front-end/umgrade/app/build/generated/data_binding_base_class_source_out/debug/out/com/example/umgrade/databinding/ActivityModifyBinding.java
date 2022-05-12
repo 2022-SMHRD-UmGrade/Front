@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -26,13 +25,7 @@ public final class ActivityModifyBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton btnModifyCamera;
-
-  @NonNull
   public final Button btnModifyCancel;
-
-  @NonNull
-  public final ImageButton btnModifyGallary;
 
   @NonNull
   public final Button btnModifySend;
@@ -64,17 +57,13 @@ public final class ActivityModifyBinding implements ViewBinding {
   @NonNull
   public final TextView tvModify;
 
-  private ActivityModifyBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton btnModifyCamera, @NonNull Button btnModifyCancel,
-      @NonNull ImageButton btnModifyGallary, @NonNull Button btnModifySend, @NonNull View divider2,
-      @NonNull View divider3, @NonNull View divider4, @NonNull EditText edtModifyContent,
-      @NonNull EditText edtModifyTitle, @NonNull Guideline guideline4,
-      @NonNull LinearLayout linearLayout2, @NonNull ScrollView scrollView3,
-      @NonNull TextView tvModify) {
+  private ActivityModifyBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnModifyCancel,
+      @NonNull Button btnModifySend, @NonNull View divider2, @NonNull View divider3,
+      @NonNull View divider4, @NonNull EditText edtModifyContent, @NonNull EditText edtModifyTitle,
+      @NonNull Guideline guideline4, @NonNull LinearLayout linearLayout2,
+      @NonNull ScrollView scrollView3, @NonNull TextView tvModify) {
     this.rootView = rootView;
-    this.btnModifyCamera = btnModifyCamera;
     this.btnModifyCancel = btnModifyCancel;
-    this.btnModifyGallary = btnModifyGallary;
     this.btnModifySend = btnModifySend;
     this.divider2 = divider2;
     this.divider3 = divider3;
@@ -114,21 +103,9 @@ public final class ActivityModifyBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnModifyCamera;
-      ImageButton btnModifyCamera = ViewBindings.findChildViewById(rootView, id);
-      if (btnModifyCamera == null) {
-        break missingId;
-      }
-
       id = R.id.btnModifyCancel;
       Button btnModifyCancel = ViewBindings.findChildViewById(rootView, id);
       if (btnModifyCancel == null) {
-        break missingId;
-      }
-
-      id = R.id.btnModifyGallary;
-      ImageButton btnModifyGallary = ViewBindings.findChildViewById(rootView, id);
-      if (btnModifyGallary == null) {
         break missingId;
       }
 
@@ -192,9 +169,9 @@ public final class ActivityModifyBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityModifyBinding((ConstraintLayout) rootView, btnModifyCamera,
-          btnModifyCancel, btnModifyGallary, btnModifySend, divider2, divider3, divider4,
-          edtModifyContent, edtModifyTitle, guideline4, linearLayout2, scrollView3, tvModify);
+      return new ActivityModifyBinding((ConstraintLayout) rootView, btnModifyCancel, btnModifySend,
+          divider2, divider3, divider4, edtModifyContent, edtModifyTitle, guideline4, linearLayout2,
+          scrollView3, tvModify);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

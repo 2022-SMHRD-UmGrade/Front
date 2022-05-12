@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivity"
+            android:name=".ModifyActivity"
             android:exported="false" />
         <activity
             android:name=".WriteActivity"
@@ -28,7 +28,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ModifyActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
