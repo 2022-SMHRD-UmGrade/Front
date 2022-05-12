@@ -38,6 +38,7 @@ drawable more
 drawable mypage
 drawable umbrella
 id bottomNav
+id bottomNavigationView
 id btnFare
 id btnIdCheck
 id btnJoin
@@ -47,6 +48,10 @@ id btnMapCard
 id btnNoticeEvent
 id btnServiceCard
 id btnSupportCard
+id btnWriteCamera
+id btnWriteCancel
+id btnWriteGallary
+id btnWriteSend
 id button
 id ckAllCheck
 id ckMarketing
@@ -54,6 +59,9 @@ id ckPersonal
 id ckTerms
 id container
 id divider
+id divider2
+id divider3
+id divider4
 id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
@@ -64,12 +72,15 @@ id edtJoinPw
 id edtJoinPwCheck
 id edtLoginId
 id edtLoginPw
+id edtWriteContent
+id edtWriteTitle
 id fragCommu
 id fragMain
 id fragMore
 id fragMyPage
 id guideline2
 id guideline3
+id guideline4
 id imgLogo
 id imgMapCard
 id imgMypageProfile
@@ -77,10 +88,11 @@ id imgQrCard
 id imgServiceCard
 id imgSupportCard
 id imgUmb
+id linearLayout2
 id mainLogo
 id mainScroll
 id scrollView2
-id textView
+id scrollView3
 id textView2
 id textView3
 id tvCarbonMypageCard
@@ -98,6 +110,7 @@ id tvPointTextMypageCard
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
+id tvWrite
 layout activity_join
 layout activity_login
 layout activity_main
@@ -128,6 +141,8 @@ string btnNoticeEvent
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+string btnWriteCancel
+string btnWriteSend
 string ckAllCheck
 string ckMarketing
 string ckPersonal
@@ -142,6 +157,8 @@ string edtJoinPw
 string edtJoinPwCheck
 string edtLoginId
 string edtLoginPw
+string edtWriteContent
+string edtWriteTitle
 string fragCommu
 string fragMain
 string fragMore
@@ -161,6 +178,7 @@ string tvPointTextMypageCard
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvWelcomeMypageCard
+string tvWrite
 style AppTheme
 style Theme.Umgrade
 style headerText

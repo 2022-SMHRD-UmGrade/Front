@@ -63,4 +63,11 @@
 
     <!-- slider_card.xml -->
     <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
+
+    <!-- activity_write.xml -->
+    <string name="btnWriteCancel">취소</string>
+    <string name="tvWrite">글쓰기</string>
+    <string name="btnWriteSend">등록</string>
+    <string name="edtWriteTitle">제목</string>
+    <string name="edtWriteContent">본문</string>
 </resources>

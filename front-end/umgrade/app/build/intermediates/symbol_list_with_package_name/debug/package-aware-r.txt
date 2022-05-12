@@ -2690,6 +2690,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomNav
+id bottomNavigationView
 id bounce
 id bounceBoth
 id bounceEnd
@@ -2703,6 +2704,10 @@ id btnMapCard
 id btnNoticeEvent
 id btnServiceCard
 id btnSupportCard
+id btnWriteCamera
+id btnWriteCancel
+id btnWriteGallary
+id btnWriteSend
 id button
 id buttonPanel
 id cache_measures
@@ -2772,6 +2777,9 @@ id disablePostScroll
 id disableScroll
 id disjoint
 id divider
+id divider2
+id divider3
+id divider4
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2796,6 +2804,8 @@ id edtJoinPw
 id edtJoinPwCheck
 id edtLoginId
 id edtLoginPw
+id edtWriteContent
+id edtWriteTitle
 id elastic
 id end
 id endToStart
@@ -2833,6 +2843,7 @@ id groups
 id guideline
 id guideline2
 id guideline3
+id guideline4
 id header_title
 id hideable
 id home
@@ -2876,6 +2887,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout2
 id listMode
 id list_item
 id mainLogo
@@ -2997,6 +3009,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView2
+id scrollView3
 id scrollable
 id search_badge
 id search_bar
@@ -3075,7 +3088,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView3
 id text_input_end_icon
@@ -3118,6 +3130,7 @@ id tvPointTextMypageCard
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
+id tvWrite
 id unchecked
 id uniform
 id unlabeled
@@ -3389,6 +3402,8 @@ string btnNoticeEvent
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+string btnWriteCancel
+string btnWriteSend
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3426,6 +3441,8 @@ string edtJoinPw
 string edtJoinPwCheck
 string edtLoginId
 string edtLoginPw
+string edtWriteContent
+string edtWriteTitle
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3540,6 +3557,7 @@ string tvPointTextMypageCard
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvWelcomeMypageCard
+string tvWrite
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

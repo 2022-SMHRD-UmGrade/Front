@@ -4,13 +4,20 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,11 +27,69 @@ public final class ActivityWriteBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textView;
+  public final BottomNavigationView bottomNavigationView;
 
-  private ActivityWriteBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textView) {
+  @NonNull
+  public final ImageButton btnWriteCamera;
+
+  @NonNull
+  public final Button btnWriteCancel;
+
+  @NonNull
+  public final ImageButton btnWriteGallary;
+
+  @NonNull
+  public final Button btnWriteSend;
+
+  @NonNull
+  public final View divider2;
+
+  @NonNull
+  public final View divider3;
+
+  @NonNull
+  public final View divider4;
+
+  @NonNull
+  public final EditText edtWriteContent;
+
+  @NonNull
+  public final EditText edtWriteTitle;
+
+  @NonNull
+  public final Guideline guideline4;
+
+  @NonNull
+  public final LinearLayout linearLayout2;
+
+  @NonNull
+  public final ScrollView scrollView3;
+
+  @NonNull
+  public final TextView tvWrite;
+
+  private ActivityWriteBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull ImageButton btnWriteCamera,
+      @NonNull Button btnWriteCancel, @NonNull ImageButton btnWriteGallary,
+      @NonNull Button btnWriteSend, @NonNull View divider2, @NonNull View divider3,
+      @NonNull View divider4, @NonNull EditText edtWriteContent, @NonNull EditText edtWriteTitle,
+      @NonNull Guideline guideline4, @NonNull LinearLayout linearLayout2,
+      @NonNull ScrollView scrollView3, @NonNull TextView tvWrite) {
     this.rootView = rootView;
-    this.textView = textView;
+    this.bottomNavigationView = bottomNavigationView;
+    this.btnWriteCamera = btnWriteCamera;
+    this.btnWriteCancel = btnWriteCancel;
+    this.btnWriteGallary = btnWriteGallary;
+    this.btnWriteSend = btnWriteSend;
+    this.divider2 = divider2;
+    this.divider3 = divider3;
+    this.divider4 = divider4;
+    this.edtWriteContent = edtWriteContent;
+    this.edtWriteTitle = edtWriteTitle;
+    this.guideline4 = guideline4;
+    this.linearLayout2 = linearLayout2;
+    this.scrollView3 = scrollView3;
+    this.tvWrite = tvWrite;
   }
 
   @Override
@@ -54,13 +119,94 @@ public final class ActivityWriteBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigationView == null) {
         break missingId;
       }
 
-      return new ActivityWriteBinding((ConstraintLayout) rootView, textView);
+      id = R.id.btnWriteCamera;
+      ImageButton btnWriteCamera = ViewBindings.findChildViewById(rootView, id);
+      if (btnWriteCamera == null) {
+        break missingId;
+      }
+
+      id = R.id.btnWriteCancel;
+      Button btnWriteCancel = ViewBindings.findChildViewById(rootView, id);
+      if (btnWriteCancel == null) {
+        break missingId;
+      }
+
+      id = R.id.btnWriteGallary;
+      ImageButton btnWriteGallary = ViewBindings.findChildViewById(rootView, id);
+      if (btnWriteGallary == null) {
+        break missingId;
+      }
+
+      id = R.id.btnWriteSend;
+      Button btnWriteSend = ViewBindings.findChildViewById(rootView, id);
+      if (btnWriteSend == null) {
+        break missingId;
+      }
+
+      id = R.id.divider2;
+      View divider2 = ViewBindings.findChildViewById(rootView, id);
+      if (divider2 == null) {
+        break missingId;
+      }
+
+      id = R.id.divider3;
+      View divider3 = ViewBindings.findChildViewById(rootView, id);
+      if (divider3 == null) {
+        break missingId;
+      }
+
+      id = R.id.divider4;
+      View divider4 = ViewBindings.findChildViewById(rootView, id);
+      if (divider4 == null) {
+        break missingId;
+      }
+
+      id = R.id.edtWriteContent;
+      EditText edtWriteContent = ViewBindings.findChildViewById(rootView, id);
+      if (edtWriteContent == null) {
+        break missingId;
+      }
+
+      id = R.id.edtWriteTitle;
+      EditText edtWriteTitle = ViewBindings.findChildViewById(rootView, id);
+      if (edtWriteTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline4;
+      Guideline guideline4 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline4 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout2;
+      LinearLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollView3;
+      ScrollView scrollView3 = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWrite;
+      TextView tvWrite = ViewBindings.findChildViewById(rootView, id);
+      if (tvWrite == null) {
+        break missingId;
+      }
+
+      return new ActivityWriteBinding((ConstraintLayout) rootView, bottomNavigationView,
+          btnWriteCamera, btnWriteCancel, btnWriteGallary, btnWriteSend, divider2, divider3,
+          divider4, edtWriteContent, edtWriteTitle, guideline4, linearLayout2, scrollView3,
+          tvWrite);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
