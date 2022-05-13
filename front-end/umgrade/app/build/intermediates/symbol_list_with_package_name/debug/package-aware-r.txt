@@ -2722,6 +2722,7 @@ id btnServiceCard
 id btnSupportCard
 id btnWriteCancel
 id btnWriteSend
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3158,6 +3159,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3417,6 +3419,7 @@ layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mypage_card
+layout mypage_card2
 layout notice_list
 layout notification_action
 layout notification_action_tombstone

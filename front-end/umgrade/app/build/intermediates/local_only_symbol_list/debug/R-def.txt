@@ -66,6 +66,7 @@ id btnServiceCard
 id btnSupportCard
 id btnWriteCancel
 id btnWriteSend
+id button
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -163,6 +164,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -225,6 +227,7 @@ layout layout_login
 layout layout_register
 layout map_card
 layout mypage_card
+layout mypage_card2
 layout notice_list
 layout qr_card
 layout service_card
