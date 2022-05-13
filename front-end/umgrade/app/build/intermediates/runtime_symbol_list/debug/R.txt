@@ -2710,6 +2710,7 @@ int id btnModifyCancel 0x7f08006f
 int id btnModifySend 0x7f080071
 int id btnNoticeEvent 0x7f080072
 int id btnPostComment 0x7f08023b
+int id btnPostDelete 0x7f080251
 int id btnPostModify 0x7f08023c
 int id btnServiceCard 0x7f080073
 int id btnSupportCard 0x7f080074
@@ -3437,6 +3438,7 @@ int string btnModifyCancel 0x7f100027
 int string btnModifySend 0x7f100028
 int string btnNoticeEvent 0x7f100029
 int string btnPostComment 0x7f1000cd
+int string btnPostDelete 0x7f1000db
 int string btnPostModify 0x7f1000ce
 int string btnQrCard 0x7f10002a
 int string btnServiceCard 0x7f10002b

@@ -31,6 +31,9 @@ public final class ActivityPostBinding implements ViewBinding {
   public final Button btnPostComment;
 
   @NonNull
+  public final Button btnPostDelete;
+
+  @NonNull
   public final Button btnPostModify;
 
   @NonNull
@@ -77,16 +80,17 @@ public final class ActivityPostBinding implements ViewBinding {
 
   private ActivityPostBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNavigationView, @NonNull Button btnPostComment,
-      @NonNull Button btnPostModify, @NonNull ConstraintLayout constraintLayout,
-      @NonNull ConstraintLayout constraintLayout3, @NonNull CircleImageView imgPostProfile,
-      @NonNull Guideline postBottom, @NonNull ScrollView scrollView4,
-      @NonNull TextView tvPostClicks, @NonNull TextView tvPostCommu,
-      @NonNull TextView tvPostContent, @NonNull TextView tvPostId, @NonNull TextView tvPostNick,
-      @NonNull TextView tvPostPl1, @NonNull TextView tvPostPl2, @NonNull TextView tvPostTime,
-      @NonNull TextView tvPostTitle) {
+      @NonNull Button btnPostDelete, @NonNull Button btnPostModify,
+      @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout3,
+      @NonNull CircleImageView imgPostProfile, @NonNull Guideline postBottom,
+      @NonNull ScrollView scrollView4, @NonNull TextView tvPostClicks,
+      @NonNull TextView tvPostCommu, @NonNull TextView tvPostContent, @NonNull TextView tvPostId,
+      @NonNull TextView tvPostNick, @NonNull TextView tvPostPl1, @NonNull TextView tvPostPl2,
+      @NonNull TextView tvPostTime, @NonNull TextView tvPostTitle) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
     this.btnPostComment = btnPostComment;
+    this.btnPostDelete = btnPostDelete;
     this.btnPostModify = btnPostModify;
     this.constraintLayout = constraintLayout;
     this.constraintLayout3 = constraintLayout3;
@@ -140,6 +144,12 @@ public final class ActivityPostBinding implements ViewBinding {
       id = R.id.btnPostComment;
       Button btnPostComment = ViewBindings.findChildViewById(rootView, id);
       if (btnPostComment == null) {
+        break missingId;
+      }
+
+      id = R.id.btnPostDelete;
+      Button btnPostDelete = ViewBindings.findChildViewById(rootView, id);
+      if (btnPostDelete == null) {
         break missingId;
       }
 
@@ -234,9 +244,9 @@ public final class ActivityPostBinding implements ViewBinding {
       }
 
       return new ActivityPostBinding((ConstraintLayout) rootView, bottomNavigationView,
-          btnPostComment, btnPostModify, constraintLayout, constraintLayout3, imgPostProfile,
-          postBottom, scrollView4, tvPostClicks, tvPostCommu, tvPostContent, tvPostId, tvPostNick,
-          tvPostPl1, tvPostPl2, tvPostTime, tvPostTitle);
+          btnPostComment, btnPostDelete, btnPostModify, constraintLayout, constraintLayout3,
+          imgPostProfile, postBottom, scrollView4, tvPostClicks, tvPostCommu, tvPostContent,
+          tvPostId, tvPostNick, tvPostPl1, tvPostPl2, tvPostTime, tvPostTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

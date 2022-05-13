@@ -205,13 +205,28 @@
                 android:gravity="center"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:stateListAnimator="@null"
                 android:text="@string/btnPostModify"
+                android:textColor="#2196F3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/btnPostDelete"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/btnPostDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:gravity="center"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btnPostDelete"
                 android:textColor="#2196F3"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:stateListAnimator="@null"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

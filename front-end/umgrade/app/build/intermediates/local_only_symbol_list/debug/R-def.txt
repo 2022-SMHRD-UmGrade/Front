@@ -55,6 +55,7 @@ id btnModifyCancel
 id btnModifySend
 id btnNoticeEvent
 id btnPostComment
+id btnPostDelete
 id btnPostModify
 id btnServiceCard
 id btnSupportCard
@@ -177,6 +178,7 @@ string btnModifyCancel
 string btnModifySend
 string btnNoticeEvent
 string btnPostComment
+string btnPostDelete
 string btnPostModify
 string btnQrCard
 string btnServiceCard
