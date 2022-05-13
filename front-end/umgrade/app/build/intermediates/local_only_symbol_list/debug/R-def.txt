@@ -159,6 +159,8 @@ id shape_my
 id tabEvent
 id tabNotice
 id tabViewpager
+id textView
+id textView2
 id textView3
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -207,6 +209,7 @@ layout activity_notice
 layout activity_notice_post
 layout activity_post
 layout activity_service
+layout activity_support
 layout activity_write
 layout board_list
 layout comment_list

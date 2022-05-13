@@ -3154,6 +3154,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
 id textView3
 id text_input_end_icon
 id text_input_error_icon
@@ -3337,6 +3339,7 @@ layout activity_notice
 layout activity_notice_post
 layout activity_post
 layout activity_service
+layout activity_support
 layout activity_write
 layout board_list
 layout comment_list

@@ -58,6 +58,16 @@ public class MainFragment extends Fragment {
             }
         });
 
+        btnSupportCard = view.findViewById(R.id.btnSupportCard);
+        // 고객센터 클릭 시 화면전환
+        btnSupportCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SupportActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);

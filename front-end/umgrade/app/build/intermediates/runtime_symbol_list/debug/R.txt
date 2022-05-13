@@ -3153,6 +3153,8 @@ int id textSpacerNoButtons 0x7f0801ff
 int id textSpacerNoTitle 0x7f080200
 int id textStart 0x7f080201
 int id textTop 0x7f080202
+int id textView 0x7f080288
+int id textView2 0x7f080289
 int id textView3 0x7f080203
 int id text_input_end_icon 0x7f080204
 int id text_input_error_icon 0x7f080205
@@ -3336,6 +3338,7 @@ int layout activity_notice 0x7f0b0091
 int layout activity_notice_post 0x7f0b0095
 int layout activity_post 0x7f0b0021
 int layout activity_service 0x7f0b0022
+int layout activity_support 0x7f0b009a
 int layout activity_write 0x7f0b0023
 int layout board_list 0x7f0b0024
 int layout comment_list 0x7f0b0025
