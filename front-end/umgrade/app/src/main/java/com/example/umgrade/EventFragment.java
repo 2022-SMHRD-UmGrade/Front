@@ -23,7 +23,7 @@ public class EventFragment extends Fragment {
         eventTitle = view.findViewById(R.id.eventTitle); // 글제목
         eventStart = view.findViewById(R.id.eventStart); // 시작 날짜
         eventEnd = view.findViewById(R.id.eventEnd); // 종료날짜
-        eventCnt = view.findViewById(R.id.eventCnt); // 글번호
+        eventCnt = view.findViewById(R.id.eventCnt); // 글번호 - 나중에 안보이게 처리
 
         return view;
     }

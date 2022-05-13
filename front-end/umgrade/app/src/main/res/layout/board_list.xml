@@ -40,4 +40,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/boardNick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/boardNick" />
+
+    <TextView
+        android:id="@+id/boardCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="right"
+        android:text="@string/boardCnt"
+        app:layout_constraintBottom_toTopOf="@+id/boardTime"
+        app:layout_constraintEnd_toEndOf="@+id/boardTime" />
 </androidx.constraintlayout.widget.ConstraintLayout>
