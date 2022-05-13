@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide;
 
 public class PostActivity extends AppCompatActivity {
     ImageView imgPostProfile;
-    Button btnPostModify, btnPostComment;
+    Button btnPostModify, btnPostDelete, btnPostComment;
     TextView tvPostTitle, tvPostNick, tvPostId, tvPostTime, tvPostClicks, tvPostContent;
 
     @Override
@@ -21,7 +21,9 @@ public class PostActivity extends AppCompatActivity {
         setContentView(R.layout.activity_post);
 
         btnPostModify = findViewById(R.id.btnPostModify);
+        btnPostDelete = findViewById(R.id.btnPostDelete);
         btnPostComment = findViewById(R.id.btnPostComment);
+
         tvPostTitle = findViewById(R.id.tvPostTitle);
         tvPostNick = findViewById(R.id.tvPostNick);
         tvPostTime = findViewById(R.id.tvPostTime);
@@ -33,13 +35,15 @@ public class PostActivity extends AppCompatActivity {
         imgPostProfile = (ImageView) findViewById(R.id.imgPostProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgPostProfile);
 
-        // 사용자 ID와 작성자 ID 일치할 때만 btnPostModify 버튼 활성화
+        // 사용자 ID와 작성자 ID 일치할 때만 수정/삭제 버튼 활성화
         String Userid = tvPostId.getText().toString();
 
         if (Userid.equals("ID***")){
             btnPostModify.setVisibility(View.VISIBLE);
+            btnPostDelete.setVisibility(View.VISIBLE);
         }else{
             btnPostModify.setVisibility(View.GONE);
+            btnPostDelete.setVisibility(View.GONE);
         }
 
     }
