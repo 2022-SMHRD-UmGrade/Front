@@ -68,8 +68,12 @@ public class CommuFragment extends Fragment {
             }
         });
 
-        lvBoard = view.findViewById(R.id.lvBoard);
         list = new ArrayList<Board>();
+
+        adapter = new BoardAdapter(getActivity(),R.layout.board_list,list);
+
+        lvBoard =  view.findViewById(R.id.lvBoard);
+
 
         queue = Volley.newRequestQueue(getContext());
 
@@ -79,6 +83,7 @@ public class CommuFragment extends Fragment {
         request = new StringRequest(
                 method,
                 server_url,
+
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -90,8 +95,7 @@ public class CommuFragment extends Fragment {
                         try {
                             JSONArray boardArray = new JSONArray(response);
 
-                            for(int i=0; i<boardArray.length(); i++)
-                            {
+                            for(int i=0; i<boardArray.length(); i++) {
                                 JSONObject Object = boardArray.getJSONObject(i);
                                 Log.d("seq", Object.getString("article_seq"));
                                 Log.d("title", Object.getString("article_title"));
@@ -101,20 +105,20 @@ public class CommuFragment extends Fragment {
                                 Log.d("id", Object.getString("article_id"));
                                 Log.d("cnt", Object.getString("article_cnt"));
 
+                                int seq = Integer.parseInt(Object.getString("article_seq"));
+                                String title = Object.getString("article_title");
+                                String content = Object.getString("article_content");
+                                String date = Object.getString("article_date");
+                                String file = Object.getString("article_file");
+                                String id = Object.getString("article_id");
+                                int cnt = Integer.parseInt(Object.getString("article_cnt"));
 
+                                list.add(new Board(seq,title,content,date,file,id,cnt));
 
+                                lvBoard.setAdapter(adapter);
+
+                                adapter.notifyDataSetChanged();
                             }
-
-//                            int article_seq = boardObject.getInt("article_seq");
-//                            String article_title = boardObject.getString("article_title");
-//                            String article_content = boardObject.getString("article_content");
-//                            String article_date = boardObject.getString("article_date");
-//                            String article_file = boardObject.getString("article_file");
-//                            String article_id = boardObject.getString("article_id");
-//                            int article_cnt = boardObject.getInt("article_cnt");
-//                            dto = new Board(article_seq, article_title, article_content, article_date, article_file, article_id, article_cnt);
-//                            dto = BoardInfo.info;
-
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -130,26 +134,9 @@ public class CommuFragment extends Fragment {
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
-        ) {
-            @NonNull
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> param = new HashMap<>();
-
-                param.put("article_id", dto.getArticle_id());
-
-                return param;
-            }
-
-        };//end
+        ); //end
 
         queue.add(request);
-
-
-//        list = new ArrayList<Board>();
-//        adapter = new BoardAdapter(getActivity(),R.layout.board_list,list);
-//
-//        lvBoard.setAdapter(adapter);
 
         return view;
     }

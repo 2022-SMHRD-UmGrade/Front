@@ -82,23 +82,25 @@ public class WriteActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
                                 Toast.makeText(WriteActivity.this,
-                                        "등록 성공!"+response,
+                                        "등록 성공!" + response,
                                         Toast.LENGTH_SHORT).show();
                                 Log.d("asdf", response);
+
+
                             }
                         },
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 Toast.makeText(WriteActivity.this,
-                                        "등록 실패!"+error.toString(),
+                                        "등록 실패!" + error.toString(),
                                         Toast.LENGTH_SHORT).show();
                             }
                         }
-                ){
+                ) {
                     @NonNull
                     @Override
-                    protected Map<String, String> getParams() throws AuthFailureError{
+                    protected Map<String, String> getParams() throws AuthFailureError {
 
                         Map<String, String> param = new HashMap<>();
 
@@ -113,7 +115,6 @@ public class WriteActivity extends AppCompatActivity {
                 queue.add(request);
             }
         });
-
-
     }
+
 }
