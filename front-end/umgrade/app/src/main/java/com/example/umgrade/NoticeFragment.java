@@ -22,7 +22,7 @@ public class NoticeFragment extends Fragment {
         
         noticeTitle = view.findViewById(R.id.noticeTitle); // 공지글 제목
         noticeTime = view.findViewById(R.id.noticeTime); // 글 등록 시간
-        noticeCnt = view.findViewById(R.id.noticeCnt); // 글번호 - 나중에 안보이게 처리
+        noticeCnt = view.findViewById(R.id.noticeSeq); // 글번호 - 나중에 안보이게 처리
         
         return view;
     }

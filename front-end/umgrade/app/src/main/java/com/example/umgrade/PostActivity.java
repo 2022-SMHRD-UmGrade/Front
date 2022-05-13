@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 public class PostActivity extends AppCompatActivity {
     ImageView imgPostProfile;
     Button btnPostModify, btnPostDelete, btnPostComment;
-    TextView tvPostTitle, tvPostNick, tvPostId, tvPostTime, tvPostClicks, tvPostContent;
+    TextView tvPostTitle, tvPostNick, tvPostId, tvPostTime, tvPostCnt, tvPostContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class PostActivity extends AppCompatActivity {
         tvPostTitle = findViewById(R.id.tvPostTitle);
         tvPostNick = findViewById(R.id.tvPostNick);
         tvPostTime = findViewById(R.id.tvPostTime);
-        tvPostClicks = findViewById(R.id.tvPostClicks);
+        tvPostCnt = findViewById(R.id.tvPostCnt);
         tvPostContent = findViewById(R.id.tvPostContent);
         tvPostId = findViewById(R.id.tvPostId);
 

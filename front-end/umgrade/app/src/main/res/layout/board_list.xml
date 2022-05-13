@@ -42,12 +42,12 @@
         app:layout_constraintTop_toTopOf="@+id/boardNick" />
 
     <TextView
-        android:id="@+id/boardCnt"
+        android:id="@+id/boardSeq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:gravity="right"
-        android:text="@string/boardCnt"
+        android:text="@string/boardSeq"
         app:layout_constraintBottom_toTopOf="@+id/boardTime"
         app:layout_constraintEnd_toEndOf="@+id/boardTime" />
 </androidx.constraintlayout.widget.ConstraintLayout>
