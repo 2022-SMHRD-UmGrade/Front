@@ -19,7 +19,7 @@ import me.relex.circleindicator.CircleIndicator3;
 public class MainFragment extends Fragment {
     Button btnFare;
     ImageView imgMypageProfile;
-    Button btnServiceCard;
+    Button btnServiceCard, btnNoticeEvent;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,6 +37,17 @@ public class MainFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        btnNoticeEvent = view.findViewById(R.id.btnNoticeEvent);
+        // 공지&이벤트 클릭 시 화면전환
+        btnNoticeEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NoticeActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);

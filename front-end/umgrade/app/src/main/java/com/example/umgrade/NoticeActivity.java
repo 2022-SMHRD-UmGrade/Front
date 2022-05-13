@@ -1,14 +1,33 @@
 package com.example.umgrade;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class NoticeActivity extends AppCompatActivity {
+
+    ViewPager tabViewpager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notice);
+
+        tabViewpager = findViewById(R.id.tabViewpager);
+        tabViewPagerAdapter adapter = new tabViewPagerAdapter(getSupportFragmentManager());
+        tabViewpager.setAdapter(adapter);
+
+        TabLayout tabLayout = findViewById(R.id.noticeTab);
+        tabLayout.setupWithViewPager(tabViewpager);
+
+        for (int i = 0; i<2; i++){
+            tabLayout.getTabAt(i);
+        }
+
     }
 }

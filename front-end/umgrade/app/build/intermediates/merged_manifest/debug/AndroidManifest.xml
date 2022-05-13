@@ -26,6 +26,9 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.NoticeActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.LoginActivity"
             android:exported="false" />
         <activity
