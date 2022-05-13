@@ -26,6 +26,9 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.MapActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.MainActivity"
             android:exported="false" />
         <activity

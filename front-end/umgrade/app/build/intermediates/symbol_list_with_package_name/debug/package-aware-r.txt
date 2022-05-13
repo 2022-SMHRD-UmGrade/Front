@@ -2717,6 +2717,7 @@ id btnNoticeEvent
 id btnPostComment
 id btnPostDelete
 id btnPostModify
+id btnQrCard
 id btnServiceCard
 id btnSupportCard
 id btnWriteCancel
@@ -3330,6 +3331,7 @@ layout activity_intro
 layout activity_join
 layout activity_login
 layout activity_main
+layout activity_map
 layout activity_modify
 layout activity_notice
 layout activity_notice_post

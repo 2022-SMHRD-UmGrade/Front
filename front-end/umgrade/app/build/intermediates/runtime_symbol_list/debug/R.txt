@@ -2716,6 +2716,7 @@ int id btnNoticeEvent 0x7f080075
 int id btnPostComment 0x7f080076
 int id btnPostDelete 0x7f080077
 int id btnPostModify 0x7f080078
+int id btnQrCard 0x7f080287
 int id btnServiceCard 0x7f080079
 int id btnSupportCard 0x7f08007a
 int id btnWriteCancel 0x7f08007b
@@ -3329,6 +3330,7 @@ int layout activity_intro 0x7f0b0098
 int layout activity_join 0x7f0b001d
 int layout activity_login 0x7f0b001e
 int layout activity_main 0x7f0b001f
+int layout activity_map 0x7f0b0099
 int layout activity_modify 0x7f0b0020
 int layout activity_notice 0x7f0b0091
 int layout activity_notice_post 0x7f0b0095

@@ -19,7 +19,7 @@ import me.relex.circleindicator.CircleIndicator3;
 public class MainFragment extends Fragment {
     Button btnFare;
     ImageView imgMypageProfile;
-    Button btnServiceCard, btnNoticeEvent;
+    Button btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +44,16 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), NoticeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMapCard = view.findViewById(R.id.btnMapCard);
+        // 보관함 찾기 클릭 시 화면전환
+        btnMapCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MapActivity.class);
                 startActivity(intent);
             }
         });

@@ -21,15 +21,15 @@ public final class QrCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button btnMapCard;
+  public final Button btnQrCard;
 
   @NonNull
   public final ImageView imgQrCard;
 
-  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnMapCard,
+  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnQrCard,
       @NonNull ImageView imgQrCard) {
     this.rootView = rootView;
-    this.btnMapCard = btnMapCard;
+    this.btnQrCard = btnQrCard;
     this.imgQrCard = imgQrCard;
   }
 
@@ -60,9 +60,9 @@ public final class QrCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnMapCard;
-      Button btnMapCard = ViewBindings.findChildViewById(rootView, id);
-      if (btnMapCard == null) {
+      id = R.id.btnQrCard;
+      Button btnQrCard = ViewBindings.findChildViewById(rootView, id);
+      if (btnQrCard == null) {
         break missingId;
       }
 
@@ -72,7 +72,7 @@ public final class QrCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new QrCardBinding((CardView) rootView, btnMapCard, imgQrCard);
+      return new QrCardBinding((CardView) rootView, btnQrCard, imgQrCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

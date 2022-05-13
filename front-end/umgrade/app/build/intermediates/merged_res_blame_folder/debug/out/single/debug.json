@@ -236,6 +236,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\comment_list.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_map.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2ndProject\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
