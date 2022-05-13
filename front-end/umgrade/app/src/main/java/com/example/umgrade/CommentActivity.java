@@ -78,6 +78,7 @@ public class CommentActivity extends AppCompatActivity {
             }
         });
 
+
 //        tvCommentNick = findViewById(R.id.tvCommentNick);
 //        tvWriter = findViewById(R.id.tvWriter);
 //        tvCommentContent = findViewById(R.id.tvCommentContent);

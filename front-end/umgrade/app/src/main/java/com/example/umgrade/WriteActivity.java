@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -83,6 +84,7 @@ public class WriteActivity extends AppCompatActivity {
                                 Toast.makeText(WriteActivity.this,
                                         "등록 성공!"+response,
                                         Toast.LENGTH_SHORT).show();
+                                Log.d("asdf", response);
                             }
                         },
                         new Response.ErrorListener() {
