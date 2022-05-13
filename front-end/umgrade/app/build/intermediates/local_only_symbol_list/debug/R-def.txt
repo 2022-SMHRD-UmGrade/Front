@@ -44,6 +44,7 @@ id boardTitle
 id bottomNav
 id bottomNavigationView
 id btnCmWrite
+id btnComment
 id btnCommuMenu
 id btnFare
 id btnIdCheck
@@ -72,6 +73,7 @@ id divider
 id divider2
 id divider3
 id divider4
+id edtComment
 id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
@@ -93,6 +95,7 @@ id fragMyPage
 id guideline2
 id guideline3
 id guideline4
+id guideline5
 id imgLogo
 id imgMapCard
 id imgMypageProfile
@@ -168,6 +171,7 @@ string boardNick
 string boardTime
 string boardTitle
 string btnCmWrite
+string btnComment
 string btnFare
 string btnIdCheck
 string btnJoin
@@ -189,6 +193,7 @@ string ckAllCheck
 string ckMarketing
 string ckPersonal
 string ckTerms
+string edtComment
 string edtJoinAddr
 string edtJoinEmail
 string edtJoinId

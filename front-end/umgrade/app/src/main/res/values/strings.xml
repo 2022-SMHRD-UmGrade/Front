@@ -101,4 +101,8 @@
     <string name="boardNick">작성자 닉네임</string>
     <string name="boardTime">2022.05.12. 17:21</string>
 
+    <!-- activity_comment.xml -->
+    <string name="edtComment">댓글 작성하기</string>
+    <string name="btnComment">등록</string>
+
 </resources>

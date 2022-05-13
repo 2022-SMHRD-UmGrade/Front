@@ -4,10 +4,13 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
@@ -20,10 +23,23 @@ public final class ActivityCommentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnComment;
+
+  @NonNull
+  public final EditText edtComment;
+
+  @NonNull
+  public final Guideline guideline5;
+
+  @NonNull
   public final ListView lvComment;
 
-  private ActivityCommentBinding(@NonNull ConstraintLayout rootView, @NonNull ListView lvComment) {
+  private ActivityCommentBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnComment,
+      @NonNull EditText edtComment, @NonNull Guideline guideline5, @NonNull ListView lvComment) {
     this.rootView = rootView;
+    this.btnComment = btnComment;
+    this.edtComment = edtComment;
+    this.guideline5 = guideline5;
     this.lvComment = lvComment;
   }
 
@@ -54,13 +70,32 @@ public final class ActivityCommentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnComment;
+      Button btnComment = ViewBindings.findChildViewById(rootView, id);
+      if (btnComment == null) {
+        break missingId;
+      }
+
+      id = R.id.edtComment;
+      EditText edtComment = ViewBindings.findChildViewById(rootView, id);
+      if (edtComment == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline5;
+      Guideline guideline5 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline5 == null) {
+        break missingId;
+      }
+
       id = R.id.lvComment;
       ListView lvComment = ViewBindings.findChildViewById(rootView, id);
       if (lvComment == null) {
         break missingId;
       }
 
-      return new ActivityCommentBinding((ConstraintLayout) rootView, lvComment);
+      return new ActivityCommentBinding((ConstraintLayout) rootView, btnComment, edtComment,
+          guideline5, lvComment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

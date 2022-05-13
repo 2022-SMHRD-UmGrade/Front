@@ -2700,6 +2700,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnCmWrite
+id btnComment
 id btnCommuMenu
 id btnFare
 id btnIdCheck
@@ -2804,6 +2805,7 @@ id easeInOut
 id easeOut
 id east
 id edit_query
+id edtComment
 id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
@@ -2856,6 +2858,7 @@ id guideline
 id guideline2
 id guideline3
 id guideline4
+id guideline5
 id header_title
 id hideable
 id home
@@ -3429,6 +3432,7 @@ string boardTitle
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string btnCmWrite
+string btnComment
 string btnFare
 string btnIdCheck
 string btnJoin
@@ -3473,6 +3477,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string edtComment
 string edtJoinAddr
 string edtJoinEmail
 string edtJoinId
