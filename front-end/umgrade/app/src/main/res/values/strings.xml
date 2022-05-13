@@ -118,17 +118,33 @@
     <!-- activity_notice.xml -->
     <string name="tabNotice">공지사항</string>
     <string name="tabEvent">이벤트</string>
-    
+
     <!-- notice_list.xml -->
     <string name="noticeTitle">공지사항 제목</string>
     <string name="noticeTime">2022.05.13 15:10</string>
     <string name="noticeCnt">00</string>
-    
+
     <!-- event_list.xml -->
     <string name="eventTitle">이벤트 제목</string>
     <string name="eventStart">2022.05.13</string>
     <string name="eventDash">-</string>
     <string name="eventEnd">2022.06.01</string>
     <string name="eventCnt">00</string>
+
+    <!-- activity_event_post.xml -->
+    <string name="eventPost">이벤트</string>
+    <string name="eventPostTitle">이벤트 글제목</string>
+    <string name="eventPostTime">2022. 05. 13. 16:16</string>
+    <string name="eventPostContent">이벤트 본문</string>
+    <string name="eventPostSeq">00</string>
+    <string name="eventPostCnt">조회 13</string>
+
+    <!-- activity_notice_post.xml -->
+    <string name="noticePost">공지사항</string>
+    <string name="noticePostTitle">공지사항 제목</string>
+    <string name="noticePostTime">2022. 05. 13. 16:16</string>
+    <string name="noticePostContent">공지사항 본문</string>
+    <string name="noticePostSeq">00</string>
+    <string name="noticePostCnt">조회 13</string>
 
 </resources>

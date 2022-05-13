@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EventPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoticePostActivity"
+            android:exported="false" />
+        <activity
             android:name=".NoticeActivity"
             android:exported="false" />
         <activity
