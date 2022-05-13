@@ -1,6 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">UM-CYCLE</string>
 
+    <!-- activity_intro.xml -->
+    <string name="tvIntro">UM-CYCLE</string>
+
     <!-- layout_loginl.xml -->
     <string name="edtLoginId">ID를 입력하세요</string>
     <string name="edtLoginPw">PW를 입력하세요</string>
