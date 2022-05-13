@@ -1,9 +1,7 @@
 package com.example.umgrade;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 
@@ -19,7 +17,7 @@ public class NoticeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notice);
 
         tabViewpager = findViewById(R.id.tabViewpager);
-        tabViewPagerAdapter adapter = new tabViewPagerAdapter(getSupportFragmentManager());
+        TabViewPagerAdapter adapter = new TabViewPagerAdapter(getSupportFragmentManager());
         tabViewpager.setAdapter(adapter);
 
         TabLayout tabLayout = findViewById(R.id.noticeTab);

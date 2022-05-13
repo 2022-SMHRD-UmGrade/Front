@@ -11,9 +11,16 @@
         android:id="@+id/noticeTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIconTint="@color/colorAccent"
+        app:tabIndicatorColor="#6DBEFF"
+        app:tabIndicatorFullWidth="true"
+        app:tabRippleColor="#BED6EA"
+        app:tabTextColor="#2196F3">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabNotice"
