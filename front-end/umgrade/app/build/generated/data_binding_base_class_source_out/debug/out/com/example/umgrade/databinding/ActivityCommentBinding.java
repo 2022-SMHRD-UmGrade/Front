@@ -26,6 +26,9 @@ public final class ActivityCommentBinding implements ViewBinding {
   public final Button btnComment;
 
   @NonNull
+  public final View divider5;
+
+  @NonNull
   public final EditText edtComment;
 
   @NonNull
@@ -35,9 +38,11 @@ public final class ActivityCommentBinding implements ViewBinding {
   public final ListView lvComment;
 
   private ActivityCommentBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnComment,
-      @NonNull EditText edtComment, @NonNull Guideline guideline5, @NonNull ListView lvComment) {
+      @NonNull View divider5, @NonNull EditText edtComment, @NonNull Guideline guideline5,
+      @NonNull ListView lvComment) {
     this.rootView = rootView;
     this.btnComment = btnComment;
+    this.divider5 = divider5;
     this.edtComment = edtComment;
     this.guideline5 = guideline5;
     this.lvComment = lvComment;
@@ -76,6 +81,12 @@ public final class ActivityCommentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.divider5;
+      View divider5 = ViewBindings.findChildViewById(rootView, id);
+      if (divider5 == null) {
+        break missingId;
+      }
+
       id = R.id.edtComment;
       EditText edtComment = ViewBindings.findChildViewById(rootView, id);
       if (edtComment == null) {
@@ -94,8 +105,8 @@ public final class ActivityCommentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCommentBinding((ConstraintLayout) rootView, btnComment, edtComment,
-          guideline5, lvComment);
+      return new ActivityCommentBinding((ConstraintLayout) rootView, btnComment, divider5,
+          edtComment, guideline5, lvComment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
