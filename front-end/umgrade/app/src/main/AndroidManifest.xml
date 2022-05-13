@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".NoticeActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -31,10 +34,10 @@
             android:name=".JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CommentActivity"
             android:exported="false" />
         <activity
-            android:name=".CommentActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

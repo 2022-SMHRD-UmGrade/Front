@@ -180,18 +180,18 @@ ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:31:13-41
-activity#com.example.umgrade.MainActivity
+activity#com.example.umgrade.CommentActivity
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:34:13-41
-activity#com.example.umgrade.CommentActivity
+		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:34:13-44
+activity#com.example.umgrade.MainActivity
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:36:9-44:20
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:37:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\smhrd\Desktop\2ndProject\front-end\umgrade\app\src\main\AndroidManifest.xml:39:13-43:29
 action#android.intent.action.MAIN
