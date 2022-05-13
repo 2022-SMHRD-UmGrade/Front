@@ -44,10 +44,14 @@
             android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.LoginActivity"
+            android:name="com.example.umgrade.MainActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name="com.example.umgrade.PostActivity"
+=======
+            android:name="com.example.umgrade.LoginActivity"
+>>>>>>> df7fed41783c74084f0e4063a4f8ffa7af5f4b2e
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

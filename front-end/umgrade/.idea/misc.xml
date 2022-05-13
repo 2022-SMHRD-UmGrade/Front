@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_comment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_join.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_modify.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_post.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_service.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/src/main/res/layout/activity_write.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable-v24/corner_shape.xml" value="0.1" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/smhrd/Desktop/2ndProject/front-end/umgrade/app/src/main/res/drawable/arroaright_resize.xml" value="0.1" />
