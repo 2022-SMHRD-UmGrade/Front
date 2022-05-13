@@ -2587,6 +2587,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable round
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2860,6 +2861,7 @@ id guideline2
 id guideline3
 id guideline4
 id guideline5
+id guideline6
 id header_title
 id hideable
 id home
@@ -2874,6 +2876,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgCommentProfile
 id imgLogo
 id imgMapCard
 id imgMypageProfile
@@ -3139,6 +3142,12 @@ id triangle
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
+id tvCommentContent
+id tvCommentDel
+id tvCommentModify
+id tvCommentNick
+id tvCommentReport
+id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
@@ -3163,6 +3172,7 @@ id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
 id tvWrite
+id tvWriter
 id unchecked
 id uniform
 id unlabeled
@@ -3596,6 +3606,12 @@ string title_activity_join
 string tvCarbonMypageCard
 string tvComment1MypageCard
 string tvComment2MypageCard
+string tvCommentContent
+string tvCommentDel
+string tvCommentModify
+string tvCommentNick
+string tvCommentReport
+string tvCommentTime
 string tvCommuTitle
 string tvCouponMypageCard
 string tvCouponTextMypageCard
@@ -3619,6 +3635,7 @@ string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvWelcomeMypageCard
 string tvWrite
+string tvWriter
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

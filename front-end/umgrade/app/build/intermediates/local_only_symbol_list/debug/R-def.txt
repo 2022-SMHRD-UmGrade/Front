@@ -37,6 +37,7 @@ drawable mapimg
 drawable menu
 drawable more
 drawable mypage
+drawable round
 drawable umbrella
 id boardNick
 id boardTime
@@ -97,6 +98,8 @@ id guideline2
 id guideline3
 id guideline4
 id guideline5
+id guideline6
+id imgCommentProfile
 id imgLogo
 id imgMapCard
 id imgMypageProfile
@@ -119,6 +122,12 @@ id textView3
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
+id tvCommentContent
+id tvCommentDel
+id tvCommentModify
+id tvCommentNick
+id tvCommentReport
+id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
@@ -143,6 +152,7 @@ id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvWelcomeMypageCard
 id tvWrite
+id tvWriter
 layout activity_comment
 layout activity_join
 layout activity_login
@@ -217,6 +227,12 @@ string title_activity_join
 string tvCarbonMypageCard
 string tvComment1MypageCard
 string tvComment2MypageCard
+string tvCommentContent
+string tvCommentDel
+string tvCommentModify
+string tvCommentNick
+string tvCommentReport
+string tvCommentTime
 string tvCommuTitle
 string tvCouponMypageCard
 string tvCouponTextMypageCard
@@ -240,6 +256,7 @@ string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvWelcomeMypageCard
 string tvWrite
+string tvWriter
 style AppTheme
 style Theme.Umgrade
 style headerText

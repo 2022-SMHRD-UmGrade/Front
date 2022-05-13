@@ -10,12 +10,19 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 public class CommentActivity extends AppCompatActivity {
 
     Button btnComment;
     EditText edtComment;
+
+    TextView tvCommentNick, tvWriter, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport;
+
+    ImageView imgCommentProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +78,48 @@ public class CommentActivity extends AppCompatActivity {
             }
         });
 
-
+//        tvCommentNick = findViewById(R.id.tvCommentNick);
+//        tvWriter = findViewById(R.id.tvWriter);
+//        tvCommentContent = findViewById(R.id.tvCommentContent);
+//        tvCommentTime = findViewById(R.id.tvCommentTime);
+//        tvCommentDel = findViewById(R.id.tvCommentDel);
+//        tvCommentModify = findViewById(R.id.tvCommentModify);
+//        tvCommentReport = findViewById(R.id.tvCommentReport);
+//
+//        // 게시물 작성자와 댓글 작성자가 일치할 경우에만 작성자 표시
+//        String brWriterID = "test"; // 게시물 작성자 ID
+//        String cmWriterID = "test"; // 댓글 작성자 ID
+//        if(cmWriterID.equals(brWriterID)){
+//            tvWriter.setVisibility(View.VISIBLE);
+//        }else{
+//            tvWriter.setVisibility(View.INVISIBLE);
+//        }
+//
+//        // 댓글 작성자와 접속한 사용자가 일치할 경우에만 수정/삭제 기능 표시
+//        String cmWriterId = "test";
+//        String userId = "test";
+//        if(userId.equals(cmWriterId)){
+//            tvCommentModify.setVisibility(View.VISIBLE);
+//            tvCommentDel.setVisibility(View.VISIBLE);
+//        } else {
+//            tvCommentModify.setVisibility(View.GONE);
+//            tvCommentDel.setVisibility(View.VISIBLE);
+//        }
+//
+//        // 접속한 사람이 관리자일 때 삭제 기능 표시
+//        String managerId = "test";
+//        if(userId.equals(managerId)){
+//            tvCommentDel.setVisibility(View.VISIBLE);
+//        } else {
+//            tvCommentDel.setVisibility(View.GONE);
+//        }
+//
+//        // 댓글 프로필 사진
+//        imgCommentProfile = findViewById(R.id.imgCommentProfile);
+//
+//        Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgCommentProfile);
 
     }
+
+
 }

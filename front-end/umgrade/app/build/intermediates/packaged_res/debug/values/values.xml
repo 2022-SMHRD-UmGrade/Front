@@ -71,6 +71,12 @@
     <string name="tvCarbonMypageCard">692g</string>
     <string name="tvComment1MypageCard">오늘까지 총</string>
     <string name="tvComment2MypageCard">의 탄소 절약!</string>
+    <string name="tvCommentContent">댓글 내용</string>
+    <string name="tvCommentDel">삭제</string>
+    <string name="tvCommentModify">수정</string>
+    <string name="tvCommentNick">작성자 닉네임</string>
+    <string name="tvCommentReport">신고</string>
+    <string name="tvCommentTime">2022.05.13 10:42</string>
     <string name="tvCommuTitle">커뮤니티</string>
     <string name="tvCouponMypageCard">1개</string>
     <string name="tvCouponTextMypageCard">보유 쿠폰</string>
@@ -94,6 +100,7 @@
     <string name="tvRatingTextMypageCard">회원 등급</string>
     <string name="tvWelcomeMypageCard">님 환영합니다!</string>
     <string name="tvWrite">글쓰기</string>
+    <string name="tvWriter">작성자</string>
     <style name="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
