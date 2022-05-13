@@ -22,7 +22,7 @@
             app:srcCompat="@drawable/mapimg" />
 
         <Button
-            android:id="@+id/btnMapCard"
+            android:id="@+id/btnQrCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:backgroundTint="#FFDDF0FF"

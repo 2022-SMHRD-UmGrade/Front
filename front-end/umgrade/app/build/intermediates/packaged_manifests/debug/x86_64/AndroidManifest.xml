@@ -26,7 +26,32 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+<<<<<<< HEAD
             android:name="com.example.umgrade.CommentActivity"
+=======
+            android:name="com.example.umgrade.FareActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.SupportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.EventPostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.NoticePostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.NoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.LoginActivity"
+>>>>>>> bdbc620e9b6cad800004ef176415b693fcef55ec
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.PostActivity"
@@ -44,10 +69,14 @@
             android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.MainActivity"
+            android:name="com.example.umgrade.CommentActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name="com.example.umgrade.LoginActivity"
+=======
+            android:name="com.example.umgrade.IntroActivity"
+>>>>>>> bdbc620e9b6cad800004ef176415b693fcef55ec
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

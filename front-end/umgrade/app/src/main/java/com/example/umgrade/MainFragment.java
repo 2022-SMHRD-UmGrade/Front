@@ -17,9 +17,8 @@ import me.relex.circleindicator.CircleIndicator3;
 
 
 public class MainFragment extends Fragment {
-    Button btnFare;
     ImageView imgMypageProfile;
-    Button btnServiceCard;
+    Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +26,14 @@ public class MainFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         btnFare = view.findViewById(R.id.btnFare);
+        // 요금안내 클릭 시 화면전환
+        btnFare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FareActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnServiceCard = view.findViewById(R.id.btnServiceCard);
         // 서비스안내 클릭 시 화면전환
@@ -37,6 +44,37 @@ public class MainFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        btnNoticeEvent = view.findViewById(R.id.btnNoticeEvent);
+        // 공지&이벤트 클릭 시 화면전환
+        btnNoticeEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NoticeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMapCard = view.findViewById(R.id.btnMapCard);
+        // 보관함 찾기 클릭 시 화면전환
+        btnMapCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSupportCard = view.findViewById(R.id.btnSupportCard);
+        // 고객센터 클릭 시 화면전환
+        btnSupportCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SupportActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);

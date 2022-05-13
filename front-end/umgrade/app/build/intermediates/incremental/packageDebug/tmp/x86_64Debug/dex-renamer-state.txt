@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Fri May 13 20:56:24 KST 2022
+=======
+#Fri May 13 20:34:10 KST 2022
+>>>>>>> bdbc620e9b6cad800004ef176415b693fcef55ec
 path.4=15/classes.dex
 path.3=13/classes.dex
 path.2=12/classes.dex
@@ -7,11 +11,19 @@ path.7=3/classes.dex
 path.6=classes2.dex
 path.5=4/classes.dex
 path.0=classes.dex
+<<<<<<< HEAD
 base.4=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
 base.3=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
 base.2=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
 base.1=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.0=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+base.4=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.3=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.2=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.1=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> bdbc620e9b6cad800004ef176415b693fcef55ec
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
@@ -20,6 +32,12 @@ renamed.7=classes8.dex
 renamed.6=classes7.dex
 base.7=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 renamed.5=classes6.dex
+<<<<<<< HEAD
 base.6=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 renamed.4=classes5.dex
 base.5=C\:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+=======
+base.6=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+renamed.4=classes5.dex
+base.5=C\:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+>>>>>>> bdbc620e9b6cad800004ef176415b693fcef55ec

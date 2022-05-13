@@ -52,7 +52,7 @@ public final class ActivityPostBinding implements ViewBinding {
   public final ScrollView scrollView4;
 
   @NonNull
-  public final TextView tvPostClicks;
+  public final TextView tvPostCnt;
 
   @NonNull
   public final TextView tvPostCommu;
@@ -83,10 +83,10 @@ public final class ActivityPostBinding implements ViewBinding {
       @NonNull Button btnPostDelete, @NonNull Button btnPostModify,
       @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout3,
       @NonNull CircleImageView imgPostProfile, @NonNull Guideline postBottom,
-      @NonNull ScrollView scrollView4, @NonNull TextView tvPostClicks,
-      @NonNull TextView tvPostCommu, @NonNull TextView tvPostContent, @NonNull TextView tvPostId,
-      @NonNull TextView tvPostNick, @NonNull TextView tvPostPl1, @NonNull TextView tvPostPl2,
-      @NonNull TextView tvPostTime, @NonNull TextView tvPostTitle) {
+      @NonNull ScrollView scrollView4, @NonNull TextView tvPostCnt, @NonNull TextView tvPostCommu,
+      @NonNull TextView tvPostContent, @NonNull TextView tvPostId, @NonNull TextView tvPostNick,
+      @NonNull TextView tvPostPl1, @NonNull TextView tvPostPl2, @NonNull TextView tvPostTime,
+      @NonNull TextView tvPostTitle) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
     this.btnPostComment = btnPostComment;
@@ -97,7 +97,7 @@ public final class ActivityPostBinding implements ViewBinding {
     this.imgPostProfile = imgPostProfile;
     this.postBottom = postBottom;
     this.scrollView4 = scrollView4;
-    this.tvPostClicks = tvPostClicks;
+    this.tvPostCnt = tvPostCnt;
     this.tvPostCommu = tvPostCommu;
     this.tvPostContent = tvPostContent;
     this.tvPostId = tvPostId;
@@ -189,9 +189,9 @@ public final class ActivityPostBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvPostClicks;
-      TextView tvPostClicks = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostClicks == null) {
+      id = R.id.tvPostCnt;
+      TextView tvPostCnt = ViewBindings.findChildViewById(rootView, id);
+      if (tvPostCnt == null) {
         break missingId;
       }
 
@@ -245,8 +245,8 @@ public final class ActivityPostBinding implements ViewBinding {
 
       return new ActivityPostBinding((ConstraintLayout) rootView, bottomNavigationView,
           btnPostComment, btnPostDelete, btnPostModify, constraintLayout, constraintLayout3,
-          imgPostProfile, postBottom, scrollView4, tvPostClicks, tvPostCommu, tvPostContent,
-          tvPostId, tvPostNick, tvPostPl1, tvPostPl2, tvPostTime, tvPostTitle);
+          imgPostProfile, postBottom, scrollView4, tvPostCnt, tvPostCommu, tvPostContent, tvPostId,
+          tvPostNick, tvPostPl1, tvPostPl2, tvPostTime, tvPostTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

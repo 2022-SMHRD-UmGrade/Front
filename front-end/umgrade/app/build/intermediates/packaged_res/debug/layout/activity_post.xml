@@ -82,12 +82,12 @@
             app:layout_constraintVertical_bias="0.388" />
 
         <TextView
-            android:id="@+id/tvPostClicks"
+            android:id="@+id/tvPostCnt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:gravity="right"
-            android:text="@string/tvPostClicks"
+            android:text="@string/tvPostCnt"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/tvPostTime"
             app:layout_constraintStart_toEndOf="@+id/tvPostTime"
