@@ -3156,6 +3156,7 @@ int id textTop 0x7f080202
 int id textView 0x7f080288
 int id textView2 0x7f080289
 int id textView3 0x7f080203
+int id textView4 0x7f08028a
 int id text_input_end_icon 0x7f080204
 int id text_input_error_icon 0x7f080205
 int id text_input_start_icon 0x7f080206
@@ -3328,6 +3329,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_comment 0x7f0b001c
 int layout activity_event_post 0x7f0b0094
+int layout activity_fare 0x7f0b009b
 int layout activity_intro 0x7f0b0098
 int layout activity_join 0x7f0b001d
 int layout activity_login 0x7f0b001e

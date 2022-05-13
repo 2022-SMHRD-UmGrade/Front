@@ -162,6 +162,7 @@ id tabViewpager
 id textView
 id textView2
 id textView3
+id textView4
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -199,6 +200,7 @@ id tvWrite
 id tvWriter
 layout activity_comment
 layout activity_event_post
+layout activity_fare
 layout activity_intro
 layout activity_join
 layout activity_login

@@ -17,9 +17,8 @@ import me.relex.circleindicator.CircleIndicator3;
 
 
 public class MainFragment extends Fragment {
-    Button btnFare;
     ImageView imgMypageProfile;
-    Button btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
+    Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +26,14 @@ public class MainFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         btnFare = view.findViewById(R.id.btnFare);
+        // 요금안내 클릭 시 화면전환
+        btnFare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FareActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnServiceCard = view.findViewById(R.id.btnServiceCard);
         // 서비스안내 클릭 시 화면전환
