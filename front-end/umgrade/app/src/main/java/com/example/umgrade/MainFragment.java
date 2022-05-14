@@ -80,7 +80,7 @@ public class MainFragment extends Fragment {
         btnQrCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), SupportActivity.class);
+                Intent intent = new Intent(getActivity(), QrActivity.class);
                 startActivity(intent);
             }
         });

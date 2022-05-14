@@ -212,6 +212,7 @@ layout activity_modify
 layout activity_notice
 layout activity_notice_post
 layout activity_post
+layout activity_qr
 layout activity_service
 layout activity_support
 layout activity_write
