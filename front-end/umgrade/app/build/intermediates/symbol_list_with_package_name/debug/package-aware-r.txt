@@ -2711,6 +2711,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id boardListItem
 id boardNick
 id boardSeq
 id boardTime
@@ -2823,6 +2824,7 @@ id divider3
 id divider4
 id divider5
 id divider7
+id divider8
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2958,6 +2960,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id linearLayout2
 id listMode
 id list_item

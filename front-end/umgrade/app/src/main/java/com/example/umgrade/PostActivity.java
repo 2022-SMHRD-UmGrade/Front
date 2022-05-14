@@ -35,6 +35,9 @@ public class PostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
 
+        vo = UserInfo.info;
+        dto = BoardInfo.info;
+
         btnPostModify = findViewById(R.id.btnPostModify);
         btnPostDelete = findViewById(R.id.btnPostDelete);
         btnPostComment = findViewById(R.id.btnPostComment);
@@ -50,8 +53,7 @@ public class PostActivity extends AppCompatActivity {
 
         tvPostId.setText(vo.getUser_id());
 
-        vo = UserInfo.info;
-        dto = BoardInfo.info;
+
 
         // 프로필 사진 원형으로
         imgPostProfile = (ImageView) findViewById(R.id.imgPostProfile);
@@ -60,13 +62,13 @@ public class PostActivity extends AppCompatActivity {
         // 사용자 ID와 작성자 ID 일치할 때만 수정/삭제 버튼 활성화
         String Userid = tvPostId.getText().toString();
 
-        if (Userid.equals(dto.getArticle_id())) {
-            btnPostModify.setVisibility(View.VISIBLE);
-            btnPostDelete.setVisibility(View.VISIBLE);
-        } else {
-            btnPostModify.setVisibility(View.GONE);
-            btnPostDelete.setVisibility(View.GONE);
-        }
+//       if (Userid.equals(vo.getUser_id())) {
+//            btnPostModify.setVisibility(View.VISIBLE);
+//          btnPostDelete.setVisibility(View.VISIBLE);
+//        } else {
+//            btnPostModify.setVisibility(View.GONE);
+//            btnPostDelete.setVisibility(View.GONE);
+//        }
 
         btnPostComment.setOnClickListener(new View.OnClickListener() {
             @Override

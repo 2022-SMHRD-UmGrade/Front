@@ -7,45 +7,59 @@
     tools:context=".CommuFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/btnCommuMenu"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="60dp"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/menu"
-            android:tint="#2196F3" />
-
-        <TextView
-            android:id="@+id/tvCommuTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/tvCommuTitle"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnCmWrite"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="#00FFFFFF"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:stateListAnimator="@null"
-            android:text="@string/btnCmWrite"
-            android:textColor="#2196F3" />
+            <ImageButton
+                android:id="@+id/btnCommuMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/menu"
+                android:tint="#2196F3" />
 
+            <TextView
+                android:id="@+id/tvCommuTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tvCommuTitle"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCmWrite"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btnCmWrite"
+                android:textColor="#2196F3" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
     </LinearLayout>
 
     <ListView
@@ -55,6 +69,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

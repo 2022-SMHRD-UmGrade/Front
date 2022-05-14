@@ -20,6 +20,9 @@ public final class BoardListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ConstraintLayout boardListItem;
+
+  @NonNull
   public final TextView boardNick;
 
   @NonNull
@@ -31,9 +34,11 @@ public final class BoardListBinding implements ViewBinding {
   @NonNull
   public final TextView boardTitle;
 
-  private BoardListBinding(@NonNull ConstraintLayout rootView, @NonNull TextView boardNick,
+  private BoardListBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout boardListItem, @NonNull TextView boardNick,
       @NonNull TextView boardSeq, @NonNull TextView boardTime, @NonNull TextView boardTitle) {
     this.rootView = rootView;
+    this.boardListItem = boardListItem;
     this.boardNick = boardNick;
     this.boardSeq = boardSeq;
     this.boardTime = boardTime;
@@ -67,6 +72,8 @@ public final class BoardListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      ConstraintLayout boardListItem = (ConstraintLayout) rootView;
+
       id = R.id.boardNick;
       TextView boardNick = ViewBindings.findChildViewById(rootView, id);
       if (boardNick == null) {
@@ -91,8 +98,8 @@ public final class BoardListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new BoardListBinding((ConstraintLayout) rootView, boardNick, boardSeq, boardTime,
-          boardTitle);
+      return new BoardListBinding((ConstraintLayout) rootView, boardListItem, boardNick, boardSeq,
+          boardTime, boardTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

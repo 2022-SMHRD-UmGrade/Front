@@ -30,6 +30,12 @@ public final class FragmentCommuBinding implements ViewBinding {
   public final ImageButton btnCommuMenu;
 
   @NonNull
+  public final View divider8;
+
+  @NonNull
+  public final LinearLayout linearLayout;
+
+  @NonNull
   public final LinearLayout linearLayout2;
 
   @NonNull
@@ -39,11 +45,14 @@ public final class FragmentCommuBinding implements ViewBinding {
   public final TextView tvCommuTitle;
 
   private FragmentCommuBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCmWrite,
-      @NonNull ImageButton btnCommuMenu, @NonNull LinearLayout linearLayout2,
-      @NonNull ListView lvBoard, @NonNull TextView tvCommuTitle) {
+      @NonNull ImageButton btnCommuMenu, @NonNull View divider8, @NonNull LinearLayout linearLayout,
+      @NonNull LinearLayout linearLayout2, @NonNull ListView lvBoard,
+      @NonNull TextView tvCommuTitle) {
     this.rootView = rootView;
     this.btnCmWrite = btnCmWrite;
     this.btnCommuMenu = btnCommuMenu;
+    this.divider8 = divider8;
+    this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.lvBoard = lvBoard;
     this.tvCommuTitle = tvCommuTitle;
@@ -88,6 +97,18 @@ public final class FragmentCommuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.divider8;
+      View divider8 = ViewBindings.findChildViewById(rootView, id);
+      if (divider8 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout;
+      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
       id = R.id.linearLayout2;
       LinearLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout2 == null) {
@@ -107,7 +128,7 @@ public final class FragmentCommuBinding implements ViewBinding {
       }
 
       return new FragmentCommuBinding((ConstraintLayout) rootView, btnCmWrite, btnCommuMenu,
-          linearLayout2, lvBoard, tvCommuTitle);
+          divider8, linearLayout, linearLayout2, lvBoard, tvCommuTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -40,6 +40,7 @@ drawable mypage
 drawable round
 drawable umbrella
 drawable umbrella2
+id boardListItem
 id boardNick
 id boardSeq
 id boardTime
@@ -84,6 +85,7 @@ id divider3
 id divider4
 id divider5
 id divider7
+id divider8
 id edtComment
 id edtJoinAddr
 id edtJoinEmail
@@ -136,6 +138,7 @@ id imgServiceCard
 id imgSupportCard
 id imgUmb
 id introLogo
+id linearLayout
 id linearLayout2
 id lvBoard
 id lvComment

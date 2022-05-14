@@ -6,10 +6,12 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -41,6 +43,7 @@ public class CommuFragment extends Fragment {
     Button btnCmWrite; // 글작성 버튼
     ListView lvBoard; // 게시물 리스트뷰
     BoardAdapter adapter;
+    ListView boardListItem; //게시물 레이아웃
 
     User vo;
     Board dto;
@@ -58,6 +61,27 @@ public class CommuFragment extends Fragment {
         btnCmWrite = view.findViewById(R.id.btnCmWrite);
 
         vo = UserInfo.info;
+        dto = BoardInfo.info;
+        // board_list 리스트뷰 클릭이벤트
+        lvBoard = (ListView) view.findViewById(R.id.lvBoard);
+        lvBoard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Board data = list.get(i);
+                vo = UserInfo.info;
+                dto = BoardInfo.info;
+                Log.d("vo1", vo.getUser_id());
+
+                Intent intent = new Intent();
+                int seq = intent.getIntExtra("seq", data.getArticle_seq());
+
+                Toast.makeText(getActivity(), "선택 게시글 번호 : "+seq, Toast.LENGTH_SHORT).show();
+
+                Intent intentPost = new Intent(getActivity(), PostActivity.class);
+                startActivity(intentPost);
+            }
+        });
+
 
         btnCmWrite.setOnClickListener(new View.OnClickListener() {
             @Override
