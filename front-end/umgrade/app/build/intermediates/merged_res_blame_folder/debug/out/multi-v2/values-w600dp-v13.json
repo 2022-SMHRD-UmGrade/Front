@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
-=======
-            "outputFile": "C:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
->>>>>>> bdbc620e9b6cad800004ef176415b693fcef55ec
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
