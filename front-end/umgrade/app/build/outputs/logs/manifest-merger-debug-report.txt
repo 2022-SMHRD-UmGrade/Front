@@ -14,6 +14,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\smhrd\.gradle\caches\tra
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\6db351a43ed5c1ace70587740e405b9c\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [me.relex:circleindicator:2.1.6] C:\Users\smhrd\.gradle\caches\transforms-3\559c6175b6aa1e10f1adc1c153a04d74\transformed\jetified-circleindicator-2.1.6\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\c4fb733a1e2f1e08b6cec4c0d00dedc6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\smhrd\.gradle\caches\transforms-3\ce963172df6de5f3264e6c1d30f905af\transformed\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\c267946a7d86f03ea7355ca1981c07a7\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\smhrd\.gradle\caches\transforms-3\5b3c023ad0a03fcfc60513cdb4884c11\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
@@ -27,8 +29,6 @@ MERGED from [androidx.activity:activity:1.2.4] C:\Users\smhrd\.gradle\caches\tra
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\smhrd\.gradle\caches\transforms-3\83c49788d45f79b690cdbf3f83d12e4b\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\1b56609e7dc72d0f508d760c75299746\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\d1e669fb14e168f243d9c08824d90b41\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\463b7469186c3f4b2f346265d95a7e42\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\smhrd\.gradle\caches\transforms-3\021b0b14525b7a5cfb20cf681b0bcfb1\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -38,9 +38,9 @@ MERGED from [androidx.media:media:1.0.0] C:\Users\smhrd\.gradle\caches\transform
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\c618c20ac0f0c831cf75a2869e1273aa\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\21b52207a6518d44b5d53bf208d72f33\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\a3a08577c2293b3274c094c4109c786c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\78a8bad557395e961dcafcf79f000333\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\cbded60deb9bdab86c8b4b61fe4b5086\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\5b6592e71f4a3a4c12eb9f17f8802d4e\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.7.0] C:\Users\smhrd\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
@@ -243,12 +243,12 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:51:13-40
-activity#com.example.umgrade.IntroActivity
+activity#com.example.umgrade.MainActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-42
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-41
 activity#com.example.umgrade.EventPostActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
@@ -303,12 +303,12 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:82:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:81:13-41
-activity#com.example.umgrade.MainActivity
+activity#com.example.umgrade.IntroActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:83:9-91:20
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:85:13-36
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-41
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:86:13-90:29
 action#android.intent.action.MAIN
@@ -343,6 +343,10 @@ MERGED from [me.relex:circleindicator:2.1.6] C:\Users\smhrd\.gradle\caches\trans
 MERGED from [me.relex:circleindicator:2.1.6] C:\Users\smhrd\.gradle\caches\transforms-3\559c6175b6aa1e10f1adc1c153a04d74\transformed\jetified-circleindicator-2.1.6\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\c4fb733a1e2f1e08b6cec4c0d00dedc6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\c4fb733a1e2f1e08b6cec4c0d00dedc6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\smhrd\.gradle\caches\transforms-3\ce963172df6de5f3264e6c1d30f905af\transformed\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\smhrd\.gradle\caches\transforms-3\ce963172df6de5f3264e6c1d30f905af\transformed\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\c267946a7d86f03ea7355ca1981c07a7\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
@@ -369,10 +373,6 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\smhrd\.gradle\c
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\1b56609e7dc72d0f508d760c75299746\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\d1e669fb14e168f243d9c08824d90b41\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\d1e669fb14e168f243d9c08824d90b41\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\463b7469186c3f4b2f346265d95a7e42\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
@@ -391,12 +391,12 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\smhrd\.gradle\ca
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\21b52207a6518d44b5d53bf208d72f33\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\a3a08577c2293b3274c094c4109c786c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\a3a08577c2293b3274c094c4109c786c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\78a8bad557395e961dcafcf79f000333\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\smhrd\.gradle\caches\transforms-3\78a8bad557395e961dcafcf79f000333\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\cbded60deb9bdab86c8b4b61fe4b5086\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\cbded60deb9bdab86c8b4b61fe4b5086\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\5b6592e71f4a3a4c12eb9f17f8802d4e\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44

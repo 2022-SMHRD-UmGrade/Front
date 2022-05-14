@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     MainFragment frag_main;
     CommuFragment frag_commu;
     MypageFragment frag_mypage;
+    MoreFragment frag_more;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         frag_main = new MainFragment();
         frag_commu = new CommuFragment();
         frag_mypage = new MypageFragment();
+        frag_more = new MoreFragment();
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.container, frag_main).commit();
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_commu).commit();
                 } else if (itemId == R.id.fragMyPage){
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
+                } else if (itemId == R.id.fragMore){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_more).commit();
                 }
 
                 return true;
