@@ -85,6 +85,8 @@ public class BoardAdapter extends BaseAdapter {
         holder.getBoardNick().setText(dto.getArticle_id());
         holder.getBoardTime().setText(dto.getArticle_date());
 
+        Log.d("dto", dto.toString());
+
         return view;
     }
 }
