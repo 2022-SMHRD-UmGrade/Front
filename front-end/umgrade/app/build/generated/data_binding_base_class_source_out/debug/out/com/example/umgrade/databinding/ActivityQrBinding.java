@@ -8,16 +8,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
+import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityQrBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityQrBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final DecoratedBarcodeView customBarcodeView;
+
+  private ActivityQrBinding(@NonNull ConstraintLayout rootView,
+      @NonNull DecoratedBarcodeView customBarcodeView) {
     this.rootView = rootView;
+    this.customBarcodeView = customBarcodeView;
   }
 
   @Override
@@ -43,10 +51,19 @@ public final class ActivityQrBinding implements ViewBinding {
 
   @NonNull
   public static ActivityQrBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.customBarcodeView;
+      DecoratedBarcodeView customBarcodeView = ViewBindings.findChildViewById(rootView, id);
+      if (customBarcodeView == null) {
+        break missingId;
+      }
 
-    return new ActivityQrBinding((ConstraintLayout) rootView);
+      return new ActivityQrBinding((ConstraintLayout) rootView, customBarcodeView);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

@@ -8,12 +8,10 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
     <!-- 인터넷 권한 설정 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 지도 API 권한 설정 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <!-- 카메라, 저장소 권한 설정 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 카메라, 저장소 권한 설정 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -71,7 +69,7 @@
             android:name="com.example.umgrade.MapActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.MainActivity"
+            android:name="com.example.umgrade.IntroActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.EventPostActivity"
@@ -101,7 +99,7 @@
             android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.IntroActivity"
+            android:name="com.example.umgrade.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

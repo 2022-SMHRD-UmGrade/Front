@@ -76,6 +76,7 @@ id constraintLayout2
 id constraintLayout3
 id constraintLayout4
 id container
+id customBarcodeView
 id divider
 id divider2
 id divider3
@@ -115,6 +116,7 @@ id fragMore
 id fragMyPage
 id guideline10
 id guideline11
+id guideline12
 id guideline2
 id guideline3
 id guideline4
@@ -197,9 +199,12 @@ id tvPostTime
 id tvPostTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
+id tvScanner
 id tvWelcomeMypageCard
 id tvWrite
 id tvWriter
+id zxing_barcode_surface
+id zxing_viewfinder_view
 layout activity_comment
 layout activity_event_post
 layout activity_fare
@@ -218,6 +223,7 @@ layout activity_support
 layout activity_write
 layout board_list
 layout comment_list
+layout custom_scanner
 layout event_list
 layout fragment_commu
 layout fragment_event
@@ -338,6 +344,7 @@ string tvPostTime
 string tvPostTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
+string tvScanner
 string tvWelcomeMypageCard
 string tvWrite
 string tvWriter

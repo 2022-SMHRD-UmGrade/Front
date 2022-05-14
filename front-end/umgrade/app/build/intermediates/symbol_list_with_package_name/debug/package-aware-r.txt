@@ -2792,6 +2792,7 @@ id cos
 id counterclockwise
 id currentState
 id custom
+id customBarcodeView
 id customPanel
 id cut
 id dark
@@ -2901,6 +2902,7 @@ id groups
 id guideline
 id guideline10
 id guideline11
+id guideline12
 id guideline2
 id guideline3
 id guideline4
@@ -3240,6 +3242,7 @@ id tvPostTime
 id tvPostTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
+id tvScanner
 id tvWelcomeMypageCard
 id tvWrite
 id tvWriter
@@ -3385,6 +3388,7 @@ layout activity_write
 layout board_list
 layout comment_list
 layout custom_dialog
+layout custom_scanner
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3767,6 +3771,7 @@ string tvPostTime
 string tvPostTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
+string tvScanner
 string tvWelcomeMypageCard
 string tvWrite
 string tvWriter
