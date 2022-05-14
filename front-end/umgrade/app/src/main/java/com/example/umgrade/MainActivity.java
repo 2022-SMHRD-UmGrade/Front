@@ -3,6 +3,8 @@ package com.example.umgrade;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -43,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         frag_commu = new CommuFragment();
         frag_mypage = new MypageFragment();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.container, frag_main).commit();
 
         bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -66,8 +69,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // 프래그먼트에서 사용하는 메소드
-   public void changeMypage(){
-       getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
+   public void changeMypage(MainFragment mainFragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, frag_mypage).commit();
    }
 
 

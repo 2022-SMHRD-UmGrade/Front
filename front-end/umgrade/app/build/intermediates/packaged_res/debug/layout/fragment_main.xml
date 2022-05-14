@@ -30,29 +30,24 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
                 android:src="@drawable/umbrella" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <Button
+                android:id="@+id/btnFare"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:id="@+id/btnFare"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:backgroundTint="#2196F3"
-                    android:drawableRight="@drawable/arroaright_resize"
-                    android:drawableTint="@color/white"
-                    android:insetTop="0dp"
-                    android:insetBottom="0dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="10dp"
-                    android:text="@string/btnFare"
-                    android:textAlignment="textStart"
-                    android:textSize="12sp"
-                    app:cornerRadius="7dp"
-                    tools:layout_editor_absoluteY="15dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="40dp"
+                android:backgroundTint="#2196F3"
+                android:drawableRight="@drawable/arroaright_resize"
+                android:drawableTint="@color/white"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text="@string/btnFare"
+                android:textAlignment="textStart"
+                android:textSize="12sp"
+                app:cornerRadius="7dp" />
 
             <include
                 layout="@layout/mypage_card"

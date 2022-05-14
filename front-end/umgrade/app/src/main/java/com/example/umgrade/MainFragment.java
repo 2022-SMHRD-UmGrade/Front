@@ -26,21 +26,24 @@ public class MainFragment extends Fragment {
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     CardView cvMypage;
-    MypageFragment frag_mypage;
+    View btnFareLayout;
 
-    // 메인액티비티 호출
-    MainActivity mainActivity;
-    @Override
-    public void onAttach(@NonNull Context context){
-        super.onAttach(context);
-        mainActivity = (MainActivity) getActivity();
-    }
-
-    // 메인액티비티 해제
-    @Override
-    public void onDetach(){
-        super.onDetach();
-        mainActivity = null;
+//    // 메인액티비티 호출
+//    MainActivity mainActivity;
+//    @Override
+//    public void onAttach(@NonNull Context context){
+//        super.onAttach(context);
+//        mainActivity = (MainActivity) getActivity();
+//    }
+//
+//    // 메인액티비티 해제
+//    @Override
+//    public void onDetach(){
+//        super.onDetach();
+//        mainActivity = null;
+//    }
+    public static MainFragment newInstance(){
+        return new MainFragment();
     }
 
     @Override
@@ -48,21 +51,12 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
+        // 마이페이지 카드 클릭 시 frag_mypage로 이동
         cvMypage = view.findViewById(R.id.cvMypage);
         cvMypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mainActivity.changeMypage();
-            }
-        });
-
-        btnFare = view.findViewById(R.id.btnFare);
-        // 요금안내 클릭 시 화면전환
-        btnFare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), FareActivity.class);
-                startActivity(intent);
+                ((MainActivity)getActivity()).changeMypage(newInstance());
             }
         });
 
@@ -120,11 +114,14 @@ public class MainFragment extends Fragment {
         imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);
 
+        btnFare = view.findViewById(R.id.btnFare);
         // 로그인 시 btnFare에 "오늘까지의 UM-CYCLE 이용 요금은 n,nnn원 입니다." 출력
         btnFare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // 요금 안내 페이지로 이동
+                Intent intent = new Intent(getActivity(), FareActivity.class);
+                startActivity(intent);
             }
         });
 

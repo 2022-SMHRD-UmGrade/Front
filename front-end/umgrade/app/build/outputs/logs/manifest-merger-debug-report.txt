@@ -243,12 +243,12 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:51:13-40
-activity#com.example.umgrade.MainActivity
+activity#com.example.umgrade.IntroActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-41
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-42
 activity#com.example.umgrade.EventPostActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
@@ -303,12 +303,12 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:82:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:81:13-41
-activity#com.example.umgrade.IntroActivity
+activity#com.example.umgrade.MainActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:83:9-91:20
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:85:13-36
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-42
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:86:13-90:29
 action#android.intent.action.MAIN
