@@ -1,10 +1,16 @@
 package com.example.umgrade;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,11 +25,36 @@ import me.relex.circleindicator.CircleIndicator3;
 public class MainFragment extends Fragment {
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
+    CardView cvMypage;
+    MypageFragment frag_mypage;
+
+    // 메인액티비티 호출
+    MainActivity mainActivity;
+    @Override
+    public void onAttach(@NonNull Context context){
+        super.onAttach(context);
+        mainActivity = (MainActivity) getActivity();
+    }
+
+    // 메인액티비티 해제
+    @Override
+    public void onDetach(){
+        super.onDetach();
+        mainActivity = null;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+
+        cvMypage = view.findViewById(R.id.cvMypage);
+        cvMypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainActivity.changeMypage();
+            }
+        });
 
         btnFare = view.findViewById(R.id.btnFare);
         // 요금안내 클릭 시 화면전환

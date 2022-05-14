@@ -2795,6 +2795,7 @@ id custom
 id customBarcodeView
 id customPanel
 id cut
+id cvMypage
 id dark
 id date_picker_actions
 id decelerate

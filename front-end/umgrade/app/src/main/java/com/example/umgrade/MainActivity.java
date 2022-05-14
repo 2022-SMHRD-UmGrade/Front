@@ -8,7 +8,10 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.Activity;
 import android.app.Service;
+import android.content.ClipData;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -58,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         }); // bottomNav end
+
+
     }
+
+    // 프래그먼트에서 사용하는 메소드
+   public void changeMypage(){
+       getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
+   }
+
 
 }

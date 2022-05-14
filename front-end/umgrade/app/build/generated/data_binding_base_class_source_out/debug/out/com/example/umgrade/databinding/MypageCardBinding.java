@@ -23,6 +23,9 @@ public final class MypageCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final CardView cvMypage;
+
+  @NonNull
   public final View divider;
 
   @NonNull
@@ -67,15 +70,17 @@ public final class MypageCardBinding implements ViewBinding {
   @NonNull
   public final TextView tvWelcomeMypageCard;
 
-  private MypageCardBinding(@NonNull CardView rootView, @NonNull View divider,
-      @NonNull Guideline guideline3, @NonNull CircleImageView imgMypageProfile,
-      @NonNull ImageView imgUmb, @NonNull TextView tvCarbonMypageCard,
-      @NonNull TextView tvComment1MypageCard, @NonNull TextView tvComment2MypageCard,
-      @NonNull TextView tvCouponMypageCard, @NonNull TextView tvCouponTextMypageCard,
-      @NonNull TextView tvNickMypageCard, @NonNull TextView tvPointMypageCard,
-      @NonNull TextView tvPointTextMypageCard, @NonNull TextView tvRatingMypageCard,
-      @NonNull TextView tvRatingTextMypageCard, @NonNull TextView tvWelcomeMypageCard) {
+  private MypageCardBinding(@NonNull CardView rootView, @NonNull CardView cvMypage,
+      @NonNull View divider, @NonNull Guideline guideline3,
+      @NonNull CircleImageView imgMypageProfile, @NonNull ImageView imgUmb,
+      @NonNull TextView tvCarbonMypageCard, @NonNull TextView tvComment1MypageCard,
+      @NonNull TextView tvComment2MypageCard, @NonNull TextView tvCouponMypageCard,
+      @NonNull TextView tvCouponTextMypageCard, @NonNull TextView tvNickMypageCard,
+      @NonNull TextView tvPointMypageCard, @NonNull TextView tvPointTextMypageCard,
+      @NonNull TextView tvRatingMypageCard, @NonNull TextView tvRatingTextMypageCard,
+      @NonNull TextView tvWelcomeMypageCard) {
     this.rootView = rootView;
+    this.cvMypage = cvMypage;
     this.divider = divider;
     this.guideline3 = guideline3;
     this.imgMypageProfile = imgMypageProfile;
@@ -120,6 +125,8 @@ public final class MypageCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      CardView cvMypage = (CardView) rootView;
+
       id = R.id.divider;
       View divider = ViewBindings.findChildViewById(rootView, id);
       if (divider == null) {
@@ -210,8 +217,8 @@ public final class MypageCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MypageCardBinding((CardView) rootView, divider, guideline3, imgMypageProfile,
-          imgUmb, tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard,
+      return new MypageCardBinding((CardView) rootView, cvMypage, divider, guideline3,
+          imgMypageProfile, imgUmb, tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard,
           tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard,
           tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard, tvWelcomeMypageCard);
     }
