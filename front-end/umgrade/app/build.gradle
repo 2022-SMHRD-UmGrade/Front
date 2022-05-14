@@ -88,4 +88,6 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     //Circleindicator
     implementation 'me.relex:circleindicator:2.1.6'
+    //QR리더기
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
 }

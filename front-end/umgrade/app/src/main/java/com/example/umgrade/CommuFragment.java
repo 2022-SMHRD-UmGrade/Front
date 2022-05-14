@@ -78,7 +78,7 @@ public class CommuFragment extends Fragment {
         queue = Volley.newRequestQueue(getContext());
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
+        String server_url = "http://59.0.124.54:8081/myapp/BoardList.do";
 
         request = new StringRequest(
                 method,
