@@ -79,6 +79,7 @@ public class CommuFragment extends Fragment {
                 Toast.makeText(getActivity(), "선택 게시글 번호 : "+seq, Toast.LENGTH_SHORT).show();
 
                 Intent intentPost = new Intent(getActivity(), PostActivity.class);
+                intentPost.putExtra("article_seq", data.getArticle_seq());
                 startActivity(intentPost);
             }
         });

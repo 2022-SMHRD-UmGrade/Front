@@ -1,5 +1,6 @@
 package com.example.umgrade;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.collection.CircularArray;
 
@@ -9,9 +10,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -29,16 +32,23 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PostActivity extends AppCompatActivity {
     ImageView imgPostProfile;
     Button btnPostModify, btnPostDelete, btnPostComment;
     TextView tvPostTitle, tvPostNick, tvPostId, tvPostTime, tvPostCnt, tvPostContent;
 
+    ListView lvBoard; // 게시물 리스트뷰
+    BoardAdapter adapter;
+
     RequestQueue queue;
     StringRequest request;
 
     User vo;
+    Board dto;
+
     ArrayList<Board> list = new ArrayList<>();
 
     @Override
@@ -47,6 +57,9 @@ public class PostActivity extends AppCompatActivity {
         setContentView(R.layout.activity_post);
 
         vo = UserInfo.info;
+        dto = BoardInfo.info;
+
+        Log.d("lt", dto.toString());
 
         btnPostModify = findViewById(R.id.btnPostModify);
         btnPostDelete = findViewById(R.id.btnPostDelete);
@@ -59,12 +72,21 @@ public class PostActivity extends AppCompatActivity {
         tvPostContent = findViewById(R.id.tvPostContent);
         tvPostId = findViewById(R.id.tvPostId);
 
-
-
         queue = Volley.newRequestQueue(PostActivity.this);
 
+        Intent intent = getIntent();
+
+        int seq = intent.getIntExtra("article_seq", dto.getArticle_seq());
+        getData(seq);
+
+        tvPostId.setText(vo.getUser_id());
+
+
+    }
+    //단일 게시글 불러오는 메서드
+    private void getData(int seq) {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardOne.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardOne.do";
 
         request = new StringRequest(
                 method,
@@ -76,7 +98,36 @@ public class PostActivity extends AppCompatActivity {
                         Toast.makeText(PostActivity.this,
                                 "선택한 게시글 가져오기 성공!",
                                 Toast.LENGTH_SHORT).show();
-                        tvPostId.setText(vo.getUser_id());
+                        try {
+                            JSONObject boardObject = new JSONObject(response);
+                            tvPostTitle.setText(boardObject.getString("article_title"));
+                            tvPostNick.setText(boardObject.getString("article_id"));
+                            tvPostContent.setText(boardObject.getString("article_content"));
+
+                            // 사용자 ID와 작성자 ID 일치할 때만 수정/삭제 버튼 활성화
+                            String Userid = tvPostId.getText().toString();
+
+                            if (Userid.equals(vo.getUser_id())) {
+                                btnPostModify.setVisibility(View.VISIBLE);
+                                btnPostDelete.setVisibility(View.VISIBLE);
+                            } else {
+                                btnPostModify.setVisibility(View.GONE);
+                                btnPostDelete.setVisibility(View.GONE);
+                            }
+
+                            btnPostModify.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    Intent intentModify = new Intent(PostActivity.this, ModifyActivity.class);
+
+                                    startActivity(intentModify);
+                                }
+                            });
+
+                        }
+                        catch(JSONException e) {
+                            e.printStackTrace();
+                        }
 
 
                     }
@@ -89,23 +140,23 @@ public class PostActivity extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
-        );
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> param = new HashMap<>();
+
+                param.put("article_seq", String.valueOf(seq));
+
+                return param;
+            }
+        };
         queue.add(request);
+
 
         // 프로필 사진 원형으로
         imgPostProfile = (ImageView) findViewById(R.id.imgPostProfile);
         Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgPostProfile);
-
-        // 사용자 ID와 작성자 ID 일치할 때만 수정/삭제 버튼 활성화
-        String Userid = tvPostId.getText().toString();
-
-//       if (Userid.equals(vo.getUser_id())) {
-//            btnPostModify.setVisibility(View.VISIBLE);
-//          btnPostDelete.setVisibility(View.VISIBLE);
-//        } else {
-//            btnPostModify.setVisibility(View.GONE);
-//            btnPostDelete.setVisibility(View.GONE);
-//        }
 
         btnPostComment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,4 +170,6 @@ public class PostActivity extends AppCompatActivity {
         });
 
     }
+
+
 }

@@ -83,6 +83,7 @@ public class BoardAdapter extends BaseAdapter {
         dto = (Board) getItem(i);
         holder.getBoardTitle().setText(dto.getArticle_title());
         holder.getBoardNick().setText(dto.getArticle_id());
+        holder.getBoardSeq().setText(dto.getArticle_seq());
         holder.getBoardTime().setText(dto.getArticle_date());
 
         Log.d("dto", dto.toString());
