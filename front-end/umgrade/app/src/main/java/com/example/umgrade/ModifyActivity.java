@@ -71,7 +71,7 @@ public class ModifyActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
                                 Toast.makeText(ModifyActivity.this,
-                                        "댓글 추가 성공"+response,
+                                        "게시글 수정 성공"+response,
                                         Toast.LENGTH_SHORT).show();
                                 //Intent intent = new Intent(ModifyActivity.this,);
                             }
@@ -80,7 +80,7 @@ public class ModifyActivity extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 Toast.makeText(ModifyActivity.this,
-                                        "댓글 추가 실패!"+error.toString(),
+                                        "게시글 수정 실패!"+error.toString(),
                                         Toast.LENGTH_SHORT).show();
                             }
                         }
