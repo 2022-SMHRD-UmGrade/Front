@@ -2806,6 +2806,7 @@ id customBarcodeView
 id customPanel
 id cut
 id cvMypage
+id cvWeather
 id dark
 id date_picker_actions
 id decelerate
@@ -2985,7 +2986,6 @@ id lvBoard
 id lvComment
 id lvEvent
 id lvNotice
-id mainLogo
 id mainScroll
 id masked
 id match_constraint
@@ -3206,6 +3206,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3523,6 +3524,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout weather_card
 layout zxing_barcode_scanner
 layout zxing_capture
 menu example_menu

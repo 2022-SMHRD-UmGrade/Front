@@ -88,6 +88,7 @@ id constraintLayout5
 id container
 id customBarcodeView
 id cvMypage
+id cvWeather
 id divider
 id divider10
 id divider11
@@ -161,7 +162,6 @@ id lvBoard
 id lvComment
 id lvEvent
 id lvNotice
-id mainLogo
 id mainScroll
 id noticePost
 id noticePost2
@@ -188,6 +188,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -263,6 +264,7 @@ layout qr_card
 layout service_card
 layout slider_card
 layout support_card
+layout weather_card
 menu frag_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
