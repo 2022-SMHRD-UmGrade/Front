@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\smhrd\\.gradle\\caches\\transforms-3\\f791586eb8e3cddcf33fb36842d7675a\\transformed\\appcompat-1.4.1\\res\\values-land\\values-land.xml",
@@ -33,7 +33,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

@@ -46,7 +46,6 @@ public class CommuFragment extends Fragment {
     ListView boardListItem; //게시물 레이아웃
 
     User vo;
-    Board dto;
 
     ArrayList<Board> list;
 
@@ -61,7 +60,7 @@ public class CommuFragment extends Fragment {
         btnCmWrite = view.findViewById(R.id.btnCmWrite);
 
         vo = UserInfo.info;
-        dto = BoardInfo.info;
+
         // board_list 리스트뷰 클릭이벤트
         lvBoard = (ListView) view.findViewById(R.id.lvBoard);
         lvBoard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -69,8 +68,10 @@ public class CommuFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Board data = list.get(i);
                 vo = UserInfo.info;
-                dto = BoardInfo.info;
+
                 Log.d("vo1", vo.getUser_id());
+                Log.d("data", data.getArticle_id());
+                Log.d("data2", data.getArticle_content());
 
                 Intent intent = new Intent();
                 int seq = intent.getIntExtra("seq", data.getArticle_seq());
@@ -78,6 +79,7 @@ public class CommuFragment extends Fragment {
                 Toast.makeText(getActivity(), "선택 게시글 번호 : "+seq, Toast.LENGTH_SHORT).show();
 
                 Intent intentPost = new Intent(getActivity(), PostActivity.class);
+                intentPost.putExtra("article_seq", data.getArticle_seq());
                 startActivity(intentPost);
             }
         });
@@ -111,6 +113,7 @@ public class CommuFragment extends Fragment {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
                         Toast.makeText(getContext(),
                                 "게시판 불러오기 성공",
                                 Toast.LENGTH_SHORT).show();

@@ -9,11 +9,13 @@ public class ViewHolder {
 
     private TextView boardTitle;
     private TextView boardNick;
+    private TextView boardSeq;
     private TextView boardTime;
 
     public ViewHolder(View itemview) {
         boardTitle = itemview.findViewById(R.id.boardTitle);
         boardNick = itemview.findViewById(R.id.boardNick);
+        boardSeq = itemview.findViewById(R.id.boardSeq);
         boardTime = itemview.findViewById(R.id.boardTime);
     }
 
@@ -24,6 +26,8 @@ public class ViewHolder {
     public TextView getBoardNick() {
         return boardNick;
     }
+
+    public TextView getBoardSeq() { return boardSeq; }
 
     public TextView getBoardTime() {
         return boardTime;
