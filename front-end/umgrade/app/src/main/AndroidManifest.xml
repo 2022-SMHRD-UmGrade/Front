@@ -34,6 +34,10 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ServiceInfoPopupActivity"
+            android:exported="false"
+            android:theme="@style/DialogTheme"/>
+        <activity
             android:name=".TermsActivity"
             android:exported="false" />
 
@@ -86,10 +90,10 @@
             android:name=".ServiceActivity"
             android:exported="false" />
         <activity
-            android:name=".JoinActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".JoinActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

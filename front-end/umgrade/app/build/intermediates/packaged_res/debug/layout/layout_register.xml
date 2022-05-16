@@ -156,7 +156,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/tvMoreOne"
+                android:id="@+id/tvMoreService"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -186,7 +186,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/tvMoreTwo"
+                android:id="@+id/tvMorePrivacy"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

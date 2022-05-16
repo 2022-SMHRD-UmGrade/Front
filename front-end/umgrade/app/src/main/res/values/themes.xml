@@ -66,4 +66,15 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- 팝업 배경 -->
+    <color name="dialogColor">#68000000</color>
+
+    <!--팝업창 테마-->
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/dialogColor</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
 </resources>

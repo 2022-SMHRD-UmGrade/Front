@@ -1306,6 +1306,7 @@ int color design_fab_stroke_top_inner_color 0x7f05005f
 int color design_fab_stroke_top_outer_color 0x7f050060
 int color design_icon_tint 0x7f050061
 int color design_snackbar_background_color 0x7f050062
+int color dialogColor 0x7f050270
 int color dim_foreground_disabled_material_dark 0x7f050063
 int color dim_foreground_disabled_material_light 0x7f050064
 int color dim_foreground_material_dark 0x7f050065
@@ -2607,6 +2608,7 @@ int drawable notification_template_icon_low_bg 0x7f0700b9
 int drawable notification_tile_bg 0x7f0700ba
 int drawable notify_panel_notification_icon_bg 0x7f0700bb
 int drawable round 0x7f0700bc
+int drawable round_layout 0x7f0700c4
 int drawable test_custom_background 0x7f0700bd
 int drawable test_level_drawable 0x7f0700be
 int drawable tooltip_frame_dark 0x7f0700bf
@@ -2924,6 +2926,10 @@ int id guideline10 0x7f080131
 int id guideline11 0x7f080132
 int id guideline12 0x7f080133
 int id guideline13 0x7f0802cc
+int id guideline14 0x7f0802d3
+int id guideline15 0x7f0802d4
+int id guideline16 0x7f0802d5
+int id guideline17 0x7f0802d6
 int id guideline2 0x7f080134
 int id guideline3 0x7f080135
 int id guideline4 0x7f080136
@@ -2957,6 +2963,7 @@ int id imgServiceCard 0x7f080151
 int id imgSupportCard 0x7f080152
 int id imgUmb 0x7f080153
 int id immediateStop 0x7f080154
+int id include 0x7f0802d7
 int id included 0x7f080155
 int id info 0x7f080156
 int id introLogo 0x7f080157
@@ -3136,6 +3143,7 @@ int id search_voice_btn 0x7f080203
 int id select_dialog_listview 0x7f080204
 int id selected 0x7f080205
 int id selection_type 0x7f080206
+int id servicePopupClose 0x7f0802d8
 int id shape_my 0x7f080207
 int id sharedValueSet 0x7f080208
 int id sharedValueUnset 0x7f080209
@@ -3204,6 +3212,7 @@ int id textSpacerNoButtons 0x7f080247
 int id textSpacerNoTitle 0x7f080248
 int id textStart 0x7f080249
 int id textTop 0x7f08024a
+int id textView 0x7f0802b3
 int id textView14 0x7f0802ba
 int id textView15 0x7f0802bb
 int id textView16 0x7f0802bc
@@ -3265,8 +3274,8 @@ int id tvJoin 0x7f080276
 int id tvJoinTitle 0x7f080277
 int id tvModify 0x7f080278
 int id tvMoreNick 0x7f080279
-int id tvMoreOne 0x7f08027a
-int id tvMoreTwo 0x7f08027b
+int id tvMorePrivacy 0x7f0802d0
+int id tvMoreService 0x7f0802d1
 int id tvNickMypageCard 0x7f08027c
 int id tvPointMypageCard 0x7f08027d
 int id tvPointTextMypageCard 0x7f08027e
@@ -3425,6 +3434,7 @@ int layout activity_notice_post 0x7f0b0026
 int layout activity_post 0x7f0b0027
 int layout activity_qr 0x7f0b0028
 int layout activity_service 0x7f0b0029
+int layout activity_service_info_popup 0x7f0b00a7
 int layout activity_support 0x7f0b002a
 int layout activity_terms 0x7f0b00a3
 int layout activity_write 0x7f0b002b
@@ -4117,6 +4127,7 @@ int style Base_Widget_MaterialComponents_TextView 0x7f110111
 int style CardView 0x7f110112
 int style CardView_Dark 0x7f110113
 int style CardView_Light 0x7f110114
+int style DialogTheme 0x7f11040b
 int style EmptyTheme 0x7f110115
 int style MaterialAlertDialog_Material3 0x7f110116
 int style MaterialAlertDialog_Material3_Body_Text 0x7f110117

@@ -4,6 +4,7 @@ color black
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color dialogColor
 color loginBkColor
 color primaryTextColor
 color purple_200
@@ -38,6 +39,7 @@ drawable menu
 drawable more
 drawable mypage
 drawable round
+drawable round_layout
 drawable umbrella
 drawable umbrella2
 id boardListItem
@@ -139,6 +141,10 @@ id guideline10
 id guideline11
 id guideline12
 id guideline13
+id guideline14
+id guideline15
+id guideline16
+id guideline17
 id guideline2
 id guideline3
 id guideline4
@@ -157,6 +163,7 @@ id imgQrCard
 id imgServiceCard
 id imgSupportCard
 id imgUmb
+id include
 id introLogo
 id linearLayout
 id linearLayout2
@@ -183,10 +190,12 @@ id scrollView2
 id scrollView3
 id scrollView4
 id scrollView5
+id servicePopupClose
 id shape_my
 id tabEvent
 id tabNotice
 id tabViewpager
+id textView
 id textView14
 id textView15
 id textView16
@@ -223,8 +232,8 @@ id tvJoin
 id tvJoinTitle
 id tvModify
 id tvMoreNick
-id tvMoreOne
-id tvMoreTwo
+id tvMorePrivacy
+id tvMoreService
 id tvNickMypageCard
 id tvPointMypageCard
 id tvPointTextMypageCard
@@ -262,6 +271,7 @@ layout activity_notice_post
 layout activity_post
 layout activity_qr
 layout activity_service
+layout activity_service_info_popup
 layout activity_support
 layout activity_terms
 layout activity_write
@@ -411,6 +421,7 @@ string tvWelcomeMypageCard
 string tvWrite
 string tvWriter
 style AppTheme
+style DialogTheme
 style Theme.Umgrade
 style headerText
 style headerTextPrimary

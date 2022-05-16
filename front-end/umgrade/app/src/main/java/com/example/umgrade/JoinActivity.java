@@ -8,9 +8,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -29,6 +31,7 @@ public class JoinActivity extends AppCompatActivity{
     CheckBox ckAllCheck, ckTerms, ckPersonal, ckMarketing;
     EditText edtJoinId, edtJoinPw,edtJoinPwCheck, edtJoinName, edtJoinNick, edtJoinEmail, edtJoinPhone, edtJoinAddr;
     Button btnJoin;
+    TextView tvMoreService, tvMorePrivacy;
 
     RequestQueue queue;
     StringRequest request;
@@ -53,6 +56,9 @@ public class JoinActivity extends AppCompatActivity{
         ckMarketing = (CheckBox) findViewById(R.id.ckMarketing);
 
         btnJoin = findViewById(R.id.btnJoin);
+
+        tvMoreService = findViewById(R.id.tvMoreService);
+        tvMorePrivacy = findViewById(R.id.tvMorePrivacy);
 
         queue = Volley.newRequestQueue(JoinActivity.this);
 
@@ -212,6 +218,14 @@ public class JoinActivity extends AppCompatActivity{
                             "비밀번호가 일치 하지 않습니다",
                             Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        tvMoreService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, ServiceInfoPopupActivity.class);
+                startActivity(intent);
             }
         });
     }
