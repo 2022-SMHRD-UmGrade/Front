@@ -27,6 +27,8 @@ drawable arrowright
 drawable closed_umbrella
 drawable community
 drawable corner_shape
+drawable creditcard16
+drawable file16
 drawable frag_color
 drawable home
 drawable ic_launcher_background
@@ -42,6 +44,7 @@ drawable round
 drawable round_layout
 drawable umbrella
 drawable umbrella2
+drawable usersetting16
 id boardListItem
 id boardNick
 id boardSeq
@@ -57,6 +60,7 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id btnLogout
 id btnMapCard
 id btnModifyCancel
 id btnModifySend
@@ -69,16 +73,19 @@ id btnMoreSupport
 id btnMoreTerms
 id btnMoreUserInfo
 id btnNoticeEvent
+id btnPayment
 id btnPostComment
 id btnPostDelete
 id btnPostModify
+id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
 id btnSupportCard
 id btnTermsClose
+id btnUserSetting
+id btnUsing
 id btnWriteCancel
 id btnWriteSend
-id button
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -214,7 +221,6 @@ id textView26
 id textView27
 id textView3
 id textView4
-id textView5
 id textView6
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -253,6 +259,7 @@ id tvRatingTextMypageCard
 id tvScanner
 id tvServiceInfo
 id tvTerms
+id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
 id tvWriter

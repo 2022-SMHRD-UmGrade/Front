@@ -34,9 +34,21 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AccountSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsageHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileUpdateActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrivacyPopupActivity"
             android:exported="false"
-            android:theme="@style/DialogTheme"/>
+            android:theme="@style/DialogTheme" />
         <activity
             android:name=".ServiceInfoPopupActivity"
             android:exported="false"

@@ -2540,11 +2540,13 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable community
 drawable corner_shape
+drawable creditcard16
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable file16
 drawable frag_color
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -2616,6 +2618,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable umbrella
 drawable umbrella2
+drawable usersetting16
 drawable white_radius
 id ALT
 id BOTTOM_END
@@ -2733,6 +2736,7 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id btnLogout
 id btnMapCard
 id btnModifyCancel
 id btnModifySend
@@ -2745,16 +2749,19 @@ id btnMoreSupport
 id btnMoreTerms
 id btnMoreUserInfo
 id btnNoticeEvent
+id btnPayment
 id btnPostComment
 id btnPostDelete
 id btnPostModify
+id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
 id btnSupportCard
 id btnTermsClose
+id btnUserSetting
+id btnUsing
 id btnWriteCancel
 id btnWriteSend
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3232,7 +3239,6 @@ id textView26
 id textView27
 id textView3
 id textView4
-id textView5
 id textView6
 id text_input_end_icon
 id text_input_error_icon
@@ -3296,6 +3302,7 @@ id tvRatingTextMypageCard
 id tvScanner
 id tvServiceInfo
 id tvTerms
+id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
 id tvWriter
