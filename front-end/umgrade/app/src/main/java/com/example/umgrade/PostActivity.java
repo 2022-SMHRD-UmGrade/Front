@@ -120,7 +120,7 @@ public class PostActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(View view) {
                                     Intent intentModify = new Intent(PostActivity.this, ModifyActivity.class);
-
+                                    intentModify.putExtra("dto",dto.getArticle_seq());
                                     startActivity(intentModify);
                                 }
                             });
