@@ -25,6 +25,8 @@
     <uses-feature
         android:name="android.hardware.camera.front"
         android:required="false" />
+    <!-- 카카오지도 네이티브 엡키 -->
+
 
     <application
         android:allowBackup="true"
@@ -35,6 +37,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
+
         <activity
             android:name=".QrActivity"
             android:exported="false"

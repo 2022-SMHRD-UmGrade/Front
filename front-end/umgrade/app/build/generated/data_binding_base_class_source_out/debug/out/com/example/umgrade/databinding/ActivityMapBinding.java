@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
@@ -20,10 +21,24 @@ public final class ActivityMapBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Guideline guideline13;
+
+  @NonNull
+  public final Guideline guideline14;
+
+  @NonNull
+  public final ConstraintLayout mapView;
+
+  @NonNull
   public final TextView textView;
 
-  private ActivityMapBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textView) {
+  private ActivityMapBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline13,
+      @NonNull Guideline guideline14, @NonNull ConstraintLayout mapView,
+      @NonNull TextView textView) {
     this.rootView = rootView;
+    this.guideline13 = guideline13;
+    this.guideline14 = guideline14;
+    this.mapView = mapView;
     this.textView = textView;
   }
 
@@ -54,13 +69,32 @@ public final class ActivityMapBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.guideline13;
+      Guideline guideline13 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline13 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline14;
+      Guideline guideline14 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline14 == null) {
+        break missingId;
+      }
+
+      id = R.id.map_View;
+      ConstraintLayout mapView = ViewBindings.findChildViewById(rootView, id);
+      if (mapView == null) {
+        break missingId;
+      }
+
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
         break missingId;
       }
 
-      return new ActivityMapBinding((ConstraintLayout) rootView, textView);
+      return new ActivityMapBinding((ConstraintLayout) rootView, guideline13, guideline14, mapView,
+          textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
