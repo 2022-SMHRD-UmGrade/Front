@@ -64,7 +64,7 @@ public class ModifyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://192.168.0.3:8081/myapp/Android/boardUpdate.do";
+                String server_url = "http://220.80.203.18:8081/myapp/Android/boardUpdate.do";
 
                 request = new StringRequest(
                         method,
@@ -75,7 +75,7 @@ public class ModifyActivity extends AppCompatActivity {
                                 Toast.makeText(ModifyActivity.this,
                                         "게시글 수정 성공"+response,
                                         Toast.LENGTH_SHORT).show();
-                            //onFragmentChanged();
+                            //getSupportFragmentManager().beginTransaction().add(CommuFragment).commit();
                             }
                         },
                         new Response.ErrorListener() {
