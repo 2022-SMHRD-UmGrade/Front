@@ -2791,6 +2791,7 @@ id constraintLayout
 id constraintLayout2
 id constraintLayout3
 id constraintLayout4
+id constraintLayout5
 id container
 id content
 id contentPanel
@@ -2805,6 +2806,7 @@ id customBarcodeView
 id customPanel
 id cut
 id cvMypage
+id cvWeather
 id dark
 id date_picker_actions
 id decelerate
@@ -2921,8 +2923,6 @@ id guideline
 id guideline10
 id guideline11
 id guideline12
-id guideline13
-id guideline14
 id guideline2
 id guideline3
 id guideline4
@@ -2948,6 +2948,7 @@ id image
 id imgCommentProfile
 id imgLogo
 id imgMapCard
+id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
 id imgQrCard
@@ -2985,7 +2986,6 @@ id lvBoard
 id lvComment
 id lvEvent
 id lvNotice
-id mainLogo
 id mainScroll
 id map_View
 id masked
@@ -3202,11 +3202,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3248,6 +3248,7 @@ id tvIntro
 id tvJoin
 id tvJoinTitle
 id tvModify
+id tvMoreNick
 id tvMoreOne
 id tvMoreTwo
 id tvNickMypageCard
@@ -3523,6 +3524,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout weather_card
 layout zxing_barcode_scanner
 layout zxing_capture
 menu example_menu
@@ -3788,6 +3790,7 @@ string tvJoin
 string tvJoinTitle
 string tvModify
 string tvMore
+string tvMoreNick
 string tvNickMypageCard
 string tvPointMypageCard
 string tvPointTextMypageCard

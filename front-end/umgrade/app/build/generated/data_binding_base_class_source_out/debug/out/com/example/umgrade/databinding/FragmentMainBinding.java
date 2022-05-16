@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,16 +24,12 @@ public final class FragmentMainBinding implements ViewBinding {
   public final Button btnFare;
 
   @NonNull
-  public final ImageView mainLogo;
-
-  @NonNull
   public final ScrollView mainScroll;
 
   private FragmentMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnFare,
-      @NonNull ImageView mainLogo, @NonNull ScrollView mainScroll) {
+      @NonNull ScrollView mainScroll) {
     this.rootView = rootView;
     this.btnFare = btnFare;
-    this.mainLogo = mainLogo;
     this.mainScroll = mainScroll;
   }
 
@@ -71,19 +66,13 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.mainLogo;
-      ImageView mainLogo = ViewBindings.findChildViewById(rootView, id);
-      if (mainLogo == null) {
-        break missingId;
-      }
-
       id = R.id.mainScroll;
       ScrollView mainScroll = ViewBindings.findChildViewById(rootView, id);
       if (mainScroll == null) {
         break missingId;
       }
 
-      return new FragmentMainBinding((ConstraintLayout) rootView, btnFare, mainLogo, mainScroll);
+      return new FragmentMainBinding((ConstraintLayout) rootView, btnFare, mainScroll);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

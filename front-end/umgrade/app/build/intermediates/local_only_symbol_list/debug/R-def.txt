@@ -84,9 +84,11 @@ id constraintLayout
 id constraintLayout2
 id constraintLayout3
 id constraintLayout4
+id constraintLayout5
 id container
 id customBarcodeView
 id cvMypage
+id cvWeather
 id divider
 id divider10
 id divider11
@@ -135,8 +137,6 @@ id fragMyPage
 id guideline10
 id guideline11
 id guideline12
-id guideline13
-id guideline14
 id guideline2
 id guideline3
 id guideline4
@@ -148,6 +148,7 @@ id guideline9
 id imgCommentProfile
 id imgLogo
 id imgMapCard
+id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
 id imgQrCard
@@ -161,7 +162,6 @@ id lvBoard
 id lvComment
 id lvEvent
 id lvNotice
-id mainLogo
 id mainScroll
 id map_View
 id noticePost
@@ -184,11 +184,11 @@ id shape_my
 id tabEvent
 id tabNotice
 id tabViewpager
-id textView
 id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -205,6 +205,7 @@ id tvIntro
 id tvJoin
 id tvJoinTitle
 id tvModify
+id tvMoreNick
 id tvMoreOne
 id tvMoreTwo
 id tvNickMypageCard
@@ -263,6 +264,7 @@ layout qr_card
 layout service_card
 layout slider_card
 layout support_card
+layout weather_card
 menu frag_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -361,6 +363,7 @@ string tvJoin
 string tvJoinTitle
 string tvModify
 string tvMore
+string tvMoreNick
 string tvNickMypageCard
 string tvPointMypageCard
 string tvPointTextMypageCard
