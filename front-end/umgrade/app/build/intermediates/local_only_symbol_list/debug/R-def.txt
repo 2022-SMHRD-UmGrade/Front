@@ -27,8 +27,6 @@ drawable arrowright
 drawable closed_umbrella
 drawable community
 drawable corner_shape
-drawable creditcard16
-drawable file16
 drawable frag_color
 drawable home
 drawable ic_launcher_background
@@ -44,7 +42,6 @@ drawable round
 drawable round_layout
 drawable umbrella
 drawable umbrella2
-drawable usersetting16
 id boardListItem
 id boardNick
 id boardSeq
@@ -52,6 +49,7 @@ id boardTime
 id boardTitle
 id bottomNav
 id bottomNavigationView
+id btnAccountSetting
 id btnCmWrite
 id btnComment
 id btnCommuMenu
@@ -82,8 +80,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCard
 id btnTermsClose
-id btnUserSetting
-id btnUsing
+id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
 id ckAllCheck

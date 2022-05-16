@@ -45,7 +45,7 @@
                 app:cornerRadius="7dp" />
 
             <Button
-                android:id="@+id/btnUsing"
+                android:id="@+id/btnUsageHistory"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
@@ -65,7 +65,7 @@
                 app:cornerRadius="7dp" />
 
             <Button
-                android:id="@+id/btnUserSetting"
+                android:id="@+id/btnAccountSetting"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"

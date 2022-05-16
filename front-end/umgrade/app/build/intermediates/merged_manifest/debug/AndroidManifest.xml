@@ -53,6 +53,18 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.AccountSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.UsageHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.ProfileUpdateActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.PrivacyPopupActivity"
             android:exported="false"
             android:theme="@style/DialogTheme" />
