@@ -85,7 +85,7 @@
             android:name="com.example.umgrade.MapActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.IntroActivity"
+            android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.EventPostActivity"
@@ -115,7 +115,7 @@
             android:name="com.example.umgrade.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.JoinActivity"
+            android:name="com.example.umgrade.IntroActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

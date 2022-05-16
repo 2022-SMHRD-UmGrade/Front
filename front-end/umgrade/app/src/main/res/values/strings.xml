@@ -170,4 +170,7 @@
     <string name="tvServiceInfo">서비스 이용약관</string>
     <string name="btnTermsClose">닫기</string>
 
+    <!-- activity_support_write.xml-->
+    <string name="tvSupport">문의 작성하기</string>
+
 </resources>
