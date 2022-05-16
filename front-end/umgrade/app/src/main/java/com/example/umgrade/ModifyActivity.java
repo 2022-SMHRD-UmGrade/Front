@@ -45,6 +45,8 @@ public class ModifyActivity extends AppCompatActivity {
 
         btnModifyCancel = findViewById(R.id.btnModifyCancel);
         btnModifySend = findViewById(R.id.btnModifySend);
+
+        CommuFragment = (CommuFragment) getSupportFragmentManager().findFragmentById(R.id.fragCommu);
         CommuFragment = new Fragment();
 
         dto = BoardInfo.info;
@@ -73,7 +75,7 @@ public class ModifyActivity extends AppCompatActivity {
                                 Toast.makeText(ModifyActivity.this,
                                         "게시글 수정 성공"+response,
                                         Toast.LENGTH_SHORT).show();
-                                //Intent intent = new Intent(ModifyActivity.this,);
+                            //onFragmentChanged();
                             }
                         },
                         new Response.ErrorListener() {
@@ -102,5 +104,14 @@ public class ModifyActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void onFragmentChanged(int index) {
+        if(index == 0) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, CommuFragment).commit();
+        }
+        else if(index == 1){
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, CommuFragment).commit();
+        }
     }
 }

@@ -137,6 +137,8 @@ id fragMyPage
 id guideline10
 id guideline11
 id guideline12
+id guideline13
+id guideline14
 id guideline2
 id guideline3
 id guideline4
@@ -163,6 +165,7 @@ id lvComment
 id lvEvent
 id lvNotice
 id mainScroll
+id map_View
 id noticePost
 id noticePost2
 id noticePostCnt
@@ -393,3 +396,4 @@ style loginParent
 style modifiedEditText
 style parent
 style viewParent
+xml network_security_config

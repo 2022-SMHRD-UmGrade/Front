@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +10,9 @@
 	<title>우산조회</title>
 
 	<!-- Site favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/umbrella180x180.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="vendors/images/umbrella32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="vendors/images/umbrella16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/resources/images/umbrella180x180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/resources/images/umbrella32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/images/umbrella16x16.png">
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,12 +20,12 @@
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
-	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/sweetalert2/sweetalert2.css">
-	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/core.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/src/plugins/datatables/css/responsive.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/src/plugins/sweetalert2/sweetalert2.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
 
 	<style>
 		.datatable-nosort::after, .datatable-nosort::before {
@@ -32,6 +34,7 @@
 	</style>
 </head>
 <body>
+	
 	<!-- Header Start -->
 	<div class="header">
 		<div class="header-left">
@@ -93,7 +96,7 @@
 							<ul>
 								<li>
 									<a href="#" class="alert alert-dismissible fade show" role="alert">
-										<img src="vendors/images/kuromi1.jpg" alt="">
+										<img src="rsources/images/kuromi1.jpg" alt="">
 										<h3>💜</h3>
 										<p>빛을 잃어가는 마음과는 달리</p>
 										<p>채워지는 도시의 별은 하나둘씩 늘어가고</p>
@@ -104,7 +107,7 @@
 								</li>
 								<li>
 									<a href="#" class="alert alert-dismissible fade show" role="alert">
-										<img src="vendors/images/kuromi2.jpg" alt="">
+										<img src="resources/images/kuromi2.jpg" alt="">
 										<h3>💜</h3>
 										<p>자리를 찾아가는 퍼즐처럼</p>
 										<p>맞춰지는 세상 속을 벗어나고만 싶어</p>
@@ -115,7 +118,7 @@
 								</li>
 								<li>
 									<a href="#" class="alert alert-dismissible fade show" role="alert">
-										<img src="vendors/images/kuromi3.jpg" alt="">
+										<img src="resources/images/kuromi3.jpg" alt="">
 										<h3>💜</h3>
 										<p>날 향한 시선에 감추기만 했던</p>
 										<p>마음의 목소리를 소리 내 외치면</p>	
@@ -128,7 +131,7 @@
 								</li>
 								<li>
 									<a href="#" class="alert alert-dismissible fade show" role="alert">
-										<img src="vendors/images/kuromi4.jpg" alt="">
+										<img src="resources/images/kuromi4.jpg" alt="">
 										<h3>💜</h3>
 										<p>잿빛 세상을 등지고 이 도시를 달려봐</p>
 										<p>내 맘 가는 대로 가로질러 가볼래 날 위해</p>	
@@ -142,7 +145,7 @@
 								</li>
 								<li>
 									<a href="#" class="alert alert-dismissible fade show" role="alert">
-										<img src="vendors/images/kuromi5.jpg" alt="">
+										<img src="resources/images/kuromi5.jpg" alt="">
 										<h3>💜</h3>
 										<p>Run run run higher, fly fly fly higher</p>
 										<p>I, I find myself 다시 빛나는 나를 봐</p>
@@ -153,7 +156,7 @@
 								</li>
 								<li>
 									<a href="#" class="alert alert-dismissible fade show" role="alert">
-										<img src="vendors/images/sanrio.jpg" alt="">
+										<img src="resources/images/sanrio.jpg" alt="">
 										<h3>💜</h3>
 										<p>Run run run higher, fly fly fly fly higher</p>
 										<p>이 어둠 속 눈을 감고</p>	
@@ -172,7 +175,7 @@
 				<div class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
 						<span class="user-icon">
-							<img src="vendors/images/kuromi3.jpg" alt="">
+							<img src="resources/images/kuromi3.jpg" alt="">
 						</span>
 						<span class="user-name">쿠로미💜</span>
 					</a>
@@ -184,7 +187,7 @@
 				</div>
 			</div>
 			<div class="github-link">
-				<a href="https://github.com/2022-SMHRD-UmGrade" target="_blank"><img src="vendors/images/github.svg" alt=""></a>
+				<a href="https://github.com/2022-SMHRD-UmGrade" target="_blank"><img src="resources/images/github.svg" alt=""></a>
 			</div>
 		</div>
 	</div>
@@ -277,8 +280,8 @@
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="home.jsp">
-				<img src="vendors/images/logo2.png" alt="" class="dark-logo">
-				<img src="vendors/images/logo1.png" alt="" class="light-logo">
+				<img src="resources/images/logo2.png" alt="" class="dark-logo">
+				<img src="resources/images/logo1.png" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
@@ -702,25 +705,25 @@
 		</div>
 	</div>
 	<!-- js -->
-	<script src="vendors/scripts/core.js"></script>
-	<script src="vendors/scripts/script.min.js"></script>
-	<script src="vendors/scripts/process.js"></script>
-	<script src="vendors/scripts/layout-settings.js"></script>
-	<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-	<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-	<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+	<script src="resources/js/core.js"></script>
+	<script src="resources/js/script.min.js"></script>
+	<script src="resources/js/process.js"></script>
+	<script src="resources/js/layout-settings.js"></script>
+	<script src="resources/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
 	<!-- buttons for Export datatable -->
-	<script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
-	<script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
-	<script src="src/plugins/datatables/js/buttons.print.min.js"></script>
-	<script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
-	<script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
-	<script src="src/plugins/datatables/js/pdfmake.min.js"></script>
-	<script src="src/plugins/datatables/js/vfs_fonts.js"></script>
+	<script src="resources/src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/buttons.print.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/buttons.html5.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/buttons.flash.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/pdfmake.min.js"></script>
+	<script src="resources/src/plugins/datatables/js/vfs_fonts.js"></script>
 	<!-- Datatable Setting js -->
-	<script src="vendors/scripts/datatable-setting.js"></script></body>
+	<script src="resources/js/datatable-setting.js"></script></body>
 	<!-- add sweet alert js & css in footer -->
-	<script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
-	<script src="src/plugins/sweetalert2/sweet-alert.init.js"></script>
+	<script src="resources/src/plugins/sweetalert2/sweetalert2.all.js"></script>
+	<script src="resources/src/plugins/sweetalert2/sweet-alert.init.js"></script>
 </html>

@@ -25,17 +25,30 @@
             android:layout_marginRight="5dp"
             android:orientation="vertical">
 
+<<<<<<< HEAD
             <include
                 layout="@layout/weather_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp" />
+=======
+            <ImageView
+                android:id="@+id/mainLogo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/umbrella" />
+>>>>>>> ac0a0c3ac951e412fad1ab712c7fce9cd56f190d
 
             <Button
                 android:id="@+id/btnFare"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+<<<<<<< HEAD
                 android:layout_marginTop="10dp"
+=======
+>>>>>>> ac0a0c3ac951e412fad1ab712c7fce9cd56f190d
                 android:backgroundTint="#2196F3"
                 android:drawableRight="@drawable/arroaright_resize"
                 android:drawableTint="@color/white"
