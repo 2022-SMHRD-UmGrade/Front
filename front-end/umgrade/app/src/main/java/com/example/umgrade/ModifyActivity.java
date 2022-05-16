@@ -75,7 +75,7 @@ public class ModifyActivity extends AppCompatActivity {
                                 Toast.makeText(ModifyActivity.this,
                                         "게시글 수정 성공"+response,
                                         Toast.LENGTH_SHORT).show();
-                            onFragmentChanged();
+                            //onFragmentChanged();
                             }
                         },
                         new Response.ErrorListener() {
