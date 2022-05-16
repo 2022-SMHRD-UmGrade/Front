@@ -80,7 +80,7 @@ public class PostActivity extends AppCompatActivity {
 
         getData(seq);
 
-        tvPostId.setText(vo.getUser_id());
+        tvPostId.setText(dto.getArticle_id());
 
 
     }

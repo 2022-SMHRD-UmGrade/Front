@@ -3,6 +3,8 @@ package com.example.umgrade;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -46,6 +48,9 @@ public class ModifyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modify);
 
+        vo = UserInfo.info;
+        dto = BoardInfo.info;
+
         btnModifyCancel = findViewById(R.id.btnModifyCancel);
         btnModifySend = findViewById(R.id.btnModifySend);
 
@@ -54,10 +59,10 @@ public class ModifyActivity extends AppCompatActivity {
 
         CommuFragment = (CommuFragment) getSupportFragmentManager().findFragmentById(R.id.fragCommu);
         CommuFragment = new Fragment();
-        vo = UserInfo.info;
-        dto = BoardInfo.info;
+
 
         queue = Volley.newRequestQueue(ModifyActivity.this);
+
 
         // 취소 버튼 누르면 이전 화면으로
         btnModifyCancel.setOnClickListener(new View.OnClickListener() {
@@ -85,8 +90,7 @@ public class ModifyActivity extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                                 Log.d("update", response);
 
-                                Intent intent = new Intent(ModifyActivity.this, PostActivity.class);
-                                startActivity(intent);
+                                replace(CommuFragment);
                             }
                         },
                         new Response.ErrorListener() {
@@ -105,7 +109,7 @@ public class ModifyActivity extends AppCompatActivity {
 
                         param.put("article_title", edtModifyTitle.getText().toString());
                         param.put("article_content", edtModifyContent.getText().toString());
-                        param.put("article_file", dto.getArticle_file());
+                        param.put("article_file", "N");
                         param.put("article_seq", String.valueOf(dto.getArticle_seq()));
 
                         return param;
@@ -115,15 +119,11 @@ public class ModifyActivity extends AppCompatActivity {
                 queue.add(request);
             }
         });
-
     }
-
-    public void onFragmentChanged(int index) {
-        if(index == 0) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, CommuFragment).commit();
-        }
-        else if(index == 1){
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, CommuFragment).commit();
-        }
+    public void replace(Fragment commuFragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, commuFragment);
+        fragmentTransaction.commit();
     }
 }
