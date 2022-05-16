@@ -60,7 +60,7 @@
             android:name=".MapActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".IntroActivity"
             android:exported="false" />
         <activity
             android:name=".EventPostActivity"
@@ -90,7 +90,7 @@
             android:name=".JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

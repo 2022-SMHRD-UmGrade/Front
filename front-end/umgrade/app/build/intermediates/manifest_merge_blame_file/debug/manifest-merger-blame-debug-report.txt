@@ -140,8 +140,8 @@
 75-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:61:13-37
 76        <activity
 76-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:62:9-64:40
-77            android:name="com.example.umgrade.MainActivity"
-77-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:63:13-41
+77            android:name="com.example.umgrade.IntroActivity"
+77-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:63:13-42
 78            android:exported="false" />
 78-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:64:13-37
 79        <activity
@@ -200,8 +200,8 @@
 105-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:91:13-37
 106        <activity
 106-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:92:9-100:20
-107            android:name="com.example.umgrade.IntroActivity"
-107-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:93:13-42
+107            android:name="com.example.umgrade.MainActivity"
+107-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:93:13-41
 108            android:exported="true" >
 108-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:94:13-36
 109            <intent-filter>
