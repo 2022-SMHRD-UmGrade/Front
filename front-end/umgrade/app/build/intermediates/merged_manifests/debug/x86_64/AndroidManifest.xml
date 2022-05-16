@@ -8,12 +8,19 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
     <!-- 인터넷 권한 설정 -->
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 지도 API 권한 설정 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <!-- 카메라, 저장소 권한 설정 -->
+=======
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 카메라, 저장소 권한 설정 -->
+>>>>>>> 86022a3eb85eb44d12b14a8fceac2c11d9c56b7f
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -40,7 +47,12 @@
         android:required="false" />
     <uses-feature
         android:name="android.hardware.wifi"
+<<<<<<< HEAD
         android:required="false" /> <!-- 카카오지도 네이티브 엡키 -->
+=======
+        android:required="false" />
+
+>>>>>>> 86022a3eb85eb44d12b14a8fceac2c11d9c56b7f
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -53,6 +65,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="com.example.umgrade.PrivacyPopupActivity"
+            android:exported="false"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name="com.example.umgrade.ServiceInfoPopupActivity"
+            android:exported="false"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name="com.example.umgrade.TermsActivity"
+            android:exported="false" />
+
+>>>>>>> 86022a3eb85eb44d12b14a8fceac2c11d9c56b7f
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
@@ -74,7 +101,11 @@
             android:name="com.example.umgrade.MapActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name="com.example.umgrade.MainActivity"
+=======
+            android:name="com.example.umgrade.IntroActivity"
+>>>>>>> 86022a3eb85eb44d12b14a8fceac2c11d9c56b7f
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.EventPostActivity"
@@ -101,10 +132,17 @@
             android:name="com.example.umgrade.ServiceActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.IntroActivity"
+=======
+            android:name="com.example.umgrade.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.JoinActivity"
+>>>>>>> 86022a3eb85eb44d12b14a8fceac2c11d9c56b7f
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

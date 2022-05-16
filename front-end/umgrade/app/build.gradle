@@ -58,6 +58,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.1.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation files('libs\\libDaumMapAndroid.jar')
+    implementation files('libs\\llibDaumMapEngineApi.jar')
 
 
     testImplementation 'junit:junit:4.13.2'

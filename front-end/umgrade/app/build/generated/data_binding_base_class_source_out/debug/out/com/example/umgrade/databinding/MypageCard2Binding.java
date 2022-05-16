@@ -23,7 +23,7 @@ public final class MypageCard2Binding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button button;
+  public final Button btnProfileUpdate;
 
   @NonNull
   public final View divider;
@@ -33,9 +33,6 @@ public final class MypageCard2Binding implements ViewBinding {
 
   @NonNull
   public final CircleImageView imgMypageProfile;
-
-  @NonNull
-  public final TextView textView5;
 
   @NonNull
   public final TextView tvCouponMypageCard;
@@ -58,19 +55,21 @@ public final class MypageCard2Binding implements ViewBinding {
   @NonNull
   public final TextView tvRatingTextMypageCard;
 
-  private MypageCard2Binding(@NonNull CardView rootView, @NonNull Button button,
+  @NonNull
+  public final TextView tvUserId;
+
+  private MypageCard2Binding(@NonNull CardView rootView, @NonNull Button btnProfileUpdate,
       @NonNull View divider, @NonNull Guideline guideline3,
-      @NonNull CircleImageView imgMypageProfile, @NonNull TextView textView5,
-      @NonNull TextView tvCouponMypageCard, @NonNull TextView tvCouponTextMypageCard,
-      @NonNull TextView tvNickMypageCard, @NonNull TextView tvPointMypageCard,
-      @NonNull TextView tvPointTextMypageCard, @NonNull TextView tvRatingMypageCard,
-      @NonNull TextView tvRatingTextMypageCard) {
+      @NonNull CircleImageView imgMypageProfile, @NonNull TextView tvCouponMypageCard,
+      @NonNull TextView tvCouponTextMypageCard, @NonNull TextView tvNickMypageCard,
+      @NonNull TextView tvPointMypageCard, @NonNull TextView tvPointTextMypageCard,
+      @NonNull TextView tvRatingMypageCard, @NonNull TextView tvRatingTextMypageCard,
+      @NonNull TextView tvUserId) {
     this.rootView = rootView;
-    this.button = button;
+    this.btnProfileUpdate = btnProfileUpdate;
     this.divider = divider;
     this.guideline3 = guideline3;
     this.imgMypageProfile = imgMypageProfile;
-    this.textView5 = textView5;
     this.tvCouponMypageCard = tvCouponMypageCard;
     this.tvCouponTextMypageCard = tvCouponTextMypageCard;
     this.tvNickMypageCard = tvNickMypageCard;
@@ -78,6 +77,7 @@ public final class MypageCard2Binding implements ViewBinding {
     this.tvPointTextMypageCard = tvPointTextMypageCard;
     this.tvRatingMypageCard = tvRatingMypageCard;
     this.tvRatingTextMypageCard = tvRatingTextMypageCard;
+    this.tvUserId = tvUserId;
   }
 
   @Override
@@ -107,9 +107,9 @@ public final class MypageCard2Binding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.btnProfileUpdate;
+      Button btnProfileUpdate = ViewBindings.findChildViewById(rootView, id);
+      if (btnProfileUpdate == null) {
         break missingId;
       }
 
@@ -128,12 +128,6 @@ public final class MypageCard2Binding implements ViewBinding {
       id = R.id.imgMypageProfile;
       CircleImageView imgMypageProfile = ViewBindings.findChildViewById(rootView, id);
       if (imgMypageProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
         break missingId;
       }
 
@@ -179,9 +173,16 @@ public final class MypageCard2Binding implements ViewBinding {
         break missingId;
       }
 
-      return new MypageCard2Binding((CardView) rootView, button, divider, guideline3,
-          imgMypageProfile, textView5, tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard,
-          tvPointMypageCard, tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard);
+      id = R.id.tvUserId;
+      TextView tvUserId = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserId == null) {
+        break missingId;
+      }
+
+      return new MypageCard2Binding((CardView) rootView, btnProfileUpdate, divider, guideline3,
+          imgMypageProfile, tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard,
+          tvPointMypageCard, tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard,
+          tvUserId);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

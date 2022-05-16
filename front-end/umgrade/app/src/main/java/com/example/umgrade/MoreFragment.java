@@ -99,10 +99,11 @@ public class MoreFragment extends Fragment {
         });
 
         // 약관확인
-        btnMoreSupport.setOnClickListener(new View.OnClickListener() {
+        btnMoreTerms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getActivity(), TermsActivity.class);
+                startActivity(intent);
             }
         });
 

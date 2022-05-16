@@ -152,7 +152,7 @@
 
     <!-- custom_scanner.xml -->
     <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
-    
+
     <!-- fragment_more.xml -->
     <string name="tvMoreNick">User Nick</string>
     <string name="btnMoreUserInfo">회원 정보 수정</string>
@@ -163,5 +163,11 @@
     <string name="btnMoreService">서비스 안내</string>
     <string name="btnMoreSupport">고객센터</string>
     <string name="btnMoreTerms">이용 약관 확인</string>
+
+    <!-- activity_terms.xml -->
+    <string name="tvTerms">위치기반서비스 이용약관</string>
+    <string name="tvPrivacy">개인정보 처리방침</string>
+    <string name="tvServiceInfo">서비스 이용약관</string>
+    <string name="btnTermsClose">닫기</string>
 
 </resources>

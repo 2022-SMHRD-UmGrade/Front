@@ -8,9 +8,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -29,6 +31,7 @@ public class JoinActivity extends AppCompatActivity{
     CheckBox ckAllCheck, ckTerms, ckPersonal, ckMarketing;
     EditText edtJoinId, edtJoinPw,edtJoinPwCheck, edtJoinName, edtJoinNick, edtJoinEmail, edtJoinPhone, edtJoinAddr;
     Button btnJoin;
+    TextView tvMoreService, tvMorePrivacy;
 
     RequestQueue queue;
     StringRequest request;
@@ -54,6 +57,9 @@ public class JoinActivity extends AppCompatActivity{
 
         btnJoin = findViewById(R.id.btnJoin);
 
+        tvMoreService = findViewById(R.id.tvMoreService);
+        tvMorePrivacy = findViewById(R.id.tvMorePrivacy);
+
         queue = Volley.newRequestQueue(JoinActivity.this);
 
         // 체크박스 기본 상태(체크 안 됨)
@@ -61,6 +67,7 @@ public class JoinActivity extends AppCompatActivity{
         ckTerms.setChecked(false);
         ckPersonal.setChecked(false);
         ckMarketing.setChecked(false);
+
 
         // AllCheck 값이 true일 때 전체 Check 값이 true, false면 전체 값도 false
         ckAllCheck.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +83,7 @@ public class JoinActivity extends AppCompatActivity{
                     ckPersonal.setChecked(false);
                     ckMarketing.setChecked(false);
                 }
-                // 조건 충족 시 버튼 활성화
+                 // 조건 충족 시 버튼 활성화
                 if (ckTerms.isChecked() && ckPersonal.isChecked()) {
                     btnJoin.setClickable(true);
                     btnJoin.setBackgroundColor(Color.parseColor("#2196F3"));
@@ -142,9 +149,12 @@ public class JoinActivity extends AppCompatActivity{
             }
         });
 
+
+        // 가입하기 버튼
         btnJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if((edtJoinPw.getText().toString().equals(edtJoinPwCheck.getText().toString()))) {
 
                     Log.d("pw", edtJoinPw.getText().toString());
@@ -212,6 +222,23 @@ public class JoinActivity extends AppCompatActivity{
                             "비밀번호가 일치 하지 않습니다",
                             Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        // 약관 보기 클릭 시 팝업
+        tvMoreService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, ServiceInfoPopupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tvMorePrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, PrivacyPopupActivity.class);
+                startActivity(intent);
             }
         });
     }
