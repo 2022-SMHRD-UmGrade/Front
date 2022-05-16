@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_post.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_post.xml"
-    },
-    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_mypage.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\fragment_mypage.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_post.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_post.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_scanner.xml",
@@ -38,6 +38,10 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\privacy_card.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\privacy_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_support_write.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_support_write.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notice_list.xml",

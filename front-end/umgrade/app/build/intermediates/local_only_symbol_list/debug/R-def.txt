@@ -74,7 +74,10 @@ id btnPostDelete
 id btnPostModify
 id btnQrCard
 id btnServiceCard
+id btnSupportCancel
 id btnSupportCard
+id btnSupportSend
+id btnSupportWrite
 id btnTermsClose
 id btnWriteCancel
 id btnWriteSend
@@ -98,6 +101,7 @@ id divider11
 id divider12
 id divider13
 id divider14
+id divider15
 id divider2
 id divider3
 id divider4
@@ -119,6 +123,8 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
+id edtSupportContent
+id edtSupportTitle
 id edtWriteContent
 id edtWriteTitle
 id eventDash
@@ -153,6 +159,7 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
+id imageView
 id imgCommentProfile
 id imgLogo
 id imgMapCard
@@ -187,6 +194,7 @@ id noticeTime
 id noticeTitle
 id postBottom
 id privacyPopupClose
+id rvSupportBoard
 id scrollView2
 id scrollView3
 id scrollView4
@@ -203,7 +211,6 @@ id textView16
 id textView17
 id textView18
 id textView19
-id textView2
 id textView20
 id textView21
 id textView22
@@ -252,6 +259,8 @@ id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
 id tvServiceInfo
+id tvSupport
+id tvSupportTitle
 id tvTerms
 id tvWelcomeMypageCard
 id tvWrite
@@ -275,6 +284,7 @@ layout activity_qr
 layout activity_service
 layout activity_service_info_popup
 layout activity_support
+layout activity_support_write
 layout activity_terms
 layout activity_write
 layout board_list
@@ -334,6 +344,7 @@ string btnPostModify
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+string btnSupportWrite
 string btnTermsClose
 string btnWriteCancel
 string btnWriteSend
@@ -418,6 +429,8 @@ string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvScanner
 string tvServiceInfo
+string tvSupport
+string tvSupportTitle
 string tvTerms
 string tvWelcomeMypageCard
 string tvWrite

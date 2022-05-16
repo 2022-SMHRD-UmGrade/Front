@@ -2749,7 +2749,10 @@ int id btnPostDelete 0x7f080081
 int id btnPostModify 0x7f080082
 int id btnQrCard 0x7f080083
 int id btnServiceCard 0x7f080084
+int id btnSupportCancel 0x7f0802cf
 int id btnSupportCard 0x7f080085
+int id btnSupportSend 0x7f0802d0
+int id btnSupportWrite 0x7f0802d1
 int id btnTermsClose 0x7f080086
 int id btnWriteCancel 0x7f080087
 int id btnWriteSend 0x7f080088
@@ -2836,6 +2839,7 @@ int id divider11 0x7f0800d8
 int id divider12 0x7f0800d9
 int id divider13 0x7f0800da
 int id divider14 0x7f0800db
+int id divider15 0x7f0802d8
 int id divider2 0x7f0800dc
 int id divider3 0x7f0800dd
 int id divider4 0x7f0800de
@@ -2871,6 +2875,8 @@ int id edtLoginId 0x7f0800fb
 int id edtLoginPw 0x7f0800fc
 int id edtModifyContent 0x7f0800fd
 int id edtModifyTitle 0x7f0800fe
+int id edtSupportContent 0x7f0802d2
+int id edtSupportTitle 0x7f0802d3
 int id edtWriteContent 0x7f0800ff
 int id edtWriteTitle 0x7f080100
 int id elastic 0x7f080101
@@ -2952,6 +2958,7 @@ int id ifRoom 0x7f08014c
 int id ignore 0x7f08014d
 int id ignoreRequest 0x7f08014e
 int id image 0x7f08014f
+int id imageView 0x7f0802d4
 int id imgCommentProfile 0x7f080150
 int id imgLogo 0x7f080151
 int id imgMapCard 0x7f080152
@@ -3117,6 +3124,7 @@ int id right_icon 0x7f0801f1
 int id right_side 0x7f0801f2
 int id rounded 0x7f0801f3
 int id row_index_key 0x7f0801f4
+int id rvSupportBoard 0x7f0802d5
 int id save_non_transition_alpha 0x7f0801f5
 int id save_overlay_view 0x7f0801f6
 int id sawtooth 0x7f0801f7
@@ -3220,7 +3228,6 @@ int id textView16 0x7f080258
 int id textView17 0x7f080259
 int id textView18 0x7f08025a
 int id textView19 0x7f08025b
-int id textView2 0x7f08025c
 int id textView20 0x7f08025d
 int id textView21 0x7f08025e
 int id textView22 0x7f08025f
@@ -3294,6 +3301,8 @@ int id tvRatingMypageCard 0x7f0802a2
 int id tvRatingTextMypageCard 0x7f0802a3
 int id tvScanner 0x7f0802a4
 int id tvServiceInfo 0x7f0802a5
+int id tvSupport 0x7f0802d6
+int id tvSupportTitle 0x7f0802d7
 int id tvTerms 0x7f0802a6
 int id tvWelcomeMypageCard 0x7f0802a7
 int id tvWrite 0x7f0802a8
@@ -3438,6 +3447,7 @@ int layout activity_qr 0x7f0b0029
 int layout activity_service 0x7f0b002a
 int layout activity_service_info_popup 0x7f0b002b
 int layout activity_support 0x7f0b002c
+int layout activity_support_write 0x7f0b00a9
 int layout activity_terms 0x7f0b002d
 int layout activity_write 0x7f0b002e
 int layout board_list 0x7f0b002f
@@ -3632,6 +3642,7 @@ int string btnPostModify 0x7f10003a
 int string btnQrCard 0x7f10003b
 int string btnServiceCard 0x7f10003c
 int string btnSupportCard 0x7f10003d
+int string btnSupportWrite 0x7f10011a
 int string btnTermsClose 0x7f10003e
 int string btnWriteCancel 0x7f10003f
 int string btnWriteSend 0x7f100040
@@ -3844,6 +3855,8 @@ int string tvRatingMypageCard 0x7f10010e
 int string tvRatingTextMypageCard 0x7f10010f
 int string tvScanner 0x7f100110
 int string tvServiceInfo 0x7f100111
+int string tvSupport 0x7f10011b
+int string tvSupportTitle 0x7f10011c
 int string tvTerms 0x7f100112
 int string tvWelcomeMypageCard 0x7f100113
 int string tvWrite 0x7f100114
