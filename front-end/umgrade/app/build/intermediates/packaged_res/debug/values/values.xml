@@ -116,6 +116,7 @@
     <string name="tvJoinTitle">회원가입</string>
     <string name="tvModify">글수정</string>
     <string name="tvMore">(보기)</string>
+    <string name="tvMoreNick">User Nick</string>
     <string name="tvNickMypageCard">USER</string>
     <string name="tvPointMypageCard">100p</string>
     <string name="tvPointTextMypageCard">보유 포인트</string>

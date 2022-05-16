@@ -84,6 +84,7 @@ id constraintLayout
 id constraintLayout2
 id constraintLayout3
 id constraintLayout4
+id constraintLayout5
 id container
 id customBarcodeView
 id cvMypage
@@ -146,6 +147,7 @@ id guideline9
 id imgCommentProfile
 id imgLogo
 id imgMapCard
+id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
 id imgQrCard
@@ -202,6 +204,7 @@ id tvIntro
 id tvJoin
 id tvJoinTitle
 id tvModify
+id tvMoreNick
 id tvMoreOne
 id tvMoreTwo
 id tvNickMypageCard
@@ -358,6 +361,7 @@ string tvJoin
 string tvJoinTitle
 string tvModify
 string tvMore
+string tvMoreNick
 string tvNickMypageCard
 string tvPointMypageCard
 string tvPointTextMypageCard
