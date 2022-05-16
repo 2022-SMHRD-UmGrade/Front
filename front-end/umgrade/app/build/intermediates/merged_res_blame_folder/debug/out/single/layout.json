@@ -24,12 +24,20 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\fragment_commu.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_terms.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_terms.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_service.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_service.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\privacy_card.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\privacy_card.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notice_list.xml",
@@ -108,6 +116,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_modify.xml"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\terms_card.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\terms_card.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_map.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_map.xml"
     },
@@ -138,6 +150,10 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\qr_card.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\qr_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\serviceinfo_card.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\serviceinfo_card.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\event_list.xml",

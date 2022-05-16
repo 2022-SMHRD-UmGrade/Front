@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="7dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="UM-GRADE(이하 &quot;회사&quot;)는 UM-CYCLE 서비스(이하 “서비스”) 기획부터 종료까지 정보통신망 이용촉진 및 정보보호 등에 관한 법률(이하 “정보통신망법”), 개인정보보호법 등 국내의 개인정보 보호 법령을 철저히 준수합니다. 또한 OECD의 개인정보 보호 가이드라인 등 국제 기준을 준수하여 서비스를 제공합니다.  회사는 본 개인정보처리방침을 정보통신망법을 기준으로 작성하되, UM-CYCLE 서비스 내에서의 이용자 개인정보 처리 현황을 최대한 알기 쉽고 상세하게 설명하기 위해 노력하였습니다.  개인정보처리방침은 다음과 같은 중요한 의미를 가지고 있습니다."
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회사가 어떤 정보를 수집하고, 수집한 정보를 어떻게 사용하며, 필요에 따라 누구와 이를 공유(위탁 또는 제공)하며, 이용목적을 달성한 정보를 언제·어떻게 파기하는지 등 ‘개인정보의 한살이’와 관련한 정보를 투명하게 제공합니다. 정보주체로서 회원(이하 “회원”)는 자신의 개인정보에 대해 어떤 권리를 가지고 있으며, 이를 어떤 방법과 절차로 행사할 수 있는지를 알려드립니다. 개인정보 침해사고가 발생하는 경우, 추가적인 피해를 예방하고 이미 발생한 피해를 복구하기 위해 누구에게 연락하여 어떤 도움을 받을 수 있는지 알려드립니다. 그 무엇보다도, 개인정보와 관련하여 회사와 회원 간의 권리 및 의무 관계를 규정하여 이용자의 ‘개인정보자기결정권’을 보장하는 수단이 됩니다."
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="제1조 (개인정보의 수집 및 이용목적)"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회사는 개인정보를 회원관리, 서비스 개발·제공 및 향상, 안전한 모바일 이용환경 등 다음의 목적을 위하여 수집하고 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전동의를 구할 것입니다.  회원 가입 의사의 확인, 이용자 식별, 서비스의 부정 이용 방지와 비인가 사용 방지, 회원 가입 및 가입 횟수 제한, 연령 확인, 불만 처리 등 회원관리를 위하여 개인정보를 이용합니다. 서비스제공에 더하여, 인구통계학적 분석, 서비스 방문 및 이용기록의 분석 등 신규서비스 요소의 발굴 및 기존 서비스 개선 등을 위하여 개인정보를 이용합니다. 법령 및 회사의 서비스 이용약관을 위반하는 회원에 대한 이용 제한 조치, 부정 이용 행위를 포함하여 서비스의 원활한 운영에 지장을 주는 행위에 대한 방지 및 제재, 계정도용 및 부정거래 방지, 약관 개정 등의 고지사항 전달, 분쟁조정을 위한 기록 보존, 민원처리 등 이용자 보호 및 서비스 운영을 위하여 개인정보를 이용합니다. 유료 서비스 제공에 따르는 본인인증, 구매 및 요금 결제를 위하여 개인정보를 이용합니다. 이벤트 정보 및 참여기회 제공, 광고성 제공 정보 등 마케팅 및 프로모션 목적으로 개인정보를 이용합니다. 서비스 이용기록과 접속 빈도 분석, 서비스 이용에 대한 통계, 서비스 분석 및 통계에 따른 맞춤형 서비스 제공 등에 개인정보를 이용합니다. 보안, 프라이버시, 안전 측면에서 이용자가 안심하고 이용할 수 있는 서비스 이용환경 구축을 위해 개인정보를 이용합니다. 사고 발생시 원인 규명 및 처리를 위하여 개인정보를 이용합니다. "
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="제2조 (수집하는 개인정보의 항목)"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회사는 다음과 같은 개인정보를 필수항목으로 수집하고 있습니다. 서비스 제공 : 휴대전화번호 휴대폰 본인 인증 : 성명, 생년월일, 성별, 내국인정보, 중복확인가입정보(ID), 휴대전화번호 회사는 다음과 같은 회원의 개인정보를 선택항목으로 수집할 수 있습니다. 프로필 사진, 이메일 서비스 이용과정이나 사업 처리 과정에서 다음과 같은 정보들이 자동으로 생성되어 수집될 수 있습니다. IP Address, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록, 기기 정보, 채팅 기록, 앱 설치정보, 네트워크 위치정보 등 서비스 이용과정에서 다음과 같은 결제정보들이 수집될 수 있습니다. 신용카드 결제 시: 카드사명, 카드번호 계좌 이체 시: 은행명, 계좌번호 상품권 이용 시: 상품권 번호 환불 시 : 은행명, 계좌번호 회사는 회원의 결제카드 등 서비스 운영상 필요하다고 판단하는 회원의 정보에 대하여 정기적으로 유효성을 검사하거나 확인할 수 있습니다. 개인정보 수집방법 회사는 다음과 같은 방법으로 개인정보를 수집합니다 애플리케이션(회원가입, 게시판, 제휴), 서면 양식, 이벤트, 배송 요청"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="제3조 (개인정보의 보유 및 이용기간)"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회사는 회원이 회원자격을 유지하고 있는 동안 수집된 회원의 개인정보를 보유ㆍ이용할 수 있습니다. 회원이 탈퇴하거나 자격을 상실할 경우, 회사는 회원의 별도 요청이 없더라도 수집된 회원정보를 삭제 및 파기합니다. 단, 회원의 탈퇴 또는 자격상실에도 불구하고 다음의 정보는 아래의 이유로 다음 기간 동안 보존됩니다. 회사 내부 방침에 의한 정보 보유 탈퇴회원의 재가입 제한을 위한 회원정보 기록: 1개월 이용 제한 회원 및 부정이용자의 재가입 제한을 위한 회원정보 기록: 1년 관계법령에 의한 정보 보유 사유(법령과 다를 경우 법령 규정에 따릅니다.) 표시/광고에 관한 기록 : 6개월 (전자상거래 등에서의 소비자보호에 관한 법률) 계약 또는 청약철회 등에 관한 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률) 대금결제 및 재화 등의 공급에 관한 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률) 소비자의 불만 또는 분쟁 처리에 관한 기록 : 3년 (전자상거래 등에서의 소비자보호에 관한 법률) 로그인 기록, 컴퓨터통신 또는 인터넷의 사용자가 정보통신망에 접속하기 위하여 사용하는 정보통신기기의 위치를 확인할 수 있는 접속지의 추적자료 : 3개월 (통신비밀보호법) 전자금융 거래에 관한 기록 : 5년 (전자금융거래법) 그 외의 통신사실 확인자료(가입자의 전기통신일시, 통신개시·종료시간, 사용도수, 정보통신망에 접속된 정보통신기기의 위치를 확인할 수 있는 발신기지국의 위치추적자료) : 각 12개월 보관 세법이 규정하는 모든 거래에 관한 장부 및 증빙서류 : 5년 보관(국세기본법) "
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="제4조 (동의의 거부권 및 거부 시의 불이익 고지)"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회원은 개인정보 수집ㆍ이용에 관한 동의를 거부할 권리가 있습니다. 다만, 계약 체결 및 이행 등을 위해 필요한 최소한의 개인정보 수집ㆍ이용에 관한 동의를 거부하는 경우에는 서비스 이용이 불가하고, 마케팅 활동 및 홍보를 위한 개인정보 수집ㆍ이용 및/또는 선택적 수집ㆍ이용에 관한 동의를 거부하는 경우에는 이벤트, 혜택에 대한 정보를 제공받지 못하거나 사은품ㆍ판촉물 제공, 제휴서비스 이용, 할인 혜택 적용 및 포인트 적립 불가 등의 불이익이 있을 수 있습니다."
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="제5조 (개인정보의 제3자 제공)"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회사는 이용자의 개인정보를 개인정보 수집목적에서 명시한 범위 내에서만 처리하며, 정보주체인 이용자의 동의가 있거나 관련 법령의 특별한 규정이 있는 경우 등 개인정보보호법 제17조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다."
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="제6조 (개인정보처리의 위탁)"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="회사는 서비스 제공을 위하여 필요한 업무 중 일부를 외부 업체에 위탁하고 있으며, 위탁계약 체결시 개인정보보호법 제26조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적·관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리·감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 정보통신망법에 따라 개인정보를 안전하게 처리하도록 필요한 사항을 규정하고 관리·감독합니다."
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

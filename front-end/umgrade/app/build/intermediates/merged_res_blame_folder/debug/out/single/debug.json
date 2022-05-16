@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_serviceinfo_card.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\serviceinfo_card.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -8,12 +12,12 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\round.xml"
     },
     {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_home.png.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\home.png"
-    },
-    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_login_bk.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\ic_login_bk.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_home.png.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\home.png"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comment.xml.flat",
@@ -108,6 +112,10 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_privacy_card.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\privacy_card.xml"
+    },
+    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -150,6 +158,10 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_join.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_join.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_terms.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_terms.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_umbrella.png.flat",
@@ -206,6 +218,10 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_more.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\more.png"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_terms_card.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\terms_card.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\xml_network_security_config.xml.flat",

@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.umgrade">
     <!-- 인터넷 권한 설정 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 지도 API 권한 설정 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <!-- 카메라, 저장소 권한 설정 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 카메라, 저장소 권한 설정 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -25,8 +23,6 @@
     <uses-feature
         android:name="android.hardware.camera.front"
         android:required="false" />
-    <!-- 카카오지도 네이티브 엡키 -->
-
 
     <application
         android:allowBackup="true"
@@ -37,6 +33,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".TermsActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
