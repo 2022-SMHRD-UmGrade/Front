@@ -49,6 +49,7 @@ id boardTime
 id boardTitle
 id bottomNav
 id bottomNavigationView
+id btnAccountSetting
 id btnCmWrite
 id btnComment
 id btnCommuMenu
@@ -57,6 +58,7 @@ id btnIdCheck
 id btnJoin
 id btnKakaoLogin
 id btnLogin
+id btnLogout
 id btnMapCard
 id btnModifyCancel
 id btnModifySend
@@ -69,9 +71,11 @@ id btnMoreSupport
 id btnMoreTerms
 id btnMoreUserInfo
 id btnNoticeEvent
+id btnPayment
 id btnPostComment
 id btnPostDelete
 id btnPostModify
+id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
 id btnSupportCancel
@@ -79,9 +83,9 @@ id btnSupportCard
 id btnSupportSend
 id btnSupportWrite
 id btnTermsClose
+id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
-id button
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -221,7 +225,6 @@ id textView26
 id textView27
 id textView3
 id textView4
-id textView5
 id textView6
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -262,6 +265,7 @@ id tvServiceInfo
 id tvSupport
 id tvSupportTitle
 id tvTerms
+id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
 id tvWriter

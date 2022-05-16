@@ -4,20 +4,41 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentMypageBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private FragmentMypageBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final Button btnAccountSetting;
+
+  @NonNull
+  public final Button btnLogout;
+
+  @NonNull
+  public final Button btnPayment;
+
+  @NonNull
+  public final Button btnUsageHistory;
+
+  private FragmentMypageBinding(@NonNull ConstraintLayout rootView,
+      @NonNull Button btnAccountSetting, @NonNull Button btnLogout, @NonNull Button btnPayment,
+      @NonNull Button btnUsageHistory) {
     this.rootView = rootView;
+    this.btnAccountSetting = btnAccountSetting;
+    this.btnLogout = btnLogout;
+    this.btnPayment = btnPayment;
+    this.btnUsageHistory = btnUsageHistory;
   }
 
   @Override
@@ -43,10 +64,38 @@ public final class FragmentMypageBinding implements ViewBinding {
 
   @NonNull
   public static FragmentMypageBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btnAccountSetting;
+      Button btnAccountSetting = ViewBindings.findChildViewById(rootView, id);
+      if (btnAccountSetting == null) {
+        break missingId;
+      }
 
-    return new FragmentMypageBinding((ConstraintLayout) rootView);
+      id = R.id.btnLogout;
+      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
+      id = R.id.btnPayment;
+      Button btnPayment = ViewBindings.findChildViewById(rootView, id);
+      if (btnPayment == null) {
+        break missingId;
+      }
+
+      id = R.id.btnUsageHistory;
+      Button btnUsageHistory = ViewBindings.findChildViewById(rootView, id);
+      if (btnUsageHistory == null) {
+        break missingId;
+      }
+
+      return new FragmentMypageBinding((ConstraintLayout) rootView, btnAccountSetting, btnLogout,
+          btnPayment, btnUsageHistory);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

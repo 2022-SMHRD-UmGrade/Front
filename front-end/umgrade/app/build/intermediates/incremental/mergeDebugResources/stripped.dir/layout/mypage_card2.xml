@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+<<<<<<< HEAD
+        android:background="#FFDDF0FF">
+=======
+<<<<<<< HEAD
+        android:background="#FFDDF0FF">
+=======
+        android:background="#FDFDFD">
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+
+        <TextView
+            android:id="@+id/tvNickMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvNickMypageCard"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+<<<<<<< HEAD
+            app:layout_constraintBottom_toTopOf="@+id/tvUserId"
+=======
+<<<<<<< HEAD
+            app:layout_constraintBottom_toTopOf="@+id/tvUserId"
+=======
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+            app:layout_constraintEnd_toEndOf="@+id/imgMypageProfile"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imgMypageProfile"
+            app:layout_constraintTop_toBottomOf="@+id/imgMypageProfile"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgMypageProfile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="72dp"
+            android:layout_weight="1"
+<<<<<<< HEAD
+            android:src="@drawable/umbrella2"
+=======
+<<<<<<< HEAD
+            android:src="@drawable/umbrella2"
+=======
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+            app:civ_circle_background_color="#C8C8C8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRatingTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvRatingTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintEnd_toStartOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvRatingMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/tvRatingMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
+            app:layout_constraintEnd_toEndOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintStart_toStartOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointMypageCard" />
+
+        <TextView
+            android:id="@+id/tvPointTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvPointTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvRatingTextMypageCard"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.65999997" />
+
+        <TextView
+            android:id="@+id/tvPointMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:text="@string/tvPointMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintEnd_toEndOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/tvCouponTextMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tvCouponTextMypageCard"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPointTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointTextMypageCard" />
+
+        <TextView
+            android:id="@+id/tvCouponMypageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/tvCouponMypageCard"
+            android:textColor="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
+            app:layout_constraintEnd_toEndOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="@+id/tvCouponTextMypageCard"
+            app:layout_constraintTop_toTopOf="@+id/tvPointMypageCard" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.69" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+<<<<<<< HEAD
+            android:id="@+id/tvUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserID"
+            app:layout_constraintBottom_toTopOf="@+id/btnProfileUpdate"
+=======
+<<<<<<< HEAD
+            android:id="@+id/tvUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserID"
+            app:layout_constraintBottom_toTopOf="@+id/btnProfileUpdate"
+=======
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+            app:layout_constraintEnd_toEndOf="@+id/tvNickMypageCard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tvNickMypageCard"
+            app:layout_constraintTop_toBottomOf="@+id/tvNickMypageCard" />
+
+        <Button
+<<<<<<< HEAD
+            android:id="@+id/btnProfileUpdate"
+=======
+<<<<<<< HEAD
+            android:id="@+id/btnProfileUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="프로필 수정"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="@+id/tvUserId"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tvUserId"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserId" />
+=======
+            android:id="@+id/button"
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="프로필 수정"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="@+id/tvUserId"
+            app:layout_constraintHorizontal_bias="0.5"
+<<<<<<< HEAD
+            app:layout_constraintStart_toStartOf="@+id/tvUserId"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserId" />
+=======
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
