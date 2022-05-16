@@ -68,6 +68,7 @@ public class JoinActivity extends AppCompatActivity{
         ckPersonal.setChecked(false);
         ckMarketing.setChecked(false);
 
+
         // AllCheck 값이 true일 때 전체 Check 값이 true, false면 전체 값도 false
         ckAllCheck.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +83,7 @@ public class JoinActivity extends AppCompatActivity{
                     ckPersonal.setChecked(false);
                     ckMarketing.setChecked(false);
                 }
-                // 조건 충족 시 버튼 활성화
+                 // 조건 충족 시 버튼 활성화
                 if (ckTerms.isChecked() && ckPersonal.isChecked()) {
                     btnJoin.setClickable(true);
                     btnJoin.setBackgroundColor(Color.parseColor("#2196F3"));
@@ -148,10 +149,12 @@ public class JoinActivity extends AppCompatActivity{
             }
         });
 
+
         // 가입하기 버튼
         btnJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if((edtJoinPw.getText().toString().equals(edtJoinPwCheck.getText().toString()))) {
 
                     Log.d("pw", edtJoinPw.getText().toString());
