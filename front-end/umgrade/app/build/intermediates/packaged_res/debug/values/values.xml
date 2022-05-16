@@ -36,6 +36,14 @@
     <string name="btnMapCard">UM-CYCLE\n보관함 찾기</string>
     <string name="btnModifyCancel">취소</string>
     <string name="btnModifySend">수정</string>
+    <string name="btnMoreCommu">커뮤니티</string>
+    <string name="btnMoreNotice">공지사항 &amp; 이벤트 확인</string>
+    <string name="btnMoreQr">우산 대여하기</string>
+    <string name="btnMoreSearch">가까운 보관함 찾기</string>
+    <string name="btnMoreService">서비스 안내</string>
+    <string name="btnMoreSupport">고객센터</string>
+    <string name="btnMoreTerms">이용 약관 확인</string>
+    <string name="btnMoreUserInfo">회원 정보 수정</string>
     <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
     <string name="btnPostComment">댓글 보기</string>
     <string name="btnPostDelete">삭제</string>
@@ -79,7 +87,6 @@
     <string name="fragMain">홈</string>
     <string name="fragMore">더보기</string>
     <string name="fragMyPage">마이페이지</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="noticePost">공지사항</string>
     <string name="noticePostCnt">조회 13</string>
     <string name="noticePostContent">공지사항 본문</string>

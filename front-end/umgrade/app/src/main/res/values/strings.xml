@@ -152,7 +152,15 @@
 
     <!-- custom_scanner.xml -->
     <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!-- fragment_more.xml -->
+    <string name="btnMoreUserInfo">회원 정보 수정</string>
+    <string name="btnMoreSearch">가까운 보관함 찾기</string>
+    <string name="btnMoreQr">우산 대여하기</string>
+    <string name="btnMoreCommu">커뮤니티</string>
+    <string name="btnMoreNotice">공지사항 &amp; 이벤트 확인</string>
+    <string name="btnMoreService">서비스 안내</string>
+    <string name="btnMoreSupport">고객센터</string>
+    <string name="btnMoreTerms">이용 약관 확인</string>
 
 </resources>
