@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/boardListItem"
+    android:id="@+id/supportListItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/corner_shape"
     android:paddingBottom="16dp">
 
     <TextView
-        android:id="@+id/boardTitle"
+        android:id="@+id/supportTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/boardTitle"
+        android:text="@string/supportTitle"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -23,33 +21,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/boardNick"
+        android:id="@+id/tvSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/boardNick"
-        android:textColor="#2196F3"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/round"
+        android:padding="4dp"
+        android:text="@string/tvSet"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/boardTitle"
-        app:layout_constraintTop_toBottomOf="@+id/boardTitle" />
+        app:layout_constraintBottom_toBottomOf="@+id/supportTitle"
+        app:layout_constraintStart_toEndOf="@+id/supportTitle"
+        app:layout_constraintTop_toTopOf="@+id/supportTitle" />
 
     <TextView
-        android:id="@+id/boardTime"
+        android:id="@+id/supportTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:text="@string/boardTime"
-        app:layout_constraintBottom_toBottomOf="@+id/boardNick"
+        android:text="@string/supportTime"
+        app:layout_constraintBottom_toBottomOf="@+id/supportSeq"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/boardNick" />
+        app:layout_constraintTop_toTopOf="@+id/supportSeq" />
 
     <TextView
-        android:id="@+id/boardSeq"
+        android:id="@+id/supportSeq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:gravity="right"
-        android:text="@string/boardSeq"
-        app:layout_constraintBottom_toTopOf="@+id/boardTime"
-        app:layout_constraintEnd_toEndOf="@+id/boardTime" />
+        android:text="@string/supportSeq"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/supportTitle"
+        app:layout_constraintTop_toBottomOf="@+id/supportTitle" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

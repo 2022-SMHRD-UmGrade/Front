@@ -177,4 +177,10 @@
     <string name="tvSupportTitle">고객센터</string>
     <string name="btnSupportWrite">문의하기</string>
 
+    <!-- support_list.xml -->
+    <string name="supportTitle">문의글 제목</string>
+    <string name="tvSet">처리중</string>
+    <string name="supportSeq">00</string>
+    <string name="supportTime">2022. 04 35 16:42</string>
+
 </resources>
