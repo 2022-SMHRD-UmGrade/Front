@@ -46,6 +46,7 @@ public class CommuFragment extends Fragment {
     ListView boardListItem; //게시물 레이아웃
 
     User vo;
+    Board dto;
 
     ArrayList<Board> list;
 
@@ -72,11 +73,7 @@ public class CommuFragment extends Fragment {
                 Log.d("vo1", vo.getUser_id());
                 Log.d("data", data.getArticle_id());
                 Log.d("data2", data.getArticle_content());
-
-                Intent intent = new Intent();
-                int seq = intent.getIntExtra("seq", data.getArticle_seq());
-
-                Toast.makeText(getActivity(), "선택 게시글 번호 : "+seq, Toast.LENGTH_SHORT).show();
+                Log.d("data3", String.valueOf(data.getArticle_seq()));
 
                 Intent intentPost = new Intent(getActivity(), PostActivity.class);
                 intentPost.putExtra("article_seq", data.getArticle_seq());
@@ -140,7 +137,11 @@ public class CommuFragment extends Fragment {
                                 String id = Object.getString("article_id");
                                 int cnt = Integer.parseInt(Object.getString("article_cnt"));
 
-                                list.add(new Board(seq,title,content,date,file,id,cnt));
+                                dto = new Board(seq, title, content, date, file, id, cnt);
+
+                                BoardInfo.info = dto;
+
+                                list.add(dto);
 
                                 lvBoard.setAdapter(adapter);
 

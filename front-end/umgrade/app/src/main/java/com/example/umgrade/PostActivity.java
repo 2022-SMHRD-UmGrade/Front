@@ -59,8 +59,6 @@ public class PostActivity extends AppCompatActivity {
         vo = UserInfo.info;
         dto = BoardInfo.info;
 
-        Log.d("lt", dto.toString());
-
         btnPostModify = findViewById(R.id.btnPostModify);
         btnPostDelete = findViewById(R.id.btnPostDelete);
         btnPostComment = findViewById(R.id.btnPostComment);
@@ -77,6 +75,9 @@ public class PostActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         int seq = intent.getIntExtra("article_seq", dto.getArticle_seq());
+
+        Log.d("seq", String.valueOf(seq));
+
         getData(seq);
 
         tvPostId.setText(vo.getUser_id());
@@ -86,7 +87,7 @@ public class PostActivity extends AppCompatActivity {
     //단일 게시글 불러오는 메서드
     private void getData(int seq) {
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/BoardOne.do";
+        String server_url = "http://220.80.203.18:8081/myapp/BoardOne.do";
 
         request = new StringRequest(
                 method,
@@ -123,6 +124,47 @@ public class PostActivity extends AppCompatActivity {
                                     startActivity(intentModify);
                                 }
                             });
+
+                            btnPostDelete.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    int method = Request.Method.POST;
+                                    String server_url = "http://220.80.203.18:8081/myapp/BoardDelete.do";
+
+                                    request = new StringRequest(
+                                            method,
+                                            server_url,
+                                            new Response.Listener<String>() {
+                                                @Override
+                                                public void onResponse(String response) {
+                                                    Toast.makeText(PostActivity.this,
+                                                            "게시글 삭제 성공!"+response,
+                                                            Toast.LENGTH_SHORT).show();
+                                                }
+                                            },
+                                            new Response.ErrorListener() {
+                                                @Override
+                                                public void onErrorResponse(VolleyError error) {
+                                                    Toast.makeText(PostActivity.this,
+                                                            "게시글 삭제 실패!"+error.toString(),
+                                                            Toast.LENGTH_SHORT).show();
+                                                }
+                                            }
+                                    ){
+                                        @NonNull
+                                        @Override
+                                        protected Map<String, String> getParams() throws AuthFailureError{
+                                            Map<String, String> param = new HashMap<>();
+
+                                            param.put("article_seq", String.valueOf(seq));
+
+                                            return param;
+                                        }
+                                    };
+                                    queue.add(request);
+                                }
+                            });
+
 
                         }
                         catch(JSONException e) {
