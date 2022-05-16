@@ -2923,8 +2923,6 @@ id guideline
 id guideline10
 id guideline11
 id guideline12
-id guideline13
-id guideline14
 id guideline2
 id guideline3
 id guideline4
@@ -3204,7 +3202,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView3
 id textView4

@@ -137,8 +137,6 @@ id fragMyPage
 id guideline10
 id guideline11
 id guideline12
-id guideline13
-id guideline14
 id guideline2
 id guideline3
 id guideline4
@@ -186,7 +184,6 @@ id shape_my
 id tabEvent
 id tabNotice
 id tabViewpager
-id textView
 id textView2
 id textView3
 id textView4

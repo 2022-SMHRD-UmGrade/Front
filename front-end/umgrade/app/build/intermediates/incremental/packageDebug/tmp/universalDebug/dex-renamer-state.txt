@@ -1,8 +1,4 @@
-<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/incremental/packageDebug/tmp/x86_64Debug/dex-renamer-state.txt
-#Mon May 16 11:07:20 KST 2022
-=======
-#Mon May 16 10:31:40 KST 2022
->>>>>>> ac0a0c3ac951e412fad1ab712c7fce9cd56f190d:front-end/umgrade/app/build/intermediates/incremental/packageDebug/tmp/universalDebug/dex-renamer-state.txt
+#Mon May 16 11:27:26 KST 2022
 path.4=15/classes.dex
 path.3=13/classes.dex
 path.2=12/classes.dex
