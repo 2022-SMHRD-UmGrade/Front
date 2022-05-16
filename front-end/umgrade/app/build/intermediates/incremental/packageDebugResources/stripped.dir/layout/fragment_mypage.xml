@@ -7,8 +7,13 @@
     tools:context=".MypageFragment">
 
     <ScrollView
+<<<<<<< HEAD
         android:layout_width="0dp"
         android:layout_height="0dp"
+=======
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,12 +22,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:orientation="vertical">
+=======
+            android:orientation="vertical" >
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
 
             <include
                 layout="@layout/mypage_card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+<<<<<<< HEAD
 
             <Button
                 android:id="@+id/btnPayment"
@@ -99,4 +109,8 @@
         </LinearLayout>
     </ScrollView>
 
+=======
+        </LinearLayout>
+    </ScrollView>
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
 </androidx.constraintlayout.widget.ConstraintLayout>

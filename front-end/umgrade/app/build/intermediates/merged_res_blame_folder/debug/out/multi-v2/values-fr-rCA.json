@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+=======
             "outputFile": "C:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+>>>>>>> 86022a3eb85eb44d12b14a8fceac2c11d9c56b7f
             "map": [
                 {
                     "source": "C:\\Users\\jsj42\\.gradle\\caches\\transforms-3\\02483169c4c9e0ddffa88758188ac6f1\\transformed\\core-1.7.0\\res\\values-fr-rCA\\values-fr-rCA.xml",

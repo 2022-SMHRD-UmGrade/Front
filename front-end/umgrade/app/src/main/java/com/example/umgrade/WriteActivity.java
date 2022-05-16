@@ -73,7 +73,7 @@ public class WriteActivity extends AppCompatActivity {
                 vo = UserInfo.info;
 
                 int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/Android/boardInsert.do";
+                String server_url = "http://220.80.203.18:8081/myapp/BoardInsert.do";
 
                 request = new StringRequest(
                         method,

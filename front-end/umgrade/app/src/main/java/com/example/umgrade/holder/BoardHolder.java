@@ -5,14 +5,14 @@ import android.widget.TextView;
 
 import com.example.umgrade.R;
 
-public class ViewHolder {
+public class BoardHolder {
 
     private TextView boardTitle;
     private TextView boardNick;
     private TextView boardSeq;
     private TextView boardTime;
 
-    public ViewHolder(View itemview) {
+    public BoardHolder(View itemview) {
         boardTitle = itemview.findViewById(R.id.boardTitle);
         boardNick = itemview.findViewById(R.id.boardNick);
         boardSeq = itemview.findViewById(R.id.boardSeq);

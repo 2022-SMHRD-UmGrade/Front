@@ -156,7 +156,11 @@
                 android:textSize="10sp" />
 
             <TextView
+<<<<<<< HEAD
                 android:id="@+id/tvMoreService"
+=======
+                android:id="@+id/tvMoreOne"
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -186,7 +190,11 @@
                 android:textSize="10sp" />
 
             <TextView
+<<<<<<< HEAD
                 android:id="@+id/tvMorePrivacy"
+=======
+                android:id="@+id/tvMoreTwo"
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
