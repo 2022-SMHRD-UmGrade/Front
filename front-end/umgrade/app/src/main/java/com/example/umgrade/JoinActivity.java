@@ -148,6 +148,7 @@ public class JoinActivity extends AppCompatActivity{
             }
         });
 
+        // 가입하기 버튼
         btnJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -221,10 +222,19 @@ public class JoinActivity extends AppCompatActivity{
             }
         });
 
+        // 약관 보기 클릭 시 팝업
         tvMoreService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(JoinActivity.this, ServiceInfoPopupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tvMorePrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, PrivacyPopupActivity.class);
                 startActivity(intent);
             }
         });

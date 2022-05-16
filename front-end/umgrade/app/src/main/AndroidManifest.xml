@@ -34,9 +34,13 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ServiceInfoPopupActivity"
+            android:name=".PrivacyPopupActivity"
             android:exported="false"
             android:theme="@style/DialogTheme"/>
+        <activity
+            android:name=".ServiceInfoPopupActivity"
+            android:exported="false"
+            android:theme="@style/DialogTheme" />
         <activity
             android:name=".TermsActivity"
             android:exported="false" />

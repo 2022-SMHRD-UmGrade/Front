@@ -3104,6 +3104,7 @@ int id pin 0x7f0801dc
 int id position 0x7f0801dd
 int id postBottom 0x7f0801de
 int id postLayout 0x7f0801df
+int id privacyPopupClose 0x7f0802d9
 int id progress_circular 0x7f0801e0
 int id progress_horizontal 0x7f0801e1
 int id radio 0x7f0801e2
@@ -3432,6 +3433,7 @@ int layout activity_modify 0x7f0b0024
 int layout activity_notice 0x7f0b0025
 int layout activity_notice_post 0x7f0b0026
 int layout activity_post 0x7f0b0027
+int layout activity_privacy_popup 0x7f0b00a8
 int layout activity_qr 0x7f0b0028
 int layout activity_service 0x7f0b0029
 int layout activity_service_info_popup 0x7f0b00a7

@@ -53,6 +53,10 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.PrivacyPopupActivity"
+            android:exported="false"
+            android:theme="@style/DialogTheme" />
+        <activity
             android:name="com.example.umgrade.ServiceInfoPopupActivity"
             android:exported="false"
             android:theme="@style/DialogTheme" />

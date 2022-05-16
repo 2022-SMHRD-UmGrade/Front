@@ -3105,6 +3105,7 @@ id pin
 id position
 id postBottom
 id postLayout
+id privacyPopupClose
 id progress_circular
 id progress_horizontal
 id radio
@@ -3433,6 +3434,7 @@ layout activity_modify
 layout activity_notice
 layout activity_notice_post
 layout activity_post
+layout activity_privacy_popup
 layout activity_qr
 layout activity_service
 layout activity_service_info_popup
