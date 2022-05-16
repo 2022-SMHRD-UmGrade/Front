@@ -643,7 +643,14 @@
     <color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
     <color name="design_snackbar_background_color">#323232</color>
+<<<<<<< HEAD
     <color name="dialogColor">#68000000</color>
+=======
+<<<<<<< HEAD
+    <color name="dialogColor">#68000000</color>
+=======
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -1674,7 +1681,14 @@
     <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
+<<<<<<< HEAD
     <string name="btnTermsClose">닫기</string>
+=======
+<<<<<<< HEAD
+    <string name="btnTermsClose">닫기</string>
+=======
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <string name="btnWriteCancel">취소</string>
     <string name="btnWriteSend">등록</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
@@ -1881,12 +1895,24 @@
     <string name="tvPostPl2">)</string>
     <string name="tvPostTime">2022.05.12. 17:21</string>
     <string name="tvPostTitle">글 제목</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <string name="tvPrivacy">개인정보 처리방침</string>
     <string name="tvRatingMypageCard">U</string>
     <string name="tvRatingTextMypageCard">회원 등급</string>
     <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
     <string name="tvServiceInfo">서비스 이용약관</string>
     <string name="tvTerms">위치기반서비스 이용약관</string>
+<<<<<<< HEAD
+=======
+=======
+    <string name="tvRatingMypageCard">U</string>
+    <string name="tvRatingTextMypageCard">회원 등급</string>
+    <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <string name="tvWelcomeMypageCard">님 환영합니다!</string>
     <string name="tvWrite">글쓰기</string>
     <string name="tvWriter">작성자</string>
@@ -4941,12 +4967,21 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <style name="DialogTheme" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@color/dialogColor</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <style name="EmptyTheme"/>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">
     <item name="enforceMaterialTheme">true</item>

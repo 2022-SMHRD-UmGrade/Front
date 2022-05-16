@@ -7,8 +7,18 @@
     tools:context=".MypageFragment">
 
     <ScrollView
+<<<<<<< HEAD
         android:layout_width="0dp"
         android:layout_height="0dp"
+=======
+<<<<<<< HEAD
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+=======
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,12 +27,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:orientation="vertical">
+=======
+<<<<<<< HEAD
+            android:orientation="vertical">
+=======
+            android:orientation="vertical" >
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
 
             <include
                 layout="@layout/mypage_card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
 
             <Button
                 android:id="@+id/btnPayment"
@@ -45,7 +67,11 @@
                 app:cornerRadius="7dp" />
 
             <Button
+<<<<<<< HEAD
                 android:id="@+id/btnUsageHistory"
+=======
+                android:id="@+id/btnUsing"
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
@@ -65,7 +91,11 @@
                 app:cornerRadius="7dp" />
 
             <Button
+<<<<<<< HEAD
                 android:id="@+id/btnAccountSetting"
+=======
+                android:id="@+id/btnUserSetting"
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
@@ -96,7 +126,17 @@
                 android:text="로그아웃"
                 android:textStyle="bold" />
 
+<<<<<<< HEAD
         </LinearLayout>
     </ScrollView>
 
+=======
+        </LinearLayout>
+    </ScrollView>
+
+=======
+        </LinearLayout>
+    </ScrollView>
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
 </androidx.constraintlayout.widget.ConstraintLayout>

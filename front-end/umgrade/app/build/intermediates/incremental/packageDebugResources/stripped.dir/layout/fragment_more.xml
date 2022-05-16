@@ -46,8 +46,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
         android:scrollbars="none">
+=======
+<<<<<<< HEAD
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        android:scrollbars="none">
+=======
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+>>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
+>>>>>>> d25de064aa5aa230667345ec7c497a07818def91
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -170,4 +170,18 @@
     <string name="tvServiceInfo">서비스 이용약관</string>
     <string name="btnTermsClose">닫기</string>
 
+    <!-- mypage_card2.xml -->
+    <string name="tvUserId">UserID</string>
+    <string name="btnProfileUpdate">프로필 수정</string>
+
+    <!-- fragment_mypage.xml -->
+    <string name="btnPayment">결제등록</string>
+    <string name="btnUsageHistory">이용내역</string>
+    <string name="btnAccountSetting">계정설정</string>
+    <string name="btnLogout">로그아웃</string>
+
+    <!-- activity_profile_update.xml -->
+    <string name="tvProfileTitle">프로필 수정</string>
+    <string name="edtNickHint">닉네임을 입력하세요</string>
+    <string name="btnNickChange">닉네임 변경</string>
 </resources>
