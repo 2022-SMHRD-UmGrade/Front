@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:background="@drawable/round"
+        android:background="@drawable/roundblack"
         android:padding="4dp"
         android:text="@string/tvSet"
         android:textColor="#FFFFFF"
