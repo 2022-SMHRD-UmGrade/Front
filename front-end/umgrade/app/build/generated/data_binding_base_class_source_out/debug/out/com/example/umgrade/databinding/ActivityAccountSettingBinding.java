@@ -4,20 +4,57 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityAccountSettingBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityAccountSettingBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final ImageButton btnPre;
+
+  @NonNull
+  public final Button button2;
+
+  @NonNull
+  public final View divider8;
+
+  @NonNull
+  public final LinearLayout linearLayout;
+
+  @NonNull
+  public final LinearLayout linearLayout2;
+
+  @NonNull
+  public final TextView tvAccountSetting;
+
+  @NonNull
+  public final TextView tvUserID;
+
+  private ActivityAccountSettingBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageButton btnPre, @NonNull Button button2, @NonNull View divider8,
+      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
+      @NonNull TextView tvAccountSetting, @NonNull TextView tvUserID) {
     this.rootView = rootView;
+    this.btnPre = btnPre;
+    this.button2 = button2;
+    this.divider8 = divider8;
+    this.linearLayout = linearLayout;
+    this.linearLayout2 = linearLayout2;
+    this.tvAccountSetting = tvAccountSetting;
+    this.tvUserID = tvUserID;
   }
 
   @Override
@@ -43,10 +80,56 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
 
   @NonNull
   public static ActivityAccountSettingBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btnPre;
+      ImageButton btnPre = ViewBindings.findChildViewById(rootView, id);
+      if (btnPre == null) {
+        break missingId;
+      }
 
-    return new ActivityAccountSettingBinding((ConstraintLayout) rootView);
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
+        break missingId;
+      }
+
+      id = R.id.divider8;
+      View divider8 = ViewBindings.findChildViewById(rootView, id);
+      if (divider8 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout;
+      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout2;
+      LinearLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAccountSetting;
+      TextView tvAccountSetting = ViewBindings.findChildViewById(rootView, id);
+      if (tvAccountSetting == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUserID;
+      TextView tvUserID = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserID == null) {
+        break missingId;
+      }
+
+      return new ActivityAccountSettingBinding((ConstraintLayout) rootView, btnPre, button2,
+          divider8, linearLayout, linearLayout2, tvAccountSetting, tvUserID);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

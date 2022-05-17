@@ -6,6 +6,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color dialogColor
+color lightBlueColor
 color loginBkColor
 color primaryTextColor
 color purple_200
@@ -87,6 +88,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
+id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
 id btnTermsClose
@@ -94,6 +96,7 @@ id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
 id button
+id button2
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -114,6 +117,7 @@ id divider12
 id divider13
 id divider14
 id divider15
+id divider16
 id divider2
 id divider3
 id divider4
@@ -216,6 +220,11 @@ id scrollView5
 id servicePopupClose
 id shape_my
 id supportListItem
+id supportPostCnt
+id supportPostContent
+id supportPostSeq
+id supportPostTime
+id supportPostTitle
 id supportSeq
 id supportTime
 id supportTitle
@@ -240,6 +249,7 @@ id textView27
 id textView3
 id textView4
 id textView6
+id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -260,6 +270,7 @@ id tvMoreNick
 id tvMorePrivacy
 id tvMoreService
 id tvNickMypageCard
+id tvPaymentTitle
 id tvPointMypageCard
 id tvPointTextMypageCard
 id tvPostCnt
@@ -279,8 +290,13 @@ id tvScanner
 id tvServiceInfo
 id tvSet
 id tvSupport
+id tvSupportCount
+id tvSupportPostComment
+id tvSupportSet
 id tvSupportTitle
 id tvTerms
+id tvUsageHistoryTitle
+id tvUserID
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
@@ -375,6 +391,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
 string btnUsageHistory
@@ -424,6 +441,10 @@ string noticePostTitle
 string noticeSeq
 string noticeTime
 string noticeTitle
+string supportPostContent
+string supportPostSeq
+string supportPostTime
+string supportPostTitle
 string supportSeq
 string supportTime
 string supportTitle
@@ -468,6 +489,9 @@ string tvScanner
 string tvServiceInfo
 string tvSet
 string tvSupport
+string tvSupportCount
+string tvSupportPostComment
+string tvSupportSet
 string tvSupportTitle
 string tvTerms
 string tvUserId

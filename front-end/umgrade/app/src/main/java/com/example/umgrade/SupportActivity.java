@@ -36,13 +36,13 @@ public class SupportActivity extends AppCompatActivity {
         supportSeq = findViewById(R.id.supportTime); // 글번호
 
         // 문의 처리여부에 따라 텍스트뷰 색상 변경
-        if(tvSet.getText().toString().equals("처리중")){
-            tvSet.setTextColor(Color.BLACK);
-            tvSet.setBackgroundResource(R.drawable.roundblack);
-        } else if(tvSet.getText().toString().equals("완료")) {
-            tvSet.setTextColor(Color.WHITE);
-            tvSet.setBackgroundResource(R.drawable.round);
-        }
+//        if(tvSet.getText().toString().equals("처리중")){
+//            tvSet.setTextColor(Color.BLACK);
+//            tvSet.setBackgroundResource(R.drawable.roundblack);
+//        } else if(tvSet.getText().toString().equals("완료")) {
+//            tvSet.setTextColor(Color.WHITE);
+//            tvSet.setBackgroundResource(R.drawable.round);
+//        }
 
     }
 }

@@ -1319,6 +1319,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightBlueColor
 color loginBkColor
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -2763,6 +2764,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
+id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
 id btnTermsClose
@@ -2770,6 +2772,7 @@ id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
 id button
+id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2853,6 +2856,7 @@ id divider12
 id divider13
 id divider14
 id divider15
+id divider16
 id divider2
 id divider3
 id divider4
@@ -3208,6 +3212,11 @@ id stretch
 id submenuarrow
 id submit_area
 id supportListItem
+id supportPostCnt
+id supportPostContent
+id supportPostSeq
+id supportPostTime
+id supportPostTitle
 id supportScrollUp
 id supportSeq
 id supportTime
@@ -3283,6 +3292,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -3303,6 +3313,7 @@ id tvMoreNick
 id tvMorePrivacy
 id tvMoreService
 id tvNickMypageCard
+id tvPaymentTitle
 id tvPointMypageCard
 id tvPointTextMypageCard
 id tvPostCnt
@@ -3322,8 +3333,13 @@ id tvScanner
 id tvServiceInfo
 id tvSet
 id tvSupport
+id tvSupportCount
+id tvSupportPostComment
+id tvSupportSet
 id tvSupportTitle
 id tvTerms
+id tvUsageHistoryTitle
+id tvUserID
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
@@ -3674,6 +3690,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
 string btnUsageHistory
@@ -3851,6 +3868,10 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string supportPostContent
+string supportPostSeq
+string supportPostTime
+string supportPostTitle
 string supportSeq
 string supportTime
 string supportTitle
@@ -3895,6 +3916,9 @@ string tvScanner
 string tvServiceInfo
 string tvSet
 string tvSupport
+string tvSupportCount
+string tvSupportPostComment
+string tvSupportSet
 string tvSupportTitle
 string tvTerms
 string tvUserId

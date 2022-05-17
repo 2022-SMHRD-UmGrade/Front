@@ -130,10 +130,10 @@
             android:name="com.example.umgrade.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.MainActivity"
+            android:name="com.example.umgrade.IntroActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.IntroActivity"
+            android:name="com.example.umgrade.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
