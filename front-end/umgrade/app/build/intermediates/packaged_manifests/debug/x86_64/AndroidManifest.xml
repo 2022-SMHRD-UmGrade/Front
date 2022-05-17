@@ -56,10 +56,17 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/x86_64/AndroidManifest.xml
             android:name="com.example.umgrade.service.SupportPostActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.service.SupportWriteActivity"
+=======
+            android:name="com.example.umgrade.sevice.SupportPostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.sevice.SupportWriteActivity"
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/universal/AndroidManifest.xml
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.AccountSettingActivity"
@@ -78,7 +85,11 @@
             android:exported="false"
             android:theme="@style/DialogTheme" />
         <activity
+<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/x86_64/AndroidManifest.xml
             android:name="com.example.umgrade.service.ServiceInfoPopupActivity"
+=======
+            android:name="com.example.umgrade.sevice.ServiceInfoPopupActivity"
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/universal/AndroidManifest.xml
             android:exported="false"
             android:theme="@style/DialogTheme" />
         <activity
@@ -100,7 +111,11 @@
             android:name="com.example.umgrade.FareActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/x86_64/AndroidManifest.xml
             android:name="com.example.umgrade.service.SupportActivity"
+=======
+            android:name="com.example.umgrade.sevice.SupportActivity"
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/universal/AndroidManifest.xml
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.main.MapActivity"
@@ -127,10 +142,23 @@
             android:name="com.example.umgrade.community.WriteActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/x86_64/AndroidManifest.xml
             android:name="com.example.umgrade.service.ServiceActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.userActivity.LoginActivity"
+=======
+            android:name="com.example.umgrade.sevice.ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.userActivity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.main.MainActivity"
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/universal/AndroidManifest.xml
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

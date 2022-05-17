@@ -24,6 +24,7 @@ dimen loginCardRadius
 dimen loginViewsMargin
 dimen newsMoreTextSize
 dimen signup_text_margin_top
+drawable alarm16
 drawable arroaright_resize
 drawable arrowleft
 drawable arrowright
@@ -57,6 +58,7 @@ id boardTitle
 id bottomNav
 id bottomNavigationView
 id btnAccountSetting
+id btnAlarmSetting
 id btnCmWrite
 id btnComment
 id btnCommuMenu
@@ -77,17 +79,23 @@ id btnMoreService
 id btnMoreSupport
 id btnMoreTerms
 id btnMoreUserInfo
+id btnNickChange
 id btnNoticeEvent
 id btnPayment
 id btnPostComment
 id btnPostDelete
 id btnPostModify
 id btnPre
+id btnProfilePre
 id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
+<<<<<<< HEAD
+=======
+id btnSupportComment
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -95,8 +103,13 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
+<<<<<<< HEAD
 id button
 id button2
+=======
+id button2
+id button4
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -110,6 +123,8 @@ id container
 id customBarcodeView
 id cvMypage
 id cvWeather
+id divSupportPost1
+id divSupportPost2
 id divider
 id divider10
 id divider11
@@ -118,6 +133,10 @@ id divider13
 id divider14
 id divider15
 id divider16
+<<<<<<< HEAD
+=======
+id divider17
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id divider2
 id divider3
 id divider4
@@ -126,7 +145,6 @@ id divider6
 id divider7
 id divider8
 id divider9
-id editTextTextPersonName
 id edtComment
 id edtJoinAddr
 id edtJoinEmail
@@ -140,6 +158,8 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
+id edtNickChange
+id edtSupportComment
 id edtSupportContent
 id edtSupportTitle
 id edtWriteContent
@@ -169,6 +189,8 @@ id guideline15
 id guideline16
 id guideline17
 id guideline2
+id guideline21
+id guideline22
 id guideline3
 id guideline4
 id guideline5
@@ -249,6 +271,11 @@ id textView27
 id textView3
 id textView4
 id textView6
+<<<<<<< HEAD
+=======
+id textView8
+id textView9
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -262,6 +289,7 @@ id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
+id tvDeletingAccount
 id tvIntro
 id tvJoin
 id tvJoinTitle
@@ -328,9 +356,11 @@ layout activity_support_write
 layout activity_terms
 layout activity_usage_history
 layout activity_write
+layout address_card
 layout board_list
 layout comment_list
 layout custom_scanner
+layout email_card
 layout event_list
 layout fragment_commu
 layout fragment_event
@@ -351,6 +381,7 @@ layout serviceinfo_card
 layout slider_card
 layout support_card
 layout support_list
+layout tel_card
 layout terms_card
 layout weather_card
 menu frag_menu
@@ -391,6 +422,10 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+<<<<<<< HEAD
+=======
+string btnSupportComment
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
@@ -415,6 +450,7 @@ string edtLoginPw
 string edtModifyContent
 string edtModifyTitle
 string edtNickHint
+string edtSupportComment
 string edtWriteContent
 string edtWriteTitle
 string eventDash

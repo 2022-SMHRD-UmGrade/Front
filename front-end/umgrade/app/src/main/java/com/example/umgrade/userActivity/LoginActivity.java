@@ -19,8 +19,13 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+<<<<<<< HEAD
 import com.example.umgrade.MainActivity;
 import com.example.umgrade.service.ServiceActivity;
+=======
+import com.example.umgrade.main.MainActivity;
+import com.example.umgrade.sevice.ServiceActivity;
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 import com.example.umgrade.R;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.User;

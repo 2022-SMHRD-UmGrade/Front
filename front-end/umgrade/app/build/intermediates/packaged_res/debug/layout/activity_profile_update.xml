@@ -34,11 +34,11 @@
 
             <TextView
                 android:id="@+id/tvProfileTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="312dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/tvProfileTitle"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="@color/blueColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -67,26 +67,26 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnNickChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/blueColor"
         android:text="@string/btnNickChange"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintEnd_toEndOf="@+id/edtNickChange"
+        app:layout_constraintStart_toStartOf="@+id/edtNickChange"
+        app:layout_constraintTop_toBottomOf="@+id/edtNickChange" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtNickChange"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/edtNickHint"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnNickChange"
         app:layout_constraintEnd_toEndOf="@+id/imgMypageProfile2"
         app:layout_constraintStart_toStartOf="@+id/imgMypageProfile2"
         app:layout_constraintTop_toBottomOf="@+id/imgMypageProfile2" />

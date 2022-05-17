@@ -109,7 +109,6 @@
             android:id="@+id/scrollView4"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,28 +119,91 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/supportPostContent"
+                <View
+                    android:id="@+id/divider17"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/supportPostContent"
-                    android:textColor="#2C2C2C"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/supportPostContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="350dp"
+                        android:padding="16dp"
+                        android:text="@string/supportPostContent"
+                        android:textColor="#2C2C2C"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <View
                     android:id="@+id/divider16"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="20dp"
                     android:background="?android:attr/listDivider" />
 
                 <TextView
                     android:id="@+id/tvSupportPostComment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tvSupportPostComment" />
+                    android:hint="@string/tvSupportPostComment"
+                    android:padding="16dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divSupportPost1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtSupportComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:hint="@string/edtSupportComment"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <Button
+                        android:id="@+id/btnSupportComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#2196F3"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/btnSupportComment"
+                        android:textStyle="bold"
+                        app:cornerRadius="0dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divSupportPost2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
             </LinearLayout>
         </ScrollView>
 

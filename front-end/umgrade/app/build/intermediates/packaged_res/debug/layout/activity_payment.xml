@@ -21,7 +21,11 @@
             android:orientation="horizontal">
 
             <ImageButton
+<<<<<<< HEAD
                 android:id="@+id/btnPre"
+=======
+                android:id="@+id/btnProfilePre"
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -33,11 +37,19 @@
 
             <TextView
                 android:id="@+id/tvPaymentTitle"
+<<<<<<< HEAD
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="결제등록"
                 android:textAlignment="textStart"
+=======
+                android:layout_width="312dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="결제등록"
+                android:textAlignment="center"
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
                 android:textColor="@color/blueColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />

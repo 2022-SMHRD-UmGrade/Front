@@ -22,7 +22,11 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+<<<<<<< HEAD
   public final ImageButton btnPre;
+=======
+  public final ImageButton btnProfilePre;
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 
   @NonNull
   public final View divider8;
@@ -37,10 +41,18 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
   public final TextView tvUsageHistoryTitle;
 
   private ActivityUsageHistoryBinding(@NonNull ConstraintLayout rootView,
+<<<<<<< HEAD
       @NonNull ImageButton btnPre, @NonNull View divider8, @NonNull LinearLayout linearLayout,
       @NonNull LinearLayout linearLayout2, @NonNull TextView tvUsageHistoryTitle) {
     this.rootView = rootView;
     this.btnPre = btnPre;
+=======
+      @NonNull ImageButton btnProfilePre, @NonNull View divider8,
+      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
+      @NonNull TextView tvUsageHistoryTitle) {
+    this.rootView = rootView;
+    this.btnProfilePre = btnProfilePre;
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
@@ -74,9 +86,15 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
       id = R.id.btnPre;
       ImageButton btnPre = ViewBindings.findChildViewById(rootView, id);
       if (btnPre == null) {
+=======
+      id = R.id.btnProfilePre;
+      ImageButton btnProfilePre = ViewBindings.findChildViewById(rootView, id);
+      if (btnProfilePre == null) {
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
         break missingId;
       }
 
@@ -104,7 +122,11 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       return new ActivityUsageHistoryBinding((ConstraintLayout) rootView, btnPre, divider8,
+=======
+      return new ActivityUsageHistoryBinding((ConstraintLayout) rootView, btnProfilePre, divider8,
+>>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
           linearLayout, linearLayout2, tvUsageHistoryTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

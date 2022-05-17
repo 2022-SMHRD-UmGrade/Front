@@ -14,6 +14,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
+import com.example.umgrade.main.MainActivity;
 import com.example.umgrade.main.QrActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.service.ServiceActivity;
@@ -28,20 +29,6 @@ public class MainFragment extends Fragment {
     CardView cvMypage;
     View btnFareLayout;
 
-//    // 메인액티비티 호출
-//    MainActivity mainActivity;
-//    @Override
-//    public void onAttach(@NonNull Context context){
-//        super.onAttach(context);
-//        mainActivity = (MainActivity) getActivity();
-//    }
-//
-//    // 메인액티비티 해제
-//    @Override
-//    public void onDetach(){
-//        super.onDetach();
-//        mainActivity = null;
-//    }
     public static MainFragment newInstance(){
         return new MainFragment();
     }
@@ -56,7 +43,7 @@ public class MainFragment extends Fragment {
         cvMypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((ServiceActivity.MainActivity)getActivity()).changeMypage(newInstance());
+                ((MainActivity)getActivity()).changeMypage(newInstance());
             }
         });
 
