@@ -4,7 +4,6 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,41 +36,67 @@ public final class ActivityServiceBinding implements ViewBinding {
   public final Guideline guideline19;
 
   @NonNull
-  public final ImageView imageView2;
+  public final TextView tvService1;
 
   @NonNull
-  public final TextView tvService;
+  public final TextView tvService2;
 
   @NonNull
-  public final TextView tvServiceOne;
+  public final TextView tvService3;
+
+  @NonNull
+  public final TextView tvService4;
+
+  @NonNull
+  public final TextView tvService5;
+
+  @NonNull
+  public final TextView tvService6;
+
+  @NonNull
+  public final TextView tvService7;
+
+  @NonNull
+  public final TextView tvService8;
 
   @NonNull
   public final TextView tvServiceService;
 
   @NonNull
-  public final TextView tvServiceTitle;
+  public final TextView tvServiceText1;
 
   @NonNull
-  public final TextView tvServiceTwo;
+  public final TextView tvServiceText2;
+
+  @NonNull
+  public final TextView tvServiceTitle;
 
   private ActivityServiceBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout constraintLayout6, @NonNull ConstraintLayout constraintLayout7,
       @NonNull View divider18, @NonNull Guideline guideline18, @NonNull Guideline guideline19,
-      @NonNull ImageView imageView2, @NonNull TextView tvService, @NonNull TextView tvServiceOne,
-      @NonNull TextView tvServiceService, @NonNull TextView tvServiceTitle,
-      @NonNull TextView tvServiceTwo) {
+      @NonNull TextView tvService1, @NonNull TextView tvService2, @NonNull TextView tvService3,
+      @NonNull TextView tvService4, @NonNull TextView tvService5, @NonNull TextView tvService6,
+      @NonNull TextView tvService7, @NonNull TextView tvService8,
+      @NonNull TextView tvServiceService, @NonNull TextView tvServiceText1,
+      @NonNull TextView tvServiceText2, @NonNull TextView tvServiceTitle) {
     this.rootView = rootView;
     this.constraintLayout6 = constraintLayout6;
     this.constraintLayout7 = constraintLayout7;
     this.divider18 = divider18;
     this.guideline18 = guideline18;
     this.guideline19 = guideline19;
-    this.imageView2 = imageView2;
-    this.tvService = tvService;
-    this.tvServiceOne = tvServiceOne;
+    this.tvService1 = tvService1;
+    this.tvService2 = tvService2;
+    this.tvService3 = tvService3;
+    this.tvService4 = tvService4;
+    this.tvService5 = tvService5;
+    this.tvService6 = tvService6;
+    this.tvService7 = tvService7;
+    this.tvService8 = tvService8;
     this.tvServiceService = tvServiceService;
+    this.tvServiceText1 = tvServiceText1;
+    this.tvServiceText2 = tvServiceText2;
     this.tvServiceTitle = tvServiceTitle;
-    this.tvServiceTwo = tvServiceTwo;
   }
 
   @Override
@@ -131,21 +156,51 @@ public final class ActivityServiceBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
+      id = R.id.tvService1;
+      TextView tvService1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService1 == null) {
         break missingId;
       }
 
-      id = R.id.tvService;
-      TextView tvService = ViewBindings.findChildViewById(rootView, id);
-      if (tvService == null) {
+      id = R.id.tvService2;
+      TextView tvService2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService2 == null) {
         break missingId;
       }
 
-      id = R.id.tvServiceOne;
-      TextView tvServiceOne = ViewBindings.findChildViewById(rootView, id);
-      if (tvServiceOne == null) {
+      id = R.id.tvService3;
+      TextView tvService3 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService3 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvService4;
+      TextView tvService4 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService4 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvService5;
+      TextView tvService5 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService5 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvService6;
+      TextView tvService6 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService6 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvService7;
+      TextView tvService7 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService7 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvService8;
+      TextView tvService8 = ViewBindings.findChildViewById(rootView, id);
+      if (tvService8 == null) {
         break missingId;
       }
 
@@ -155,21 +210,28 @@ public final class ActivityServiceBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvServiceText1;
+      TextView tvServiceText1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvServiceText1 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvServiceText2;
+      TextView tvServiceText2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvServiceText2 == null) {
+        break missingId;
+      }
+
       id = R.id.tvServiceTitle;
       TextView tvServiceTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvServiceTitle == null) {
         break missingId;
       }
 
-      id = R.id.tvServiceTwo;
-      TextView tvServiceTwo = ViewBindings.findChildViewById(rootView, id);
-      if (tvServiceTwo == null) {
-        break missingId;
-      }
-
       return new ActivityServiceBinding((ConstraintLayout) rootView, constraintLayout6,
-          constraintLayout7, divider18, guideline18, guideline19, imageView2, tvService,
-          tvServiceOne, tvServiceService, tvServiceTitle, tvServiceTwo);
+          constraintLayout7, divider18, guideline18, guideline19, tvService1, tvService2,
+          tvService3, tvService4, tvService5, tvService6, tvService7, tvService8, tvServiceService,
+          tvServiceText1, tvServiceText2, tvServiceTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

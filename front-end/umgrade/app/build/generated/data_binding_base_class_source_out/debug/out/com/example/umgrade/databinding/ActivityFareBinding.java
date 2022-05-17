@@ -49,6 +49,9 @@ public final class ActivityFareBinding implements ViewBinding {
   public final TextView tvFareService;
 
   @NonNull
+  public final TextView tvFareThree;
+
+  @NonNull
   public final TextView tvFareTitle;
 
   @NonNull
@@ -58,7 +61,8 @@ public final class ActivityFareBinding implements ViewBinding {
       @NonNull ConstraintLayout constraintLayout6, @NonNull ConstraintLayout constraintLayout7,
       @NonNull View divider18, @NonNull Guideline guideline18, @NonNull Guideline guideline19,
       @NonNull ImageView imageView2, @NonNull TextView tvFare, @NonNull TextView tvFareOne,
-      @NonNull TextView tvFareService, @NonNull TextView tvFareTitle, @NonNull TextView tvFareTwo) {
+      @NonNull TextView tvFareService, @NonNull TextView tvFareThree, @NonNull TextView tvFareTitle,
+      @NonNull TextView tvFareTwo) {
     this.rootView = rootView;
     this.constraintLayout6 = constraintLayout6;
     this.constraintLayout7 = constraintLayout7;
@@ -69,6 +73,7 @@ public final class ActivityFareBinding implements ViewBinding {
     this.tvFare = tvFare;
     this.tvFareOne = tvFareOne;
     this.tvFareService = tvFareService;
+    this.tvFareThree = tvFareThree;
     this.tvFareTitle = tvFareTitle;
     this.tvFareTwo = tvFareTwo;
   }
@@ -154,6 +159,12 @@ public final class ActivityFareBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvFareThree;
+      TextView tvFareThree = ViewBindings.findChildViewById(rootView, id);
+      if (tvFareThree == null) {
+        break missingId;
+      }
+
       id = R.id.tvFareTitle;
       TextView tvFareTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvFareTitle == null) {
@@ -168,7 +179,7 @@ public final class ActivityFareBinding implements ViewBinding {
 
       return new ActivityFareBinding((ConstraintLayout) rootView, constraintLayout6,
           constraintLayout7, divider18, guideline18, guideline19, imageView2, tvFare, tvFareOne,
-          tvFareService, tvFareTitle, tvFareTwo);
+          tvFareService, tvFareThree, tvFareTitle, tvFareTwo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
