@@ -54,12 +54,15 @@ public final class ActivitySupportWriteBinding implements ViewBinding {
   @NonNull
   public final TextView tvSupport;
 
+  @NonNull
+  public final TextView tvSupportCount;
+
   private ActivitySupportWriteBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnSupportCancel, @NonNull Button btnSupportSend, @NonNull View divider2,
       @NonNull View divider3, @NonNull EditText edtSupportContent,
       @NonNull EditText edtSupportTitle, @NonNull Guideline guideline4,
       @NonNull LinearLayout linearLayout2, @NonNull ScrollView scrollView3,
-      @NonNull TextView tvSupport) {
+      @NonNull TextView tvSupport, @NonNull TextView tvSupportCount) {
     this.rootView = rootView;
     this.btnSupportCancel = btnSupportCancel;
     this.btnSupportSend = btnSupportSend;
@@ -71,6 +74,7 @@ public final class ActivitySupportWriteBinding implements ViewBinding {
     this.linearLayout2 = linearLayout2;
     this.scrollView3 = scrollView3;
     this.tvSupport = tvSupport;
+    this.tvSupportCount = tvSupportCount;
   }
 
   @Override
@@ -160,9 +164,15 @@ public final class ActivitySupportWriteBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvSupportCount;
+      TextView tvSupportCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvSupportCount == null) {
+        break missingId;
+      }
+
       return new ActivitySupportWriteBinding((ConstraintLayout) rootView, btnSupportCancel,
           btnSupportSend, divider2, divider3, edtSupportContent, edtSupportTitle, guideline4,
-          linearLayout2, scrollView3, tvSupport);
+          linearLayout2, scrollView3, tvSupport, tvSupportCount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

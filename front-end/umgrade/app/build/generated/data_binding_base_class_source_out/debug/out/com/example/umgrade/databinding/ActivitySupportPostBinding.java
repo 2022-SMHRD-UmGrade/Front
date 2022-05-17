@@ -10,11 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,16 +22,7 @@ public final class ActivitySupportPostBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final BottomNavigationView bottomNavigationView;
-
-  @NonNull
-  public final Button btnPostComment;
-
-  @NonNull
-  public final Button btnPostDelete;
-
-  @NonNull
-  public final Button btnPostModify;
+  public final Button btnSupportDelete;
 
   @NonNull
   public final ConstraintLayout constraintLayout;
@@ -42,55 +31,52 @@ public final class ActivitySupportPostBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout3;
 
   @NonNull
-  public final Guideline postBottom;
+  public final View divider16;
 
   @NonNull
   public final ScrollView scrollView4;
 
   @NonNull
-  public final TextView tvPostCnt;
+  public final TextView supportPostCnt;
 
   @NonNull
-  public final TextView tvPostContent;
+  public final TextView supportPostContent;
 
   @NonNull
-  public final TextView tvPostId;
+  public final TextView supportPostSeq;
 
   @NonNull
-  public final TextView tvPostNick;
+  public final TextView supportPostTime;
 
   @NonNull
-  public final TextView tvPostPl1;
+  public final TextView supportPostTitle;
 
   @NonNull
-  public final TextView tvPostPl2;
+  public final TextView tvSupportPostComment;
 
   @NonNull
-  public final TextView tvPostTime;
+  public final TextView tvSupportSet;
 
   private ActivitySupportPostBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull Button btnPostComment,
-      @NonNull Button btnPostDelete, @NonNull Button btnPostModify,
-      @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout3,
-      @NonNull Guideline postBottom, @NonNull ScrollView scrollView4, @NonNull TextView tvPostCnt,
-      @NonNull TextView tvPostContent, @NonNull TextView tvPostId, @NonNull TextView tvPostNick,
-      @NonNull TextView tvPostPl1, @NonNull TextView tvPostPl2, @NonNull TextView tvPostTime) {
+      @NonNull Button btnSupportDelete, @NonNull ConstraintLayout constraintLayout,
+      @NonNull ConstraintLayout constraintLayout3, @NonNull View divider16,
+      @NonNull ScrollView scrollView4, @NonNull TextView supportPostCnt,
+      @NonNull TextView supportPostContent, @NonNull TextView supportPostSeq,
+      @NonNull TextView supportPostTime, @NonNull TextView supportPostTitle,
+      @NonNull TextView tvSupportPostComment, @NonNull TextView tvSupportSet) {
     this.rootView = rootView;
-    this.bottomNavigationView = bottomNavigationView;
-    this.btnPostComment = btnPostComment;
-    this.btnPostDelete = btnPostDelete;
-    this.btnPostModify = btnPostModify;
+    this.btnSupportDelete = btnSupportDelete;
     this.constraintLayout = constraintLayout;
     this.constraintLayout3 = constraintLayout3;
-    this.postBottom = postBottom;
+    this.divider16 = divider16;
     this.scrollView4 = scrollView4;
-    this.tvPostCnt = tvPostCnt;
-    this.tvPostContent = tvPostContent;
-    this.tvPostId = tvPostId;
-    this.tvPostNick = tvPostNick;
-    this.tvPostPl1 = tvPostPl1;
-    this.tvPostPl2 = tvPostPl2;
-    this.tvPostTime = tvPostTime;
+    this.supportPostCnt = supportPostCnt;
+    this.supportPostContent = supportPostContent;
+    this.supportPostSeq = supportPostSeq;
+    this.supportPostTime = supportPostTime;
+    this.supportPostTitle = supportPostTitle;
+    this.tvSupportPostComment = tvSupportPostComment;
+    this.tvSupportSet = tvSupportSet;
   }
 
   @Override
@@ -120,27 +106,9 @@ public final class ActivitySupportPostBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bottomNavigationView;
-      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
-      if (bottomNavigationView == null) {
-        break missingId;
-      }
-
-      id = R.id.btnPostComment;
-      Button btnPostComment = ViewBindings.findChildViewById(rootView, id);
-      if (btnPostComment == null) {
-        break missingId;
-      }
-
-      id = R.id.btnPostDelete;
-      Button btnPostDelete = ViewBindings.findChildViewById(rootView, id);
-      if (btnPostDelete == null) {
-        break missingId;
-      }
-
-      id = R.id.btnPostModify;
-      Button btnPostModify = ViewBindings.findChildViewById(rootView, id);
-      if (btnPostModify == null) {
+      id = R.id.btnSupportDelete;
+      Button btnSupportDelete = ViewBindings.findChildViewById(rootView, id);
+      if (btnSupportDelete == null) {
         break missingId;
       }
 
@@ -156,9 +124,9 @@ public final class ActivitySupportPostBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.postBottom;
-      Guideline postBottom = ViewBindings.findChildViewById(rootView, id);
-      if (postBottom == null) {
+      id = R.id.divider16;
+      View divider16 = ViewBindings.findChildViewById(rootView, id);
+      if (divider16 == null) {
         break missingId;
       }
 
@@ -168,52 +136,52 @@ public final class ActivitySupportPostBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvPostCnt;
-      TextView tvPostCnt = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostCnt == null) {
+      id = R.id.supportPostCnt;
+      TextView supportPostCnt = ViewBindings.findChildViewById(rootView, id);
+      if (supportPostCnt == null) {
         break missingId;
       }
 
-      id = R.id.tvPostContent;
-      TextView tvPostContent = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostContent == null) {
+      id = R.id.supportPostContent;
+      TextView supportPostContent = ViewBindings.findChildViewById(rootView, id);
+      if (supportPostContent == null) {
         break missingId;
       }
 
-      id = R.id.tvPostId;
-      TextView tvPostId = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostId == null) {
+      id = R.id.supportPostSeq;
+      TextView supportPostSeq = ViewBindings.findChildViewById(rootView, id);
+      if (supportPostSeq == null) {
         break missingId;
       }
 
-      id = R.id.tvPostNick;
-      TextView tvPostNick = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostNick == null) {
+      id = R.id.supportPostTime;
+      TextView supportPostTime = ViewBindings.findChildViewById(rootView, id);
+      if (supportPostTime == null) {
         break missingId;
       }
 
-      id = R.id.tvPostPl1;
-      TextView tvPostPl1 = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostPl1 == null) {
+      id = R.id.supportPostTitle;
+      TextView supportPostTitle = ViewBindings.findChildViewById(rootView, id);
+      if (supportPostTitle == null) {
         break missingId;
       }
 
-      id = R.id.tvPostPl2;
-      TextView tvPostPl2 = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostPl2 == null) {
+      id = R.id.tvSupportPostComment;
+      TextView tvSupportPostComment = ViewBindings.findChildViewById(rootView, id);
+      if (tvSupportPostComment == null) {
         break missingId;
       }
 
-      id = R.id.tvPostTime;
-      TextView tvPostTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvPostTime == null) {
+      id = R.id.tvSupportSet;
+      TextView tvSupportSet = ViewBindings.findChildViewById(rootView, id);
+      if (tvSupportSet == null) {
         break missingId;
       }
 
-      return new ActivitySupportPostBinding((ConstraintLayout) rootView, bottomNavigationView,
-          btnPostComment, btnPostDelete, btnPostModify, constraintLayout, constraintLayout3,
-          postBottom, scrollView4, tvPostCnt, tvPostContent, tvPostId, tvPostNick, tvPostPl1,
-          tvPostPl2, tvPostTime);
+      return new ActivitySupportPostBinding((ConstraintLayout) rootView, btnSupportDelete,
+          constraintLayout, constraintLayout3, divider16, scrollView4, supportPostCnt,
+          supportPostContent, supportPostSeq, supportPostTime, supportPostTitle,
+          tvSupportPostComment, tvSupportSet);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

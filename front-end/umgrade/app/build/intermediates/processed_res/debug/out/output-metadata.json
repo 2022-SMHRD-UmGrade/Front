@@ -8,7 +8,6 @@
   "variantName": "debug",
   "elements": [
     {
-<<<<<<< HEAD
       "type": "ONE_OF_MANY",
       "filters": [
         {
@@ -20,14 +19,6 @@
       "versionCode": 1,
       "versionName": "1.0",
       "outputFile": "resources-x86_64Debug.ap_"
-=======
-      "type": "UNIVERSAL",
-      "filters": [],
-      "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0",
-      "outputFile": "resources-universalDebug.ap_"
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     }
   ],
   "elementType": "File"

@@ -6,6 +6,7 @@
     <color name="colorPrimary">#1F5BF3</color>
     <color name="colorPrimaryDark">#0947E8</color>
     <color name="dialogColor">#68000000</color>
+    <color name="lightBlueColor">#FFDDF0FF</color>
     <color name="loginBkColor">#f0f0f0</color>
     <color name="primaryTextColor">#00a5ff</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -58,10 +59,8 @@
     <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
-<<<<<<< HEAD
-=======
+    <string name="btnSupportDelete">삭제</string>
     <string name="btnSupportWrite">문의하기</string>
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     <string name="btnTermsClose">닫기</string>
     <string name="btnUsageHistory">이용내역</string>
     <string name="btnWriteCancel">취소</string>
@@ -110,6 +109,10 @@
     <string name="noticeSeq">00</string>
     <string name="noticeTime">2022.05.13 15:10</string>
     <string name="noticeTitle">공지사항 제목</string>
+    <string name="supportPostContent">본문 내용</string>
+    <string name="supportPostSeq">00</string>
+    <string name="supportPostTime">2022. 04. 35 16:42</string>
+    <string name="supportPostTitle">문의글 제목</string>
     <string name="supportSeq">00</string>
     <string name="supportTime">2022. 04. 35 16:42</string>
     <string name="supportTitle">문의글 제목</string>
@@ -154,6 +157,9 @@
     <string name="tvServiceInfo">서비스 이용약관</string>
     <string name="tvSet">처리중</string>
     <string name="tvSupport">문의 작성하기</string>
+    <string name="tvSupportCount">0/1000</string>
+    <string name="tvSupportPostComment">답변을 기다리고 있어요</string>
+    <string name="tvSupportSet">처리중</string>
     <string name="tvSupportTitle">고객센터</string>
     <string name="tvTerms">위치기반서비스 이용약관</string>
     <string name="tvUserId">UserID</string>
