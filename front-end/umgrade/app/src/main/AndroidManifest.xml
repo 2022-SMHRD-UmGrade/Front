@@ -34,12 +34,12 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-<<<<<<< HEAD
             android:name=".SupportPostActivity"
             android:exported="false" />
         <activity
             android:name=".SupportWriteActivity"
-=======
+            android:exported="false" />
+        <activity
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
@@ -50,7 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".ProfileUpdateActivity"
->>>>>>> ff4d167322a0792d2a428145d734aaf86df6f73b
             android:exported="false" />
         <activity
             android:name=".PrivacyPopupActivity"
