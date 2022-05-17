@@ -83,26 +83,26 @@
             android:textStyle="bold"
             app:cornerRadius="7dp" />
 
-        <include
-            layout="@layout/email_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
+<!--        <include-->
+<!--            layout="@layout/email_card"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <include
-            layout="@layout/tel_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
+<!--        <include-->
+<!--            layout="@layout/tel_card"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <include
-            layout="@layout/address_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
+<!--        <include-->
+<!--            layout="@layout/address_card"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_weight="1" />-->
     </LinearLayout>
 
     <TextView

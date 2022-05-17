@@ -23,6 +23,9 @@ public final class FragmentMypageBinding implements ViewBinding {
   public final Button btnAccountSetting;
 
   @NonNull
+  public final Button btnAlarmSetting;
+
+  @NonNull
   public final Button btnLogout;
 
   @NonNull
@@ -32,10 +35,11 @@ public final class FragmentMypageBinding implements ViewBinding {
   public final Button btnUsageHistory;
 
   private FragmentMypageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnAccountSetting, @NonNull Button btnLogout, @NonNull Button btnPayment,
-      @NonNull Button btnUsageHistory) {
+      @NonNull Button btnAccountSetting, @NonNull Button btnAlarmSetting, @NonNull Button btnLogout,
+      @NonNull Button btnPayment, @NonNull Button btnUsageHistory) {
     this.rootView = rootView;
     this.btnAccountSetting = btnAccountSetting;
+    this.btnAlarmSetting = btnAlarmSetting;
     this.btnLogout = btnLogout;
     this.btnPayment = btnPayment;
     this.btnUsageHistory = btnUsageHistory;
@@ -74,6 +78,12 @@ public final class FragmentMypageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnAlarmSetting;
+      Button btnAlarmSetting = ViewBindings.findChildViewById(rootView, id);
+      if (btnAlarmSetting == null) {
+        break missingId;
+      }
+
       id = R.id.btnLogout;
       Button btnLogout = ViewBindings.findChildViewById(rootView, id);
       if (btnLogout == null) {
@@ -92,8 +102,8 @@ public final class FragmentMypageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMypageBinding((ConstraintLayout) rootView, btnAccountSetting, btnLogout,
-          btnPayment, btnUsageHistory);
+      return new FragmentMypageBinding((ConstraintLayout) rootView, btnAccountSetting,
+          btnAlarmSetting, btnLogout, btnPayment, btnUsageHistory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

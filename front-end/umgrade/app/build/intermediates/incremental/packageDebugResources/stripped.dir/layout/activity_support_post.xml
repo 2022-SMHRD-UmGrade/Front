@@ -119,7 +119,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-<<<<<<< HEAD
                 <View
                     android:id="@+id/divider17"
                     android:layout_width="match_parent"
@@ -145,33 +144,17 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="1.0" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-                <TextView
-                    android:id="@+id/supportPostContent"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/supportPostContent"
-                    android:textColor="#2C2C2C"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 
                 <View
                     android:id="@+id/divider16"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-<<<<<<< HEAD
-=======
-                    android:layout_marginBottom="20dp"
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
                     android:background="?android:attr/listDivider" />
 
                 <TextView
                     android:id="@+id/tvSupportPostComment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:hint="@string/tvSupportPostComment"
                     android:padding="16dp"
                     android:textColor="#000000"
@@ -221,9 +204,6 @@
                     android:layout_weight="1"
                     android:background="?android:attr/listDivider" />
 
-=======
-                    android:text="@string/tvSupportPostComment" />
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
             </LinearLayout>
         </ScrollView>
 

@@ -41,6 +41,14 @@ public class SupportPostActivity extends AppCompatActivity {
         divSupportPost1 = findViewById(R.id.divSupportPost1); // 구분선
         divSupportPost2 = findViewById(R.id.divSupportPost2);
 
+
+        btnSupportDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 게시물 삭제
+            }
+        });
+
         // 관리자가 접속했을 때만 답변 작성란/전송 버튼 보이게
         String managerId = "manager"; // 관리자 아이디(임시)
         String userId = "manager"; // 사용자 아이디(임시)

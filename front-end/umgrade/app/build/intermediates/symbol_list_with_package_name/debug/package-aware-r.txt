@@ -2508,6 +2508,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable alarm16
 drawable arroaright_resize
 drawable arrowleft
 drawable arrowright
@@ -2733,6 +2734,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAccountSetting
+id btnAlarmSetting
 id btnCmWrite
 id btnComment
 id btnCommuMenu
@@ -2766,10 +2768,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
-<<<<<<< HEAD
 id btnSupportComment
-=======
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -2777,13 +2776,8 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
-<<<<<<< HEAD
-id button
-id button2
-=======
 id button2
 id button4
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2870,10 +2864,7 @@ id divider13
 id divider14
 id divider15
 id divider16
-<<<<<<< HEAD
 id divider17
-=======
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id divider2
 id divider3
 id divider4
@@ -2909,11 +2900,8 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
-<<<<<<< HEAD
-id edtSupportComment
-=======
 id edtNickChange
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
+id edtSupportComment
 id edtSupportContent
 id edtSupportTitle
 id edtWriteContent
@@ -3719,10 +3707,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
-<<<<<<< HEAD
 string btnSupportComment
-=======
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose

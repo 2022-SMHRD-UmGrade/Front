@@ -53,11 +53,7 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
-<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/x86_64/AndroidManifest.xml
             android:name="com.example.umgrade.main.MainActivity"
-=======
-            android:name="com.example.umgrade.sevice.SupportPostActivity"
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/universal/AndroidManifest.xml
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.sevice.SupportWriteActivity"
@@ -129,7 +125,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.sevice.ServiceActivity"
-<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/x86_64/AndroidManifest.xml
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.userActivity.LoginActivity"
@@ -139,11 +134,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.sevice.SupportPostActivity"
-=======
-            android:exported="false" />
-        <activity
-            android:name="com.example.umgrade.userActivity.LoginActivity"
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f:front-end/umgrade/app/build/intermediates/packaged_manifests/debug/universal/AndroidManifest.xml
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

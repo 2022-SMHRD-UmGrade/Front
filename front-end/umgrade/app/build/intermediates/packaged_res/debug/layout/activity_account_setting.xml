@@ -34,19 +34,11 @@
 
             <TextView
                 android:id="@+id/tvAccountSetting"
-<<<<<<< HEAD
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="계정설정"
-                android:textAlignment="textStart"
-=======
                 android:layout_width="312dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="계정설정"
                 android:textAlignment="center"
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
                 android:textColor="@color/blueColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -87,8 +79,7 @@
             android:text="비밀번호 변경"
             android:textAlignment="textStart"
             android:textColor="@color/blueColor"
-<<<<<<< HEAD
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:cornerRadius="7dp" />
 
@@ -113,32 +104,6 @@
 <!--            android:layout_marginTop="15dp"-->
 <!--            android:layout_weight="1" />-->
     </LinearLayout>
-=======
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:cornerRadius="7dp" />
-
-        <include
-            layout="@layout/email_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
-
-        <include
-            layout="@layout/tel_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
-
-        <include
-            layout="@layout/address_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
-    </LinearLayout>
 
     <TextView
         android:id="@+id/tvDeletingAccount"
@@ -152,5 +117,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.974" />
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 </androidx.constraintlayout.widget.ConstraintLayout>

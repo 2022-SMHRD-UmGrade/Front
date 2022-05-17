@@ -22,11 +22,7 @@ public final class ActivityPaymentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-<<<<<<< HEAD
-  public final ImageButton btnPre;
-=======
   public final ImageButton btnProfilePre;
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 
   @NonNull
   public final View divider8;
@@ -40,20 +36,12 @@ public final class ActivityPaymentBinding implements ViewBinding {
   @NonNull
   public final TextView tvPaymentTitle;
 
-<<<<<<< HEAD
-  private ActivityPaymentBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton btnPre,
-      @NonNull View divider8, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout2, @NonNull TextView tvPaymentTitle) {
-    this.rootView = rootView;
-    this.btnPre = btnPre;
-=======
   private ActivityPaymentBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton btnProfilePre, @NonNull View divider8,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
       @NonNull TextView tvPaymentTitle) {
     this.rootView = rootView;
     this.btnProfilePre = btnProfilePre;
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
@@ -87,15 +75,9 @@ public final class ActivityPaymentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-<<<<<<< HEAD
-      id = R.id.btnPre;
-      ImageButton btnPre = ViewBindings.findChildViewById(rootView, id);
-      if (btnPre == null) {
-=======
       id = R.id.btnProfilePre;
       ImageButton btnProfilePre = ViewBindings.findChildViewById(rootView, id);
       if (btnProfilePre == null) {
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
         break missingId;
       }
 
@@ -123,13 +105,8 @@ public final class ActivityPaymentBinding implements ViewBinding {
         break missingId;
       }
 
-<<<<<<< HEAD
-      return new ActivityPaymentBinding((ConstraintLayout) rootView, btnPre, divider8, linearLayout,
-          linearLayout2, tvPaymentTitle);
-=======
       return new ActivityPaymentBinding((ConstraintLayout) rootView, btnProfilePre, divider8,
           linearLayout, linearLayout2, tvPaymentTitle);
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -24,6 +24,7 @@ dimen loginCardRadius
 dimen loginViewsMargin
 dimen newsMoreTextSize
 dimen signup_text_margin_top
+drawable alarm16
 drawable arroaright_resize
 drawable arrowleft
 drawable arrowright
@@ -57,6 +58,7 @@ id boardTitle
 id bottomNav
 id bottomNavigationView
 id btnAccountSetting
+id btnAlarmSetting
 id btnCmWrite
 id btnComment
 id btnCommuMenu
@@ -90,10 +92,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
-<<<<<<< HEAD
 id btnSupportComment
-=======
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -101,13 +100,8 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
-<<<<<<< HEAD
-id button
-id button2
-=======
 id button2
 id button4
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -131,10 +125,7 @@ id divider13
 id divider14
 id divider15
 id divider16
-<<<<<<< HEAD
 id divider17
-=======
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id divider2
 id divider3
 id divider4
@@ -156,11 +147,8 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
-<<<<<<< HEAD
-id edtSupportComment
-=======
 id edtNickChange
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
+id edtSupportComment
 id edtSupportContent
 id edtSupportTitle
 id edtWriteContent
@@ -272,11 +260,8 @@ id textView27
 id textView3
 id textView4
 id textView6
-<<<<<<< HEAD
-=======
 id textView8
 id textView9
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -423,10 +408,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
-<<<<<<< HEAD
 string btnSupportComment
-=======
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
