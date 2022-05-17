@@ -282,13 +282,23 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 	tools:replace
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:74:13-46
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:65:13-39
+activity#com.example.umgrade.community.CommentActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:69:9-71:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:71:13-39
 activity#com.example.umgrade.CommentActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:75:9-77:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:77:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:70:13-54
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:76:13-44
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 activity#com.example.umgrade.FareActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:78:9-80:40
 	android:exported
@@ -312,49 +322,95 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:89:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:82:13-42
+activity#com.example.umgrade.notice.EventPostActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:84:9-86:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:88:13-41
 activity#com.example.umgrade.EventPostActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:90:9-92:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:92:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:85:13-53
+activity#com.example.umgrade.notice.NoticePostActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:87:9-89:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:91:13-46
 activity#com.example.umgrade.NoticePostActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:93:9-95:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:95:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:88:13-54
+activity#com.example.umgrade.notice.NoticeActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:90:9-92:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:94:13-47
 activity#com.example.umgrade.NoticeActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:96:9-98:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:98:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:91:13-50
+activity#com.example.umgrade.userActivity.JoinActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:93:9-95:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:97:13-43
 activity#com.example.umgrade.LoginActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:99:9-101:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:101:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:94:13-54
+activity#com.example.umgrade.community.PostActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:96:9-98:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:100:13-42
 activity#com.example.umgrade.PostActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:102:9-104:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:104:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:97:13-51
+activity#com.example.umgrade.community.ModifyActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:99:9-101:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:103:13-41
 activity#com.example.umgrade.ModifyActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:105:9-107:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:107:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:100:13-53
+activity#com.example.umgrade.community.WriteActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:102:9-104:40
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:106:13-43
 activity#com.example.umgrade.WriteActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:108:9-110:40
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:110:13-37
 	android:name
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:103:13-52
+=======
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:109:13-42
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 activity#com.example.umgrade.ServiceActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:111:9-113:40
 	android:exported
@@ -366,13 +422,32 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:116:13-37
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:115:13-42
 activity#com.example.umgrade.MainActivity
+=======
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:109:13-41
+activity#com.example.umgrade.userActivity.LoginActivity
+ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:111:9-119:20
+=======
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:115:13-41
+activity#com.example.umgrade.IntroActivity
+>>>>>>> 38207b322895c3c775fc9ab28701e4b22e60be48
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:117:9-125:20
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:119:13-36
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:118:13-41
+=======
+<<<<<<< HEAD
+		ADDED from C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:112:13-55
+=======
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:118:13-42
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
+>>>>>>> 38207b322895c3c775fc9ab28701e4b22e60be48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:120:13-124:29
 action#android.intent.action.MAIN

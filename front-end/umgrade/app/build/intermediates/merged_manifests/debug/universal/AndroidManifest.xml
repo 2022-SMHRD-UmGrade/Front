@@ -91,7 +91,7 @@
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name="com.example.umgrade.CommentActivity"
+            android:name="com.example.umgrade.community.CommentActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.FareActivity"
@@ -106,25 +106,25 @@
             android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.EventPostActivity"
+            android:name="com.example.umgrade.notice.EventPostActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.NoticePostActivity"
+            android:name="com.example.umgrade.notice.NoticePostActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.NoticeActivity"
+            android:name="com.example.umgrade.notice.NoticeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.LoginActivity"
+            android:name="com.example.umgrade.userActivity.JoinActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.PostActivity"
+            android:name="com.example.umgrade.community.PostActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.ModifyActivity"
+            android:name="com.example.umgrade.community.ModifyActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.WriteActivity"
+            android:name="com.example.umgrade.community.WriteActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.ServiceActivity"
@@ -133,7 +133,15 @@
             android:name="com.example.umgrade.IntroActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name="com.example.umgrade.MainActivity"
+=======
+<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/merged_manifests/debug/x86_64/AndroidManifest.xml
+            android:name="com.example.umgrade.userActivity.LoginActivity"
+=======
+            android:name="com.example.umgrade.IntroActivity"
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9:front-end/umgrade/app/build/intermediates/merged_manifests/debug/universal/AndroidManifest.xml
+>>>>>>> 38207b322895c3c775fc9ab28701e4b22e60be48
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

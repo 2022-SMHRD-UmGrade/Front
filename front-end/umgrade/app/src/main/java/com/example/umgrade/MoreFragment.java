@@ -12,6 +12,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.umgrade.main.MapActivity;
+import com.example.umgrade.main.QrActivity;
+import com.example.umgrade.notice.NoticeActivity;
+import com.example.umgrade.sevice.ServiceActivity;
+import com.example.umgrade.sevice.SupportActivity;
 
 public class MoreFragment extends Fragment {
 

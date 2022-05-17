@@ -3,23 +3,21 @@ package com.example.umgrade;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.Activity;
 import android.app.Service;
-import android.content.ClipData;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.umgrade.communityFrag.CommuFragment;
+import com.example.umgrade.mainFrag.MainFragment;
+import com.example.umgrade.userActivity.MypageFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -33,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     MainFragment frag_main;
     CommuFragment frag_commu;
     MypageFragment frag_mypage;
-    MoreFragment frag_more;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +42,8 @@ public class MainActivity extends AppCompatActivity {
         frag_main = new MainFragment();
         frag_commu = new CommuFragment();
         frag_mypage = new MypageFragment();
-        frag_more = new MoreFragment();
 
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.container, frag_main).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
 
         bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -61,23 +56,11 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_commu).commit();
                 } else if (itemId == R.id.fragMyPage){
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
-                } else if (itemId == R.id.fragMore){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_more).commit();
                 }
 
                 return true;
             }
         }); // bottomNav end
-
-
     }
-
-    // 프래그먼트에서 사용하는 메소드
-   public void changeMypage(MainFragment mainFragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, frag_mypage).commit();
-   }
-
 
 }

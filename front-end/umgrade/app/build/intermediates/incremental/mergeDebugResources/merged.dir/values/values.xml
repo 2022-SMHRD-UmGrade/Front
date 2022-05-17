@@ -1681,9 +1681,15 @@
     <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
+<<<<<<< HEAD
     <string name="btnSupportComment">전송</string>
     <string name="btnSupportDelete">삭제</string>
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 38207b322895c3c775fc9ab28701e4b22e60be48
     <string name="btnSupportWrite">문의하기</string>
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     <string name="btnTermsClose">닫기</string>
     <string name="btnUsageHistory">이용내역</string>
     <string name="btnWriteCancel">취소</string>

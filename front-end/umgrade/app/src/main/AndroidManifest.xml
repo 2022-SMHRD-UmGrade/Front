@@ -34,10 +34,10 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".SupportPostActivity"
+            android:name=".sevice.SupportPostActivity"
             android:exported="false" />
         <activity
-            android:name=".SupportWriteActivity"
+            android:name=".sevice.SupportWriteActivity"
             android:exported="false" />
         <activity
             android:name=".AccountSettingActivity"
@@ -56,7 +56,7 @@
             android:exported="false"
             android:theme="@style/DialogTheme" />
         <activity
-            android:name=".ServiceInfoPopupActivity"
+            android:name=".sevice.ServiceInfoPopupActivity"
             android:exported="false"
             android:theme="@style/DialogTheme" />
         <activity
@@ -68,47 +68,48 @@
             android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
 
         <activity
-            android:name=".QrActivity"
+            android:name=".main.QrActivity"
             android:exported="false"
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
         <activity
-            android:name=".CommentActivity"
+            android:name=".community.CommentActivity"
             android:exported="false" />
         <activity
             android:name=".FareActivity"
             android:exported="false" />
         <activity
-            android:name=".SupportActivity"
+            android:name=".sevice.SupportActivity"
             android:exported="false" />
         <activity
-            android:name=".MapActivity"
+            android:name=".main.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".JoinActivity"
+            android:name=".notice.EventPostActivity"
             android:exported="false" />
         <activity
-            android:name=".EventPostActivity"
+            android:name=".notice.NoticePostActivity"
             android:exported="false" />
         <activity
-            android:name=".NoticePostActivity"
+            android:name=".notice.NoticeActivity"
             android:exported="false" />
         <activity
-            android:name=".NoticeActivity"
+            android:name=".userActivity.JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".community.PostActivity"
             android:exported="false" />
         <activity
-            android:name=".PostActivity"
+            android:name=".community.ModifyActivity"
             android:exported="false" />
         <activity
-            android:name=".ModifyActivity"
+            android:name=".community.WriteActivity"
             android:exported="false" />
         <activity
-            android:name=".WriteActivity"
+            android:name=".sevice.ServiceActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".ServiceActivity"
             android:exported="false" />
         <activity
@@ -116,6 +117,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+=======
+            android:name=".userActivity.LoginActivity"
+>>>>>>> 38207b322895c3c775fc9ab28701e4b22e60be48
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
