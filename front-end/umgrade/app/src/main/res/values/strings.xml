@@ -173,6 +173,7 @@
 
     <!-- activity_support_write.xml-->
     <string name="tvSupport">문의 작성하기</string>
+    <string name="tvSupportCount">0/1000</string>
 
     <!-- activity_support.xml-->
     <string name="tvSupportTitle">고객센터</string>

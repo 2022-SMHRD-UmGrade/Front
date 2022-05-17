@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
@@ -14,6 +15,7 @@ public class SupportWriteActivity extends AppCompatActivity {
 
     Button btnSupportCancel, btnSupportSend;
     EditText edtSupportTitle, edtSupportContent;
+    TextView tvSupportCount;
 
     RequestQueue queue;
     StringRequest request;
@@ -27,6 +29,7 @@ public class SupportWriteActivity extends AppCompatActivity {
         btnSupportSend = findViewById(R.id.btnSupportSend);
         edtSupportTitle = findViewById(R.id.edtSupportTitle);
         edtSupportContent = findViewById(R.id.edtSupportContent);
+        tvSupportCount = findViewById(R.id.tvSupportCount); // 글자 수 카운트
 
         // 취소 버튼 누르면 이전 화면으로
         btnSupportCancel.setOnClickListener(new View.OnClickListener() {
