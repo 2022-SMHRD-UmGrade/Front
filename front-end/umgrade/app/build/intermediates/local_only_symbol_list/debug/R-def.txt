@@ -77,18 +77,23 @@ id btnMoreService
 id btnMoreSupport
 id btnMoreTerms
 id btnMoreUserInfo
+id btnNickChange
 id btnNoticeEvent
 id btnPayment
 id btnPostComment
 id btnPostDelete
 id btnPostModify
 id btnPre
+id btnProfilePre
 id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
+<<<<<<< HEAD
 id btnSupportComment
+=======
+>>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -96,8 +101,13 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
+<<<<<<< HEAD
 id button
 id button2
+=======
+id button2
+id button4
+>>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -121,7 +131,10 @@ id divider13
 id divider14
 id divider15
 id divider16
+<<<<<<< HEAD
 id divider17
+=======
+>>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id divider2
 id divider3
 id divider4
@@ -130,7 +143,6 @@ id divider6
 id divider7
 id divider8
 id divider9
-id editTextTextPersonName
 id edtComment
 id edtJoinAddr
 id edtJoinEmail
@@ -144,7 +156,11 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
+<<<<<<< HEAD
 id edtSupportComment
+=======
+id edtNickChange
+>>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id edtSupportContent
 id edtSupportTitle
 id edtWriteContent
@@ -174,6 +190,8 @@ id guideline15
 id guideline16
 id guideline17
 id guideline2
+id guideline21
+id guideline22
 id guideline3
 id guideline4
 id guideline5
@@ -254,6 +272,11 @@ id textView27
 id textView3
 id textView4
 id textView6
+<<<<<<< HEAD
+=======
+id textView8
+id textView9
+>>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -267,6 +290,7 @@ id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
+id tvDeletingAccount
 id tvIntro
 id tvJoin
 id tvJoinTitle
@@ -333,9 +357,11 @@ layout activity_support_write
 layout activity_terms
 layout activity_usage_history
 layout activity_write
+layout address_card
 layout board_list
 layout comment_list
 layout custom_scanner
+layout email_card
 layout event_list
 layout fragment_commu
 layout fragment_event
@@ -356,6 +382,7 @@ layout serviceinfo_card
 layout slider_card
 layout support_card
 layout support_list
+layout tel_card
 layout terms_card
 layout weather_card
 menu frag_menu
@@ -396,7 +423,10 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+<<<<<<< HEAD
 string btnSupportComment
+=======
+>>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
