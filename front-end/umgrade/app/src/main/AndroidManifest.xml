@@ -34,9 +34,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
+<<<<<<< HEAD
 <!--        <activity-->
 <!--            android:name=".PasswordChangeActivity"-->
 <!--            android:exported="false" />-->
+=======
+        <activity
+            android:name=".CardRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:exported="false" />
+>>>>>>> 523e539262a4bc4fc1f2af113f2d92e9301e39ba
         <activity
             android:name=".service.SupportPostActivity"
             android:exported="false" />

@@ -70,7 +70,7 @@
         android:id="@+id/btnNickChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/blueColor"
         android:text="@string/btnNickChange"
         android:textStyle="bold"
@@ -85,9 +85,23 @@
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/edtNickHint"
+        android:maxLength="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnNickChange"
         app:layout_constraintEnd_toEndOf="@+id/imgProfileChange"
         app:layout_constraintStart_toStartOf="@+id/imgProfileChange"
         app:layout_constraintTop_toBottomOf="@+id/imgProfileChange" />
+
+    <TextView
+        android:id="@+id/tvProfileNIckhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/tvProfileNIckhint"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNickChange"
+        app:layout_constraintEnd_toEndOf="@+id/btnNickChange"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtNickChange"
+        app:layout_constraintTop_toBottomOf="@+id/edtNickChange"
+        app:layout_constraintVertical_bias="0.241" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -109,6 +109,8 @@
         android:id="@+id/tvDeletingAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:autoLink="web"
         android:text="@string/tvDeletingAccount"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
