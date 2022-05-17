@@ -22,6 +22,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.umgrade.R;
+import com.example.umgrade.adapter.BoardAdapter;
 import com.example.umgrade.info.BoardInfo;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.Board;
@@ -38,6 +39,8 @@ public class ModifyActivity extends AppCompatActivity {
     Fragment CommuFragment;
 
     EditText edtModifyTitle, edtModifyContent;
+
+    BoardAdapter adapter = new BoardAdapter();
 
     RequestQueue queue;
     StringRequest request;
@@ -66,7 +69,8 @@ public class ModifyActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        int seq = intent.getIntExtra("article_seq", dto.getArticle_seq());
+        int seq = intent.getIntExtra("article_seq", 0);
+        String nick = intent.getStringExtra("article_id");
 
         edtModifyTitle.setText(intent.getStringExtra("article_title"));
         edtModifyContent.setText(intent.getStringExtra("article_content"));
@@ -83,18 +87,21 @@ public class ModifyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getUpdate(seq, edtModifyTitle.getText().toString(), edtModifyContent.getText().toString());
-                replace(CommuFragment);
+                Intent intent = new Intent(getApplicationContext(), PostActivity.class);
+                intent.putExtra("article_seq", seq);
+                adapter.notifyDataSetChanged();
+                startActivity(intent);
+                //replace(CommuFragment);
             }
         });
 
 
     }
-
+    // 게시글 수정하여 전송하는 메소드
     public void getUpdate(int seq, String title, String content) {
-        // 글 전송
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardUpdate.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardUpdate.do";
 
         request = new StringRequest(
                 method,
@@ -126,6 +133,7 @@ public class ModifyActivity extends AppCompatActivity {
                 param.put("article_seq", String.valueOf(seq));
                 param.put("article_title", title);
                 param.put("article_content", content);
+                param.put("article_file", "N");
 
                 return param;
             }

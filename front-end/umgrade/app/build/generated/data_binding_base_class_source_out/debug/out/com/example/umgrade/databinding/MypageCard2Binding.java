@@ -26,6 +26,9 @@ public final class MypageCard2Binding implements ViewBinding {
   public final Button btnProfileUpdate;
 
   @NonNull
+  public final CardView cvMypage2;
+
+  @NonNull
   public final View divider;
 
   @NonNull
@@ -59,7 +62,7 @@ public final class MypageCard2Binding implements ViewBinding {
   public final TextView tvUserId;
 
   private MypageCard2Binding(@NonNull CardView rootView, @NonNull Button btnProfileUpdate,
-      @NonNull View divider, @NonNull Guideline guideline3,
+      @NonNull CardView cvMypage2, @NonNull View divider, @NonNull Guideline guideline3,
       @NonNull CircleImageView imgMypageProfile, @NonNull TextView tvCouponMypageCard,
       @NonNull TextView tvCouponTextMypageCard, @NonNull TextView tvNickMypageCard,
       @NonNull TextView tvPointMypageCard, @NonNull TextView tvPointTextMypageCard,
@@ -67,6 +70,7 @@ public final class MypageCard2Binding implements ViewBinding {
       @NonNull TextView tvUserId) {
     this.rootView = rootView;
     this.btnProfileUpdate = btnProfileUpdate;
+    this.cvMypage2 = cvMypage2;
     this.divider = divider;
     this.guideline3 = guideline3;
     this.imgMypageProfile = imgMypageProfile;
@@ -112,6 +116,8 @@ public final class MypageCard2Binding implements ViewBinding {
       if (btnProfileUpdate == null) {
         break missingId;
       }
+
+      CardView cvMypage2 = (CardView) rootView;
 
       id = R.id.divider;
       View divider = ViewBindings.findChildViewById(rootView, id);
@@ -179,10 +185,10 @@ public final class MypageCard2Binding implements ViewBinding {
         break missingId;
       }
 
-      return new MypageCard2Binding((CardView) rootView, btnProfileUpdate, divider, guideline3,
-          imgMypageProfile, tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard,
-          tvPointMypageCard, tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard,
-          tvUserId);
+      return new MypageCard2Binding((CardView) rootView, btnProfileUpdate, cvMypage2, divider,
+          guideline3, imgMypageProfile, tvCouponMypageCard, tvCouponTextMypageCard,
+          tvNickMypageCard, tvPointMypageCard, tvPointTextMypageCard, tvRatingMypageCard,
+          tvRatingTextMypageCard, tvUserId);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

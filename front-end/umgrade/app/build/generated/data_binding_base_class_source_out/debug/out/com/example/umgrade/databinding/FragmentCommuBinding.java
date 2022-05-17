@@ -7,11 +7,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
@@ -39,14 +39,14 @@ public final class FragmentCommuBinding implements ViewBinding {
   public final LinearLayout linearLayout2;
 
   @NonNull
-  public final ListView lvBoard;
+  public final RecyclerView lvborad;
 
   @NonNull
   public final TextView tvCommuTitle;
 
   private FragmentCommuBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCmWrite,
       @NonNull ImageButton btnCommuMenu, @NonNull View divider8, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout2, @NonNull ListView lvBoard,
+      @NonNull LinearLayout linearLayout2, @NonNull RecyclerView lvborad,
       @NonNull TextView tvCommuTitle) {
     this.rootView = rootView;
     this.btnCmWrite = btnCmWrite;
@@ -54,7 +54,7 @@ public final class FragmentCommuBinding implements ViewBinding {
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
-    this.lvBoard = lvBoard;
+    this.lvborad = lvborad;
     this.tvCommuTitle = tvCommuTitle;
   }
 
@@ -115,9 +115,9 @@ public final class FragmentCommuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lvBoard;
-      ListView lvBoard = ViewBindings.findChildViewById(rootView, id);
-      if (lvBoard == null) {
+      id = R.id.lvborad;
+      RecyclerView lvborad = ViewBindings.findChildViewById(rootView, id);
+      if (lvborad == null) {
         break missingId;
       }
 
@@ -128,7 +128,7 @@ public final class FragmentCommuBinding implements ViewBinding {
       }
 
       return new FragmentCommuBinding((ConstraintLayout) rootView, btnCmWrite, btnCommuMenu,
-          divider8, linearLayout, linearLayout2, lvBoard, tvCommuTitle);
+          divider8, linearLayout, linearLayout2, lvborad, tvCommuTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

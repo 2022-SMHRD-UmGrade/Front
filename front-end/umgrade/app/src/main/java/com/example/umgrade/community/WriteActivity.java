@@ -50,6 +50,9 @@ public class WriteActivity extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(WriteActivity.this);
 
+        //게시글 작성 메서드 불러오기
+        writeContent();
+
         // 취소 버튼 누르면 이전 화면으로
         btnWriteCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +61,11 @@ public class WriteActivity extends AppCompatActivity {
             }
         });
 
-        // 작성 글 전송
+
+    }
+    //게시글 작성 메서드
+    public void writeContent() {
+
         btnWriteSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,7 +73,7 @@ public class WriteActivity extends AppCompatActivity {
                 vo = UserInfo.info;
 
                 int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardInsert.do";
+                String server_url = "http://192.168.0.3:8081/myapp/BoardInsert.do";
 
                 request = new StringRequest(
                         method,

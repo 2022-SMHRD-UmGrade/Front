@@ -23,10 +23,10 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton btnPre;
+  public final ImageButton btnAccountSettingPre;
 
   @NonNull
-  public final Button button2;
+  public final Button btnPasswordChange;
 
   @NonNull
   public final View divider8;
@@ -38,28 +38,28 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
   public final LinearLayout linearLayout2;
 
   @NonNull
+  public final TextView tvAccountID;
+
+  @NonNull
   public final TextView tvAccountSetting;
 
   @NonNull
   public final TextView tvDeletingAccount;
 
-  @NonNull
-  public final TextView tvUserID;
-
   private ActivityAccountSettingBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton btnPre, @NonNull Button button2, @NonNull View divider8,
-      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
-      @NonNull TextView tvAccountSetting, @NonNull TextView tvDeletingAccount,
-      @NonNull TextView tvUserID) {
+      @NonNull ImageButton btnAccountSettingPre, @NonNull Button btnPasswordChange,
+      @NonNull View divider8, @NonNull LinearLayout linearLayout,
+      @NonNull LinearLayout linearLayout2, @NonNull TextView tvAccountID,
+      @NonNull TextView tvAccountSetting, @NonNull TextView tvDeletingAccount) {
     this.rootView = rootView;
-    this.btnPre = btnPre;
-    this.button2 = button2;
+    this.btnAccountSettingPre = btnAccountSettingPre;
+    this.btnPasswordChange = btnPasswordChange;
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
+    this.tvAccountID = tvAccountID;
     this.tvAccountSetting = tvAccountSetting;
     this.tvDeletingAccount = tvDeletingAccount;
-    this.tvUserID = tvUserID;
   }
 
   @Override
@@ -89,15 +89,15 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnPre;
-      ImageButton btnPre = ViewBindings.findChildViewById(rootView, id);
-      if (btnPre == null) {
+      id = R.id.btnAccountSettingPre;
+      ImageButton btnAccountSettingPre = ViewBindings.findChildViewById(rootView, id);
+      if (btnAccountSettingPre == null) {
         break missingId;
       }
 
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
+      id = R.id.btnPasswordChange;
+      Button btnPasswordChange = ViewBindings.findChildViewById(rootView, id);
+      if (btnPasswordChange == null) {
         break missingId;
       }
 
@@ -119,6 +119,12 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvAccountID;
+      TextView tvAccountID = ViewBindings.findChildViewById(rootView, id);
+      if (tvAccountID == null) {
+        break missingId;
+      }
+
       id = R.id.tvAccountSetting;
       TextView tvAccountSetting = ViewBindings.findChildViewById(rootView, id);
       if (tvAccountSetting == null) {
@@ -131,14 +137,9 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvUserID;
-      TextView tvUserID = ViewBindings.findChildViewById(rootView, id);
-      if (tvUserID == null) {
-        break missingId;
-      }
-
-      return new ActivityAccountSettingBinding((ConstraintLayout) rootView, btnPre, button2,
-          divider8, linearLayout, linearLayout2, tvAccountSetting, tvDeletingAccount, tvUserID);
+      return new ActivityAccountSettingBinding((ConstraintLayout) rootView, btnAccountSettingPre,
+          btnPasswordChange, divider8, linearLayout, linearLayout2, tvAccountID, tvAccountSetting,
+          tvDeletingAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

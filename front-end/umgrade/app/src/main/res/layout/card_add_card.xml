@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvCardAdd"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#FDFDFD"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#66DDF0FF">
+
+        <TextView
+            android:id="@+id/tvCardAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tvcardAdd"
+            android:textColor="@color/blueColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imgCardAdd"
+            app:layout_constraintStart_toStartOf="@+id/imgCardAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imgCardAdd" />
+
+        <ImageView
+            android:id="@+id/imgCardAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="#96B7D1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.415"
+            app:srcCompat="@drawable/add" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

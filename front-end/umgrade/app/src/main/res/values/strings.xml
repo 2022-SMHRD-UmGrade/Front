@@ -191,7 +191,7 @@
     <string name="btnProfileUpdate">프로필 수정</string>
 
     <!-- fragment_mypage.xml -->
-    <string name="btnPayment">결제등록</string>
+    <string name="btnPayment">결제관리</string>
     <string name="btnUsageHistory">이용내역</string>
     <string name="btnAccountSetting">계정설정</string>
     <string name="btnLogout">로그아웃</string>
@@ -199,6 +199,7 @@
     <!-- activity_profile_update.xml -->
     <string name="tvProfileTitle">프로필 수정</string>
     <string name="edtNickHint">닉네임을 입력하세요</string>
+    <string name="tvProfileNIckhint">※최대 10글자까지 입력 가능합니다</string>
     <string name="btnNickChange">닉네임 변경</string>
 
     <!-- activity_support_post.xml-->
@@ -233,5 +234,46 @@
     <string name="tvService6">6. 우산 대여 비용은 1일(24시간)에 800원이며, 대여비는 반납 시에 등록된 결제정보에서 자동결제 됩니다.</string>
     <string name="tvService7">7. 우산을 반납할 때도 근처의 보관함을 검색합니다.</string>
     <string name="tvService8">8. 반납 시에는 별도의 QR 스캔 과정 없이 우산을 반납할 수 있습니다.</string>
+
+    <!-- activity_password_change.xml -->
+    <string name="tvPasswordChangeTitle">비밀번호변경</string>
+    <string name="tvNowPwTitle">현재 비밀번호</string>
+    <string name="edtNowPw">현재 사용인 비밀번호를 입력해주세요</string>
+    <string name="tvNowPw">이전 비밀번호를 잘못 입력하셨습니다.</string>
+    <string name="tvNewPwTitle">새 비밀번호</string>
+    <string name="edtNewPw">8자 이상 영문/숫자/특수문자 중 2가지 포함</string>
+    <string name="tvNewPw">총 8자 이상, 용문/숫자/특수문자 중 2가지 이상 입력해주세요.</string>
+    <string name="tvNewCkPwTitle">새 비밀번호 확인</string>
+    <string name="edtNewCkPw">비밀번호를 다시 한 번 입력해주세요</string>
+    <string name="tvNewCkPw">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</string>
+    <string name="btnChangePw">비밀번호 변경하기</string>
+
+    <!-- activity_account_setting.xml -->
+    <string name="tvAccountSetting">계정설정</string>
+    <string name="tvAccountID">USERID</string>
+    <string name="btnPasswordChange">비밀번호 변경</string>
+    <string name="tvDeletingAccount">탈퇴하기</string>
+    <!--card.xml-->
+    <string name="tvEmailTitle">이메일</string>
+    <string name="tvEmail">test@example.com</string>
+    <string name="tvTelTitle">전화번호</string>
+    <string name="tvTel">010-XXXX-XXXX</string>
+    <string name="tvAddressTitle">주소</string>
+    <string name="tvAddress">광주광역시 동구 예술길 31-15</string>
+    <string name="btnChange">변경하기</string>
+
+    <!-- activity_payment.xml -->
+    <string name="tvPaymentTitle">결제관리</string>
+    <string name="tvcardAdd">카드 등록하기</string>
+
+    <!-- CardRegisterActivity.xml -->
+    <string name="tvCardRegisterTitle">카드등록</string>
+    <string name="tvCardNumTitle">카드번호</string>
+    <string name="tvCardExpiryDateTitle">유효기간</string>
+    <string name="tvCardPwTitle">비밀번호</string>
+    <string name="tvCardDOBTitle">생년월일</string>
+
+    <!-- activity_usage_history.xml -->
+    <string name="tvUsageHistoryTitle">이용내역</string>
 
 </resources>

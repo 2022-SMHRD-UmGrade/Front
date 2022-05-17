@@ -101,7 +101,8 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         }
     }
 
-    public void initView() {
+    //지도 띄우는 메서드
+   public void initView() {
 
         mapView = new MapView(this);
 

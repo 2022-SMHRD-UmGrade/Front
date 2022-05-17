@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -19,10 +19,13 @@ import java.lang.String;
 
 public final class EmailCardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
-  public final Button button4;
+  public final Button btnChange;
+
+  @NonNull
+  public final CardView cvEmail;
 
   @NonNull
   public final Guideline guideline21;
@@ -31,25 +34,26 @@ public final class EmailCardBinding implements ViewBinding {
   public final Guideline guideline22;
 
   @NonNull
-  public final TextView textView8;
+  public final TextView tvAddress;
 
   @NonNull
-  public final TextView textView9;
+  public final TextView tvAddressTitle;
 
-  private EmailCardBinding(@NonNull ConstraintLayout rootView, @NonNull Button button4,
-      @NonNull Guideline guideline21, @NonNull Guideline guideline22, @NonNull TextView textView8,
-      @NonNull TextView textView9) {
+  private EmailCardBinding(@NonNull CardView rootView, @NonNull Button btnChange,
+      @NonNull CardView cvEmail, @NonNull Guideline guideline21, @NonNull Guideline guideline22,
+      @NonNull TextView tvAddress, @NonNull TextView tvAddressTitle) {
     this.rootView = rootView;
-    this.button4 = button4;
+    this.btnChange = btnChange;
+    this.cvEmail = cvEmail;
     this.guideline21 = guideline21;
     this.guideline22 = guideline22;
-    this.textView8 = textView8;
-    this.textView9 = textView9;
+    this.tvAddress = tvAddress;
+    this.tvAddressTitle = tvAddressTitle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -74,11 +78,13 @@ public final class EmailCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button4;
-      Button button4 = ViewBindings.findChildViewById(rootView, id);
-      if (button4 == null) {
+      id = R.id.btnChange;
+      Button btnChange = ViewBindings.findChildViewById(rootView, id);
+      if (btnChange == null) {
         break missingId;
       }
+
+      CardView cvEmail = (CardView) rootView;
 
       id = R.id.guideline21;
       Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
@@ -92,20 +98,20 @@ public final class EmailCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
+      id = R.id.tvAddress;
+      TextView tvAddress = ViewBindings.findChildViewById(rootView, id);
+      if (tvAddress == null) {
         break missingId;
       }
 
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
+      id = R.id.tvAddressTitle;
+      TextView tvAddressTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvAddressTitle == null) {
         break missingId;
       }
 
-      return new EmailCardBinding((ConstraintLayout) rootView, button4, guideline21, guideline22,
-          textView8, textView9);
+      return new EmailCardBinding((CardView) rootView, btnChange, cvEmail, guideline21, guideline22,
+          tvAddress, tvAddressTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

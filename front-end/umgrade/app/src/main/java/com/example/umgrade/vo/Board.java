@@ -1,5 +1,7 @@
 package com.example.umgrade.vo;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 public class Board {
     private int article_seq; // 커뮤니티 일련번호
     private String article_title; // 커뮤니티 제목
@@ -49,6 +51,34 @@ public class Board {
 
     public int getArticle_cnt() {
         return article_cnt;
+    }
+
+    public void setArticle_seq(int article_seq) {
+        this.article_seq = article_seq;
+    }
+
+    public void setArticle_title(String article_title) {
+        this.article_title = article_title;
+    }
+
+    public void setArticle_content(String article_content) {
+        this.article_content = article_content;
+    }
+
+    public void setArticle_date(String article_date) {
+        this.article_date = article_date;
+    }
+
+    public void setArticle_file(String article_file) {
+        this.article_file = article_file;
+    }
+
+    public void setArticle_id(String article_id) {
+        this.article_id = article_id;
+    }
+
+    public void setArticle_cnt(int article_cnt) {
+        this.article_cnt = article_cnt;
     }
 
     @Override

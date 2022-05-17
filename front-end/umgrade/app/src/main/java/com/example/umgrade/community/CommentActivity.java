@@ -71,7 +71,7 @@ public class CommentActivity extends AppCompatActivity {
         queue = Volley.newRequestQueue(CommentActivity.this);
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardComment.do";
 
         request = new StringRequest(
                 method,

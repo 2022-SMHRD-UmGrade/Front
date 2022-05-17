@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -19,10 +19,13 @@ import java.lang.String;
 
 public final class TelCardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
-  public final Button button4;
+  public final Button btnChange;
+
+  @NonNull
+  public final CardView cvTel;
 
   @NonNull
   public final Guideline guideline21;
@@ -31,25 +34,26 @@ public final class TelCardBinding implements ViewBinding {
   public final Guideline guideline22;
 
   @NonNull
-  public final TextView textView8;
+  public final TextView tvTel;
 
   @NonNull
-  public final TextView textView9;
+  public final TextView tvTelTitle;
 
-  private TelCardBinding(@NonNull ConstraintLayout rootView, @NonNull Button button4,
-      @NonNull Guideline guideline21, @NonNull Guideline guideline22, @NonNull TextView textView8,
-      @NonNull TextView textView9) {
+  private TelCardBinding(@NonNull CardView rootView, @NonNull Button btnChange,
+      @NonNull CardView cvTel, @NonNull Guideline guideline21, @NonNull Guideline guideline22,
+      @NonNull TextView tvTel, @NonNull TextView tvTelTitle) {
     this.rootView = rootView;
-    this.button4 = button4;
+    this.btnChange = btnChange;
+    this.cvTel = cvTel;
     this.guideline21 = guideline21;
     this.guideline22 = guideline22;
-    this.textView8 = textView8;
-    this.textView9 = textView9;
+    this.tvTel = tvTel;
+    this.tvTelTitle = tvTelTitle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -74,11 +78,13 @@ public final class TelCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button4;
-      Button button4 = ViewBindings.findChildViewById(rootView, id);
-      if (button4 == null) {
+      id = R.id.btnChange;
+      Button btnChange = ViewBindings.findChildViewById(rootView, id);
+      if (btnChange == null) {
         break missingId;
       }
+
+      CardView cvTel = (CardView) rootView;
 
       id = R.id.guideline21;
       Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
@@ -92,20 +98,20 @@ public final class TelCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
+      id = R.id.tvTel;
+      TextView tvTel = ViewBindings.findChildViewById(rootView, id);
+      if (tvTel == null) {
         break missingId;
       }
 
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
+      id = R.id.tvTelTitle;
+      TextView tvTelTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTelTitle == null) {
         break missingId;
       }
 
-      return new TelCardBinding((ConstraintLayout) rootView, button4, guideline21, guideline22,
-          textView8, textView9);
+      return new TelCardBinding((CardView) rootView, btnChange, cvTel, guideline21, guideline22,
+          tvTel, tvTelTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

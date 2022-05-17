@@ -22,7 +22,7 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton btnProfilePre;
+  public final ImageButton btnUsageHistoryPre;
 
   @NonNull
   public final View divider8;
@@ -37,11 +37,11 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
   public final TextView tvUsageHistoryTitle;
 
   private ActivityUsageHistoryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton btnProfilePre, @NonNull View divider8,
+      @NonNull ImageButton btnUsageHistoryPre, @NonNull View divider8,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
       @NonNull TextView tvUsageHistoryTitle) {
     this.rootView = rootView;
-    this.btnProfilePre = btnProfilePre;
+    this.btnUsageHistoryPre = btnUsageHistoryPre;
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
@@ -75,9 +75,9 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnProfilePre;
-      ImageButton btnProfilePre = ViewBindings.findChildViewById(rootView, id);
-      if (btnProfilePre == null) {
+      id = R.id.btnUsageHistoryPre;
+      ImageButton btnUsageHistoryPre = ViewBindings.findChildViewById(rootView, id);
+      if (btnUsageHistoryPre == null) {
         break missingId;
       }
 
@@ -105,8 +105,8 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityUsageHistoryBinding((ConstraintLayout) rootView, btnProfilePre, divider8,
-          linearLayout, linearLayout2, tvUsageHistoryTitle);
+      return new ActivityUsageHistoryBinding((ConstraintLayout) rootView, btnUsageHistoryPre,
+          divider8, linearLayout, linearLayout2, tvUsageHistoryTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
