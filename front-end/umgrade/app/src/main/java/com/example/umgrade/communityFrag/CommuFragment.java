@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,6 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.umgrade.adapter.BoardAdapter;
+import com.example.umgrade.adapter.OnBoardItemClickListener;
 import com.example.umgrade.community.PostActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.community.WriteActivity;
@@ -39,46 +42,31 @@ import java.util.ArrayList;
 public class CommuFragment extends Fragment {
 
     Button btnCmWrite; // 글작성 버튼
-    ListView lvBoard; // 게시물 리스트뷰
-    BoardAdapter adapter;
-    ListView boardListItem; //게시물 레이아웃
 
-    User vo;
-    Board dto;
-
-    ArrayList<Board> list;
+    RecyclerView recyclerView;
+    BoardAdapter adapter = new BoardAdapter();
 
     RequestQueue queue;
     StringRequest request;
 
+    User vo;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_commu, container, false);
 
+        queue = Volley.newRequestQueue(getContext());
+
+        initBoard();
+
+        recyclerView = (RecyclerView) view.findViewById(R.id.lvborad);
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+
+        recyclerView.setLayoutManager(layoutManager);
+
+
         btnCmWrite = view.findViewById(R.id.btnCmWrite);
-
-        vo = UserInfo.info;
-
-        // board_list 리스트뷰 클릭이벤트
-        lvBoard = (ListView) view.findViewById(R.id.lvBoard);
-        lvBoard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Board data = list.get(i);
-                vo = UserInfo.info;
-
-                Log.d("vo1", vo.getUser_id());
-                Log.d("data", data.getArticle_id());
-                Log.d("data2", data.getArticle_content());
-                Log.d("data3", String.valueOf(data.getArticle_seq()));
-
-                Intent intentPost = new Intent(getActivity(), PostActivity.class);
-                intentPost.putExtra("article_seq", data.getArticle_seq());
-                startActivity(intentPost);
-            }
-        });
-
 
         btnCmWrite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,17 +77,15 @@ public class CommuFragment extends Fragment {
             }
         });
 
-        list = new ArrayList<Board>();
 
-        adapter = new BoardAdapter(getActivity(),R.layout.board_list,list);
-
-        lvBoard =  view.findViewById(R.id.lvBoard);
+        return view;
+    }
 
 
-        queue = Volley.newRequestQueue(getContext());
-
+    //게시판 불러오는 메서드
+    public void initBoard() {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardList.do";
 
         request = new StringRequest(
                 method,
@@ -128,14 +114,6 @@ public class CommuFragment extends Fragment {
                                 String id = Object.getString("article_id");
                                 int cnt = Integer.parseInt(Object.getString("article_cnt"));
 
-                                dto = new Board(seq, title, content, date, file, id, cnt);
-
-                                BoardInfo.info = dto;
-
-                                list.add(dto);
-
-                                lvBoard.setAdapter(adapter);
-
                                 adapter.notifyDataSetChanged();
                             }
 
@@ -156,7 +134,5 @@ public class CommuFragment extends Fragment {
         ); //end
 
         queue.add(request);
-
-        return view;
     }
 }

@@ -87,7 +87,7 @@ public class PostActivity extends AppCompatActivity {
     //단일 게시글 불러오는 메서드
     private void getData(int seq) {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardOne.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardOne.do";
 
         request = new StringRequest(
                 method,

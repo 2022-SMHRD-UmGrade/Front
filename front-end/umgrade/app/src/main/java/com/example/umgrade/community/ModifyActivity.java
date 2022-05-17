@@ -94,7 +94,7 @@ public class ModifyActivity extends AppCompatActivity {
         // 글 전송
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardUpdate.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardUpdate.do";
 
         request = new StringRequest(
                 method,

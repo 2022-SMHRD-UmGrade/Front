@@ -28,7 +28,7 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
   public final Button btnNickChange;
 
   @NonNull
-  public final ImageButton btnPre;
+  public final ImageButton btnProfileUpdatePre;
 
   @NonNull
   public final View divider8;
@@ -37,7 +37,7 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
   public final EditText edtNickChange;
 
   @NonNull
-  public final CircleImageView imgMypageProfile2;
+  public final CircleImageView imgProfileChange;
 
   @NonNull
   public final LinearLayout linearLayout;
@@ -49,16 +49,16 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
   public final TextView tvProfileTitle;
 
   private ActivityProfileUpdateBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnNickChange, @NonNull ImageButton btnPre, @NonNull View divider8,
-      @NonNull EditText edtNickChange, @NonNull CircleImageView imgMypageProfile2,
-      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
-      @NonNull TextView tvProfileTitle) {
+      @NonNull Button btnNickChange, @NonNull ImageButton btnProfileUpdatePre,
+      @NonNull View divider8, @NonNull EditText edtNickChange,
+      @NonNull CircleImageView imgProfileChange, @NonNull LinearLayout linearLayout,
+      @NonNull LinearLayout linearLayout2, @NonNull TextView tvProfileTitle) {
     this.rootView = rootView;
     this.btnNickChange = btnNickChange;
-    this.btnPre = btnPre;
+    this.btnProfileUpdatePre = btnProfileUpdatePre;
     this.divider8 = divider8;
     this.edtNickChange = edtNickChange;
-    this.imgMypageProfile2 = imgMypageProfile2;
+    this.imgProfileChange = imgProfileChange;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.tvProfileTitle = tvProfileTitle;
@@ -97,9 +97,9 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnPre;
-      ImageButton btnPre = ViewBindings.findChildViewById(rootView, id);
-      if (btnPre == null) {
+      id = R.id.btnProfileUpdatePre;
+      ImageButton btnProfileUpdatePre = ViewBindings.findChildViewById(rootView, id);
+      if (btnProfileUpdatePre == null) {
         break missingId;
       }
 
@@ -115,9 +115,9 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgMypageProfile2;
-      CircleImageView imgMypageProfile2 = ViewBindings.findChildViewById(rootView, id);
-      if (imgMypageProfile2 == null) {
+      id = R.id.imgProfileChange;
+      CircleImageView imgProfileChange = ViewBindings.findChildViewById(rootView, id);
+      if (imgProfileChange == null) {
         break missingId;
       }
 
@@ -139,8 +139,9 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileUpdateBinding((ConstraintLayout) rootView, btnNickChange, btnPre,
-          divider8, edtNickChange, imgMypageProfile2, linearLayout, linearLayout2, tvProfileTitle);
+      return new ActivityProfileUpdateBinding((ConstraintLayout) rootView, btnNickChange,
+          btnProfileUpdatePre, divider8, edtNickChange, imgProfileChange, linearLayout,
+          linearLayout2, tvProfileTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

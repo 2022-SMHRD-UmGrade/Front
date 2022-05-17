@@ -30,6 +30,8 @@
     <string name="boardTime">2022.05.12. 17:21</string>
     <string name="boardTitle">글 제목</string>
     <string name="btnAccountSetting">계정설정</string>
+    <string name="btnChange">변경하기</string>
+    <string name="btnChangePw">비밀번호 변경하기</string>
     <string name="btnCmWrite">글쓰기</string>
     <string name="btnComment">등록</string>
     <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
@@ -51,6 +53,7 @@
     <string name="btnMoreUserInfo">회원 정보 수정</string>
     <string name="btnNickChange">닉네임 변경</string>
     <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
+    <string name="btnPasswordChange">비밀번호 변경</string>
     <string name="btnPayment">결제등록</string>
     <string name="btnPostComment">댓글 보기</string>
     <string name="btnPostDelete">삭제</string>
@@ -83,7 +86,10 @@
     <string name="edtLoginPw">PW를 입력하세요</string>
     <string name="edtModifyContent">본문</string>
     <string name="edtModifyTitle">제목</string>
+    <string name="edtNewCkPw">비밀번호를 다시 한 번 입력해주세요</string>
+    <string name="edtNewPw">8자 이상 영문/숫자/특수문자 중 2가지 포함</string>
     <string name="edtNickHint">닉네임을 입력하세요</string>
+    <string name="edtNowPw">현재 사용인 비밀번호를 입력해주세요</string>
     <string name="edtSupportComment">문의 답변하기</string>
     <string name="edtWriteContent">본문</string>
     <string name="edtWriteTitle">제목</string>
@@ -121,6 +127,10 @@
     <string name="tabEvent">이벤트</string>
     <string name="tabNotice">공지사항</string>
     <string name="title_activity_join">JoinActivity</string>
+    <string name="tvAccountID">USERID</string>
+    <string name="tvAccountSetting">계정설정</string>
+    <string name="tvAddress">광주광역시 동구 예술길 31-15</string>
+    <string name="tvAddressTitle">주소</string>
     <string name="tvCarbonMypageCard">692g</string>
     <string name="tvComment1MypageCard">오늘까지 총</string>
     <string name="tvComment2MypageCard">의 탄소 절약!</string>
@@ -133,6 +143,9 @@
     <string name="tvCommuTitle">커뮤니티</string>
     <string name="tvCouponMypageCard">1개</string>
     <string name="tvCouponTextMypageCard">보유 쿠폰</string>
+    <string name="tvDeletingAccount">탈퇴하기</string>
+    <string name="tvEmail">test@example.com</string>
+    <string name="tvEmailTitle">이메일</string>
     <string name="tvFare">기본요금 = 기본 800원 + 하루(24시간)당 요금 * 800원</string>
     <string name="tvFareOne">* 이용 요금은 우산 반납 시 자동 결제됩니다.</string>
     <string name="tvFareService">이용 요금 안내</string>
@@ -145,7 +158,15 @@
     <string name="tvModify">글수정</string>
     <string name="tvMore">(보기)</string>
     <string name="tvMoreNick">User Nick</string>
+    <string name="tvNewCkPw">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</string>
+    <string name="tvNewCkPwTitle">새 비밀번호 확인</string>
+    <string name="tvNewPw">총 8자 이상, 용문/숫자/특수문자 중 2가지 이상 입력해주세요.</string>
+    <string name="tvNewPwTitle">새 비밀번호</string>
     <string name="tvNickMypageCard">USER</string>
+    <string name="tvNowPw">이전 비밀번호를 잘못 입력하셨습니다.</string>
+    <string name="tvNowPwTitle">현재 비밀번호</string>
+    <string name="tvPasswordChangeTitle">비밀번호변경</string>
+    <string name="tvPaymentTitle">결제등록</string>
     <string name="tvPointMypageCard">100p</string>
     <string name="tvPointTextMypageCard">보유 포인트</string>
     <string name="tvPostCnt">조회 15</string>
@@ -181,7 +202,10 @@
     <string name="tvSupportPostComment">답변을 기다리고 있어요</string>
     <string name="tvSupportSet">처리중</string>
     <string name="tvSupportTitle">고객센터</string>
+    <string name="tvTel">010-XXXX-XXXX</string>
+    <string name="tvTelTitle">전화번호</string>
     <string name="tvTerms">위치기반서비스 이용약관</string>
+    <string name="tvUsageHistoryTitle">이용내역</string>
     <string name="tvUserId">UserID</string>
     <string name="tvWelcomeMypageCard">님 환영합니다!</string>
     <string name="tvWrite">글쓰기</string>
@@ -197,17 +221,17 @@
         <item name="android:windowAnimationStyle">@null</item>
     </style>
     <style name="Theme.Umgrade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        
+        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        
+        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        
+        <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
+        <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
     </style>
     <style name="headerText" parent="parent">
@@ -223,7 +247,7 @@
         <item name="android:orientation">vertical</item>
     </style>
     <style name="loginButton" parent="viewParent">
-
+<!--        <item name="android:background">@drawable/login_button_bk</item>-->
         <item name="android:textColor">@color/whiteTextColor</item>
         <item name="android:textStyle">bold</item>
     </style>

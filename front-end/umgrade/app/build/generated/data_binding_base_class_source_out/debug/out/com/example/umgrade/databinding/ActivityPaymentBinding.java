@@ -22,7 +22,7 @@ public final class ActivityPaymentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton btnProfilePre;
+  public final ImageButton btnPaymentPre;
 
   @NonNull
   public final View divider8;
@@ -37,11 +37,11 @@ public final class ActivityPaymentBinding implements ViewBinding {
   public final TextView tvPaymentTitle;
 
   private ActivityPaymentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton btnProfilePre, @NonNull View divider8,
+      @NonNull ImageButton btnPaymentPre, @NonNull View divider8,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
       @NonNull TextView tvPaymentTitle) {
     this.rootView = rootView;
-    this.btnProfilePre = btnProfilePre;
+    this.btnPaymentPre = btnPaymentPre;
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
@@ -75,9 +75,9 @@ public final class ActivityPaymentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnProfilePre;
-      ImageButton btnProfilePre = ViewBindings.findChildViewById(rootView, id);
-      if (btnProfilePre == null) {
+      id = R.id.btnPaymentPre;
+      ImageButton btnPaymentPre = ViewBindings.findChildViewById(rootView, id);
+      if (btnPaymentPre == null) {
         break missingId;
       }
 
@@ -105,7 +105,7 @@ public final class ActivityPaymentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPaymentBinding((ConstraintLayout) rootView, btnProfilePre, divider8,
+      return new ActivityPaymentBinding((ConstraintLayout) rootView, btnPaymentPre, divider8,
           linearLayout, linearLayout2, tvPaymentTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
