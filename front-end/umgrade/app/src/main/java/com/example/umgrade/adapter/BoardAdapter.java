@@ -58,8 +58,8 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
         }
 
     }
-    @Override
-    public void onItemClick(ViewHolder viewHolder, View view, int position) {
+    @Override //Override 하는 이유는 BoardAdapter는 onBoardItemClickListener를 implement하기 때문이다
+    public void onItemClick(ViewHolder viewHolder, View view, int position) { // adapter 안에 있는 viewHolder,view, position을 외부에서 쓰기위함이다.
         if(listener != null) {
             listener.onItemClick(viewHolder, view, position);
         }
