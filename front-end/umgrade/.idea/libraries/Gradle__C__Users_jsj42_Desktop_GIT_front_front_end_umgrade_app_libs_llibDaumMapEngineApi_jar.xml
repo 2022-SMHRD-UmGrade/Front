@@ -1,9 +1,5 @@
 <component name="libraryTable">
-<<<<<<< HEAD:front-end/umgrade/.idea/libraries/Gradle__C__Users_smhrd_Desktop_project2nd_front_end_umgrade_app_libs_llibDaumMapEngineApi_jar.xml
-  <library name="Gradle: C./Users/smhrd/Desktop/project2nd/front-end/umgrade/app/libs/llibDaumMapEngineApi.jar">
-=======
   <library name="Gradle: C./Users/jsj42/Desktop/GIT/front/front-end/umgrade/app/libs/llibDaumMapEngineApi.jar">
->>>>>>> dc6e833092d579ebff49274ff0a42e48ba0a3a5f:front-end/umgrade/.idea/libraries/Gradle__C__Users_jsj42_Desktop_GIT_front_front_end_umgrade_app_libs_llibDaumMapEngineApi_jar.xml
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/app/libs/llibDaumMapEngineApi.jar!/" />
     </CLASSES>
