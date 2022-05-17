@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ProfileUpdateActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgMypageProfile2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="88dp"
-        android:layout_weight="1"
-        android:src="@drawable/umbrella2"
-        app:civ_circle_background_color="#C8C8C8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -48,7 +35,6 @@
                 android:id="@+id/tvProfileTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/tvProfileTitle"
                 android:textAlignment="textStart"
@@ -65,6 +51,19 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
     </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgMypageProfile2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="88dp"
+        android:layout_weight="1"
+        android:src="@drawable/umbrella2"
+        app:civ_circle_background_color="#C8C8C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/button"

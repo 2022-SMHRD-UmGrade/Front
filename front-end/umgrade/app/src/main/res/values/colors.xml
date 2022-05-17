@@ -19,6 +19,8 @@
 
     <!--colros for card-->
     <color name="whiteCardColor">#fff</color>
-    <!-- drawable tint-->
+
+    <!-- custom color-->
     <color name="blueColor">#2196F3</color>
+    <color name="lightBlueColor">#FFDDF0FF</color>
 </resources>
