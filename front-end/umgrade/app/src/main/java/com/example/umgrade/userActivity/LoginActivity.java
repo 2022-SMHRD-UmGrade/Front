@@ -19,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.umgrade.main.MainActivity;
 import com.example.umgrade.sevice.ServiceActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.info.UserInfo;
@@ -90,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                                         Log.v("dddddd", vo.toString());
                                         UserInfo.info = vo;
 
-                                        Intent intent = new Intent(LoginActivity.this, ServiceActivity.MainActivity.class);
+                                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 
                                         intent.putExtra("response", response);
 

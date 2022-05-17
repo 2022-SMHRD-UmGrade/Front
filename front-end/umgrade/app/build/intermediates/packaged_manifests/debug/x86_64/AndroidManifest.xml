@@ -53,7 +53,7 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.umgrade.IntroActivity"
+            android:name="com.example.umgrade.main.MainActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.sevice.SupportWriteActivity"
@@ -130,7 +130,7 @@
             android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.main.MainActivity"
+            android:name="com.example.umgrade.IntroActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.sevice.SupportPostActivity"
