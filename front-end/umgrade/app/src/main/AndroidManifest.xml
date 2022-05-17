@@ -34,6 +34,12 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".SupportPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupportWriteActivity"
+            android:exported="false" />
+        <activity
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
@@ -79,7 +85,7 @@
             android:name=".main.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".JoinActivity"
             android:exported="false" />
         <activity
             android:name=".notice.EventPostActivity"
@@ -109,7 +115,11 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".userActivity.LoginActivity"
+=======
+            android:name=".IntroActivity"
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

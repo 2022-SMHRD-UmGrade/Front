@@ -170,6 +170,22 @@
     <string name="tvServiceInfo">서비스 이용약관</string>
     <string name="btnTermsClose">닫기</string>
 
+
+    <!-- activity_support_write.xml-->
+    <string name="tvSupport">문의 작성하기</string>
+    <string name="tvSupportCount">0/1000</string>
+
+    <!-- activity_support.xml-->
+    <string name="tvSupportTitle">고객센터</string>
+    <string name="btnSupportWrite">문의하기</string>
+
+    <!-- support_list.xml -->
+    <string name="supportTitle">문의글 제목</string>
+    <string name="tvSet">처리중</string>
+    <string name="supportSeq">00</string>
+    <string name="supportTime">2022. 04. 35 16:42</string>
+
+
     <!-- mypage_card2.xml -->
     <string name="tvUserId">UserID</string>
     <string name="btnProfileUpdate">프로필 수정</string>
@@ -184,4 +200,14 @@
     <string name="tvProfileTitle">프로필 수정</string>
     <string name="edtNickHint">닉네임을 입력하세요</string>
     <string name="btnNickChange">닉네임 변경</string>
+
+    <!-- activity_support_post.xml-->
+    <string name="supportPostTitle">문의글 제목</string>
+    <string name="supportPostTime">2022. 04. 35 16:42</string>
+    <string name="tvSupportSet">처리중</string>
+    <string name="supportPostContent">본문 내용</string>
+    <string name="btnSupportDelete">삭제</string>
+    <string name="supportPostSeq">00</string>
+    <string name="tvSupportPostComment">답변을 기다리고 있어요</string>
+
 </resources>

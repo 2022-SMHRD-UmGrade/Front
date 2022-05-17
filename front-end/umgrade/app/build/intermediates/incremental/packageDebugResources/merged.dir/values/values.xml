@@ -58,6 +58,10 @@
     <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
+<<<<<<< HEAD
+=======
+    <string name="btnSupportWrite">문의하기</string>
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     <string name="btnTermsClose">닫기</string>
     <string name="btnUsageHistory">이용내역</string>
     <string name="btnWriteCancel">취소</string>
@@ -106,6 +110,9 @@
     <string name="noticeSeq">00</string>
     <string name="noticeTime">2022.05.13 15:10</string>
     <string name="noticeTitle">공지사항 제목</string>
+    <string name="supportSeq">00</string>
+    <string name="supportTime">2022. 04. 35 16:42</string>
+    <string name="supportTitle">문의글 제목</string>
     <string name="tabEvent">이벤트</string>
     <string name="tabNotice">공지사항</string>
     <string name="title_activity_join">JoinActivity</string>
@@ -145,6 +152,9 @@
     <string name="tvRatingTextMypageCard">회원 등급</string>
     <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
     <string name="tvServiceInfo">서비스 이용약관</string>
+    <string name="tvSet">처리중</string>
+    <string name="tvSupport">문의 작성하기</string>
+    <string name="tvSupportTitle">고객센터</string>
     <string name="tvTerms">위치기반서비스 이용약관</string>
     <string name="tvUserId">UserID</string>
     <string name="tvWelcomeMypageCard">님 환영합니다!</string>

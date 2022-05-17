@@ -12,7 +12,8 @@
     <ScrollView
         android:id="@+id/scrollView2"
         style="@style/parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:scrollbars="none">
 
         <RelativeLayout
             style="@style/parent"

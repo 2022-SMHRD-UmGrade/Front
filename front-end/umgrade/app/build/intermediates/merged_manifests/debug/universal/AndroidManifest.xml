@@ -53,6 +53,12 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.SupportPostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.SupportWriteActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.AccountSettingActivity"
             android:exported="false" />
         <activity
@@ -97,7 +103,7 @@
             android:name="com.example.umgrade.MapActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.IntroActivity"
+            android:name="com.example.umgrade.JoinActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.notice.EventPostActivity"
@@ -127,7 +133,11 @@
             android:name="com.example.umgrade.MainActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD:front-end/umgrade/app/build/intermediates/merged_manifests/debug/x86_64/AndroidManifest.xml
             android:name="com.example.umgrade.userActivity.LoginActivity"
+=======
+            android:name="com.example.umgrade.IntroActivity"
+>>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9:front-end/umgrade/app/build/intermediates/merged_manifests/debug/universal/AndroidManifest.xml
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
