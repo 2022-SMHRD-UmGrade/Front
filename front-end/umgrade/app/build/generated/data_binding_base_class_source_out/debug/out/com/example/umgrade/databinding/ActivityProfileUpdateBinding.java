@@ -46,13 +46,17 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
   public final LinearLayout linearLayout2;
 
   @NonNull
+  public final TextView tvProfileNIckhint;
+
+  @NonNull
   public final TextView tvProfileTitle;
 
   private ActivityProfileUpdateBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnNickChange, @NonNull ImageButton btnProfileUpdatePre,
       @NonNull View divider8, @NonNull EditText edtNickChange,
       @NonNull CircleImageView imgProfileChange, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout2, @NonNull TextView tvProfileTitle) {
+      @NonNull LinearLayout linearLayout2, @NonNull TextView tvProfileNIckhint,
+      @NonNull TextView tvProfileTitle) {
     this.rootView = rootView;
     this.btnNickChange = btnNickChange;
     this.btnProfileUpdatePre = btnProfileUpdatePre;
@@ -61,6 +65,7 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
     this.imgProfileChange = imgProfileChange;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
+    this.tvProfileNIckhint = tvProfileNIckhint;
     this.tvProfileTitle = tvProfileTitle;
   }
 
@@ -133,6 +138,12 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvProfileNIckhint;
+      TextView tvProfileNIckhint = ViewBindings.findChildViewById(rootView, id);
+      if (tvProfileNIckhint == null) {
+        break missingId;
+      }
+
       id = R.id.tvProfileTitle;
       TextView tvProfileTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvProfileTitle == null) {
@@ -141,7 +152,7 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
 
       return new ActivityProfileUpdateBinding((ConstraintLayout) rootView, btnNickChange,
           btnProfileUpdatePre, divider8, edtNickChange, imgProfileChange, linearLayout,
-          linearLayout2, tvProfileTitle);
+          linearLayout2, tvProfileNIckhint, tvProfileTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

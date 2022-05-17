@@ -35,13 +35,15 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
             boardSeq = itemView.findViewById(R.id.boardSeq);
             boardTime = itemView.findViewById(R.id.boardTime);
 
+
+
             itemView.setOnClickListener(new View.OnClickListener() { //아이템 뷰에 OnClickListener 설정
                 @Override
                 public void onClick(View view) {
                     int position = getAdapterPosition();
 
                     if (listener != null) {
-                        listener.onItemClck(ViewHolder.this, view, position); //아이템 뷰 클릭 시 미리 정의한 다른 리스너의 메서드 호출!
+                        listener.onItemClick(ViewHolder.this, view, position); //아이템 뷰 클릭 시 미리 정의한 다른 리스너의 메서드 호출!
 
                     }
                 }
@@ -51,7 +53,7 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
         public void setItem(Board item){
             boardTitle.setText(item.getArticle_title());
             boardNick.setText(item.getArticle_id());
-            boardSeq.setText(item.getArticle_seq());
+            boardSeq.setText(String.valueOf(item.getArticle_seq()));
             boardTime.setText(item.getArticle_date());
         }
 
@@ -59,7 +61,7 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
     @Override
     public void onItemClick(ViewHolder viewHolder, View view, int position) {
         if(listener != null) {
-            listener.onItemClck(viewHolder, view, position);
+            listener.onItemClick(viewHolder, view, position);
         }
     }
     //ViewHolder end.
@@ -68,7 +70,7 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
-        View itemView = inflater.inflate(R.layout.board_list, viewGroup); // 인플레이션을 통해 뷰 객체 만듬
+        View itemView = inflater.inflate(R.layout.board_list, viewGroup, false); // 인플레이션을 통해 뷰 객체 만듬
         return new ViewHolder(itemView); //뷰 객체를 생성하면서 뷰 객체를 전달하고 그 뷰홀더 객체를 반환
     }
     //onBindViewHolder : 재활용 할 수 있는 객체를 파라미터로 전달
@@ -88,7 +90,7 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
     }
 
     public interface OnBoardItemClickListener {
-        public void onItemClck(BoardAdapter.ViewHolder viewHolder, View view, int position);
+        public void onItemClick(BoardAdapter.ViewHolder viewHolder, View view, int position);
     }
 
     public void setOnItemClickListener(OnBoardItemClickListener listener) { //외부 리스너를 설정 할 수 있도록 메서드를 추가함

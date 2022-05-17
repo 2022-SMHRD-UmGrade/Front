@@ -36,6 +36,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
@@ -45,7 +46,7 @@ public class CommuFragment extends Fragment {
 
     RecyclerView recyclerView;
     BoardAdapter adapter = new BoardAdapter();
-
+    ArrayList<Board> items = new ArrayList<>();
     RequestQueue queue;
     StringRequest request;
 
@@ -59,11 +60,36 @@ public class CommuFragment extends Fragment {
 
         initBoard();
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.lvborad);
+        recyclerView = view.findViewById(R.id.lvborad);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(layoutManager);
+
+        adapter.setOnItemClickListener(new BoardAdapter.OnBoardItemClickListener() {
+            @Override
+            public void onItemClick(BoardAdapter.ViewHolder viewHolder, View view, int position) {
+
+                Board item = adapter.getItem(position);
+                int seq = item.getArticle_seq();
+                String title = item.getArticle_title();
+                String content = item.getArticle_content();
+                String nick = item.getArticle_id();
+                String date = item.getArticle_date();
+                String file = item.getArticle_file();
+
+                Intent intent = new Intent(getContext(), PostActivity.class);
+                intent.putExtra("article_seq", seq);
+                intent.putExtra("article_title", title);
+                intent.putExtra("article_content", content);
+                intent.putExtra("article_id", nick);
+                intent.putExtra("article_date", date);
+                intent.putExtra("article_file", file);
+                startActivity(intent);
+
+            }
+        });
+        recyclerView.setAdapter(adapter);
 
 
         btnCmWrite = view.findViewById(R.id.btnCmWrite);
@@ -77,14 +103,13 @@ public class CommuFragment extends Fragment {
             }
         });
 
-
         return view;
     }
 
 
     //게시판 불러오는 메서드
     public void initBoard() {
-        int method = Request.Method.POST;
+        int method = Request.Method.GET;
         String server_url = "http://192.168.0.3:8081/myapp/BoardList.do";
 
         request = new StringRequest(
@@ -98,7 +123,6 @@ public class CommuFragment extends Fragment {
                         Toast.makeText(getContext(),
                                 "게시판 불러오기 성공",
                                 Toast.LENGTH_SHORT).show();
-                        Log.d("user_id", vo.getUser_id());
                         Log.d("asdf", response);
                         try {
                             JSONArray boardArray = new JSONArray(response);
@@ -113,10 +137,12 @@ public class CommuFragment extends Fragment {
                                 String file = Object.getString("article_file");
                                 String id = Object.getString("article_id");
                                 int cnt = Integer.parseInt(Object.getString("article_cnt"));
+                                Board item = new Board(seq, title, content, date, file, id, cnt);
+                                items.add(item);
 
-                                adapter.notifyDataSetChanged();
                             }
-
+                            adapter.setItems(items);
+                            adapter.notifyDataSetChanged();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

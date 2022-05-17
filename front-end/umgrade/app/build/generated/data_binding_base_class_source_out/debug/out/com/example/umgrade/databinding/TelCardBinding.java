@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -19,10 +19,13 @@ import java.lang.String;
 
 public final class TelCardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
   public final Button btnChange;
+
+  @NonNull
+  public final CardView cvTel;
 
   @NonNull
   public final Guideline guideline21;
@@ -36,11 +39,12 @@ public final class TelCardBinding implements ViewBinding {
   @NonNull
   public final TextView tvTelTitle;
 
-  private TelCardBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnChange,
-      @NonNull Guideline guideline21, @NonNull Guideline guideline22, @NonNull TextView tvTel,
-      @NonNull TextView tvTelTitle) {
+  private TelCardBinding(@NonNull CardView rootView, @NonNull Button btnChange,
+      @NonNull CardView cvTel, @NonNull Guideline guideline21, @NonNull Guideline guideline22,
+      @NonNull TextView tvTel, @NonNull TextView tvTelTitle) {
     this.rootView = rootView;
     this.btnChange = btnChange;
+    this.cvTel = cvTel;
     this.guideline21 = guideline21;
     this.guideline22 = guideline22;
     this.tvTel = tvTel;
@@ -49,7 +53,7 @@ public final class TelCardBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -80,6 +84,8 @@ public final class TelCardBinding implements ViewBinding {
         break missingId;
       }
 
+      CardView cvTel = (CardView) rootView;
+
       id = R.id.guideline21;
       Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
       if (guideline21 == null) {
@@ -104,7 +110,7 @@ public final class TelCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TelCardBinding((ConstraintLayout) rootView, btnChange, guideline21, guideline22,
+      return new TelCardBinding((CardView) rootView, btnChange, cvTel, guideline21, guideline22,
           tvTel, tvTelTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

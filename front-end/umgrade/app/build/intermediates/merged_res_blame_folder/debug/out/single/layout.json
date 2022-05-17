@@ -16,6 +16,10 @@
         "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_terms.xml"
     },
     {
+        "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_card_register.xml",
+        "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_card_register.xml"
+    },
+    {
         "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\board_list.xml",
         "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\board_list.xml"
     },
@@ -184,6 +188,10 @@
         "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_modify.xml"
     },
     {
+        "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_add_card.xml",
+        "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\card_add_card.xml"
+    },
+    {
         "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fare.xml",
         "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_fare.xml"
     },
@@ -198,6 +206,10 @@
     {
         "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_support.xml",
         "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_support.xml"
+    },
+    {
+        "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_password_change.xml",
+        "source": "F:\\second\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_password_change.xml"
     },
     {
         "merged": "F:\\second\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",

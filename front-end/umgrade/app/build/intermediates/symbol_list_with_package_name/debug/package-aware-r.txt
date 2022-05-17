@@ -2508,6 +2508,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
 drawable alarm16
 drawable arroaright_resize
 drawable arrowleft
@@ -2737,7 +2738,9 @@ id bounceStart
 id btnAccountSetting
 id btnAccountSettingPre
 id btnAlarmSetting
+id btnCardRegisterPre
 id btnChange
+id btnChangePw
 id btnCmWrite
 id btnComment
 id btnCommuMenu
@@ -2761,6 +2764,7 @@ id btnMoreUserInfo
 id btnNickChange
 id btnNoticeEvent
 id btnPasswordChange
+id btnPasswordChangePre
 id btnPayment
 id btnPaymentPre
 id btnPostComment
@@ -2836,7 +2840,12 @@ id custom
 id customBarcodeView
 id customPanel
 id cut
+id cvAddr
+id cvCardAdd
+id cvEmail
 id cvMypage
+id cvMypage2
+id cvTel
 id cvWeather
 id dark
 id date_picker_actions
@@ -2906,7 +2915,10 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
+id edtNewCkPw
+id edtNewPw
 id edtNickChange
+id edtNowPw
 id edtSupportComment
 id edtSupportContent
 id edtSupportTitle
@@ -2997,6 +3009,7 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imgCardAdd
 id imgCommentProfile
 id imgLogo
 id imgMapCard
@@ -3036,10 +3049,10 @@ id linearLayout2
 id linearLayout3
 id listMode
 id list_item
-id lvBoard
 id lvComment
 id lvEvent
 id lvNotice
+id lvborad
 id mainScroll
 id map_View
 id masked
@@ -3314,6 +3327,8 @@ id tvAccountSetting
 id tvAddress
 id tvAddressTitle
 id tvCarbonMypageCard
+id tvCardAdd
+id tvCardRegisterTitle
 id tvComment1MypageCard
 id tvComment2MypageCard
 id tvCommentContent
@@ -3326,8 +3341,6 @@ id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
 id tvDeletingAccount
-id tvEmail
-id tvEmailTitle
 id tvFare
 id tvFareOne
 id tvFareService
@@ -3341,7 +3354,14 @@ id tvModify
 id tvMoreNick
 id tvMorePrivacy
 id tvMoreService
+id tvNewCkPw
+id tvNewCkPwTitle
+id tvNewPw
+id tvNewPwTitle
 id tvNickMypageCard
+id tvNowPw
+id tvNowPwTitle
+id tvPasswordChangeTitle
 id tvPaymentTitle
 id tvPointMypageCard
 id tvPointTextMypageCard
@@ -3355,6 +3375,7 @@ id tvPostPl2
 id tvPostTime
 id tvPostTitle
 id tvPrivacy
+id tvProfileNIckhint
 id tvProfileTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
@@ -3510,6 +3531,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_setting
+layout activity_card_register
 layout activity_comment
 layout activity_event_post
 layout activity_fare
@@ -3521,6 +3543,7 @@ layout activity_map
 layout activity_modify
 layout activity_notice
 layout activity_notice_post
+layout activity_password_change
 layout activity_payment
 layout activity_post
 layout activity_privacy_popup
@@ -3536,6 +3559,7 @@ layout activity_usage_history
 layout activity_write
 layout address_card
 layout board_list
+layout card_add_card
 layout comment_list
 layout custom_dialog
 layout custom_scanner
@@ -3936,6 +3960,11 @@ string tvAccountSetting
 string tvAddress
 string tvAddressTitle
 string tvCarbonMypageCard
+string tvCardDOBTitle
+string tvCardExpiryDateTitle
+string tvCardNumTitle
+string tvCardPwTitle
+string tvCardRegisterTitle
 string tvComment1MypageCard
 string tvComment2MypageCard
 string tvCommentContent
@@ -3983,6 +4012,7 @@ string tvPostPl2
 string tvPostTime
 string tvPostTitle
 string tvPrivacy
+string tvProfileNIckhint
 string tvProfileTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
@@ -4014,6 +4044,7 @@ string tvUserId
 string tvWelcomeMypageCard
 string tvWrite
 string tvWriter
+string tvcardAdd
 string zxing_app_name
 string zxing_button_ok
 string zxing_msg_camera_framework_bug

@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -19,10 +19,13 @@ import java.lang.String;
 
 public final class EmailCardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
   public final Button btnChange;
+
+  @NonNull
+  public final CardView cvEmail;
 
   @NonNull
   public final Guideline guideline21;
@@ -31,25 +34,26 @@ public final class EmailCardBinding implements ViewBinding {
   public final Guideline guideline22;
 
   @NonNull
-  public final TextView tvEmail;
+  public final TextView tvAddress;
 
   @NonNull
-  public final TextView tvEmailTitle;
+  public final TextView tvAddressTitle;
 
-  private EmailCardBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnChange,
-      @NonNull Guideline guideline21, @NonNull Guideline guideline22, @NonNull TextView tvEmail,
-      @NonNull TextView tvEmailTitle) {
+  private EmailCardBinding(@NonNull CardView rootView, @NonNull Button btnChange,
+      @NonNull CardView cvEmail, @NonNull Guideline guideline21, @NonNull Guideline guideline22,
+      @NonNull TextView tvAddress, @NonNull TextView tvAddressTitle) {
     this.rootView = rootView;
     this.btnChange = btnChange;
+    this.cvEmail = cvEmail;
     this.guideline21 = guideline21;
     this.guideline22 = guideline22;
-    this.tvEmail = tvEmail;
-    this.tvEmailTitle = tvEmailTitle;
+    this.tvAddress = tvAddress;
+    this.tvAddressTitle = tvAddressTitle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -80,6 +84,8 @@ public final class EmailCardBinding implements ViewBinding {
         break missingId;
       }
 
+      CardView cvEmail = (CardView) rootView;
+
       id = R.id.guideline21;
       Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
       if (guideline21 == null) {
@@ -92,20 +98,20 @@ public final class EmailCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvEmail;
-      TextView tvEmail = ViewBindings.findChildViewById(rootView, id);
-      if (tvEmail == null) {
+      id = R.id.tvAddress;
+      TextView tvAddress = ViewBindings.findChildViewById(rootView, id);
+      if (tvAddress == null) {
         break missingId;
       }
 
-      id = R.id.tvEmailTitle;
-      TextView tvEmailTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvEmailTitle == null) {
+      id = R.id.tvAddressTitle;
+      TextView tvAddressTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvAddressTitle == null) {
         break missingId;
       }
 
-      return new EmailCardBinding((ConstraintLayout) rootView, btnChange, guideline21, guideline22,
-          tvEmail, tvEmailTitle);
+      return new EmailCardBinding((CardView) rootView, btnChange, cvEmail, guideline21, guideline22,
+          tvAddress, tvAddressTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
