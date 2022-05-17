@@ -209,5 +209,7 @@
     <string name="btnSupportDelete">삭제</string>
     <string name="supportPostSeq">00</string>
     <string name="tvSupportPostComment">답변을 기다리고 있어요</string>
+    <string name="btnSupportComment">전송</string>
+    <string name="edtSupportComment">문의 답변하기</string>
 
 </resources>

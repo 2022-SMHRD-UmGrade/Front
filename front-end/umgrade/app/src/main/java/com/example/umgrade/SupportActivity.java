@@ -35,6 +35,8 @@ public class SupportActivity extends AppCompatActivity {
         supportTime = findViewById(R.id.supportTime); // 글작성시각
         supportSeq = findViewById(R.id.supportTime); // 글번호
 
+        // 문의 처리여부(관리자가 답을 했는지)에 따라 tvSet 문구 변경
+
         // 문의 처리여부에 따라 텍스트뷰 색상 변경
 //        if(tvSet.getText().toString().equals("처리중")){
 //            tvSet.setTextColor(Color.BLACK);

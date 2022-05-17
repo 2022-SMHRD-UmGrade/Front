@@ -88,6 +88,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
+id btnSupportComment
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -118,6 +119,7 @@ id divider13
 id divider14
 id divider15
 id divider16
+id divider17
 id divider2
 id divider3
 id divider4
@@ -140,6 +142,7 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
+id edtSupportComment
 id edtSupportContent
 id edtSupportTitle
 id edtWriteContent
@@ -391,6 +394,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
+string btnSupportComment
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
@@ -415,6 +419,7 @@ string edtLoginPw
 string edtModifyContent
 string edtModifyTitle
 string edtNickHint
+string edtSupportComment
 string edtWriteContent
 string edtWriteTitle
 string eventDash
