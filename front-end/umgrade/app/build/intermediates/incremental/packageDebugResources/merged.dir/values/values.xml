@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="blueColor">#2196F3</color>
     <color name="colorAccent">#00A5FF</color>
     <color name="colorPrimary">#1F5BF3</color>
     <color name="colorPrimaryDark">#0947E8</color>
-<<<<<<< HEAD
     <color name="dialogColor">#68000000</color>
-=======
-<<<<<<< HEAD
-    <color name="dialogColor">#68000000</color>
-=======
->>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
->>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <color name="loginBkColor">#f0f0f0</color>
     <color name="primaryTextColor">#00a5ff</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -34,6 +28,7 @@
     <string name="boardSeq">00</string>
     <string name="boardTime">2022.05.12. 17:21</string>
     <string name="boardTitle">글 제목</string>
+    <string name="btnAccountSetting">계정설정</string>
     <string name="btnCmWrite">글쓰기</string>
     <string name="btnComment">등록</string>
     <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
@@ -41,6 +36,7 @@
     <string name="btnJoin">가입하기</string>
     <string name="btnKakaoLogin">카카오로 시작하기</string>
     <string name="btnLogin">로그인</string>
+    <string name="btnLogout">로그아웃</string>
     <string name="btnMapCard">UM-CYCLE\n보관함 찾기</string>
     <string name="btnModifyCancel">취소</string>
     <string name="btnModifySend">수정</string>
@@ -52,21 +48,18 @@
     <string name="btnMoreSupport">고객센터</string>
     <string name="btnMoreTerms">이용 약관 확인</string>
     <string name="btnMoreUserInfo">회원 정보 수정</string>
+    <string name="btnNickChange">닉네임 변경</string>
     <string name="btnNoticeEvent">공지사항 &amp; 이벤트 확인하기</string>
+    <string name="btnPayment">결제등록</string>
     <string name="btnPostComment">댓글 보기</string>
     <string name="btnPostDelete">삭제</string>
     <string name="btnPostModify">수정</string>
+    <string name="btnProfileUpdate">프로필 수정</string>
     <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
-<<<<<<< HEAD
     <string name="btnTermsClose">닫기</string>
-=======
-<<<<<<< HEAD
-    <string name="btnTermsClose">닫기</string>
-=======
->>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
->>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+    <string name="btnUsageHistory">이용내역</string>
     <string name="btnWriteCancel">취소</string>
     <string name="btnWriteSend">등록</string>
     <string name="ckAllCheck">모두 동의합니다.</string>
@@ -86,6 +79,7 @@
     <string name="edtLoginPw">PW를 입력하세요</string>
     <string name="edtModifyContent">본문</string>
     <string name="edtModifyTitle">제목</string>
+    <string name="edtNickHint">닉네임을 입력하세요</string>
     <string name="edtWriteContent">본문</string>
     <string name="edtWriteTitle">제목</string>
     <string name="eventDash">-</string>
@@ -145,24 +139,14 @@
     <string name="tvPostPl2">)</string>
     <string name="tvPostTime">2022.05.12. 17:21</string>
     <string name="tvPostTitle">글 제목</string>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <string name="tvPrivacy">개인정보 처리방침</string>
+    <string name="tvProfileTitle">프로필 수정</string>
     <string name="tvRatingMypageCard">U</string>
     <string name="tvRatingTextMypageCard">회원 등급</string>
     <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
     <string name="tvServiceInfo">서비스 이용약관</string>
     <string name="tvTerms">위치기반서비스 이용약관</string>
-<<<<<<< HEAD
-=======
-=======
-    <string name="tvRatingMypageCard">U</string>
-    <string name="tvRatingTextMypageCard">회원 등급</string>
-    <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
->>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
->>>>>>> d25de064aa5aa230667345ec7c497a07818def91
+    <string name="tvUserId">UserID</string>
     <string name="tvWelcomeMypageCard">님 환영합니다!</string>
     <string name="tvWrite">글쓰기</string>
     <string name="tvWriter">작성자</string>
@@ -170,21 +154,12 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <style name="DialogTheme" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@color/dialogColor</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> df2318786ced5b7d6ae48eb15ba92b70b5530e40
->>>>>>> d25de064aa5aa230667345ec7c497a07818def91
     <style name="Theme.Umgrade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>

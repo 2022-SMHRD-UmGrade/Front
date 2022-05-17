@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:theme="@style/loginParent"
-    tools:context=".LoginActivity">
+    tools:context=".userActivity.LoginActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"

@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color blueColor
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
@@ -23,10 +24,13 @@ dimen loginViewsMargin
 dimen newsMoreTextSize
 dimen signup_text_margin_top
 drawable arroaright_resize
+drawable arrowleft
 drawable arrowright
 drawable closed_umbrella
 drawable community
 drawable corner_shape
+drawable creditcard16
+drawable file16
 drawable frag_color
 drawable home
 drawable ic_launcher_background
@@ -42,6 +46,7 @@ drawable round
 drawable round_layout
 drawable umbrella
 drawable umbrella2
+drawable usersetting16
 id boardListItem
 id boardNick
 id boardSeq
@@ -75,6 +80,7 @@ id btnPayment
 id btnPostComment
 id btnPostDelete
 id btnPostModify
+id btnPre
 id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
@@ -83,6 +89,7 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
+id button
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -110,6 +117,7 @@ id divider6
 id divider7
 id divider8
 id divider9
+id editTextTextPersonName
 id edtComment
 id edtJoinAddr
 id edtJoinEmail
@@ -162,6 +170,7 @@ id imgLogo
 id imgMapCard
 id imgMoreProfile
 id imgMypageProfile
+id imgMypageProfile2
 id imgPostProfile
 id imgQrCard
 id imgServiceCard
@@ -251,6 +260,7 @@ id tvPostPl2
 id tvPostTime
 id tvPostTitle
 id tvPrivacy
+id tvProfileTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
@@ -262,6 +272,7 @@ id tvWrite
 id tvWriter
 id zxing_barcode_surface
 id zxing_viewfinder_view
+layout activity_account_setting
 layout activity_comment
 layout activity_event_post
 layout activity_fare
@@ -273,13 +284,16 @@ layout activity_map
 layout activity_modify
 layout activity_notice
 layout activity_notice_post
+layout activity_payment
 layout activity_post
 layout activity_privacy_popup
+layout activity_profile_update
 layout activity_qr
 layout activity_service
 layout activity_service_info_popup
 layout activity_support
 layout activity_terms
+layout activity_usage_history
 layout activity_write
 layout board_list
 layout comment_list
@@ -313,6 +327,7 @@ string boardNick
 string boardSeq
 string boardTime
 string boardTitle
+string btnAccountSetting
 string btnCmWrite
 string btnComment
 string btnFare
@@ -320,6 +335,7 @@ string btnIdCheck
 string btnJoin
 string btnKakaoLogin
 string btnLogin
+string btnLogout
 string btnMapCard
 string btnModifyCancel
 string btnModifySend
@@ -331,14 +347,18 @@ string btnMoreService
 string btnMoreSupport
 string btnMoreTerms
 string btnMoreUserInfo
+string btnNickChange
 string btnNoticeEvent
+string btnPayment
 string btnPostComment
 string btnPostDelete
 string btnPostModify
+string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
 string btnTermsClose
+string btnUsageHistory
 string btnWriteCancel
 string btnWriteSend
 string ckAllCheck
@@ -358,6 +378,7 @@ string edtLoginId
 string edtLoginPw
 string edtModifyContent
 string edtModifyTitle
+string edtNickHint
 string edtWriteContent
 string edtWriteTitle
 string eventDash
@@ -418,11 +439,13 @@ string tvPostPl2
 string tvPostTime
 string tvPostTitle
 string tvPrivacy
+string tvProfileTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvScanner
 string tvServiceInfo
 string tvTerms
+string tvUserId
 string tvWelcomeMypageCard
 string tvWrite
 string tvWriter

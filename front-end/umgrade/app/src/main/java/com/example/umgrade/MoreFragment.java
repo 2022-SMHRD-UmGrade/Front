@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.umgrade.main.MapActivity;
+import com.example.umgrade.notice.NoticeActivity;
 
 public class MoreFragment extends Fragment {
 
