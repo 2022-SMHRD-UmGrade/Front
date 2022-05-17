@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".service.ServiceActivity">
-=======
-    tools:context=".sevice.ServiceActivity">
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 
     <TextView
         android:id="@+id/textView3"

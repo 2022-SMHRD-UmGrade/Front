@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         frag_mypage = new MypageFragment();
         frag_more = new MoreFragment();
 
+
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
 
         // 프래그먼트 전환

@@ -112,9 +112,6 @@
             android:name=".service.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name= ".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity

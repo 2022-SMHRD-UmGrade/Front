@@ -59,10 +59,7 @@
     <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
-<<<<<<< HEAD
-=======
     <string name="btnSupportComment">전송</string>
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
     <string name="btnSupportDelete">삭제</string>
     <string name="btnSupportWrite">문의하기</string>
     <string name="btnTermsClose">닫기</string>

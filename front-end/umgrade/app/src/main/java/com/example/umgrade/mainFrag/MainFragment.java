@@ -5,12 +5,16 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
@@ -21,6 +25,7 @@ import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.notice.NoticeActivity;
+import com.example.umgrade.userActivity.MypageFragment;
 
 
 public class MainFragment extends Fragment {
@@ -44,6 +49,10 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 ((MainActivity)getActivity()).changeMypage(newInstance());
+                // Log.v("tetetetetet","teteltetet");
+                //((MainActivity)getActivity()).getSupportFragmentManager().beginTransaction().replace(R.id.container, MainActivity.frag_mypage).commit();
+                //MypageFragment frag_mypage = new MypageFragment();
+                //((MainActivity)getActivity()).getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
             }
         });
 

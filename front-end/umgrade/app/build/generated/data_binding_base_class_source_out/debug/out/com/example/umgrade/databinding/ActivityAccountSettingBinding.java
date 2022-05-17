@@ -41,23 +41,16 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
   public final TextView tvAccountSetting;
 
   @NonNull
-<<<<<<< HEAD
-=======
   public final TextView tvDeletingAccount;
 
   @NonNull
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
   public final TextView tvUserID;
 
   private ActivityAccountSettingBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton btnPre, @NonNull Button button2, @NonNull View divider8,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
-<<<<<<< HEAD
-      @NonNull TextView tvAccountSetting, @NonNull TextView tvUserID) {
-=======
       @NonNull TextView tvAccountSetting, @NonNull TextView tvDeletingAccount,
       @NonNull TextView tvUserID) {
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
     this.rootView = rootView;
     this.btnPre = btnPre;
     this.button2 = button2;
@@ -65,10 +58,7 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.tvAccountSetting = tvAccountSetting;
-<<<<<<< HEAD
-=======
     this.tvDeletingAccount = tvDeletingAccount;
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
     this.tvUserID = tvUserID;
   }
 
@@ -135,15 +125,12 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
         break missingId;
       }
 
-<<<<<<< HEAD
-=======
       id = R.id.tvDeletingAccount;
       TextView tvDeletingAccount = ViewBindings.findChildViewById(rootView, id);
       if (tvDeletingAccount == null) {
         break missingId;
       }
 
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
       id = R.id.tvUserID;
       TextView tvUserID = ViewBindings.findChildViewById(rootView, id);
       if (tvUserID == null) {
@@ -151,11 +138,7 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
       }
 
       return new ActivityAccountSettingBinding((ConstraintLayout) rootView, btnPre, button2,
-<<<<<<< HEAD
-          divider8, linearLayout, linearLayout2, tvAccountSetting, tvUserID);
-=======
           divider8, linearLayout, linearLayout2, tvAccountSetting, tvDeletingAccount, tvUserID);
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

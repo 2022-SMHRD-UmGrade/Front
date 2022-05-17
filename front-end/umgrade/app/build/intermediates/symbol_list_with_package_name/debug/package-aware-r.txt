@@ -2768,10 +2768,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
-<<<<<<< HEAD
-=======
 id btnSupportComment
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -2779,13 +2776,8 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
-<<<<<<< HEAD
-id button
-id button2
-=======
 id button2
 id button4
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2872,10 +2864,7 @@ id divider13
 id divider14
 id divider15
 id divider16
-<<<<<<< HEAD
-=======
 id divider17
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id divider2
 id divider3
 id divider4
@@ -2911,11 +2900,8 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
-<<<<<<< HEAD
-=======
 id edtNickChange
 id edtSupportComment
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id edtSupportContent
 id edtSupportTitle
 id edtWriteContent
@@ -3721,10 +3707,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
-<<<<<<< HEAD
-=======
 string btnSupportComment
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose

@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".service.SupportPostActivity">
-=======
-    tools:context=".sevice.SupportPostActivity">
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -123,17 +119,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-<<<<<<< HEAD
-                <TextView
-                    android:id="@+id/supportPostContent"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/supportPostContent"
-                    android:textColor="#2C2C2C"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-=======
                 <View
                     android:id="@+id/divider17"
                     android:layout_width="match_parent"
@@ -159,25 +144,17 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="1.0" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 
                 <View
                     android:id="@+id/divider16"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-<<<<<<< HEAD
-                    android:layout_marginBottom="20dp"
-=======
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
                     android:background="?android:attr/listDivider" />
 
                 <TextView
                     android:id="@+id/tvSupportPostComment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:text="@string/tvSupportPostComment" />
-=======
                     android:hint="@string/tvSupportPostComment"
                     android:padding="16dp"
                     android:textColor="#000000"
@@ -227,7 +204,6 @@
                     android:layout_weight="1"
                     android:background="?android:attr/listDivider" />
 
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
             </LinearLayout>
         </ScrollView>
 

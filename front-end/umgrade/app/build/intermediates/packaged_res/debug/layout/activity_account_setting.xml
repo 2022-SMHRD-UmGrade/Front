@@ -34,19 +34,11 @@
 
             <TextView
                 android:id="@+id/tvAccountSetting"
-<<<<<<< HEAD
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="계정설정"
-                android:textAlignment="textStart"
-=======
                 android:layout_width="312dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="계정설정"
                 android:textAlignment="center"
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
                 android:textColor="@color/blueColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -87,11 +79,7 @@
             android:text="비밀번호 변경"
             android:textAlignment="textStart"
             android:textColor="@color/blueColor"
-<<<<<<< HEAD
-            android:textSize="16sp"
-=======
             android:textSize="14sp"
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
             android:textStyle="bold"
             app:cornerRadius="7dp" />
 
@@ -116,8 +104,6 @@
 <!--            android:layout_marginTop="15dp"-->
 <!--            android:layout_weight="1" />-->
     </LinearLayout>
-<<<<<<< HEAD
-=======
 
     <TextView
         android:id="@+id/tvDeletingAccount"
@@ -131,5 +117,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.974" />
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 </androidx.constraintlayout.widget.ConstraintLayout>

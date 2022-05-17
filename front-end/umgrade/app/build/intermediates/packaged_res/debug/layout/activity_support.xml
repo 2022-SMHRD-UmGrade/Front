@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".service.SupportActivity">
-=======
-    tools:context=".sevice.SupportActivity">
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 
     <LinearLayout
         android:id="@+id/linearLayout"

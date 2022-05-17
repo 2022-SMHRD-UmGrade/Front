@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".service.SupportWriteActivity">
-=======
-    tools:context=".sevice.SupportWriteActivity">
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -102,11 +98,8 @@
                 android:id="@+id/tvSupportCount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
                 android:gravity="right"
                 android:paddingRight="5dp"
                 android:text="@string/tvSupportCount" />

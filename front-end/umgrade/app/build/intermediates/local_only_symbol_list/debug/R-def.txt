@@ -92,10 +92,7 @@ id btnQrCard
 id btnServiceCard
 id btnSupportCancel
 id btnSupportCard
-<<<<<<< HEAD
-=======
 id btnSupportComment
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
@@ -103,13 +100,8 @@ id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
-<<<<<<< HEAD
-id button
-id button2
-=======
 id button2
 id button4
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -133,10 +125,7 @@ id divider13
 id divider14
 id divider15
 id divider16
-<<<<<<< HEAD
-=======
 id divider17
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id divider2
 id divider3
 id divider4
@@ -271,11 +260,8 @@ id textView27
 id textView3
 id textView4
 id textView6
-<<<<<<< HEAD
-=======
 id textView8
 id textView9
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
@@ -422,10 +408,7 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
-<<<<<<< HEAD
-=======
 string btnSupportComment
->>>>>>> 31039cfb050fd798e7ebe2932b36ca23defa650b
 string btnSupportDelete
 string btnSupportWrite
 string btnTermsClose
