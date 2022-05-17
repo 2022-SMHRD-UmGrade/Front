@@ -49,6 +49,7 @@ drawable round_layout
 drawable roundblack
 drawable umbrella
 drawable umbrella2
+drawable umbrella_person
 drawable usersetting16
 id boardListItem
 id boardNick
@@ -111,6 +112,8 @@ id constraintLayout2
 id constraintLayout3
 id constraintLayout4
 id constraintLayout5
+id constraintLayout6
+id constraintLayout7
 id container
 id customBarcodeView
 id cvMypage
@@ -126,6 +129,7 @@ id divider14
 id divider15
 id divider16
 id divider17
+id divider18
 id divider2
 id divider3
 id divider4
@@ -177,6 +181,7 @@ id guideline14
 id guideline15
 id guideline16
 id guideline17
+id guideline18
 id guideline2
 id guideline21
 id guideline22
@@ -188,6 +193,7 @@ id guideline7
 id guideline8
 id guideline9
 id imageView
+id imageView2
 id imgCommentProfile
 id imgLogo
 id imgMapCard
@@ -258,7 +264,6 @@ id textView25
 id textView26
 id textView27
 id textView3
-id textView4
 id textView6
 id textView8
 id textView9
@@ -276,6 +281,11 @@ id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
 id tvDeletingAccount
+id tvFare
+id tvFareOne
+id tvFareService
+id tvFareTitle
+id tvFareTwo
 id tvIntro
 id tvJoin
 id tvJoinTitle
@@ -482,6 +492,11 @@ string tvCommentTime
 string tvCommuTitle
 string tvCouponMypageCard
 string tvCouponTextMypageCard
+string tvFare
+string tvFareOne
+string tvFareService
+string tvFareTitle
+string tvFareTwo
 string tvIntro
 string tvJoin
 string tvJoinTitle

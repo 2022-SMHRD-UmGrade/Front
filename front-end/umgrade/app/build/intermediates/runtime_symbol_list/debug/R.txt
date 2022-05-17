@@ -2622,6 +2622,7 @@ int drawable tooltip_frame_dark 0x7f0700c5
 int drawable tooltip_frame_light 0x7f0700c6
 int drawable umbrella 0x7f0700c7
 int drawable umbrella2 0x7f0700c8
+int drawable umbrella_person 0x7f0700cb
 int drawable usersetting16 0x7f0700c9
 int drawable white_radius 0x7f0700ca
 int id ALT 0x7f080000
@@ -2817,6 +2818,8 @@ int id constraintLayout2 0x7f0800bd
 int id constraintLayout3 0x7f0800be
 int id constraintLayout4 0x7f0800bf
 int id constraintLayout5 0x7f0800c0
+int id constraintLayout6 0x7f080302
+int id constraintLayout7 0x7f08030a
 int id container 0x7f0800c1
 int id content 0x7f0800c2
 int id contentPanel 0x7f0800c3
@@ -2864,6 +2867,7 @@ int id divider14 0x7f0800ec
 int id divider15 0x7f0800ed
 int id divider16 0x7f0800ee
 int id divider17 0x7f0800ef
+int id divider18 0x7f080303
 int id divider2 0x7f0800f0
 int id divider3 0x7f0800f1
 int id divider4 0x7f0800f2
@@ -2962,6 +2966,7 @@ int id guideline14 0x7f08014e
 int id guideline15 0x7f08014f
 int id guideline16 0x7f080150
 int id guideline17 0x7f080151
+int id guideline18 0x7f080304
 int id guideline2 0x7f080152
 int id guideline21 0x7f080153
 int id guideline22 0x7f080154
@@ -2987,6 +2992,7 @@ int id ignore 0x7f080167
 int id ignoreRequest 0x7f080168
 int id image 0x7f080169
 int id imageView 0x7f08016a
+int id imageView2 0x7f08030b
 int id imgCommentProfile 0x7f08016b
 int id imgLogo 0x7f08016c
 int id imgMapCard 0x7f08016d
@@ -3275,7 +3281,6 @@ int id textView25 0x7f080287
 int id textView26 0x7f080288
 int id textView27 0x7f080289
 int id textView3 0x7f08028a
-int id textView4 0x7f08028b
 int id textView6 0x7f08028c
 int id textView8 0x7f08028d
 int id textView9 0x7f08028e
@@ -3318,6 +3323,11 @@ int id tvCommuTitle 0x7f0802b2
 int id tvCouponMypageCard 0x7f0802b3
 int id tvCouponTextMypageCard 0x7f0802b4
 int id tvDeletingAccount 0x7f0802b5
+int id tvFare 0x7f080305
+int id tvFareOne 0x7f080306
+int id tvFareService 0x7f080307
+int id tvFareTitle 0x7f080308
+int id tvFareTwo 0x7f080309
 int id tvIntro 0x7f0802b6
 int id tvJoin 0x7f0802b7
 int id tvJoinTitle 0x7f0802b8
@@ -3908,6 +3918,11 @@ int string tvCommentTime 0x7f100109
 int string tvCommuTitle 0x7f10010a
 int string tvCouponMypageCard 0x7f10010b
 int string tvCouponTextMypageCard 0x7f10010c
+int string tvFare 0x7f100134
+int string tvFareOne 0x7f100135
+int string tvFareService 0x7f100136
+int string tvFareTitle 0x7f100137
+int string tvFareTwo 0x7f100138
 int string tvIntro 0x7f10010d
 int string tvJoin 0x7f10010e
 int string tvJoinTitle 0x7f10010f

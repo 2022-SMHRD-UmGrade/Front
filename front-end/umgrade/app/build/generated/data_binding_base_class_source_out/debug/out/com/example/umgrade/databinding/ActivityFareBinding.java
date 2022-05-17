@@ -4,10 +4,12 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
@@ -20,11 +22,51 @@ public final class ActivityFareBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textView4;
+  public final ConstraintLayout constraintLayout6;
 
-  private ActivityFareBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textView4) {
+  @NonNull
+  public final ConstraintLayout constraintLayout7;
+
+  @NonNull
+  public final View divider18;
+
+  @NonNull
+  public final Guideline guideline18;
+
+  @NonNull
+  public final ImageView imageView2;
+
+  @NonNull
+  public final TextView tvFare;
+
+  @NonNull
+  public final TextView tvFareOne;
+
+  @NonNull
+  public final TextView tvFareService;
+
+  @NonNull
+  public final TextView tvFareTitle;
+
+  @NonNull
+  public final TextView tvFareTwo;
+
+  private ActivityFareBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout constraintLayout6, @NonNull ConstraintLayout constraintLayout7,
+      @NonNull View divider18, @NonNull Guideline guideline18, @NonNull ImageView imageView2,
+      @NonNull TextView tvFare, @NonNull TextView tvFareOne, @NonNull TextView tvFareService,
+      @NonNull TextView tvFareTitle, @NonNull TextView tvFareTwo) {
     this.rootView = rootView;
-    this.textView4 = textView4;
+    this.constraintLayout6 = constraintLayout6;
+    this.constraintLayout7 = constraintLayout7;
+    this.divider18 = divider18;
+    this.guideline18 = guideline18;
+    this.imageView2 = imageView2;
+    this.tvFare = tvFare;
+    this.tvFareOne = tvFareOne;
+    this.tvFareService = tvFareService;
+    this.tvFareTitle = tvFareTitle;
+    this.tvFareTwo = tvFareTwo;
   }
 
   @Override
@@ -54,13 +96,69 @@ public final class ActivityFareBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.constraintLayout6;
+      ConstraintLayout constraintLayout6 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout6 == null) {
         break missingId;
       }
 
-      return new ActivityFareBinding((ConstraintLayout) rootView, textView4);
+      id = R.id.constraintLayout7;
+      ConstraintLayout constraintLayout7 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout7 == null) {
+        break missingId;
+      }
+
+      id = R.id.divider18;
+      View divider18 = ViewBindings.findChildViewById(rootView, id);
+      if (divider18 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline18;
+      Guideline guideline18 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline18 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFare;
+      TextView tvFare = ViewBindings.findChildViewById(rootView, id);
+      if (tvFare == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFareOne;
+      TextView tvFareOne = ViewBindings.findChildViewById(rootView, id);
+      if (tvFareOne == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFareService;
+      TextView tvFareService = ViewBindings.findChildViewById(rootView, id);
+      if (tvFareService == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFareTitle;
+      TextView tvFareTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvFareTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFareTwo;
+      TextView tvFareTwo = ViewBindings.findChildViewById(rootView, id);
+      if (tvFareTwo == null) {
+        break missingId;
+      }
+
+      return new ActivityFareBinding((ConstraintLayout) rootView, constraintLayout6,
+          constraintLayout7, divider18, guideline18, imageView2, tvFare, tvFareOne, tvFareService,
+          tvFareTitle, tvFareTwo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -133,6 +133,11 @@
     <string name="tvCommuTitle">커뮤니티</string>
     <string name="tvCouponMypageCard">1개</string>
     <string name="tvCouponTextMypageCard">보유 쿠폰</string>
+    <string name="tvFare">기본요금 = 기본 800원 + 하루당 요금 * n 원</string>
+    <string name="tvFareOne">* 이용 요금은 우산 반납 시 자동 결제됩니다.</string>
+    <string name="tvFareService">이용 요금 안내</string>
+    <string name="tvFareTitle">UM-CYCLE 이용 요금 안내</string>
+    <string name="tvFareTwo">* 정해진 기간 동안 반납하지 않을 시 미납금 8,000원이 자동으로 결제됩니다.</string>
     <string name="tvIntro">UM-CYCLE</string>
     <string name="tvJoin">회원가입하기</string>
     <string name="tvJoinTitle">회원가입</string>

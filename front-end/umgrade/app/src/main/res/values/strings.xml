@@ -212,4 +212,11 @@
     <string name="btnSupportComment">전송</string>
     <string name="edtSupportComment">문의 답변하기</string>
 
+    <!-- activity_fare.xml -->
+    <string name="tvFareTitle">UM-CYCLE 이용 요금 안내</string>
+    <string name="tvFareService">이용 요금 안내</string>
+    <string name="tvFare">기본요금 = 기본 800원 + 하루당 요금 * n 원</string>
+    <string name="tvFareOne">* 이용 요금은 우산 반납 시 자동 결제됩니다.</string>
+    <string name="tvFareTwo">* 정해진 기간 동안 반납하지 않을 시 미납금 8,000원이 자동으로 결제됩니다.</string>
+
 </resources>
