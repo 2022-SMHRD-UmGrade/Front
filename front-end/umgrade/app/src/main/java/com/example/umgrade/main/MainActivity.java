@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_main).commit();
 
+        // 프래그먼트 전환
         bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -67,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         }); // bottomNav end
+    }
+
+    // MainFrag -> MyPageFrag 이동 메소드
+    public void changeMypage(MainFragment mainFragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
     }
 
 }
