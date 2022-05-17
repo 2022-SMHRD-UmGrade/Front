@@ -219,4 +219,11 @@
     <string name="tvFareOne">* 이용 요금은 우산 반납 시 자동 결제됩니다.</string>
     <string name="tvFareTwo">* 정해진 기간 동안 반납하지 않을 시 미납금 8,000원이 자동으로 결제됩니다.</string>
 
+    <!-- activity_service.xml -->
+    <string name="tvServiceTitle">UM-CYCLE 서비스 안내</string>
+    <string name="tvServiceService">서비스 안내</string>
+    <string name="tvService">text1</string>
+    <string name="tvServiceOne">one</string>
+    <string name="tvServiceTwo">two</string>
+
 </resources>

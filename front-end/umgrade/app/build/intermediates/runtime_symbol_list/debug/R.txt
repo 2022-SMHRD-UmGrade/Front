@@ -3280,7 +3280,6 @@ int id textView24 0x7f080286
 int id textView25 0x7f080287
 int id textView26 0x7f080288
 int id textView27 0x7f080289
-int id textView3 0x7f08028a
 int id textView6 0x7f08028c
 int id textView8 0x7f08028d
 int id textView9 0x7f08028e
@@ -3353,7 +3352,12 @@ int id tvProfileTitle 0x7f0802cb
 int id tvRatingMypageCard 0x7f0802cc
 int id tvRatingTextMypageCard 0x7f0802cd
 int id tvScanner 0x7f0802ce
+int id tvService 0x7f08030d
 int id tvServiceInfo 0x7f0802cf
+int id tvServiceOne 0x7f08030e
+int id tvServiceService 0x7f08030f
+int id tvServiceTitle 0x7f080310
+int id tvServiceTwo 0x7f080311
 int id tvSet 0x7f0802d0
 int id tvSupport 0x7f0802d1
 int id tvSupportCount 0x7f0802d2
@@ -3946,7 +3950,12 @@ int string tvProfileTitle 0x7f100120
 int string tvRatingMypageCard 0x7f100121
 int string tvRatingTextMypageCard 0x7f100122
 int string tvScanner 0x7f100123
+int string tvService 0x7f100139
 int string tvServiceInfo 0x7f100124
+int string tvServiceOne 0x7f10013a
+int string tvServiceService 0x7f10013b
+int string tvServiceTitle 0x7f10013c
+int string tvServiceTwo 0x7f10013d
 int string tvSet 0x7f100125
 int string tvSupport 0x7f100126
 int string tvSupportCount 0x7f100127

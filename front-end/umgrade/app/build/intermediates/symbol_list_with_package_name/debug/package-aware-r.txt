@@ -3281,7 +3281,6 @@ id textView24
 id textView25
 id textView26
 id textView27
-id textView3
 id textView6
 id textView8
 id textView9
@@ -3354,7 +3353,12 @@ id tvProfileTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
+id tvService
 id tvServiceInfo
+id tvServiceOne
+id tvServiceService
+id tvServiceTitle
+id tvServiceTwo
 id tvSet
 id tvSupport
 id tvSupportCount
@@ -3947,7 +3951,12 @@ string tvProfileTitle
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvScanner
+string tvService
 string tvServiceInfo
+string tvServiceOne
+string tvServiceService
+string tvServiceTitle
+string tvServiceTwo
 string tvSet
 string tvSupport
 string tvSupportCount
