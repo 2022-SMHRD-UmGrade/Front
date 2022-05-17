@@ -191,7 +191,7 @@
     <string name="btnProfileUpdate">프로필 수정</string>
 
     <!-- fragment_mypage.xml -->
-    <string name="btnPayment">결제등록</string>
+    <string name="btnPayment">결제관리</string>
     <string name="btnUsageHistory">이용내역</string>
     <string name="btnAccountSetting">계정설정</string>
     <string name="btnLogout">로그아웃</string>
@@ -199,6 +199,7 @@
     <!-- activity_profile_update.xml -->
     <string name="tvProfileTitle">프로필 수정</string>
     <string name="edtNickHint">닉네임을 입력하세요</string>
+    <string name="tvProfileNIckhint">※최대 10글자까지 입력 가능합니다</string>
     <string name="btnNickChange">닉네임 변경</string>
 
     <!-- activity_support_post.xml-->
@@ -262,7 +263,15 @@
     <string name="btnChange">변경하기</string>
 
     <!-- activity_payment.xml -->
-    <string name="tvPaymentTitle">결제등록</string>
+    <string name="tvPaymentTitle">결제관리</string>
+    <string name="tvcardAdd">카드 등록하기</string>
+
+    <!-- CardRegisterActivity.xml -->
+    <string name="tvCardRegisterTitle">카드등록</string>
+    <string name="tvCardNumTitle">카드번호</string>
+    <string name="tvCardExpiryDateTitle">유효기간</string>
+    <string name="tvCardPwTitle">비밀번호</string>
+    <string name="tvCardDOBTitle">생년월일</string>
 
     <!-- activity_usage_history.xml -->
     <string name="tvUsageHistoryTitle">이용내역</string>

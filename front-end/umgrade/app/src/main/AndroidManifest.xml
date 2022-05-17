@@ -35,6 +35,9 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CardRegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".PasswordChangeActivity"
             android:exported="false" />
         <activity
