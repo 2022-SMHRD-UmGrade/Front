@@ -35,6 +35,12 @@ public final class ActivitySupportPostBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout3;
 
   @NonNull
+  public final View divSupportPost1;
+
+  @NonNull
+  public final View divSupportPost2;
+
+  @NonNull
   public final View divider16;
 
   @NonNull
@@ -70,16 +76,19 @@ public final class ActivitySupportPostBinding implements ViewBinding {
   private ActivitySupportPostBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnSupportComment, @NonNull Button btnSupportDelete,
       @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout3,
-      @NonNull View divider16, @NonNull View divider17, @NonNull EditText edtSupportComment,
-      @NonNull ScrollView scrollView4, @NonNull TextView supportPostCnt,
-      @NonNull TextView supportPostContent, @NonNull TextView supportPostSeq,
-      @NonNull TextView supportPostTime, @NonNull TextView supportPostTitle,
-      @NonNull TextView tvSupportPostComment, @NonNull TextView tvSupportSet) {
+      @NonNull View divSupportPost1, @NonNull View divSupportPost2, @NonNull View divider16,
+      @NonNull View divider17, @NonNull EditText edtSupportComment, @NonNull ScrollView scrollView4,
+      @NonNull TextView supportPostCnt, @NonNull TextView supportPostContent,
+      @NonNull TextView supportPostSeq, @NonNull TextView supportPostTime,
+      @NonNull TextView supportPostTitle, @NonNull TextView tvSupportPostComment,
+      @NonNull TextView tvSupportSet) {
     this.rootView = rootView;
     this.btnSupportComment = btnSupportComment;
     this.btnSupportDelete = btnSupportDelete;
     this.constraintLayout = constraintLayout;
     this.constraintLayout3 = constraintLayout3;
+    this.divSupportPost1 = divSupportPost1;
+    this.divSupportPost2 = divSupportPost2;
     this.divider16 = divider16;
     this.divider17 = divider17;
     this.edtSupportComment = edtSupportComment;
@@ -141,6 +150,18 @@ public final class ActivitySupportPostBinding implements ViewBinding {
       id = R.id.constraintLayout3;
       ConstraintLayout constraintLayout3 = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayout3 == null) {
+        break missingId;
+      }
+
+      id = R.id.divSupportPost1;
+      View divSupportPost1 = ViewBindings.findChildViewById(rootView, id);
+      if (divSupportPost1 == null) {
+        break missingId;
+      }
+
+      id = R.id.divSupportPost2;
+      View divSupportPost2 = ViewBindings.findChildViewById(rootView, id);
+      if (divSupportPost2 == null) {
         break missingId;
       }
 
@@ -211,9 +232,9 @@ public final class ActivitySupportPostBinding implements ViewBinding {
       }
 
       return new ActivitySupportPostBinding((ConstraintLayout) rootView, btnSupportComment,
-          btnSupportDelete, constraintLayout, constraintLayout3, divider16, divider17,
-          edtSupportComment, scrollView4, supportPostCnt, supportPostContent, supportPostSeq,
-          supportPostTime, supportPostTitle, tvSupportPostComment, tvSupportSet);
+          btnSupportDelete, constraintLayout, constraintLayout3, divSupportPost1, divSupportPost2,
+          divider16, divider17, edtSupportComment, scrollView4, supportPostCnt, supportPostContent,
+          supportPostSeq, supportPostTime, supportPostTitle, tvSupportPostComment, tvSupportSet);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

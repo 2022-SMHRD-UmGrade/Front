@@ -16,12 +16,12 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\weather_card.xml"
     },
     {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\support_list.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\support_list.xml"
-    },
-    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_terms.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_terms.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\support_list.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\support_list.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\privacy_card.xml",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_write.xml"
     },
     {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile_update.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_profile_update.xml"
-    },
-    {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_comment.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile_update.xml",
+        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_profile_update.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_join.xml",
@@ -136,21 +136,8 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\board_list.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_usage_history.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_usage_history.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_account_setting.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_account_setting.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\qr_card.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\qr_card.xml"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\service_card.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\service_card.xml"
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\comment_list.xml",
@@ -165,17 +152,8 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_intro.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile_update.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_profile_update.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_service.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_service.xml"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_modify.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_modify.xml"
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\terms_card.xml",
@@ -190,14 +168,6 @@
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_service_info_popup.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_payment.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fare.xml",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_fare.xml"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fare.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_fare.xml"
     },
@@ -228,6 +198,5 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_usage_history.xml",
         "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_usage_history.xml"
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
     }
 ]

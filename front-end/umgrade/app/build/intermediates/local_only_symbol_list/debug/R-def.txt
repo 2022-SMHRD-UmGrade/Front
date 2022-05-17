@@ -111,6 +111,8 @@ id container
 id customBarcodeView
 id cvMypage
 id cvWeather
+id divSupportPost1
+id divSupportPost2
 id divider
 id divider10
 id divider11

@@ -34,7 +34,7 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".sevice.SupportPostActivity"
+            android:name=".IntroActivity"
             android:exported="false" />
         <activity
             android:name=".sevice.SupportWriteActivity"
@@ -109,17 +109,13 @@
             android:name=".sevice.ServiceActivity"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-            android:name=".ServiceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IntroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-=======
             android:name=".userActivity.LoginActivity"
->>>>>>> 38207b322895c3c775fc9ab28701e4b22e60be48
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".sevice.SupportPostActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

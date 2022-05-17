@@ -155,10 +155,17 @@
                     android:id="@+id/tvSupportPostComment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/tvSupportPostComment"
                     android:padding="16dp"
-                    android:text="@string/tvSupportPostComment"
                     android:textColor="#000000"
                     android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divSupportPost1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -189,6 +196,13 @@
                         app:cornerRadius="0dp" />
 
                 </LinearLayout>
+
+                <View
+                    android:id="@+id/divSupportPost2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
 
             </LinearLayout>
         </ScrollView>
