@@ -34,6 +34,9 @@ public final class ActivityFareBinding implements ViewBinding {
   public final Guideline guideline18;
 
   @NonNull
+  public final Guideline guideline19;
+
+  @NonNull
   public final ImageView imageView2;
 
   @NonNull
@@ -53,14 +56,15 @@ public final class ActivityFareBinding implements ViewBinding {
 
   private ActivityFareBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout constraintLayout6, @NonNull ConstraintLayout constraintLayout7,
-      @NonNull View divider18, @NonNull Guideline guideline18, @NonNull ImageView imageView2,
-      @NonNull TextView tvFare, @NonNull TextView tvFareOne, @NonNull TextView tvFareService,
-      @NonNull TextView tvFareTitle, @NonNull TextView tvFareTwo) {
+      @NonNull View divider18, @NonNull Guideline guideline18, @NonNull Guideline guideline19,
+      @NonNull ImageView imageView2, @NonNull TextView tvFare, @NonNull TextView tvFareOne,
+      @NonNull TextView tvFareService, @NonNull TextView tvFareTitle, @NonNull TextView tvFareTwo) {
     this.rootView = rootView;
     this.constraintLayout6 = constraintLayout6;
     this.constraintLayout7 = constraintLayout7;
     this.divider18 = divider18;
     this.guideline18 = guideline18;
+    this.guideline19 = guideline19;
     this.imageView2 = imageView2;
     this.tvFare = tvFare;
     this.tvFareOne = tvFareOne;
@@ -120,6 +124,12 @@ public final class ActivityFareBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.guideline19;
+      Guideline guideline19 = ViewBindings.findChildViewById(rootView, id);
+      if (guideline19 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView2;
       ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
       if (imageView2 == null) {
@@ -157,8 +167,8 @@ public final class ActivityFareBinding implements ViewBinding {
       }
 
       return new ActivityFareBinding((ConstraintLayout) rootView, constraintLayout6,
-          constraintLayout7, divider18, guideline18, imageView2, tvFare, tvFareOne, tvFareService,
-          tvFareTitle, tvFareTwo);
+          constraintLayout7, divider18, guideline18, guideline19, imageView2, tvFare, tvFareOne,
+          tvFareService, tvFareTitle, tvFareTwo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
