@@ -50,6 +50,9 @@ public class WriteActivity extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(WriteActivity.this);
 
+        //게시글 작성 메서드 불러오기
+        writeContent();
+
         // 취소 버튼 누르면 이전 화면으로
         btnWriteCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +61,11 @@ public class WriteActivity extends AppCompatActivity {
             }
         });
 
-        // 작성 글 전송
+
+    }
+    //게시글 작성 메서드
+    public void writeContent() {
+
         btnWriteSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

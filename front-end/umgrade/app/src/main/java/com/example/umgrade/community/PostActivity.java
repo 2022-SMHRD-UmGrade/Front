@@ -1,7 +1,12 @@
 package com.example.umgrade.community;
 
+import static java.security.AccessController.getContext;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -45,7 +50,7 @@ public class PostActivity extends AppCompatActivity {
 
     RequestQueue queue;
     StringRequest request;
-
+    Fragment commuFragment;
     User vo;
     Board dto;
 
@@ -57,7 +62,9 @@ public class PostActivity extends AppCompatActivity {
         setContentView(R.layout.activity_post);
 
         vo = UserInfo.info;
-        dto = BoardInfo.info;
+
+        commuFragment = (com.example.umgrade.communityFrag.CommuFragment) getSupportFragmentManager().findFragmentById(R.id.fragCommu);
+        commuFragment = new Fragment();
 
         btnPostModify = findViewById(R.id.btnPostModify);
         btnPostDelete = findViewById(R.id.btnPostDelete);
@@ -74,18 +81,23 @@ public class PostActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        int seq = intent.getIntExtra("article_seq", dto.getArticle_seq());
+        int seq = intent.getIntExtra("article_seq", 0);
+        String nick = intent.getStringExtra("article_id");
+        String title = intent.getStringExtra("article_title");
+        String content = intent.getStringExtra("article_content");
+        String date = intent.getStringExtra("article_date");
+        String file = intent.getStringExtra("article_file");
 
         Log.d("seq", String.valueOf(seq));
+        //단일 게시글 불러오기
+        getData(seq, title, nick, content, date, file);
 
-        getData(seq);
-
-        tvPostId.setText(dto.getArticle_id());
+        tvPostId.setText(nick);
 
 
     }
     //단일 게시글 불러오는 메서드
-    private void getData(int seq) {
+    private void getData(int seq, String title, String nick, String content, String date, String file) {
         int method = Request.Method.POST;
         String server_url = "http://192.168.0.3:8081/myapp/BoardOne.do";
 
@@ -108,7 +120,7 @@ public class PostActivity extends AppCompatActivity {
                             // 사용자 ID와 작성자 ID 일치할 때만 수정/삭제 버튼 활성화
                             String Userid = tvPostId.getText().toString();
 
-                            if (Userid.equals(vo.getUser_id())) {
+                            if (Userid.equals(nick)) {
                                 btnPostModify.setVisibility(View.VISIBLE);
                                 btnPostDelete.setVisibility(View.VISIBLE);
                             } else {
@@ -119,53 +131,16 @@ public class PostActivity extends AppCompatActivity {
                             btnPostModify.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-                                    Intent intentModify = new Intent(PostActivity.this, ModifyActivity.class);
-                                    intentModify.putExtra("dto",dto.getArticle_seq());
-                                    startActivity(intentModify);
+                                    Intent intent = new Intent(PostActivity.this, ModifyActivity.class);
+                                    intent.putExtra("article_seq", seq);
+                                    intent.putExtra("article_title", title);
+                                    intent.putExtra("article_content", content);
+                                    intent.putExtra("article_date", date);
+                                    intent.putExtra("article_file", file);
+
+                                    startActivity(intent);
                                 }
                             });
-
-                            btnPostDelete.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View view) {
-                                    int method = Request.Method.POST;
-                                    String server_url = "http://220.80.203.18:8081/myapp/BoardDelete.do";
-
-                                    request = new StringRequest(
-                                            method,
-                                            server_url,
-                                            new Response.Listener<String>() {
-                                                @Override
-                                                public void onResponse(String response) {
-                                                    Toast.makeText(PostActivity.this,
-                                                            "게시글 삭제 성공!"+response,
-                                                            Toast.LENGTH_SHORT).show();
-                                                }
-                                            },
-                                            new Response.ErrorListener() {
-                                                @Override
-                                                public void onErrorResponse(VolleyError error) {
-                                                    Toast.makeText(PostActivity.this,
-                                                            "게시글 삭제 실패!"+error.toString(),
-                                                            Toast.LENGTH_SHORT).show();
-                                                }
-                                            }
-                                    ){
-                                        @NonNull
-                                        @Override
-                                        protected Map<String, String> getParams() throws AuthFailureError{
-                                            Map<String, String> param = new HashMap<>();
-
-                                            param.put("article_seq", String.valueOf(seq));
-
-                                            return param;
-                                        }
-                                    };
-                                    queue.add(request);
-                                }
-                            });
-
-
                         }
                         catch(JSONException e) {
                             e.printStackTrace();
@@ -195,6 +170,7 @@ public class PostActivity extends AppCompatActivity {
         };
         queue.add(request);
 
+        deleteContent(seq);
 
         // 프로필 사진 원형으로
         imgPostProfile = (ImageView) findViewById(R.id.imgPostProfile);
@@ -213,5 +189,55 @@ public class PostActivity extends AppCompatActivity {
 
     }
 
+    public void deleteContent(int seq) {
+        btnPostDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int method = Request.Method.POST;
+                String server_url = "http://192.168.0.3:8081/myapp/BoardDelete.do";
+
+                request = new StringRequest(
+                        method,
+                        server_url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                Toast.makeText(PostActivity.this,
+                                        "게시글 삭제 성공!"+response,
+                                        Toast.LENGTH_SHORT).show();
+                                replace(commuFragment);
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                Toast.makeText(PostActivity.this,
+                                        "게시글 삭제 실패!"+error.toString(),
+                                        Toast.LENGTH_SHORT).show();
+
+                            }
+                        }
+                ){
+                    @NonNull
+                    @Override
+                    protected Map<String, String> getParams() throws AuthFailureError{
+                        Map<String, String> param = new HashMap<>();
+
+                        param.put("article_seq", String.valueOf(seq));
+
+                        return param;
+                    }
+                };
+                queue.add(request);
+            }
+        });
+    }
+
+    public void replace(Fragment commuFragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, commuFragment);
+        fragmentTransaction.commit();
+    }
 
 }
