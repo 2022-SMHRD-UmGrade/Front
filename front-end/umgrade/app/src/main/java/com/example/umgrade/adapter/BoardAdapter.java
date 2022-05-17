@@ -9,13 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.umgrade.adapterInterface.OnBoardItemClickListener;
 import com.example.umgrade.R;
 import com.example.umgrade.vo.Board;
 
 import java.util.ArrayList;
 
 //어뎁터 클래스가 새로 정의한 리스너 인터페이스 구현하도록 함
-public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> implements OnBoardItemClickListener{
+public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> implements OnBoardItemClickListener {
 
     ArrayList<Board> items = new ArrayList<>();
     static OnBoardItemClickListener listener;

@@ -11,9 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -23,11 +21,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.umgrade.adapter.BoardAdapter;
-import com.example.umgrade.adapter.OnBoardItemClickListener;
 import com.example.umgrade.community.PostActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.community.WriteActivity;
-import com.example.umgrade.info.BoardInfo;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.Board;
 import com.example.umgrade.vo.User;
@@ -36,7 +32,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 

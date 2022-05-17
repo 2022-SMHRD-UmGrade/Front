@@ -10,11 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.umgrade.R;
+import com.example.umgrade.adapterInterface.OnCommentListClickListener;
 import com.example.umgrade.vo.Comment;
 
 import java.util.ArrayList;
 
-public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHolder> implements OnCommentListClickListener{
+public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHolder> implements OnCommentListClickListener {
 
     ArrayList<Comment> lists = new ArrayList<>();
     static OnCommentListClickListener listener;
