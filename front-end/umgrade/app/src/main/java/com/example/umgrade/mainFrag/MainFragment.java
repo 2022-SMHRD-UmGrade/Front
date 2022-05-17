@@ -14,11 +14,10 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
-import com.example.umgrade.MainActivity;
-import com.example.umgrade.QrActivity;
+import com.example.umgrade.main.QrActivity;
 import com.example.umgrade.R;
-import com.example.umgrade.ServiceActivity;
-import com.example.umgrade.SupportActivity;
+import com.example.umgrade.sevice.ServiceActivity;
+import com.example.umgrade.sevice.SupportActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.notice.NoticeActivity;
 
@@ -57,7 +56,7 @@ public class MainFragment extends Fragment {
         cvMypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)getActivity()).changeMypage(newInstance());
+                ((ServiceActivity.MainActivity)getActivity()).changeMypage(newInstance());
             }
         });
 

@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.umgrade.EventFragment;
-import com.example.umgrade.NoticeFragment;
+import com.example.umgrade.noticeFrag.EventFragment;
+import com.example.umgrade.noticeFrag.NoticeFragment;
 
 import java.util.ArrayList;
 

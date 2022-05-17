@@ -1,4 +1,4 @@
-package com.example.umgrade;
+package com.example.umgrade.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.provider.ContactsContract;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.umgrade.R;
 import com.google.zxing.ResultPoint;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;

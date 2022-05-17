@@ -1,4 +1,4 @@
-package com.example.umgrade;
+package com.example.umgrade.sevice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
+import com.example.umgrade.R;
 
 public class SupportWriteActivity extends AppCompatActivity {
 

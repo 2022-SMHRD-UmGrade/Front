@@ -1,4 +1,4 @@
-package com.example.umgrade;
+package com.example.umgrade.noticeFrag;
 
 import android.os.Bundle;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.umgrade.R;
 
 public class NoticeFragment extends Fragment {
     ListView lvNotice; // 공지 리스트뷰

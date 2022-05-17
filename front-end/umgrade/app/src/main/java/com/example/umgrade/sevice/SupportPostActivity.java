@@ -1,8 +1,10 @@
-package com.example.umgrade;
+package com.example.umgrade.sevice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.umgrade.R;
 
 public class SupportPostActivity extends AppCompatActivity {
 

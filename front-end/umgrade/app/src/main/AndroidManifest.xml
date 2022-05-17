@@ -34,10 +34,10 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".SupportPostActivity"
+            android:name=".sevice.SupportPostActivity"
             android:exported="false" />
         <activity
-            android:name=".SupportWriteActivity"
+            android:name=".sevice.SupportWriteActivity"
             android:exported="false" />
         <activity
             android:name=".AccountSettingActivity"
@@ -56,7 +56,7 @@
             android:exported="false"
             android:theme="@style/DialogTheme" />
         <activity
-            android:name=".ServiceInfoPopupActivity"
+            android:name=".sevice.ServiceInfoPopupActivity"
             android:exported="false"
             android:theme="@style/DialogTheme" />
         <activity
@@ -68,7 +68,7 @@
             android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
 
         <activity
-            android:name=".QrActivity"
+            android:name=".main.QrActivity"
             android:exported="false"
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
@@ -79,13 +79,10 @@
             android:name=".FareActivity"
             android:exported="false" />
         <activity
-            android:name=".SupportActivity"
+            android:name=".sevice.SupportActivity"
             android:exported="false" />
         <activity
             android:name=".main.MapActivity"
-            android:exported="false" />
-        <activity
-            android:name=".JoinActivity"
             android:exported="false" />
         <activity
             android:name=".notice.EventPostActivity"
@@ -109,17 +106,10 @@
             android:name=".community.WriteActivity"
             android:exported="false" />
         <activity
-            android:name=".ServiceActivity"
+            android:name=".sevice.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-<<<<<<< HEAD
             android:name=".userActivity.LoginActivity"
-=======
-            android:name=".IntroActivity"
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
