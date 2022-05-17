@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/btnPre"
+                android:id="@+id/btnAccountSettingPre"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -37,7 +37,7 @@
                 android:layout_width="312dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="계정설정"
+                android:text="@string/tvAccountSetting"
                 android:textAlignment="center"
                 android:textColor="@color/blueColor"
                 android:textSize="16sp"
@@ -53,20 +53,20 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/tvUserID"
+            android:id="@+id/tvAccountID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/lightBlueColor"
             android:padding="20dp"
-            android:text="USERID"
+            android:text="@string/tvAccountID"
             android:textAlignment="textStart"
             android:textColor="@color/blueColor"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnPasswordChange"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
@@ -76,7 +76,7 @@
             android:drawableTint="@color/blueColor"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:text="비밀번호 변경"
+            android:text="@string/btnPasswordChange"
             android:textAlignment="textStart"
             android:textColor="@color/blueColor"
             android:textSize="14sp"
@@ -109,7 +109,7 @@
         android:id="@+id/tvDeletingAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="탈퇴하기"
+        android:text="@string/tvDeletingAccount"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

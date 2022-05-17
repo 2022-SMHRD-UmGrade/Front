@@ -219,4 +219,37 @@
     <string name="tvFareOne">* 이용 요금은 우산 반납 시 자동 결제됩니다.</string>
     <string name="tvFareTwo">* 정해진 기간 동안 반납하지 않을 시 미납금 8,000원이 자동으로 결제됩니다.</string>
 
+    <!-- activity_password_change.xml -->
+    <string name="tvPasswordChangeTitle">비밀번호변경</string>
+    <string name="tvNowPwTitle">현재 비밀번호</string>
+    <string name="edtNowPw">현재 사용인 비밀번호를 입력해주세요</string>
+    <string name="tvNowPw">이전 비밀번호를 잘못 입력하셨습니다.</string>
+    <string name="tvNewPwTitle">새 비밀번호</string>
+    <string name="edtNewPw">8자 이상 영문/숫자/특수문자 중 2가지 포함</string>
+    <string name="tvNewPw">총 8자 이상, 용문/숫자/특수문자 중 2가지 이상 입력해주세요.</string>
+    <string name="tvNewCkPwTitle">새 비밀번호 확인</string>
+    <string name="edtNewCkPw">비밀번호를 다시 한 번 입력해주세요</string>
+    <string name="tvNewCkPw">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</string>
+    <string name="btnChangePw">비밀번호 변경하기</string>
+
+    <!-- activity_account_setting.xml -->
+    <string name="tvAccountSetting">계정설정</string>
+    <string name="tvAccountID">USERID</string>
+    <string name="btnPasswordChange">비밀번호 변경</string>
+    <string name="tvDeletingAccount">탈퇴하기</string>
+    <!--card.xml-->
+    <string name="tvEmailTitle">이메일</string>
+    <string name="tvEmail">test@example.com</string>
+    <string name="tvTelTitle">전화번호</string>
+    <string name="tvTel">010-XXXX-XXXX</string>
+    <string name="tvAddressTitle">주소</string>
+    <string name="tvAddress">광주광역시 동구 예술길 31-15</string>
+    <string name="btnChange">변경하기</string>
+
+    <!-- activity_payment.xml -->
+    <string name="tvPaymentTitle">결제등록</string>
+
+    <!-- activity_usage_history.xml -->
+    <string name="tvUsageHistoryTitle">이용내역</string>
+
 </resources>

@@ -7,10 +7,10 @@
     android:background="@color/lightBlueColor">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvTelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전화번호"
+        android:text="@string/tvTelTitle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -19,20 +19,20 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvTel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="010-XXXX-XXXX"
+        android:text="@string/tvTel"
         android:textColor="@color/blueColor"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/tvTelTitle"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintStart_toStartOf="@+id/tvTelTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelTitle" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnChange"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginTop="4dp"
@@ -40,10 +40,10 @@
         android:backgroundTint="@color/blueColor"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:text="변경하기"
+        android:text="@string/btnChange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/tvTel"
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline

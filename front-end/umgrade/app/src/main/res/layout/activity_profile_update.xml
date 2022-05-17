@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/btnPre"
+                android:id="@+id/btnProfileUpdatePre"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgMypageProfile2"
+        android:id="@+id/imgProfileChange"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="88dp"
@@ -87,7 +87,7 @@
         android:hint="@string/edtNickHint"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnNickChange"
-        app:layout_constraintEnd_toEndOf="@+id/imgMypageProfile2"
-        app:layout_constraintStart_toStartOf="@+id/imgMypageProfile2"
-        app:layout_constraintTop_toBottomOf="@+id/imgMypageProfile2" />
+        app:layout_constraintEnd_toEndOf="@+id/imgProfileChange"
+        app:layout_constraintStart_toStartOf="@+id/imgProfileChange"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileChange" />
 </androidx.constraintlayout.widget.ConstraintLayout>
