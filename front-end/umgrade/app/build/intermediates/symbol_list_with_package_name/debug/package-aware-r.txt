@@ -1319,6 +1319,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightBlueColor
 color loginBkColor
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -2614,10 +2615,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable round
 drawable round_layout
-<<<<<<< HEAD
-=======
 drawable roundblack
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2764,19 +2762,17 @@ id btnPre
 id btnProfileUpdate
 id btnQrCard
 id btnServiceCard
-<<<<<<< HEAD
-id btnSupportCard
-=======
 id btnSupportCancel
 id btnSupportCard
+id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id btnTermsClose
 id btnUsageHistory
 id btnWriteCancel
 id btnWriteSend
 id button
+id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2859,10 +2855,8 @@ id divider11
 id divider12
 id divider13
 id divider14
-<<<<<<< HEAD
-=======
 id divider15
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
+id divider16
 id divider2
 id divider3
 id divider4
@@ -2899,11 +2893,8 @@ id edtLoginId
 id edtLoginPw
 id edtModifyContent
 id edtModifyTitle
-<<<<<<< HEAD
-=======
 id edtSupportContent
 id edtSupportTitle
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id edtWriteContent
 id edtWriteTitle
 id elastic
@@ -2985,10 +2976,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-<<<<<<< HEAD
-=======
 id imageView
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id imgCommentProfile
 id imgLogo
 id imgMapCard
@@ -3155,10 +3143,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-<<<<<<< HEAD
-=======
 id rvSupportBoard
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3226,15 +3211,16 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
-<<<<<<< HEAD
-id supportScrollUp
-=======
 id supportListItem
+id supportPostCnt
+id supportPostContent
+id supportPostSeq
+id supportPostTime
+id supportPostTitle
 id supportScrollUp
 id supportSeq
 id supportTime
 id supportTitle
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id tabEvent
 id tabMode
 id tabNotice
@@ -3270,10 +3256,6 @@ id textView16
 id textView17
 id textView18
 id textView19
-<<<<<<< HEAD
-id textView2
-=======
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id textView20
 id textView21
 id textView22
@@ -3310,6 +3292,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAccountSetting
 id tvCarbonMypageCard
 id tvComment1MypageCard
 id tvComment2MypageCard
@@ -3330,6 +3313,7 @@ id tvMoreNick
 id tvMorePrivacy
 id tvMoreService
 id tvNickMypageCard
+id tvPaymentTitle
 id tvPointMypageCard
 id tvPointTextMypageCard
 id tvPostCnt
@@ -3347,13 +3331,15 @@ id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
 id tvServiceInfo
-<<<<<<< HEAD
-=======
 id tvSet
 id tvSupport
+id tvSupportCount
+id tvSupportPostComment
+id tvSupportSet
 id tvSupportTitle
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 id tvTerms
+id tvUsageHistoryTitle
+id tvUserID
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
@@ -3501,11 +3487,8 @@ layout activity_qr
 layout activity_service
 layout activity_service_info_popup
 layout activity_support
-<<<<<<< HEAD
-=======
 layout activity_support_post
 layout activity_support_write
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 layout activity_terms
 layout activity_usage_history
 layout activity_write
@@ -3611,10 +3594,7 @@ layout service_card
 layout serviceinfo_card
 layout slider_card
 layout support_card
-<<<<<<< HEAD
-=======
 layout support_list
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 layout support_simple_spinner_dropdown_item
 layout terms_card
 layout test_action_chip
@@ -3710,10 +3690,8 @@ string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
 string btnSupportCard
-<<<<<<< HEAD
-=======
+string btnSupportDelete
 string btnSupportWrite
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 string btnTermsClose
 string btnUsageHistory
 string btnWriteCancel
@@ -3890,12 +3868,13 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
-<<<<<<< HEAD
-=======
+string supportPostContent
+string supportPostSeq
+string supportPostTime
+string supportPostTitle
 string supportSeq
 string supportTime
 string supportTitle
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 string tabEvent
 string tabNotice
 string title_activity_join
@@ -3935,12 +3914,12 @@ string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvScanner
 string tvServiceInfo
-<<<<<<< HEAD
-=======
 string tvSet
 string tvSupport
+string tvSupportCount
+string tvSupportPostComment
+string tvSupportSet
 string tvSupportTitle
->>>>>>> 546d02b5c880af15b561820a15b1326e50f03bf9
 string tvTerms
 string tvUserId
 string tvWelcomeMypageCard
@@ -5143,6 +5122,7 @@ styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_widt
 styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_laser_visibility zxing_viewfinder_mask
 styleable zxing_view zxing_scanner_layout
 xml network_security_config
+xml network_security_config2
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

@@ -15,8 +15,8 @@ import com.bumptech.glide.Glide;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.main.QrActivity;
 import com.example.umgrade.notice.NoticeActivity;
-import com.example.umgrade.sevice.ServiceActivity;
-import com.example.umgrade.sevice.SupportActivity;
+import com.example.umgrade.service.ServiceActivity;
+import com.example.umgrade.service.SupportActivity;
 
 public class MoreFragment extends Fragment {
 

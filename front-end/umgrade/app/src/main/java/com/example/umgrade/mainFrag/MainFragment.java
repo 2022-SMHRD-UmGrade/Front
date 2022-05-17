@@ -16,8 +16,8 @@ import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
 import com.example.umgrade.main.QrActivity;
 import com.example.umgrade.R;
-import com.example.umgrade.sevice.ServiceActivity;
-import com.example.umgrade.sevice.SupportActivity;
+import com.example.umgrade.service.ServiceActivity;
+import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.notice.NoticeActivity;
 

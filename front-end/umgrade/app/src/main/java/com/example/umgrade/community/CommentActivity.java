@@ -24,10 +24,17 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.umgrade.R;
 import com.example.umgrade.info.BoardInfo;
+import com.example.umgrade.info.CommentInfo;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.Board;
+import com.example.umgrade.vo.Comment;
 import com.example.umgrade.vo.User;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,9 +50,11 @@ public class CommentActivity extends AppCompatActivity {
     RequestQueue queue;
     StringRequest request;
 
+    ArrayList<Comment> list = new ArrayList<>();
+
     User vo;
     Board dto;
-
+    Comment cmt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,11 +63,60 @@ public class CommentActivity extends AppCompatActivity {
 
         vo = UserInfo.info;
         dto = BoardInfo.info;
+        cmt = CommentInfo.info;
 
         btnComment = findViewById(R.id.btnComment);
         edtComment = findViewById(R.id.edtComment);
 
         queue = Volley.newRequestQueue(CommentActivity.this);
+
+        int method = Request.Method.POST;
+        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 불러오기 성공",
+                                Toast.LENGTH_SHORT).show();
+                        try{
+                            JSONArray cmtArray = new JSONArray(response);
+
+                            for(int i = 0; i<cmtArray.length(); i++) {
+                                JSONObject object = cmtArray.getJSONObject(i);
+
+                                int seq = Integer.parseInt(object.getString("cmt_seq"));
+                                int a_seq = Integer.parseInt(object.getString("article_seq"));
+                                String content = object.getString("cmt_content");
+                                String date = object.getString("cmt_date");
+                                String id = object.getString("cmt_id");
+                                int likes = Integer.parseInt(object.getString("cmt_likes"));
+
+                                cmt = new Comment(seq, a_seq, content, date, id, likes);
+
+                                CommentInfo.info = cmt;
+
+                                list.add(cmt);
+                            }
+                        }
+                        catch(JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 불러오기 실패",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+        queue.add(request);
 
         // 댓글 내용이 없을 경우 버튼 비활성화
         edtComment.addTextChangedListener(new TextWatcher() {

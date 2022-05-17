@@ -4,17 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SupportPostActivity">
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/postBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="411dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_end="40dp"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout3" />
+    tools:context=".service.SupportPostActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -27,86 +17,90 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/supportPostTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:gravity="right"
-            android:text="문의게시물확인"
+            android:text="@string/supportPostTitle"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="28dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvPostNick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tvPostNick"
-            android:textColor="#2196F3"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvPostTime"
-            tools:layout_editor_absoluteX="68dp" />
-
-        <TextView
-            android:id="@+id/tvPostCnt"
+            android:id="@+id/supportPostCnt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:gravity="right"
             android:text="@string/tvPostCnt"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPostTime"
-            app:layout_constraintStart_toEndOf="@+id/tvPostTime"
-            app:layout_constraintTop_toTopOf="@+id/tvPostTime" />
+            app:layout_constraintBottom_toBottomOf="@+id/supportPostTime"
+            app:layout_constraintStart_toEndOf="@+id/supportPostTime"
+            app:layout_constraintTop_toTopOf="@+id/supportPostTime" />
 
         <TextView
-            android:id="@+id/tvPostTime"
+            android:id="@+id/supportPostTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:gravity="right"
-            android:text="@string/tvPostTime"
+            android:text="@string/supportPostTime"
             android:textSize="12sp"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="36dp" />
+            app:layout_constraintStart_toStartOf="@+id/supportPostTitle"
+            app:layout_constraintTop_toBottomOf="@+id/supportPostTitle" />
 
         <TextView
-            android:id="@+id/tvPostId"
+            android:id="@+id/tvSupportSet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="@string/tvPostId"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPostPl1"
-            app:layout_constraintStart_toEndOf="@+id/tvPostPl1"
-            app:layout_constraintTop_toTopOf="@+id/tvPostPl1" />
+            android:layout_marginStart="4dp"
+            android:background="@drawable/roundblack"
+            android:padding="4dp"
+            android:text="@string/tvSupportSet"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/supportPostTitle"
+            app:layout_constraintStart_toEndOf="@+id/supportPostTitle"
+            app:layout_constraintTop_toTopOf="@+id/supportPostTitle" />
+
+        <Button
+            android:id="@+id/btnSupportDelete"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:stateListAnimator="@null"
+            android:text="@string/btnSupportDelete"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvPostPl1"
+            android:id="@+id/supportPostSeq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:text="@string/tvPostPl1"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPostNick"
-            app:layout_constraintStart_toEndOf="@+id/tvPostNick"
-            app:layout_constraintTop_toTopOf="@+id/tvPostNick"
-            app:layout_constraintVertical_bias="0.333" />
+            android:text="@string/supportPostSeq"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSupportDelete"
+            app:layout_constraintEnd_toStartOf="@+id/btnSupportDelete"
+            app:layout_constraintTop_toTopOf="@+id/btnSupportDelete" />
 
-        <TextView
-            android:id="@+id/tvPostPl2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tvPostPl2"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPostId"
-            app:layout_constraintStart_toEndOf="@+id/tvPostId"
-            app:layout_constraintTop_toTopOf="@+id/tvPostId" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/postBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
@@ -121,80 +115,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tvPostContent"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tvPostContent"
-                android:textColor="#2C2C2C" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/supportPostContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/supportPostContent"
+                    android:textColor="#2C2C2C"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/divider16"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/tvSupportPostComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSupportPostComment" />
+            </LinearLayout>
         </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/postBottom" >
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/btnPostComment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:gravity="center"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="@string/btnPostComment"
-                android:textColor="#2196F3"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                android:stateListAnimator="@null"/>
-
-            <Button
-                android:id="@+id/btnPostModify"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:gravity="center"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:stateListAnimator="@null"
-                android:text="@string/btnPostModify"
-                android:textColor="#2196F3"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/btnPostDelete"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <Button
-                android:id="@+id/btnPostDelete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:gravity="center"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:stateListAnimator="@null"
-                android:text="@string/btnPostDelete"
-                android:textColor="#2196F3"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

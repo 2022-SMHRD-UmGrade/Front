@@ -119,13 +119,6 @@ public class CommuFragment extends Fragment {
 
                             for(int i=0; i<boardArray.length(); i++) {
                                 JSONObject Object = boardArray.getJSONObject(i);
-                                Log.d("seq", Object.getString("article_seq"));
-                                Log.d("title", Object.getString("article_title"));
-                                Log.d("content", Object.getString("article_content"));
-                                Log.d("date", Object.getString("article_date"));
-                                Log.d("file", Object.getString("article_file"));
-                                Log.d("id", Object.getString("article_id"));
-                                Log.d("cnt", Object.getString("article_cnt"));
 
                                 int seq = Integer.parseInt(Object.getString("article_seq"));
                                 String title = Object.getString("article_title");

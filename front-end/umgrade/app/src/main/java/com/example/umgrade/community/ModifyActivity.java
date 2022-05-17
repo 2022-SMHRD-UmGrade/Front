@@ -3,6 +3,8 @@ package com.example.umgrade.community;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -42,6 +44,7 @@ public class ModifyActivity extends AppCompatActivity {
 
     User vo;
     Board dto;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +68,9 @@ public class ModifyActivity extends AppCompatActivity {
 
         int seq = intent.getIntExtra("article_seq", dto.getArticle_seq());
 
-        getData(seq);
+        edtModifyTitle.setText(intent.getStringExtra("article_title"));
+        edtModifyContent.setText(intent.getStringExtra("article_content"));
+
         // 취소 버튼 누르면 이전 화면으로
         btnModifyCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,59 +79,66 @@ public class ModifyActivity extends AppCompatActivity {
             }
         });
 
-
-    }
-    public void getData(int seq) {
-        // 글 전송
         btnModifySend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardUpdate.do";
-
-                request = new StringRequest(
-                        method,
-                        server_url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                Toast.makeText(ModifyActivity.this,
-                                        "게시글 수정 성공",
-                                        Toast.LENGTH_SHORT).show();
-                                Log.d("update", response);
-                                try{
-                                    JSONObject updateObject = new JSONObject(response);
-                                    //edtModifyTitle.setText();
-                                }
-                                catch(JSONException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(ModifyActivity.this,
-                                        "게시글 수정 실패!"+error.toString(),
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                ){
-                    @NonNull
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String, String> param = new HashMap<>();
-
-                        param.put("article_seq", String.valueOf(seq));
-
-                        return param;
-                    }
-
-                };
-                queue.add(request);
+                getUpdate(seq, edtModifyTitle.getText().toString(), edtModifyContent.getText().toString());
+                replace(CommuFragment);
             }
         });
+
+
+    }
+
+    public void getUpdate(int seq, String title, String content) {
+        // 글 전송
+
+        int method = Request.Method.POST;
+        String server_url = "http://220.80.203.18:8081/myapp/BoardUpdate.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(ModifyActivity.this,
+                                "게시글 수정 성공",
+                                Toast.LENGTH_SHORT).show();
+                        Log.d("update", response);
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(ModifyActivity.this,
+                                "게시글 수정 실패!" + error.toString(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ) {
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> param = new HashMap<String, String>();
+
+                param.put("article_seq", String.valueOf(seq));
+                param.put("article_title", title);
+                param.put("article_content", content);
+
+                return param;
+            }
+
+        };
+        queue.add(request);
+    }
+
+    public void replace(Fragment commuFragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, commuFragment);
+        fragmentTransaction.commit();
     }
 
 }
