@@ -200,4 +200,13 @@
     <string name="edtNickHint">닉네임을 입력하세요</string>
     <string name="btnNickChange">닉네임 변경</string>
 
+    <!-- activity_support_post.xml-->
+    <string name="supportPostTitle">문의글 제목</string>
+    <string name="supportPostTime">2022. 04. 35 16:42</string>
+    <string name="tvSupportSet">처리중</string>
+    <string name="supportPostContent">본문 내용</string>
+    <string name="btnSupportDelete">삭제</string>
+    <string name="supportPostSeq">00</string>
+    <string name="tvSupportPostComment">답변을 기다리고 있어요</string>
+
 </resources>
