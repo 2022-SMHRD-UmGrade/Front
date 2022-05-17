@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.umgrade">
     <!-- 인터넷 권한 설정 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 지도 API 권한 설정 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <!-- 카메라, 저장소 권한 설정 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 카메라, 저장소 권한 설정 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -31,11 +29,14 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="umgrade"
+        android:networkSecurityConfig="@xml/network_security_config2"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Umgrade"
-        android:networkSecurityConfig="@xml/network_security_config2"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:exported="false" />
         <activity
             android:name=".service.SupportPostActivity"
             android:exported="false" />
@@ -112,14 +113,14 @@
             android:name=".service.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name= ".MainActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".main.MainActivity"
             android:exported="true">
