@@ -113,12 +113,6 @@
             android:name=".service.ServiceActivity"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-=======
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
->>>>>>> 8236853a2df3f40b2714e037362d25e5ae567809
             android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity

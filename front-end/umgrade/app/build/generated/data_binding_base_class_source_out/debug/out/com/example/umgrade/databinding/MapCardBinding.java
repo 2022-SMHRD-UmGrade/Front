@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -23,14 +22,9 @@ public final class MapCardBinding implements ViewBinding {
   @NonNull
   public final Button btnMapCard;
 
-  @NonNull
-  public final ImageView imgMapCard;
-
-  private MapCardBinding(@NonNull CardView rootView, @NonNull Button btnMapCard,
-      @NonNull ImageView imgMapCard) {
+  private MapCardBinding(@NonNull CardView rootView, @NonNull Button btnMapCard) {
     this.rootView = rootView;
     this.btnMapCard = btnMapCard;
-    this.imgMapCard = imgMapCard;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class MapCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgMapCard;
-      ImageView imgMapCard = ViewBindings.findChildViewById(rootView, id);
-      if (imgMapCard == null) {
-        break missingId;
-      }
-
-      return new MapCardBinding((CardView) rootView, btnMapCard, imgMapCard);
+      return new MapCardBinding((CardView) rootView, btnMapCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

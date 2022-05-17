@@ -3002,7 +3002,6 @@ id imgMoreProfile
 id imgMypageProfile
 id imgMypageProfile2
 id imgPostProfile
-id imgQrCard
 id imgServiceCard
 id imgSupportCard
 id imgUmb

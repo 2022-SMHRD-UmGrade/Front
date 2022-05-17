@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -23,14 +22,9 @@ public final class QrCardBinding implements ViewBinding {
   @NonNull
   public final Button btnQrCard;
 
-  @NonNull
-  public final ImageView imgQrCard;
-
-  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnQrCard,
-      @NonNull ImageView imgQrCard) {
+  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnQrCard) {
     this.rootView = rootView;
     this.btnQrCard = btnQrCard;
-    this.imgQrCard = imgQrCard;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class QrCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgQrCard;
-      ImageView imgQrCard = ViewBindings.findChildViewById(rootView, id);
-      if (imgQrCard == null) {
-        break missingId;
-      }
-
-      return new QrCardBinding((CardView) rootView, btnQrCard, imgQrCard);
+      return new QrCardBinding((CardView) rootView, btnQrCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
