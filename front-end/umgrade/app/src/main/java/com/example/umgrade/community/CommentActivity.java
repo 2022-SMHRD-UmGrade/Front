@@ -83,6 +83,7 @@ public class CommentActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         int article_seq = intent.getIntExtra("article_seq", 0);
+        int cmt_seq = intent.getIntExtra("cmt_seq", 0);
         String content = intent.getStringExtra("article_content");
 
         Log.d("seqa", String.valueOf(article_seq));
@@ -158,6 +159,25 @@ public class CommentActivity extends AppCompatActivity {
                     btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
                     btnComment.setTextColor(Color.WHITE);
                 }
+            }
+        });
+
+        tvCommentModify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateComment(cmt_seq, content);
+                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
+                intent.putExtra("article_seq", article_seq);
+                intent.putExtra("cmt_seq", cmt_seq);
+                intent.putExtra("cmt_content", content);
+                startActivity(intent);
+            }
+        });
+
+        tvCommentDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteComment(cmt_seq);
             }
         });
 
@@ -318,5 +338,75 @@ public class CommentActivity extends AppCompatActivity {
         });
     }
 
+    //댓글 수정 메서드
+    public void updateComment(int cmt_seq, String content) {
+        int method = Request.Method.POST;
+        String server_url = "http://220.80.203.18:8081/myapp/CommentUpdate.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 수정 성공!",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 수정 실패!"+error.toString(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+                Map<String, String> param = new HashMap<>();
+                param.put("cmt_seq", String.valueOf(cmt_seq));
+                param.put("cmt_content", content);
+                return param;
+            }
+        };
+        queue.add(request);
+    }
+
+    //댓글 삭제 메서드
+    public void deleteComment(int cmt_seq) {
+        int method = Request.Method.POST;
+        String server_url = "http://220.80.203.18:8081/myapp/CommentDelete.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 삭제 실패!"+error.toString(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+                Map<String, String> param = new HashMap<>();
+                param.put("cmt_seq", String.valueOf(cmt_seq));
+                return param;
+            }
+        };
+        queue.add(request);
+    }
 
 }
