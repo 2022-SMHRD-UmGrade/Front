@@ -2,6 +2,7 @@ package com.example.umgrade.community;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -35,6 +36,7 @@ import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.Board;
 import com.example.umgrade.vo.Comment;
 import com.example.umgrade.vo.User;
+import com.google.rpc.context.AttributeContext;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -60,8 +62,6 @@ public class CommentActivity extends AppCompatActivity {
     ArrayList<Comment> lists = new ArrayList<>();
 
     User vo;
-    Board dto;
-    Comment cmt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,15 +82,16 @@ public class CommentActivity extends AppCompatActivity {
         edtComment = findViewById(R.id.edtComment);
 
         Intent intent = getIntent();
-        int seq = intent.getIntExtra("article_seq", 0);
+        int article_seq = intent.getIntExtra("article_seq", 0);
+        int cmt_seq = intent.getIntExtra("cmt_seq", 0);
         String content = intent.getStringExtra("article_content");
 
-        Log.d("seqa", String.valueOf(seq));
+        Log.d("seqa", String.valueOf(article_seq));
 
         queue = Volley.newRequestQueue(CommentActivity.this);
 
-        initComment(seq);
-        writecomment(seq, content);
+        writecomment(article_seq, content);
+        initComment(article_seq);
 
         recyclerView = findViewById(R.id.rvComment);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
@@ -105,7 +106,7 @@ public class CommentActivity extends AppCompatActivity {
                 String content = list.getCmt_content();
                 String time = list.getCmt_date();
 
-                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PostActivity.class);
                 intent.putExtra("article_seq", seq);
                 intent.putExtra("cmt_id", nick);
                 intent.putExtra("cmt_content", content);
@@ -137,8 +138,6 @@ public class CommentActivity extends AppCompatActivity {
                     btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
                     btnComment.setTextColor(Color.WHITE);
                     }
-
-
                  }
             @Override
             public void afterTextChanged(Editable editable) {
@@ -160,6 +159,25 @@ public class CommentActivity extends AppCompatActivity {
                     btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
                     btnComment.setTextColor(Color.WHITE);
                 }
+            }
+        });
+
+        tvCommentModify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateComment(cmt_seq, content);
+                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
+                intent.putExtra("article_seq", article_seq);
+                intent.putExtra("cmt_seq", cmt_seq);
+                intent.putExtra("cmt_content", content);
+                startActivity(intent);
+            }
+        });
+
+        tvCommentDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteComment(cmt_seq);
             }
         });
 
@@ -210,9 +228,9 @@ public class CommentActivity extends AppCompatActivity {
 
     }
     //댓글 리스트 메서드
-    public void initComment(int seq) {
+    public void initComment(int article_seq) {
         int method = Request.Method.GET;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do";
+        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do?article_seq=" + article_seq;
 
         request = new StringRequest(
                 method,
@@ -223,26 +241,25 @@ public class CommentActivity extends AppCompatActivity {
                         Toast.makeText(CommentActivity.this,
                                 "댓글 불러오기 성공",
                                 Toast.LENGTH_SHORT).show();
-                        try{
+                        try {
                             JSONArray cmtArray = new JSONArray(response);
 
-                            for(int i = 0; i<cmtArray.length(); i++) {
+                            for (int i = 0; i < cmtArray.length(); i++) {
                                 JSONObject object = cmtArray.getJSONObject(i);
 
-                                int seq1 = Integer.parseInt(object.getString(String.valueOf(seq)));
-                                int a_seq = Integer.parseInt(object.getString("cmt_seq"));
+                                int seq = Integer.parseInt(object.getString("cmt_seq"));
+                                int seq1 = Integer.parseInt(object.getString("article_seq"));
                                 String content = object.getString("cmt_content");
                                 String date = object.getString("cmt_date");
                                 String id = object.getString("cmt_id");
                                 int likes = Integer.parseInt(object.getString("cmt_likes"));
-                                Log.d("seqw", String.valueOf(seq1));
-                                Comment list = new Comment(seq1, a_seq, content, date, id, likes);
+
+                                Comment list = new Comment(seq, seq1, content, date, id, likes);
                                 lists.add(list);
                             }
                             adapter.setLists(lists);
                             adapter.notifyDataSetChanged();
-                        }
-                        catch(JSONException e) {
+                        } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
@@ -255,8 +272,19 @@ public class CommentActivity extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
-        );
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> param = new HashMap<>();
+
+                param.put("article_seq", String.valueOf(article_seq));
+
+                return param;
+            }
+        };
         queue.add(request);
+
     }
     //댓글 작성 메서드
     public void writecomment(int seq, String content) {
@@ -310,5 +338,75 @@ public class CommentActivity extends AppCompatActivity {
         });
     }
 
+    //댓글 수정 메서드
+    public void updateComment(int cmt_seq, String content) {
+        int method = Request.Method.POST;
+        String server_url = "http://220.80.203.18:8081/myapp/CommentUpdate.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 수정 성공!",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 수정 실패!"+error.toString(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+                Map<String, String> param = new HashMap<>();
+                param.put("cmt_seq", String.valueOf(cmt_seq));
+                param.put("cmt_content", content);
+                return param;
+            }
+        };
+        queue.add(request);
+    }
+
+    //댓글 삭제 메서드
+    public void deleteComment(int cmt_seq) {
+        int method = Request.Method.POST;
+        String server_url = "http://220.80.203.18:8081/myapp/CommentDelete.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 삭제 실패!"+error.toString(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+                Map<String, String> param = new HashMap<>();
+                param.put("cmt_seq", String.valueOf(cmt_seq));
+                return param;
+            }
+        };
+        queue.add(request);
+    }
 
 }

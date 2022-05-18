@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/project2nd.front-end.umgrade.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/project2nd.front-end.umgrade.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/umgrade.iml" filepath="$PROJECT_DIR$/.idea/umgrade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/umgrade.iml" filepath="$PROJECT_DIR$/.idea/modules/umgrade.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/umgrade.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/umgrade.app.iml" />
     </modules>
   </component>
