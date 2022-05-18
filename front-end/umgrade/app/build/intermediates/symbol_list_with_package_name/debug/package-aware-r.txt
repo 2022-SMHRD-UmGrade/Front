@@ -3056,6 +3056,7 @@ id listMode
 id list_item
 id lvEvent
 id lvNotice
+id lvUsageHistoryList
 id lvborad
 id mainScroll
 id map_View

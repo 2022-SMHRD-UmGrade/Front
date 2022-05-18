@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,17 +35,21 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
   public final LinearLayout linearLayout2;
 
   @NonNull
+  public final ListView lvUsageHistoryList;
+
+  @NonNull
   public final TextView tvUsageHistoryTitle;
 
   private ActivityUsageHistoryBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton btnUsageHistoryPre, @NonNull View divider8,
       @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
-      @NonNull TextView tvUsageHistoryTitle) {
+      @NonNull ListView lvUsageHistoryList, @NonNull TextView tvUsageHistoryTitle) {
     this.rootView = rootView;
     this.btnUsageHistoryPre = btnUsageHistoryPre;
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
+    this.lvUsageHistoryList = lvUsageHistoryList;
     this.tvUsageHistoryTitle = tvUsageHistoryTitle;
   }
 
@@ -99,6 +104,12 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.lvUsageHistoryList;
+      ListView lvUsageHistoryList = ViewBindings.findChildViewById(rootView, id);
+      if (lvUsageHistoryList == null) {
+        break missingId;
+      }
+
       id = R.id.tvUsageHistoryTitle;
       TextView tvUsageHistoryTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvUsageHistoryTitle == null) {
@@ -106,7 +117,7 @@ public final class ActivityUsageHistoryBinding implements ViewBinding {
       }
 
       return new ActivityUsageHistoryBinding((ConstraintLayout) rootView, btnUsageHistoryPre,
-          divider8, linearLayout, linearLayout2, tvUsageHistoryTitle);
+          divider8, linearLayout, linearLayout2, lvUsageHistoryList, tvUsageHistoryTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
