@@ -31,7 +31,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="20dp"
             android:text="@string/tvMoreNick"
-            android:textColor="#2196F3"
+            android:textColor="@color/blueColor"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/imgMoreProfile"

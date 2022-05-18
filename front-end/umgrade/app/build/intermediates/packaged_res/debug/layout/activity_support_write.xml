@@ -22,7 +22,7 @@
             android:insetBottom="0dp"
             android:stateListAnimator="@null"
             android:text="@string/btnWriteCancel"
-            android:textColor="#2196F3" />
+            android:textColor="@color/blueColor" />
 
         <TextView
             android:id="@+id/tvSupport"
@@ -43,7 +43,7 @@
             android:insetBottom="0dp"
             android:stateListAnimator="@null"
             android:text="@string/btnWriteSend"
-            android:textColor="#2196F3" />
+            android:textColor="@color/blueColor" />
 
     </LinearLayout>
 

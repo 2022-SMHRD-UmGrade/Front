@@ -229,15 +229,10 @@ id introLogo
 id linearLayout
 id linearLayout2
 id linearLayout3
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 id linearLayout4
->>>>>>> 4f2ea305e06bade0519a5b0bc8e33e0999d3ce32
->>>>>>> a446f5016b671ea00ffe157a2df3a461b5f46722
 id lvEvent
 id lvNotice
+id lvUsageHistoryList
 id lvborad
 id mainScroll
 id map_View

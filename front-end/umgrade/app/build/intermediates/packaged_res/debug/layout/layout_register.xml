@@ -15,7 +15,7 @@
     <LinearLayout
         style="@style/linearParent"
         android:layout_gravity="center"
-        android:background="#FFFFFF"
+        android:background="@color/lightBlueColor"
         android:padding="@dimen/loginViewsMargin"
         tools:ignore="MissingConstraints">
 
@@ -51,7 +51,7 @@
                 android:id="@+id/btnIdCheck"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:backgroundTint="#2196F3"
+                android:backgroundTint="@color/blueColor"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="@string/btnIdCheck"
@@ -150,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                android:buttonTint="#77A9D5"
+                android:buttonTint="@color/blueColor"
                 android:text="@string/ckTerms"
                 android:textColor="#000000"
                 android:textSize="10sp" />
@@ -180,7 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:layout_weight="1"
-                android:buttonTint="#77A9D5"
+                android:buttonTint="@color/blueColor"
                 android:text="@string/ckPersonal"
                 android:textColor="#000000"
                 android:textSize="10sp" />
@@ -202,7 +202,7 @@
             android:id="@+id/ckMarketing"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:buttonTint="#77A9D5"
+            android:buttonTint="@color/blueColor"
             android:text="@string/ckMarketing"
             android:textColor="#000000"
             android:textSize="10sp" />

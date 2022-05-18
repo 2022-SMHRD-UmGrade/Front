@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/front-end.umgrade.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/umgrade.iml" filepath="$PROJECT_DIR$/.idea/umgrade.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/umgrade.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/umgrade.app.iml" />
     </modules>
