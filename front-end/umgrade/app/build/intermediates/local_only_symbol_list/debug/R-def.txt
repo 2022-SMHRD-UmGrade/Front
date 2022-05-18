@@ -227,7 +227,17 @@ id introLogo
 id linearLayout
 id linearLayout2
 id linearLayout3
+<<<<<<< HEAD
 id linearLayout4
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+id linearLayout4
+>>>>>>> 4f2ea305e06bade0519a5b0bc8e33e0999d3ce32
+>>>>>>> a446f5016b671ea00ffe157a2df3a461b5f46722
+>>>>>>> d0f04257b30fc342adf01a16434b9d5286506678
 id lvEvent
 id lvNotice
 id lvUsageHistoryList
@@ -341,6 +351,7 @@ id tvProfileTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
+id tvSeq
 id tvService1
 id tvService2
 id tvService3
@@ -367,7 +378,6 @@ id tvUsageHistoryTitle
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
-id tvWriter
 id zxing_barcode_surface
 id zxing_viewfinder_view
 layout activity_account_setting

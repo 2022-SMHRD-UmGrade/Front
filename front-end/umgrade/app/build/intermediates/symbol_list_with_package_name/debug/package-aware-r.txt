@@ -3384,6 +3384,7 @@ id tvProfileTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
+id tvSeq
 id tvService1
 id tvService2
 id tvService3
@@ -3410,7 +3411,6 @@ id tvUsageHistoryTitle
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
-id tvWriter
 id unchecked
 id uniform
 id unlabeled

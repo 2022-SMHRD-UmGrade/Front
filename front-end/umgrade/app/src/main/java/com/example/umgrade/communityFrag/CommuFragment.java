@@ -105,7 +105,7 @@ public class CommuFragment extends Fragment {
     //게시판 불러오는 메서드
     public void initBoard() {
         int method = Request.Method.GET;
-        String server_url = "http://192.168.0.3:8081/myapp/BoardList.do";
+        String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
 
         request = new StringRequest(
                 method,

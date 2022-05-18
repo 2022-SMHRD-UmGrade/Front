@@ -52,7 +52,6 @@ public class PostActivity extends AppCompatActivity {
     StringRequest request;
     Fragment commuFragment;
     User vo;
-    Board dto;
 
     ArrayList<Board> list = new ArrayList<>();
 
@@ -63,7 +62,7 @@ public class PostActivity extends AppCompatActivity {
 
         vo = UserInfo.info;
 
-        commuFragment = (com.example.umgrade.communityFrag.CommuFragment) getSupportFragmentManager().findFragmentById(R.id.fragCommu);
+        commuFragment = getSupportFragmentManager().findFragmentById(R.id.fragCommu);
         commuFragment = new Fragment();
 
         btnPostModify = findViewById(R.id.btnPostModify);
@@ -99,7 +98,7 @@ public class PostActivity extends AppCompatActivity {
     //단일 게시글 불러오는 메서드
     private void getData(int seq, String title, String nick, String content, String date, String file) {
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/BoardOne.do";
+        String server_url = "http://220.80.203.18:8081/myapp/BoardOne.do";
 
         request = new StringRequest(
                 method,
@@ -182,7 +181,8 @@ public class PostActivity extends AppCompatActivity {
                 vo = UserInfo.info;
                 Log.d("user_id", vo.getUser_id());
                 Intent intent = new Intent(PostActivity.this, CommentActivity.class);
-
+                intent.putExtra("article_seq", seq);
+                intent.putExtra("article_content", content);
                 startActivity(intent);
             }
         });

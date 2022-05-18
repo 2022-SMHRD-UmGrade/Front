@@ -2,12 +2,16 @@ package com.example.umgrade.community;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +27,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.umgrade.R;
+import com.example.umgrade.adapter.CommentAdapter;
+import com.example.umgrade.adapterInterface.OnCommentListClickListener;
 import com.example.umgrade.info.BoardInfo;
 import com.example.umgrade.info.CommentInfo;
 import com.example.umgrade.info.UserInfo;
@@ -43,14 +49,15 @@ public class CommentActivity extends AppCompatActivity {
     Button btnComment;
     EditText edtComment;
 
-    TextView tvCommentNick, tvWriter, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport;
+    TextView tvCommentNick, tvSeq, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport;
 
     ImageView imgCommentProfile;
 
     RequestQueue queue;
     StringRequest request;
-
-    ArrayList<Comment> list = new ArrayList<>();
+    RecyclerView recyclerView;
+    CommentAdapter adapter = new CommentAdapter();
+    ArrayList<Comment> lists = new ArrayList<>();
 
     User vo;
     Board dto;
@@ -62,61 +69,53 @@ public class CommentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_comment);
 
         vo = UserInfo.info;
-        dto = BoardInfo.info;
-        cmt = CommentInfo.info;
+
+        tvCommentContent = findViewById(R.id.tvCommentContent);
+        tvSeq = findViewById(R.id.tvSeq);
+        tvCommentNick = findViewById(R.id.tvCommentNick);
+        tvCommentTime = findViewById(R.id.tvCommentTime);
+        tvCommentDel = findViewById(R.id.tvCommentDel);
+        tvCommentModify = findViewById(R.id.tvCommentModify);
+        tvCommentReport = findViewById(R.id.tvCommentReport);
 
         btnComment = findViewById(R.id.btnComment);
         edtComment = findViewById(R.id.edtComment);
 
+        Intent intent = getIntent();
+        int seq = intent.getIntExtra("article_seq", 0);
+        String content = intent.getStringExtra("article_content");
+
+        Log.d("seqa", String.valueOf(seq));
+
         queue = Volley.newRequestQueue(CommentActivity.this);
 
-        int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/BoardComment.do";
+        initComment(seq);
+        writecomment(seq, content);
 
-        request = new StringRequest(
-                method,
-                server_url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Toast.makeText(CommentActivity.this,
-                                "댓글 불러오기 성공",
-                                Toast.LENGTH_SHORT).show();
-                        try{
-                            JSONArray cmtArray = new JSONArray(response);
+        recyclerView = findViewById(R.id.rvComment);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(layoutManager);
 
-                            for(int i = 0; i<cmtArray.length(); i++) {
-                                JSONObject object = cmtArray.getJSONObject(i);
+        adapter.setOnListClickListener(new OnCommentListClickListener() {
+            @Override
+            public void onListClick(CommentAdapter.ViewHolder viewHolder, View view, int position) {
+                Comment list = adapter.getList(position);
+                int seq = list.getArticle_seq();
+                String nick = list.getCmt_id();
+                String content = list.getCmt_content();
+                String time = list.getCmt_date();
 
-                                int seq = Integer.parseInt(object.getString("cmt_seq"));
-                                int a_seq = Integer.parseInt(object.getString("article_seq"));
-                                String content = object.getString("cmt_content");
-                                String date = object.getString("cmt_date");
-                                String id = object.getString("cmt_id");
-                                int likes = Integer.parseInt(object.getString("cmt_likes"));
+                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
+                intent.putExtra("article_seq", seq);
+                intent.putExtra("cmt_id", nick);
+                intent.putExtra("cmt_content", content);
+                intent.putExtra("cmt_date", time);
+                startActivity(intent);
 
-                                cmt = new Comment(seq, a_seq, content, date, id, likes);
+            }
+        });
+        recyclerView.setAdapter(adapter);
 
-                                CommentInfo.info = cmt;
-
-                                list.add(cmt);
-                            }
-                        }
-                        catch(JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(CommentActivity.this,
-                                "댓글 불러오기 실패",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                }
-        );
-        queue.add(request);
 
         // 댓글 내용이 없을 경우 버튼 비활성화
         edtComment.addTextChangedListener(new TextWatcher() {
@@ -164,51 +163,7 @@ public class CommentActivity extends AppCompatActivity {
             }
         });
 
-        btnComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/InsertCmt.do";
 
-                request = new StringRequest(
-                        method,
-                        server_url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                Toast.makeText(CommentActivity.this,
-                                        "댓글 추가 성공!"+response,
-                                        Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
-                                startActivity(intent);
-
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(CommentActivity.this,
-                                        "댓글 추가 실패!"+error.toString(),
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                ){
-                    @NonNull
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String, String> param = new HashMap<>();
-
-                        param.put("article_seq", String.valueOf(dto.getArticle_seq()));
-                        param.put("article_content", dto.getArticle_content());
-                        param.put("cmt_content", edtComment.getText().toString());
-                        param.put("cmt_id", vo.getUser_id());
-
-                        return param;
-                    }
-                };
-                queue.add(request);
-            }
-        });
 
 
 
@@ -253,6 +208,106 @@ public class CommentActivity extends AppCompatActivity {
 //
 //        Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgCommentProfile);
 
+    }
+    //댓글 리스트 메서드
+    public void initComment(int seq) {
+        int method = Request.Method.GET;
+        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do";
+
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 불러오기 성공",
+                                Toast.LENGTH_SHORT).show();
+                        try{
+                            JSONArray cmtArray = new JSONArray(response);
+
+                            for(int i = 0; i<cmtArray.length(); i++) {
+                                JSONObject object = cmtArray.getJSONObject(i);
+
+                                int seq1 = Integer.parseInt(object.getString(String.valueOf(seq)));
+                                int a_seq = Integer.parseInt(object.getString("cmt_seq"));
+                                String content = object.getString("cmt_content");
+                                String date = object.getString("cmt_date");
+                                String id = object.getString("cmt_id");
+                                int likes = Integer.parseInt(object.getString("cmt_likes"));
+                                Log.d("seqw", String.valueOf(seq1));
+                                Comment list = new Comment(seq1, a_seq, content, date, id, likes);
+                                lists.add(list);
+                            }
+                            adapter.setLists(lists);
+                            adapter.notifyDataSetChanged();
+                        }
+                        catch(JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(CommentActivity.this,
+                                "댓글 불러오기 실패",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+        queue.add(request);
+    }
+    //댓글 작성 메서드
+    public void writecomment(int seq, String content) {
+        btnComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int method = Request.Method.POST;
+                String server_url = "http://220.80.203.18:8081/myapp/InsertCmt.do";
+
+                request = new StringRequest(
+                        method,
+                        server_url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                Toast.makeText(CommentActivity.this,
+                                        "댓글 추가 성공!"+response,
+                                        Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
+                                intent.putExtra("article_seq", seq);
+                                intent.putExtra("article_content", content);
+                                intent.putExtra("cmt_content", edtComment.getText().toString());
+                                startActivity(intent);
+
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                Toast.makeText(CommentActivity.this,
+                                        "댓글 추가 실패!"+error.toString(),
+                                        Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                ){
+                    @NonNull
+                    @Override
+                    protected Map<String, String> getParams() throws AuthFailureError {
+                        Map<String, String> param = new HashMap<>();
+
+                        param.put("article_seq", String.valueOf(seq));
+                        param.put("article_content", content);
+                        param.put("cmt_content", edtComment.getText().toString());
+                        param.put("cmt_id", vo.getUser_id());
+
+                        return param;
+                    }
+                };
+                queue.add(request);
+            }
+        });
     }
 
 
