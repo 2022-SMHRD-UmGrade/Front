@@ -263,13 +263,14 @@ footer .container .section-heading h4 {
 }
 
 footer {
-  background-image: url(../images/footer-bg.png);
+  /* background-image: url(../images/footer-bg.png); */
+  background-color: #1f3346;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 80px;
-  padding-top: 300px;
-  padding-bottom: 60px;
+  margin-top: 180px;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .footer-btn{
