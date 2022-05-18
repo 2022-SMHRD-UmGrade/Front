@@ -6,21 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/lightBlueColor"
-    app:cardCornerRadius="0dp">
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/lightBlueColor">
+        android:background="#FFFFFF"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp">
 
         <TextView
-            android:id="@+id/tvAddressTitle"
+            android:id="@+id/tvEmailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tvAddressTitle"
+            android:text="@string/tvEmailTitle"
+            android:textColor="@color/blueColor"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -29,32 +32,27 @@
             app:layout_constraintVertical_bias="0.172" />
 
         <TextView
-            android:id="@+id/tvAddress"
+            android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tvAddress"
-            android:textColor="@color/blueColor"
+            android:layout_marginTop="4dp"
+            android:text="@string/tvEmail"
             android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/tvAddressTitle"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmailTitle"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvAddressTitle"
-            app:layout_constraintTop_toBottomOf="@+id/tvAddressTitle" />
+            app:layout_constraintStart_toStartOf="@+id/tvEmailTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailTitle" />
 
         <Button
             android:id="@+id/btnChange"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="16dp"
+            android:layout_height="27dp"
             android:backgroundTint="@color/blueColor"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text="@string/btnChange"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline22"
-            app:layout_constraintTop_toTopOf="@+id/tvAddress"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="@+id/tvEmail" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline21"

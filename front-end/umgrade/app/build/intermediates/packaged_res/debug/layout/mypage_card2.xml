@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/lightBlueColor">
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/tvNickMypageCard"
@@ -143,13 +143,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:backgroundTint="@color/blueColor"
+            android:stateListAnimator="@null"
             android:text="@string/btnProfileUpdate"
             android:textStyle="bold"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="@+id/tvUserId"
             app:layout_constraintStart_toStartOf="@+id/tvUserId"
-            app:layout_constraintTop_toBottomOf="@+id/tvUserId"
-            android:stateListAnimator="@null"/>
+            app:layout_constraintTop_toBottomOf="@+id/tvUserId" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

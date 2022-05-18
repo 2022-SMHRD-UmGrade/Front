@@ -304,6 +304,8 @@ id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
 id tvDeletingAccount
+id tvEmail
+id tvEmailTitle
 id tvFare
 id tvFareOne
 id tvFareService

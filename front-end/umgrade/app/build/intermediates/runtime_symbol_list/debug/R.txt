@@ -3346,6 +3346,8 @@ int id tvCommuTitle 0x7f0802ca
 int id tvCouponMypageCard 0x7f0802cb
 int id tvCouponTextMypageCard 0x7f0802cc
 int id tvDeletingAccount 0x7f0802cd
+int id tvEmail 0x7f080335
+int id tvEmailTitle 0x7f080336
 int id tvFare 0x7f0802ce
 int id tvFareOne 0x7f0802cf
 int id tvFareService 0x7f0802d0
