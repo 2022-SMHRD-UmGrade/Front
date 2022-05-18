@@ -55,7 +55,7 @@
                 android:insetBottom="0dp"
                 android:stateListAnimator="@null"
                 android:text="@string/btnSupportWrite"
-                android:textColor="#2196F3" />
+                android:textColor="@color/blueColor" />
 
         </LinearLayout>
 

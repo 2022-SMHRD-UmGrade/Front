@@ -14,13 +14,12 @@
 
     <LinearLayout
         style="@style/linearParent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#FFFFFF"
-        android:padding="@dimen/loginViewsMargin"
-        android:layout_centerHorizontal="true"
         android:layout_width="fill_parent"
-        >
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@color/lightBlueColor"
+        android:padding="@dimen/loginViewsMargin">
 
         <ImageView
             android:id="@+id/imgLogo"
@@ -58,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:backgroundTint="#2196F3"
+            android:backgroundTint="@color/blueColor"
             android:text="@string/btnLogin"
             app:cornerRadius="5dp" />
 
@@ -81,7 +80,7 @@
             android:onClick="viewRegisterClicked"
             android:text="@string/tvJoin"
             android:textAlignment="viewEnd"
-            android:textColor="@color/primaryTextColor"
+            android:textColor="@color/blueColor"
             android:textStyle="bold" />
 
 
