@@ -136,13 +136,13 @@
             android:name="com.example.umgrade.service.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.main.MainActivity"
+            android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.IntroActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.userActivity.LoginActivity"
+            android:name="com.example.umgrade.main.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

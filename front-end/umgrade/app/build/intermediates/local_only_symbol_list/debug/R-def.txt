@@ -5,9 +5,11 @@ color blueColor
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color darkBlueColor
 color dialogColor
 color lightBlueColor
 color loginBkColor
+color middleBlueColor
 color primaryTextColor
 color purple_200
 color purple_500
@@ -120,6 +122,7 @@ id constraintLayout4
 id constraintLayout5
 id constraintLayout6
 id constraintLayout7
+id constraintLayout8
 id container
 id customBarcodeView
 id cvAddr
@@ -221,11 +224,12 @@ id imgServiceCard
 id imgSupportCard
 id imgUmb
 id include
+id include2
 id introLogo
 id linearLayout
 id linearLayout2
 id linearLayout3
-id lvComment
+id linearLayout4
 id lvEvent
 id lvNotice
 id lvborad
@@ -244,6 +248,7 @@ id noticeTime
 id noticeTitle
 id postBottom
 id privacyPopupClose
+id rvComment
 id rvSupportBoard
 id scrollView2
 id scrollView3

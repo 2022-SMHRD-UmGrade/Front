@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
@@ -26,6 +26,9 @@ public final class ActivityCommentBinding implements ViewBinding {
   public final Button btnComment;
 
   @NonNull
+  public final ConstraintLayout constraintLayout8;
+
+  @NonNull
   public final View divider5;
 
   @NonNull
@@ -35,17 +38,19 @@ public final class ActivityCommentBinding implements ViewBinding {
   public final Guideline guideline5;
 
   @NonNull
-  public final ListView lvComment;
+  public final RecyclerView rvComment;
 
   private ActivityCommentBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnComment,
-      @NonNull View divider5, @NonNull EditText edtComment, @NonNull Guideline guideline5,
-      @NonNull ListView lvComment) {
+      @NonNull ConstraintLayout constraintLayout8, @NonNull View divider5,
+      @NonNull EditText edtComment, @NonNull Guideline guideline5,
+      @NonNull RecyclerView rvComment) {
     this.rootView = rootView;
     this.btnComment = btnComment;
+    this.constraintLayout8 = constraintLayout8;
     this.divider5 = divider5;
     this.edtComment = edtComment;
     this.guideline5 = guideline5;
-    this.lvComment = lvComment;
+    this.rvComment = rvComment;
   }
 
   @Override
@@ -81,6 +86,12 @@ public final class ActivityCommentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout8;
+      ConstraintLayout constraintLayout8 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout8 == null) {
+        break missingId;
+      }
+
       id = R.id.divider5;
       View divider5 = ViewBindings.findChildViewById(rootView, id);
       if (divider5 == null) {
@@ -99,14 +110,14 @@ public final class ActivityCommentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lvComment;
-      ListView lvComment = ViewBindings.findChildViewById(rootView, id);
-      if (lvComment == null) {
+      id = R.id.rvComment;
+      RecyclerView rvComment = ViewBindings.findChildViewById(rootView, id);
+      if (rvComment == null) {
         break missingId;
       }
 
-      return new ActivityCommentBinding((ConstraintLayout) rootView, btnComment, divider5,
-          edtComment, guideline5, lvComment);
+      return new ActivityCommentBinding((ConstraintLayout) rootView, btnComment, constraintLayout8,
+          divider5, edtComment, guideline5, rvComment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

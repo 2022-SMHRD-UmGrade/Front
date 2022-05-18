@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,12 +25,21 @@ public final class FragmentMainBinding implements ViewBinding {
   public final Button btnFare;
 
   @NonNull
+  public final SliderCardBinding include2;
+
+  @NonNull
+  public final LinearLayout linearLayout4;
+
+  @NonNull
   public final ScrollView mainScroll;
 
   private FragmentMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnFare,
+      @NonNull SliderCardBinding include2, @NonNull LinearLayout linearLayout4,
       @NonNull ScrollView mainScroll) {
     this.rootView = rootView;
     this.btnFare = btnFare;
+    this.include2 = include2;
+    this.linearLayout4 = linearLayout4;
     this.mainScroll = mainScroll;
   }
 
@@ -66,13 +76,27 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.include2;
+      View include2 = ViewBindings.findChildViewById(rootView, id);
+      if (include2 == null) {
+        break missingId;
+      }
+      SliderCardBinding binding_include2 = SliderCardBinding.bind(include2);
+
+      id = R.id.linearLayout4;
+      LinearLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout4 == null) {
+        break missingId;
+      }
+
       id = R.id.mainScroll;
       ScrollView mainScroll = ViewBindings.findChildViewById(rootView, id);
       if (mainScroll == null) {
         break missingId;
       }
 
-      return new FragmentMainBinding((ConstraintLayout) rootView, btnFare, mainScroll);
+      return new FragmentMainBinding((ConstraintLayout) rootView, btnFare, binding_include2,
+          linearLayout4, mainScroll);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
