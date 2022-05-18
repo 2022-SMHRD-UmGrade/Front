@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:layout_marginTop="@dimen/loginViewsMargin"
     android:layout_marginBottom="@dimen/loginViewsMargin"
-    android:background="@color/whiteCardColor"
+    android:background="#FFFFFF"
     android:elevation="5dp"
     android:theme="@style/loginCard"
     app:cardCornerRadius="@dimen/loginCardRadius">
@@ -54,9 +54,9 @@
                 android:backgroundTint="@color/blueColor"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:stateListAnimator="@null"
                 android:text="@string/btnIdCheck"
-                app:cornerRadius="5dp"
-                android:stateListAnimator="@null" />
+                app:cornerRadius="5dp" />
         </LinearLayout>
 
         <EditText
