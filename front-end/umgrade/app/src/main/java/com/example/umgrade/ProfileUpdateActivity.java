@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
     ImageView imgProfileChange;
     EditText edtNickChange;
     Button btnProfileChange;
+    ImageButton btnProfileUpdatePre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         imgProfileChange = findViewById(R.id.imgProfileChange); // 수정할 프로필 이미지
         edtNickChange = findViewById(R.id.edtNickChange); // 수정할 닉네임
         btnProfileChange = findViewById(R.id.btnProfileChange); // 프로필 변경
+        btnProfileUpdatePre = findViewById(R.id.btnProfileUpdatePre); // 뒤로가기 버튼
 
         // 이미지 클릭해서 갤러리 접근
         imgProfileChange.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +66,14 @@ public class ProfileUpdateActivity extends AppCompatActivity {
 //                Toast.makeText(ProfileUpdateActivity.this, "nickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
                 // 화면종료
                 finish();
+            }
+        });
+
+        // 뒤로가기 버튼
+        btnProfileUpdatePre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
             }
         });
 
