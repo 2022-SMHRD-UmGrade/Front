@@ -2762,7 +2762,6 @@ int id btnMoreService 0x7f080082
 int id btnMoreSupport 0x7f080083
 int id btnMoreTerms 0x7f080084
 int id btnMoreUserInfo 0x7f080085
-int id btnNickChange 0x7f080086
 int id btnNoticeEvent 0x7f080087
 int id btnPasswordChange 0x7f080088
 int id btnPasswordChangePre 0x7f080089
@@ -2771,6 +2770,7 @@ int id btnPaymentPre 0x7f08008b
 int id btnPostComment 0x7f08008c
 int id btnPostDelete 0x7f08008d
 int id btnPostModify 0x7f08008e
+int id btnProfileChange 0x7f080333
 int id btnProfileUpdate 0x7f08008f
 int id btnProfileUpdatePre 0x7f080090
 int id btnQrCard 0x7f080091
@@ -3754,13 +3754,13 @@ int string btnMoreService 0x7f100037
 int string btnMoreSupport 0x7f100038
 int string btnMoreTerms 0x7f100039
 int string btnMoreUserInfo 0x7f10003a
-int string btnNickChange 0x7f10003b
 int string btnNoticeEvent 0x7f10003c
 int string btnPasswordChange 0x7f10003d
 int string btnPayment 0x7f10003e
 int string btnPostComment 0x7f10003f
 int string btnPostDelete 0x7f100040
 int string btnPostModify 0x7f100041
+int string btnProfileChange 0x7f100165
 int string btnProfileUpdate 0x7f100042
 int string btnQrCard 0x7f100043
 int string btnServiceCard 0x7f100044

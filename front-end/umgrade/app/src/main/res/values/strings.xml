@@ -200,7 +200,7 @@
     <string name="tvProfileTitle">프로필 수정</string>
     <string name="edtNickHint">닉네임을 입력하세요</string>
     <string name="tvProfileNIckhint">※최대 10글자까지 입력 가능합니다</string>
-    <string name="btnNickChange">닉네임 변경</string>
+    <string name="btnProfileChange">완료</string>
 
     <!-- activity_support_post.xml-->
     <string name="supportPostTitle">문의글 제목</string>

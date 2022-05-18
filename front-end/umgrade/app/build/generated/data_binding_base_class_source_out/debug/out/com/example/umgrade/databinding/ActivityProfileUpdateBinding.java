@@ -25,7 +25,7 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnNickChange;
+  public final Button btnProfileChange;
 
   @NonNull
   public final ImageButton btnProfileUpdatePre;
@@ -52,13 +52,13 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
   public final TextView tvProfileTitle;
 
   private ActivityProfileUpdateBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnNickChange, @NonNull ImageButton btnProfileUpdatePre,
+      @NonNull Button btnProfileChange, @NonNull ImageButton btnProfileUpdatePre,
       @NonNull View divider8, @NonNull EditText edtNickChange,
       @NonNull CircleImageView imgProfileChange, @NonNull LinearLayout linearLayout,
       @NonNull LinearLayout linearLayout2, @NonNull TextView tvProfileNIckhint,
       @NonNull TextView tvProfileTitle) {
     this.rootView = rootView;
-    this.btnNickChange = btnNickChange;
+    this.btnProfileChange = btnProfileChange;
     this.btnProfileUpdatePre = btnProfileUpdatePre;
     this.divider8 = divider8;
     this.edtNickChange = edtNickChange;
@@ -96,9 +96,9 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnNickChange;
-      Button btnNickChange = ViewBindings.findChildViewById(rootView, id);
-      if (btnNickChange == null) {
+      id = R.id.btnProfileChange;
+      Button btnProfileChange = ViewBindings.findChildViewById(rootView, id);
+      if (btnProfileChange == null) {
         break missingId;
       }
 
@@ -150,7 +150,7 @@ public final class ActivityProfileUpdateBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileUpdateBinding((ConstraintLayout) rootView, btnNickChange,
+      return new ActivityProfileUpdateBinding((ConstraintLayout) rootView, btnProfileChange,
           btnProfileUpdatePre, divider8, edtNickChange, imgProfileChange, linearLayout,
           linearLayout2, tvProfileNIckhint, tvProfileTitle);
     }

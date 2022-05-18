@@ -2763,7 +2763,6 @@ id btnMoreService
 id btnMoreSupport
 id btnMoreTerms
 id btnMoreUserInfo
-id btnNickChange
 id btnNoticeEvent
 id btnPasswordChange
 id btnPasswordChangePre
@@ -2772,6 +2771,7 @@ id btnPaymentPre
 id btnPostComment
 id btnPostDelete
 id btnPostModify
+id btnProfileChange
 id btnProfileUpdate
 id btnProfileUpdatePre
 id btnQrCard
@@ -3755,13 +3755,13 @@ string btnMoreService
 string btnMoreSupport
 string btnMoreTerms
 string btnMoreUserInfo
-string btnNickChange
 string btnNoticeEvent
 string btnPasswordChange
 string btnPayment
 string btnPostComment
 string btnPostDelete
 string btnPostModify
+string btnProfileChange
 string btnProfileUpdate
 string btnQrCard
 string btnServiceCard
