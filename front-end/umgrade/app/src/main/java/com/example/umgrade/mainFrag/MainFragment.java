@@ -26,7 +26,7 @@ import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.notice.NoticeActivity;
 import com.example.umgrade.userActivity.MypageFragment;
-
+import com.example.umgrade.service.ServiceActivity;
 
 public class MainFragment extends Fragment {
     ImageView imgMypageProfile;
