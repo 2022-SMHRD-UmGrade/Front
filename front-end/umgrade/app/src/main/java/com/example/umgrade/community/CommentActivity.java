@@ -49,9 +49,9 @@ import java.util.Map;
 public class CommentActivity extends AppCompatActivity {
 
     Button btnComment;
-    EditText edtComment;
+    EditText edtComment, edtCommentContent ;
 
-    TextView tvCommentNick, tvSeq, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport;
+    TextView tvCommentNick, tvSeq, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport, tvCommentSuccess;
 
     ImageView imgCommentProfile;
 
@@ -70,16 +70,53 @@ public class CommentActivity extends AppCompatActivity {
 
         vo = UserInfo.info;
 
-        tvCommentContent = findViewById(R.id.tvCommentContent);
+        tvCommentContent = findViewById(R.id.tvCommentContent); // 댓글 본문
         tvSeq = findViewById(R.id.tvSeq);
-        tvCommentNick = findViewById(R.id.tvCommentNick);
-        tvCommentTime = findViewById(R.id.tvCommentTime);
-        tvCommentDel = findViewById(R.id.tvCommentDel);
-        tvCommentModify = findViewById(R.id.tvCommentModify);
-        tvCommentReport = findViewById(R.id.tvCommentReport);
+        tvCommentNick = findViewById(R.id.tvCommentNick); // 작성자 닉네임
+        tvCommentTime = findViewById(R.id.tvCommentTime); // 댓글 작성시각
+        tvCommentDel = findViewById(R.id.tvCommentDel); // 삭제
+        tvCommentModify = findViewById(R.id.tvCommentModify); // 수정
+        tvCommentReport = findViewById(R.id.tvCommentReport); // 신고
 
         btnComment = findViewById(R.id.btnComment);
         edtComment = findViewById(R.id.edtComment);
+
+        edtCommentContent = findViewById(R.id.edtCommentContent); // 댓글 수정 창
+        tvCommentSuccess = findViewById(R.id.tvCommentSuccess); // 완료
+
+        // 기본 숨김 상태
+        tvCommentSuccess.setVisibility(View.GONE);
+        edtCommentContent.setVisibility(View.GONE);
+
+        // 수정 누르면 활성화
+        tvCommentModify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvCommentSuccess.setVisibility(View.VISIBLE); // 수정 완료
+                edtCommentContent.setVisibility(View.VISIBLE); // 댓글 수정 란
+                tvCommentModify.setVisibility(View.GONE); // 수정 버튼 숨김
+                tvCommentContent.setVisibility(View.GONE); // 댓글 본문 숨김
+                tvCommentTime.setVisibility(View.GONE); // 댓글 작성 시각 숨김
+
+                // 기존에 작성한 댓글 수정란에 출력
+                edtCommentContent.setText(tvCommentContent.getText().toString());
+            }
+        });
+
+        // 완료 누르면 특정 항목 숨김/보임
+        tvCommentSuccess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvCommentSuccess.setVisibility(View.GONE); // 수정 숨김
+                edtCommentContent.setVisibility(View.GONE); // 댓글 수정 숨김
+                tvCommentModify.setVisibility(View.VISIBLE); // 수정 버튼
+                tvCommentContent.setVisibility(View.VISIBLE); // 댓글 본문
+                tvCommentTime.setVisibility(View.VISIBLE); // 댓글 작성 시각
+
+                // 수정한 text 댓글 본문 출력
+                tvCommentContent.setText(edtCommentContent.getText().toString());
+            }
+        });
 
         Intent intent = getIntent();
         int article_seq = intent.getIntExtra("article_seq", 0);

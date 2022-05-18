@@ -153,6 +153,7 @@ id divider7
 id divider8
 id divider9
 id edtComment
+id edtCommentContent
 id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
@@ -297,6 +298,7 @@ id tvCommentDel
 id tvCommentModify
 id tvCommentNick
 id tvCommentReport
+id tvCommentSuccess
 id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
@@ -549,6 +551,7 @@ string tvCommentDel
 string tvCommentModify
 string tvCommentNick
 string tvCommentReport
+string tvCommentSuccess
 string tvCommentTime
 string tvCommuTitle
 string tvCouponMypageCard

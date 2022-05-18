@@ -13,6 +13,7 @@
         android:layout_marginStart="6dp"
         android:layout_marginTop="6dp"
         android:layout_weight="1"
+        android:src="@drawable/umbrella2"
         app:civ_circle_background_color="#C8C8C8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -56,7 +57,7 @@
         android:gravity="left"
         android:text="@string/tvCommentTime"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/tvCommentContent"
+        app:layout_constraintStart_toStartOf="@+id/tvCommentNick"
         app:layout_constraintTop_toBottomOf="@+id/tvCommentContent" />
 
     <TextView
@@ -110,5 +111,35 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvCommentReport"
         app:layout_constraintEnd_toStartOf="@+id/tvCommentReport"
         app:layout_constraintTop_toTopOf="@+id/tvCommentReport" />
+
+    <EditText
+        android:id="@+id/edtCommentContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="3dp"
+        android:text="Name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvCommentContent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvCommentNick"
+        app:layout_constraintTop_toBottomOf="@+id/tvCommentNick"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/tvCommentSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tvCommentSuccess"
+        android:textColor="@color/blueColor"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCommentDel"
+        app:layout_constraintEnd_toStartOf="@+id/tvCommentDel"
+        app:layout_constraintTop_toTopOf="@+id/tvCommentDel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

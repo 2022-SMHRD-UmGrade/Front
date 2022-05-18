@@ -116,6 +116,7 @@
     <string name="tvCommentTime">2022.05.13 10:42</string>
     <string name="tvCommentDel">삭제</string>
     <string name="tvCommentModify">수정</string>
+    <string name="tvCommentSuccess">완료</string>
     <string name="tvCommentReport">신고</string>
 
     <!-- activity_notice.xml -->
