@@ -31,7 +31,6 @@ drawable alarm16
 drawable arroaright_resize
 drawable arrowleft
 drawable arrowright
-drawable button_more
 drawable closed_umbrella
 drawable community
 drawable corner_shape

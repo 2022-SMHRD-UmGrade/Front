@@ -126,7 +126,8 @@
                 android:insetBottom="0dp"
                 android:text="@string/btnLogout"
                 android:textStyle="bold"
-                app:cornerRadius="5dp" />
+                app:cornerRadius="5dp"
+                android:stateListAnimator="@null"/>
 
         </LinearLayout>
     </ScrollView>
