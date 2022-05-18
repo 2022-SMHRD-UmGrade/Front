@@ -2827,6 +2827,7 @@ id constraintLayout4
 id constraintLayout5
 id constraintLayout6
 id constraintLayout7
+id constraintLayout8
 id container
 id content
 id contentPanel
@@ -3049,7 +3050,6 @@ id linearLayout2
 id linearLayout3
 id listMode
 id list_item
-id lvComment
 id lvEvent
 id lvNotice
 id lvborad
@@ -3175,6 +3175,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvComment
 id rvSupportBoard
 id save_non_transition_alpha
 id save_overlay_view
