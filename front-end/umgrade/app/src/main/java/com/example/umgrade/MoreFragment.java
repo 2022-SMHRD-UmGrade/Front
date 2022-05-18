@@ -54,6 +54,8 @@ public class MoreFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // 마이페이지 내부 수정페이지로
+                Intent intent = new Intent(getActivity(), AccountSettingActivity.class);
+                startActivity(intent);
             }
         });
 
