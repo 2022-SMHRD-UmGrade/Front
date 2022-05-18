@@ -29,7 +29,7 @@
                 android:layout_marginRight="10dp"
                 android:backgroundTint="#00FFFFFF"
                 android:src="@drawable/arrowleft"
-                android:tint="#2196F3" />
+                android:tint="@color/blueColor" />
 
             <TextView
                 android:id="@+id/tvUsageHistoryTitle"

@@ -42,7 +42,7 @@
                 android:paddingRight="10dp"
                 android:text="@string/btnPayment"
                 android:textAlignment="textStart"
-                android:textColor="#2196F3"
+                android:textColor="@color/blueColor"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -61,7 +61,7 @@
                 android:paddingRight="10dp"
                 android:text="@string/btnUsageHistory"
                 android:textAlignment="textStart"
-                android:textColor="#2196F3"
+                android:textColor="@color/blueColor"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:cornerRadius="7dp" />
@@ -81,7 +81,7 @@
                 android:paddingRight="10dp"
                 android:text="@string/btnAccountSetting"
                 android:textAlignment="textStart"
-                android:textColor="#2196F3"
+                android:textColor="@color/blueColor"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:cornerRadius="7dp" />
@@ -101,7 +101,7 @@
                 android:paddingRight="10dp"
                 android:text="알람설정"
                 android:textAlignment="textStart"
-                android:textColor="#2196F3"
+                android:textColor="@color/blueColor"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:cornerRadius="7dp" />
