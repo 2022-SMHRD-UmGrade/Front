@@ -6,371 +6,371 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml
+8-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml
+9-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml
 10    <!-- 인터넷 권한 설정 -->
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:6:5-67
-11-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:6:22-64
+11-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:6:22-64
 12    <!-- 지도 API 권한 설정 -->
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:8:5-81
-13-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:8:22-78
+13-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:8:5-81
+13-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:8:22-78
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:9:5-79
-14-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:9:22-76
+14-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:9:5-79
+14-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:9:22-76
 15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-15-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:10:5-85
-15-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:10:22-82
+15-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:10:5-85
+15-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:10:22-82
 16    <!-- 카메라, 저장소 권한 설정 -->
 17    <uses-permission android:name="android.permission.CAMERA" />
-17-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:12:5-65
-17-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:12:22-62
+17-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:12:5-65
+17-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:12:22-62
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:13:5-81
-18-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:13:22-78
+18-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:13:5-81
+18-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:13:22-78
 19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-19-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:14:5-80
-19-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:14:22-77
+19-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:14:5-80
+19-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:14:22-77
 20
 21    <uses-feature
-21-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:16:5-18:36
+21-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:16:5-18:36
 22        android:name="android.hardware.camera"
-22-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:17:9-47
+22-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:17:9-47
 23        android:required="false" />
-23-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:18:9-33
+23-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:18:9-33
 24    <uses-feature
-24-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:19:5-21:36
+24-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:19:5-21:36
 25        android:name="android.hardware.camera.autofocus"
-25-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:20:9-57
+25-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:20:9-57
 26        android:required="false" />
-26-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:21:9-33
+26-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:21:9-33
 27    <uses-feature
-27-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:22:5-24:36
+27-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:22:5-24:36
 28        android:name="android.hardware.camera.flash"
-28-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:23:9-53
+28-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:23:9-53
 29        android:required="false" />
-29-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:24:9-33
+29-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:24:9-33
 30    <uses-feature
-30-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:25:5-27:36
+30-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:25:5-27:36
 31        android:name="android.hardware.camera.front"
-31-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:26:9-53
+31-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:26:9-53
 32        android:required="false" />
-32-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:27:9-33
+32-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:27:9-33
 33
 34    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 35    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-36-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:5-79
-36-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:22-76
+36-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:5-79
+36-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:13:22-76
 37
 38    <uses-feature
-38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
 39        android:name="android.hardware.screen.landscape"
-39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
 40        android:required="false" />
-40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
 41    <uses-feature
-41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
 42        android:name="android.hardware.wifi"
-42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
 43        android:required="false" />
-43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
 44
 45    <application
-45-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:29:5-137:19
+45-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:29:5-137:19
 46        android:allowBackup="true"
-46-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:30:9-35
+46-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:30:9-35
 47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-47-->[androidx.core:core:1.7.0] C:\Users\rlarl\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+47-->[androidx.core:core:1.7.0] C:\Users\smhrd\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 48        android:debuggable="true"
 49        android:hardwareAccelerated="true"
-49-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:31:9-43
+49-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:31:9-43
 50        android:icon="@mipmap/ic_launcher"
-50-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:32:9-43
+50-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:32:9-43
 51        android:label="umgrade"
-51-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:33:9-32
+51-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:33:9-32
 52        android:networkSecurityConfig="@xml/network_security_config2"
-52-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:34:9-70
+52-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:34:9-70
 53        android:roundIcon="@mipmap/ic_launcher_round"
-53-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:35:9-54
+53-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:35:9-54
 54        android:supportsRtl="true"
-54-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:36:9-35
+54-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:36:9-35
 55        android:testOnly="true"
 56        android:theme="@style/Theme.Umgrade"
-56-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:37:9-45
+56-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:37:9-45
 57        android:usesCleartextTraffic="true" >
-57-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:38:9-44
+57-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:38:9-44
 58        <activity
-58-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:40:9-42:40
+58-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:40:9-42:40
 59            android:name="com.example.umgrade.CardRegisterActivity"
-59-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:41:13-49
+59-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:41:13-49
 60            android:exported="false" />
-60-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:42:13-37
+60-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:42:13-37
 61        <activity
-61-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:43:9-45:40
+61-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:43:9-45:40
 62            android:name="com.example.umgrade.PasswordChangeActivity"
-62-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:44:13-51
+62-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:44:13-51
 63            android:exported="false" />
-63-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:45:13-37
+63-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:45:13-37
 64        <activity
-64-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:47:9-49:40
+64-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:47:9-49:40
 65            android:name="com.example.umgrade.service.SupportPostActivity"
-65-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:48:13-56
+65-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:48:13-56
 66            android:exported="false" />
-66-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:49:13-37
+66-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:49:13-37
 67        <activity
-67-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:50:9-52:40
+67-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:50:9-52:40
 68            android:name="com.example.umgrade.service.SupportWriteActivity"
-68-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:51:13-57
+68-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:51:13-57
 69            android:exported="false" />
-69-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:52:13-37
+69-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:52:13-37
 70        <activity
-70-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:53:9-55:40
+70-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:53:9-55:40
 71            android:name="com.example.umgrade.AccountSettingActivity"
-71-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-51
+71-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-51
 72            android:exported="false" />
-72-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:55:13-37
+72-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:55:13-37
 73        <activity
-73-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:56:9-58:40
+73-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:56:9-58:40
 74            android:name="com.example.umgrade.UsageHistoryActivity"
-74-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:57:13-49
+74-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:57:13-49
 75            android:exported="false" />
-75-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:58:13-37
+75-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:58:13-37
 76        <activity
-76-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:59:9-61:40
+76-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:59:9-61:40
 77            android:name="com.example.umgrade.PaymentActivity"
-77-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:60:13-44
+77-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:60:13-44
 78            android:exported="false" />
-78-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:61:13-37
+78-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:61:13-37
 79        <activity
-79-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:62:9-64:40
+79-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:62:9-64:40
 80            android:name="com.example.umgrade.ProfileUpdateActivity"
-80-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:63:13-50
+80-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:63:13-50
 81            android:exported="false" />
-81-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:64:13-37
+81-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:64:13-37
 82        <activity
-82-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:65:9-68:50
+82-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:65:9-68:50
 83            android:name="com.example.umgrade.PrivacyPopupActivity"
-83-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:66:13-49
+83-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:66:13-49
 84            android:exported="false"
-84-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:67:13-37
+84-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:67:13-37
 85            android:theme="@style/DialogTheme" />
-85-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:68:13-47
+85-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:68:13-47
 86        <activity
-86-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:69:9-72:50
+86-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:69:9-72:50
 87            android:name="com.example.umgrade.service.ServiceInfoPopupActivity"
-87-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:70:13-61
+87-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:70:13-61
 88            android:exported="false"
-88-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:71:13-37
+88-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:71:13-37
 89            android:theme="@style/DialogTheme" />
-89-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:72:13-47
+89-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:72:13-47
 90        <activity
-90-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:73:9-75:40
+90-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:73:9-75:40
 91            android:name="com.example.umgrade.TermsActivity"
-91-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:74:13-42
+91-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:74:13-42
 92            android:exported="false" />
-92-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:75:13-37
+92-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:75:13-37
 93
 94        <meta-data
-94-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:77:9-79:64
+94-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:77:9-79:64
 95            android:name="com.kakao.sdk.AppKey"
-95-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:78:13-48
+95-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:78:13-48
 96            android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
-96-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:79:13-61
+96-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:79:13-61
 97
 98        <activity
-98-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:81:9-85:49
+98-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:81:9-85:49
 99            android:name="com.example.umgrade.main.QrActivity"
-99-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:82:13-44
+99-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:82:13-44
 100            android:exported="false"
-100-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:83:13-37
+100-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:83:13-37
 101            android:screenOrientation="fullSensor" />
-101-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-51
+101-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-51
 102        <activity
-102-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:86:9-88:40
+102-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:86:9-88:40
 103            android:name="com.example.umgrade.community.CommentActivity"
-103-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:87:13-54
+103-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:87:13-54
 104            android:exported="false" />
-104-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:88:13-37
+104-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:88:13-37
 105        <activity
-105-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:89:9-91:40
+105-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:89:9-91:40
 106            android:name="com.example.umgrade.FareActivity"
-106-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:90:13-41
+106-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:90:13-41
 107            android:exported="false" />
-107-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:91:13-37
+107-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:91:13-37
 108        <activity
-108-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:92:9-94:40
+108-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:92:9-94:40
 109            android:name="com.example.umgrade.service.SupportActivity"
-109-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:93:13-52
+109-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:93:13-52
 110            android:exported="false" />
-110-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:94:13-37
+110-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:94:13-37
 111        <activity
-111-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:95:9-97:40
+111-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:95:9-97:40
 112            android:name="com.example.umgrade.main.MapActivity"
-112-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:96:13-45
+112-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:96:13-45
 113            android:exported="false" />
-113-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:97:13-37
+113-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:97:13-37
 114        <activity
-114-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:98:9-100:40
+114-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:98:9-100:40
 115            android:name="com.example.umgrade.notice.EventPostActivity"
-115-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:99:13-53
+115-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:99:13-53
 116            android:exported="false" />
-116-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:100:13-37
+116-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:100:13-37
 117        <activity
-117-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:101:9-103:40
+117-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:101:9-103:40
 118            android:name="com.example.umgrade.notice.NoticePostActivity"
-118-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:102:13-54
+118-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:102:13-54
 119            android:exported="false" />
-119-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:103:13-37
+119-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:103:13-37
 120        <activity
-120-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:104:9-106:40
+120-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:104:9-106:40
 121            android:name="com.example.umgrade.notice.NoticeActivity"
-121-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:105:13-50
+121-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:105:13-50
 122            android:exported="false" />
-122-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:106:13-37
+122-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:106:13-37
 123        <activity
-123-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:107:9-109:40
+123-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:107:9-109:40
 124            android:name="com.example.umgrade.userActivity.JoinActivity"
-124-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:108:13-54
+124-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:108:13-54
 125            android:exported="false" />
-125-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:109:13-37
+125-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:109:13-37
 126        <activity
-126-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:110:9-112:40
+126-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:110:9-112:40
 127            android:name="com.example.umgrade.community.PostActivity"
-127-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:111:13-51
+127-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:111:13-51
 128            android:exported="false" />
-128-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:112:13-37
+128-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:112:13-37
 129        <activity
-129-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:113:9-115:40
+129-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:113:9-115:40
 130            android:name="com.example.umgrade.community.ModifyActivity"
-130-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:114:13-53
+130-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:114:13-53
 131            android:exported="false" />
-131-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:115:13-37
+131-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:115:13-37
 132        <activity
-132-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:116:9-118:40
+132-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:116:9-118:40
 133            android:name="com.example.umgrade.community.WriteActivity"
-133-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:117:13-52
+133-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:117:13-52
 134            android:exported="false" />
-134-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:118:13-37
+134-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:118:13-37
 135        <activity
-135-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:119:9-121:40
+135-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:119:9-121:40
 136            android:name="com.example.umgrade.service.ServiceActivity"
-136-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:120:13-52
+136-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:120:13-52
 137            android:exported="false" />
-137-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:121:13-37
+137-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:121:13-37
 138        <activity
-138-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:122:9-124:40
+138-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:122:9-124:40
 139            android:name="com.example.umgrade.main.MainActivity"
-139-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:123:13-46
+139-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:123:13-46
 140            android:exported="false" />
-140-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:124:13-37
+140-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:124:13-37
 141        <activity
-141-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:125:9-127:40
+141-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:125:9-127:40
 142            android:name="com.example.umgrade.IntroActivity"
-142-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:126:13-42
+142-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:126:13-42
 143            android:exported="false" />
-143-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:127:13-37
+143-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:127:13-37
 144        <activity
-144-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:128:9-136:20
+144-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:128:9-136:20
 145            android:name="com.example.umgrade.userActivity.LoginActivity"
-145-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-55
+145-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-55
 146            android:exported="true" >
-146-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:130:13-36
+146-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:130:13-36
 147            <intent-filter>
-147-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:131:13-135:29
+147-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:131:13-135:29
 148                <action android:name="android.intent.action.MAIN" />
-148-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:132:17-69
-148-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:132:25-66
+148-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:132:17-69
+148-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:132:25-66
 149
 150                <category android:name="android.intent.category.LAUNCHER" />
-150-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:134:17-77
-150-->F:\second\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:134:27-74
+150-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:134:17-77
+150-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:134:27-74
 151            </intent-filter>
 152        </activity>
 153
 154        <service
-154-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:17:9-23:19
+154-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:17:9-23:19
 155            android:name="com.google.firebase.components.ComponentDiscoveryService"
-155-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:18:13-84
+155-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:18:13-84
 156            android:directBootAware="true"
-156-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+156-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
 157            android:exported="false" >
-157-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:19:13-37
+157-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:19:13-37
 158            <meta-data
-158-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:20:13-22:85
+158-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:20:13-22:85
 159                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-159-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:21:17-111
+159-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:21:17-111
 160                android:value="com.google.firebase.components.ComponentRegistrar" />
-160-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\rlarl\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:22:17-82
+160-->[com.google.firebase:firebase-firestore:24.1.2] C:\Users\smhrd\.gradle\caches\transforms-3\3ffd6d07a3fd32cfe7e0839848cb0e1d\transformed\jetified-firebase-firestore-24.1.2\AndroidManifest.xml:22:17-82
 161        </service>
 162
 163        <activity
-163-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rlarl\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+163-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\smhrd\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 164            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-164-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rlarl\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+164-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\smhrd\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 165            android:exported="false"
-165-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rlarl\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+165-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\smhrd\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 166            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-166-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rlarl\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+166-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\smhrd\.gradle\caches\transforms-3\88a701e62390f47932520816266fd7ec\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 167
 168        <provider
-168-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+168-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
 169            android:name="com.google.firebase.provider.FirebaseInitProvider"
-169-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+169-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
 170            android:authorities="com.example.umgrade.firebaseinitprovider"
-170-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+170-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
 171            android:directBootAware="true"
-171-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+171-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
 172            android:exported="false"
-172-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+172-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
 173            android:initOrder="100" />
-173-->[com.google.firebase:firebase-common:20.1.1] C:\Users\rlarl\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+173-->[com.google.firebase:firebase-common:20.1.1] C:\Users\smhrd\.gradle\caches\transforms-3\53d6e7c457e6378f02008afc1aac44b6\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
 174
 175        <meta-data
-175-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\3750a3a0b81204ef8c8b302ccbbf8423\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+175-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\3750a3a0b81204ef8c8b302ccbbf8423\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 176            android:name="com.google.android.gms.version"
-176-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\3750a3a0b81204ef8c8b302ccbbf8423\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+176-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\3750a3a0b81204ef8c8b302ccbbf8423\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
 177            android:value="@integer/google_play_services_version" />
-177-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\3750a3a0b81204ef8c8b302ccbbf8423\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+177-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\3750a3a0b81204ef8c8b302ccbbf8423\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 178
 179        <provider
-179-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+179-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 180            android:name="androidx.startup.InitializationProvider"
-180-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+180-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 181            android:authorities="com.example.umgrade.androidx-startup"
-181-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+181-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 182            android:exported="false" >
-182-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+182-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 183            <meta-data
-183-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+183-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 184                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-184-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+184-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 185                android:value="androidx.startup" />
-185-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rlarl\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+185-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smhrd\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 186            <meta-data
-186-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\rlarl\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+186-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 187                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-187-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\rlarl\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+187-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 188                android:value="androidx.startup" />
-188-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\rlarl\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+188-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smhrd\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 189        </provider>
 190
 191        <activity
-191-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+191-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
 192            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-192-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+192-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
 193            android:clearTaskOnLaunch="true"
-193-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+193-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
 194            android:screenOrientation="sensorLandscape"
-194-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+194-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
 195            android:stateNotNeeded="true"
-195-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+195-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
 196            android:theme="@style/zxing_CaptureTheme"
-196-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+196-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
 197            android:windowSoftInputMode="stateAlwaysHidden" />
-197-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\rlarl\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+197-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
 198    </application>
 199
 200</manifest>

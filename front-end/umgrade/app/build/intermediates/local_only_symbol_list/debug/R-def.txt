@@ -120,6 +120,7 @@ id constraintLayout4
 id constraintLayout5
 id constraintLayout6
 id constraintLayout7
+id constraintLayout8
 id container
 id customBarcodeView
 id cvAddr
@@ -225,7 +226,6 @@ id introLogo
 id linearLayout
 id linearLayout2
 id linearLayout3
-id lvComment
 id lvEvent
 id lvNotice
 id lvborad
@@ -244,6 +244,7 @@ id noticeTime
 id noticeTitle
 id postBottom
 id privacyPopupClose
+id rvComment
 id rvSupportBoard
 id scrollView2
 id scrollView3
@@ -337,6 +338,7 @@ id tvProfileTitle
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
+id tvSeq
 id tvService1
 id tvService2
 id tvService3
@@ -363,7 +365,6 @@ id tvUsageHistoryTitle
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
-id tvWriter
 id zxing_barcode_surface
 id zxing_viewfinder_view
 layout activity_account_setting

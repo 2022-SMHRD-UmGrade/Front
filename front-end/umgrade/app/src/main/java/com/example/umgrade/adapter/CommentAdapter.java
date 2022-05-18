@@ -22,13 +22,14 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
 
     //viewHolder start ~
     public static class ViewHolder extends RecyclerView.ViewHolder{
+        TextView tvSeq;
         TextView tvCommentNick;
         TextView tvCommentContent;
         TextView tvCommentTime;
 
         public ViewHolder(View listView) {
             super(listView);
-
+            tvSeq = listView.findViewById(R.id.tvSeq);
             tvCommentNick = listView.findViewById(R.id.tvCommentNick);
             tvCommentContent = listView.findViewById(R.id.tvCommentContent);
             tvCommentTime = listView.findViewById(R.id.tvCommentTime);
@@ -46,6 +47,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         }
 
         public void setItem(Comment list) {
+            tvSeq.setText(String.valueOf(list.getArticle_seq()));
             tvCommentNick.setText(list.getCmt_id());
             tvCommentContent.setText(list.getCmt_content());
             tvCommentTime.setText(list.getCmt_date());

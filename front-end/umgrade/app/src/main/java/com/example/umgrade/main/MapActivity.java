@@ -44,6 +44,8 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
     private static final int PERMISSIONS_REQUEST_CODE = 0;
     String[] REQUIRED_PERMISSIONS = {Manifest.permission.ACCESS_FINE_LOCATION};
     private MapView mapView;
+    double mCurrentLng;
+    double mCurrentLat;
 
     User vo;
 
@@ -124,7 +126,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
 
         MapPOIItem marker = new MapPOIItem();
         //맵 포인트 위도경도 설정
-        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(35.14983, 126.91977);
+        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(mCurrentLat, mCurrentLng);
 
         marker.setItemName("Default Name");
 
@@ -167,8 +169,8 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         //이 좌표로 지도 중심 이동
         mapView.setMapCenterPoint(currentMapPoint, true);
         //현재 좌표 저장
-        double mCurrentLat = mapPointGeo.latitude;
-        double mCurrentLng = mapPointGeo.longitude;
+        mCurrentLat = mapPointGeo.latitude;
+        mCurrentLng = mapPointGeo.longitude;
         Log.d(TAG, "현재위치 => " + mCurrentLat + "  " + mCurrentLng);
 
         //트래킹 모드가 아닌 단순 현재위치 업데이트일 경우, 한번만 위치 업데이트하고 트래킹을 중단시키기 위한 로직

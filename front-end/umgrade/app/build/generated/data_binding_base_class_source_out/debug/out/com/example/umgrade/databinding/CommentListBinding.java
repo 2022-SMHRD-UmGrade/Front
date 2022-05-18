@@ -46,13 +46,13 @@ public final class CommentListBinding implements ViewBinding {
   public final TextView tvCommentTime;
 
   @NonNull
-  public final TextView tvWriter;
+  public final TextView tvSeq;
 
   private CommentListBinding(@NonNull ConstraintLayout rootView, @NonNull Guideline guideline6,
       @NonNull CircleImageView imgCommentProfile, @NonNull TextView tvCommentContent,
       @NonNull TextView tvCommentDel, @NonNull TextView tvCommentModify,
       @NonNull TextView tvCommentNick, @NonNull TextView tvCommentReport,
-      @NonNull TextView tvCommentTime, @NonNull TextView tvWriter) {
+      @NonNull TextView tvCommentTime, @NonNull TextView tvSeq) {
     this.rootView = rootView;
     this.guideline6 = guideline6;
     this.imgCommentProfile = imgCommentProfile;
@@ -62,7 +62,7 @@ public final class CommentListBinding implements ViewBinding {
     this.tvCommentNick = tvCommentNick;
     this.tvCommentReport = tvCommentReport;
     this.tvCommentTime = tvCommentTime;
-    this.tvWriter = tvWriter;
+    this.tvSeq = tvSeq;
   }
 
   @Override
@@ -140,15 +140,15 @@ public final class CommentListBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvWriter;
-      TextView tvWriter = ViewBindings.findChildViewById(rootView, id);
-      if (tvWriter == null) {
+      id = R.id.tvSeq;
+      TextView tvSeq = ViewBindings.findChildViewById(rootView, id);
+      if (tvSeq == null) {
         break missingId;
       }
 
       return new CommentListBinding((ConstraintLayout) rootView, guideline6, imgCommentProfile,
           tvCommentContent, tvCommentDel, tvCommentModify, tvCommentNick, tvCommentReport,
-          tvCommentTime, tvWriter);
+          tvCommentTime, tvSeq);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
