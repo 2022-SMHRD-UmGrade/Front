@@ -28,7 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:src="@drawable/umbrella" />
 
         <EditText
@@ -76,7 +76,7 @@
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:layout_marginBottom="30dp"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:onClick="viewRegisterClicked"
             android:text="@string/tvJoin"
             android:textAlignment="viewEnd"
