@@ -1,6 +1,7 @@
 package com.example.umgrade;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,8 +13,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.umgrade.main.MainActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.main.QrActivity;
+import com.example.umgrade.mainFrag.MainFragment;
 import com.example.umgrade.notice.NoticeActivity;
 import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
@@ -23,6 +26,10 @@ public class MoreFragment extends Fragment {
     Button btnMoreUserInfo, btnMoreSearch, btnMoreQr, btnMoreCommu,
             btnMoreNotice, btnMoreService, btnMoreSupport, btnMoreTerms;
     ImageView imgMoreProfile;
+
+    public static MainFragment newInstance(){
+        return new MainFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,6 +54,8 @@ public class MoreFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // 마이페이지 내부 수정페이지로
+                Intent intent = new Intent(getActivity(), AccountSettingActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -72,7 +81,8 @@ public class MoreFragment extends Fragment {
         btnMoreCommu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 커뮤니티 프래그먼트로
+                // 커뮤니티 프래그먼트로 이동
+                ((MainActivity)getActivity()).changeCommu(newInstance());
             }
         });
 

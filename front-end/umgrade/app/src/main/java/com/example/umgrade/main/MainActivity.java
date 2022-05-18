@@ -76,4 +76,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_mypage).commit();
     }
 
+    // CommuFrag 이동 메소드
+    public void changeCommu(MainFragment mainFragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag_commu).commit();
+    }
 }

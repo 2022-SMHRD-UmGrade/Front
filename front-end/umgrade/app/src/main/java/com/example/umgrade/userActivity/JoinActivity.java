@@ -3,6 +3,7 @@ package com.example.umgrade.userActivity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -80,7 +81,7 @@ public class JoinActivity extends AppCompatActivity{
                 // 조건 충족 시 버튼 활성화
                 if (ckTerms.isChecked() && ckPersonal.isChecked()) {
                     btnJoin.setClickable(true);
-                    btnJoin.setBackgroundColor(Color.parseColor("#2196F3"));
+                    btnJoin.setBackgroundColor(getResources().getColor(R.color.blueColor));
                     btnJoin.setTextColor(Color.WHITE);
                 } else if (!ckTerms.isChecked() || !ckPersonal.isChecked()) {
                     btnJoin.setClickable(false);
@@ -101,7 +102,7 @@ public class JoinActivity extends AppCompatActivity{
 
                 if (ckTerms.isChecked() && ckPersonal.isChecked()) {
                     btnJoin.setClickable(true);
-                    btnJoin.setBackgroundColor(Color.parseColor("#2196F3"));
+                    btnJoin.setBackgroundColor(getResources().getColor(R.color.blueColor));
                     btnJoin.setTextColor(Color.WHITE);
                 } else if (!ckTerms.isChecked() || !ckPersonal.isChecked()) {
                     btnJoin.setClickable(false);
@@ -122,7 +123,7 @@ public class JoinActivity extends AppCompatActivity{
 
                 if (ckTerms.isChecked() && ckPersonal.isChecked()) {
                     btnJoin.setClickable(true);
-                    btnJoin.setBackgroundColor(Color.parseColor("#2196F3"));
+                    btnJoin.setBackgroundColor(getResources().getColor(R.color.blueColor));
                     btnJoin.setTextColor(Color.WHITE);
                 } else if (!ckTerms.isChecked() || !ckPersonal.isChecked()) {
                     btnJoin.setClickable(false);

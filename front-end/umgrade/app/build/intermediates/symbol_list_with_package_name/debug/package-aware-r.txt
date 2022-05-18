@@ -3020,8 +3020,6 @@ id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
 id imgProfileChange
-id imgServiceCard
-id imgSupportCard
 id imgUmb
 id immediateStop
 id include
@@ -5088,6 +5086,7 @@ style loginButton
 style loginCard
 style loginParent
 style modifiedEditText
+style myButton
 style parent
 style viewParent
 style zxing_CaptureTheme

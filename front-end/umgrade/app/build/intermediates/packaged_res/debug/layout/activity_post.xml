@@ -64,7 +64,7 @@
             app:civ_circle_background_color="#C8C8C8"
             app:layout_constraintStart_toStartOf="@+id/tvPostTitle"
             app:layout_constraintTop_toBottomOf="@+id/tvPostTitle"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/tvPostNick"

@@ -270,6 +270,15 @@
         <item name="android:textSize">@dimen/newsMoreTextSize</item>
         <item name="android:backgroundTint">@color/blueColor</item>
     </style>
+    <style name="myButton">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+        <item name="android:colorControlHighlight">@color/ripple_material_dark</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
     <style name="parent">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

@@ -55,7 +55,8 @@
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="@string/btnIdCheck"
-                app:cornerRadius="5dp" />
+                app:cornerRadius="5dp"
+                android:stateListAnimator="@null" />
         </LinearLayout>
 
         <EditText

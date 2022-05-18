@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -23,14 +22,9 @@ public final class SupportCardBinding implements ViewBinding {
   @NonNull
   public final Button btnSupportCard;
 
-  @NonNull
-  public final ImageView imgSupportCard;
-
-  private SupportCardBinding(@NonNull CardView rootView, @NonNull Button btnSupportCard,
-      @NonNull ImageView imgSupportCard) {
+  private SupportCardBinding(@NonNull CardView rootView, @NonNull Button btnSupportCard) {
     this.rootView = rootView;
     this.btnSupportCard = btnSupportCard;
-    this.imgSupportCard = imgSupportCard;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class SupportCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgSupportCard;
-      ImageView imgSupportCard = ViewBindings.findChildViewById(rootView, id);
-      if (imgSupportCard == null) {
-        break missingId;
-      }
-
-      return new SupportCardBinding((CardView) rootView, btnSupportCard, imgSupportCard);
+      return new SupportCardBinding((CardView) rootView, btnSupportCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

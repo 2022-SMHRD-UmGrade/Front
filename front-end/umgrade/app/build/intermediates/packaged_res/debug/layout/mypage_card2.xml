@@ -58,7 +58,6 @@
             android:gravity="left"
             android:text="@string/tvRatingMypageCard"
             android:textColor="@color/blueColor"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
             app:layout_constraintEnd_toStartOf="@+id/tvPointMypageCard"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +84,6 @@
             android:gravity="left"
             android:text="@string/tvPointMypageCard"
             android:textColor="@color/blueColor"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider" />
@@ -109,7 +107,6 @@
             android:gravity="left"
             android:text="@string/tvCouponMypageCard"
             android:textColor="@color/blueColor"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvPointMypageCard"
@@ -151,7 +148,8 @@
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="@+id/tvUserId"
             app:layout_constraintStart_toStartOf="@+id/tvUserId"
-            app:layout_constraintTop_toBottomOf="@+id/tvUserId" />
+            app:layout_constraintTop_toBottomOf="@+id/tvUserId"
+            android:stateListAnimator="@null"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
