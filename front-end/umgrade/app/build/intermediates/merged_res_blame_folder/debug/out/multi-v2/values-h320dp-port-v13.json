@@ -1,10 +1,24 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\smhrd\\.gradle\\caches\\transforms-3\\8c8bd08bd5ab439882315c15d3205b6b\\transformed\\material-1.5.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+=======
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\jsj42\\Desktop\\GIT\\front\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jsj42\\.gradle\\caches\\transforms-3\\8c8bd08bd5ab439882315c15d3205b6b\\transformed\\material-1.5.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+=======
+            "outputFile": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\smhrd\\.gradle\\caches\\transforms-3\\8c8bd08bd5ab439882315c15d3205b6b\\transformed\\material-1.5.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+>>>>>>> 4f2ea305e06bade0519a5b0bc8e33e0999d3ce32
+>>>>>>> a446f5016b671ea00ffe157a2df3a461b5f46722
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

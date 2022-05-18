@@ -52,7 +52,6 @@ public class PostActivity extends AppCompatActivity {
     StringRequest request;
     Fragment commuFragment;
     User vo;
-    Board dto;
 
     ArrayList<Board> list = new ArrayList<>();
 
@@ -63,7 +62,7 @@ public class PostActivity extends AppCompatActivity {
 
         vo = UserInfo.info;
 
-        commuFragment = (com.example.umgrade.communityFrag.CommuFragment) getSupportFragmentManager().findFragmentById(R.id.fragCommu);
+        commuFragment = getSupportFragmentManager().findFragmentById(R.id.fragCommu);
         commuFragment = new Fragment();
 
         btnPostModify = findViewById(R.id.btnPostModify);

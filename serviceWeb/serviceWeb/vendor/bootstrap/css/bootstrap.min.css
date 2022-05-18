@@ -621,6 +621,16 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+.pricing-tables .container .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: center;
+}
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -1223,6 +1233,10 @@ progress {
   }
   .offset-lg-2 {
     margin-left: 16.66666667%;
+  }
+  .pricing-tables .container .row .offset-lg-2 {
+    margin-left: 16.66666667%;
+    margin-right: 16.66666667%;
   }
   .offset-lg-3 {
     margin-left: 25%;
