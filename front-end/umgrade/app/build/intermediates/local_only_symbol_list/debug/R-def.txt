@@ -31,6 +31,7 @@ drawable alarm16
 drawable arroaright_resize
 drawable arrowleft
 drawable arrowright
+drawable button_more
 drawable closed_umbrella
 drawable community
 drawable corner_shape
@@ -220,8 +221,6 @@ id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
 id imgProfileChange
-id imgServiceCard
-id imgSupportCard
 id imgUmb
 id include
 id include2
@@ -634,6 +633,7 @@ style loginButton
 style loginCard
 style loginParent
 style modifiedEditText
+style myButton
 style parent
 style viewParent
 xml network_security_config

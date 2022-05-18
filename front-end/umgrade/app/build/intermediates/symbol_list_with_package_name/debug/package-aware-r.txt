@@ -2525,6 +2525,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_more
 drawable closed_umbrella
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -3020,8 +3021,6 @@ id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
 id imgProfileChange
-id imgServiceCard
-id imgSupportCard
 id imgUmb
 id immediateStop
 id include
@@ -5088,6 +5087,7 @@ style loginButton
 style loginCard
 style loginParent
 style modifiedEditText
+style myButton
 style parent
 style viewParent
 style zxing_CaptureTheme

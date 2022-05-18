@@ -22,7 +22,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/umbrella2" />
+            android:src="@drawable/umbrella2" />
 
         <TextView
             android:id="@+id/tvMoreNick"
@@ -72,8 +72,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreUserInfo"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -95,8 +98,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreSearch"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -118,8 +124,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreQr"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -141,8 +150,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreCommu"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -164,8 +176,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreNotice"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -187,8 +202,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreService"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -210,8 +228,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreSupport"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 
@@ -233,8 +254,11 @@
                 android:minHeight="0dp"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
                 android:text="@string/btnMoreTerms"
                 android:textColor="#000000"
+                android:textSize="11sp"
                 app:cornerRadius="0dp"
                 app:iconPadding="0dp" />
 

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -23,14 +22,9 @@ public final class ServiceCardBinding implements ViewBinding {
   @NonNull
   public final Button btnServiceCard;
 
-  @NonNull
-  public final ImageView imgServiceCard;
-
-  private ServiceCardBinding(@NonNull CardView rootView, @NonNull Button btnServiceCard,
-      @NonNull ImageView imgServiceCard) {
+  private ServiceCardBinding(@NonNull CardView rootView, @NonNull Button btnServiceCard) {
     this.rootView = rootView;
     this.btnServiceCard = btnServiceCard;
-    this.imgServiceCard = imgServiceCard;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class ServiceCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgServiceCard;
-      ImageView imgServiceCard = ViewBindings.findChildViewById(rootView, id);
-      if (imgServiceCard == null) {
-        break missingId;
-      }
-
-      return new ServiceCardBinding((CardView) rootView, btnServiceCard, imgServiceCard);
+      return new ServiceCardBinding((CardView) rootView, btnServiceCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
