@@ -24,16 +24,23 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/btnCommuMenu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="60dp"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/menu"
-                android:tint="#2196F3" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btnCommuMenu"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/menu"
+                    android:tint="@color/blueColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/tvCommuTitle"
@@ -54,7 +61,7 @@
                 android:insetBottom="0dp"
                 android:stateListAnimator="@null"
                 android:text="@string/btnCmWrite"
-                android:textColor="#2196F3" />
+                android:textColor="@color/blueColor" />
 
         </LinearLayout>
 

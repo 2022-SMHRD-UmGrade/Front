@@ -10,7 +10,7 @@
         android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#2196F3"
+        android:background="@color/blueColor"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,7 +122,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/umbrella_person"
-            app:tint="#5C7D97" />
+            app:tint="@color/blueColor" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline19"

@@ -5,9 +5,11 @@ color blueColor
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color darkBlueColor
 color dialogColor
 color lightBlueColor
 color loginBkColor
+color middleBlueColor
 color primaryTextColor
 color purple_200
 color purple_500
@@ -222,10 +224,15 @@ id imgServiceCard
 id imgSupportCard
 id imgUmb
 id include
+id include2
 id introLogo
 id linearLayout
 id linearLayout2
 id linearLayout3
+<<<<<<< HEAD
+=======
+id linearLayout4
+>>>>>>> 4f2ea305e06bade0519a5b0bc8e33e0999d3ce32
 id lvEvent
 id lvNotice
 id lvborad
