@@ -264,10 +264,13 @@
     <!--card.xml-->
     <string name="tvEmailTitle">이메일</string>
     <string name="tvEmail">test@example.com</string>
+    <string name="edtEmail">수정할 이메일을 입력하세요</string>
     <string name="tvTelTitle">전화번호</string>
     <string name="tvTel">010-XXXX-XXXX</string>
+    <string name="edtTel">수정할 전화번호를 입력하세요</string>
     <string name="tvAddressTitle">주소</string>
     <string name="tvAddress">광주광역시 동구 예술길 31-15</string>
+    <string name="edtAddress">수정할 주소를 입력하세요</string>
     <string name="btnChange">변경하기</string>
 
     <!-- activity_payment.xml -->
