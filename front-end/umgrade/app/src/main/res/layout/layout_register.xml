@@ -135,7 +135,7 @@
             android:layout_height="25dp"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:layout_weight="1"
-            android:buttonTint="#77A9D5"
+            android:buttonTint="@color/blueColor"
             android:text="@string/ckAllCheck"
             android:textSize="11dp"
             android:textStyle="bold" />

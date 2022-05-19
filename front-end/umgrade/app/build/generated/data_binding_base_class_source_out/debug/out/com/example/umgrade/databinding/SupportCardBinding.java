@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -22,9 +24,23 @@ public final class SupportCardBinding implements ViewBinding {
   @NonNull
   public final Button btnSupportCard;
 
-  private SupportCardBinding(@NonNull CardView rootView, @NonNull Button btnSupportCard) {
+  @NonNull
+  public final ImageView imageView4;
+
+  @NonNull
+  public final TextView tvSupportCard1;
+
+  @NonNull
+  public final TextView tvSupportCard2;
+
+  private SupportCardBinding(@NonNull CardView rootView, @NonNull Button btnSupportCard,
+      @NonNull ImageView imageView4, @NonNull TextView tvSupportCard1,
+      @NonNull TextView tvSupportCard2) {
     this.rootView = rootView;
     this.btnSupportCard = btnSupportCard;
+    this.imageView4 = imageView4;
+    this.tvSupportCard1 = tvSupportCard1;
+    this.tvSupportCard2 = tvSupportCard2;
   }
 
   @Override
@@ -60,7 +76,26 @@ public final class SupportCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SupportCardBinding((CardView) rootView, btnSupportCard);
+      id = R.id.imageView4;
+      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView4 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSupportCard1;
+      TextView tvSupportCard1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvSupportCard1 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSupportCard2;
+      TextView tvSupportCard2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvSupportCard2 == null) {
+        break missingId;
+      }
+
+      return new SupportCardBinding((CardView) rootView, btnSupportCard, imageView4, tvSupportCard1,
+          tvSupportCard2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

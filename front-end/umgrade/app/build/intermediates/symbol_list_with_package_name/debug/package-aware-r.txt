@@ -2557,6 +2557,7 @@ drawable file16
 drawable frag_color
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable guide
 drawable home
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2605,6 +2606,8 @@ drawable mtrl_popupmenu_background_overlay
 drawable mtrl_tabs_default_indicator
 drawable mypage
 drawable navigation_empty_icon
+drawable notice
+drawable noticeresize
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2621,6 +2624,7 @@ drawable qr
 drawable round
 drawable round_layout
 drawable roundblack
+drawable support
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3014,10 +3018,11 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView3
+id imageView4
 id imgCardAdd
 id imgCommentProfile
 id imgLogo
-id imgMapCard
 id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
@@ -3403,6 +3408,8 @@ id tvService5
 id tvService6
 id tvService7
 id tvService8
+id tvServiceCard1
+id tvServiceCard2
 id tvServiceInfo
 id tvServiceService
 id tvServiceText1
@@ -3410,6 +3417,8 @@ id tvServiceText2
 id tvServiceTitle
 id tvSet
 id tvSupport
+id tvSupportCard1
+id tvSupportCard2
 id tvSupportCount
 id tvSupportPostComment
 id tvSupportSet
@@ -3773,8 +3782,6 @@ string btnPostDelete
 string btnPostModify
 string btnProfileChange
 string btnProfileUpdate
-string btnServiceCard
-string btnSupportCard
 string btnSupportComment
 string btnSupportDelete
 string btnSupportWrite
@@ -4046,6 +4053,8 @@ string tvService5
 string tvService6
 string tvService7
 string tvService8
+string tvServiceCard1
+string tvServiceCard2
 string tvServiceInfo
 string tvServiceService
 string tvServiceText1
@@ -4053,6 +4062,8 @@ string tvServiceText2
 string tvServiceTitle
 string tvSet
 string tvSupport
+string tvSupportCard1
+string tvSupportCard2
 string tvSupportCount
 string tvSupportPostComment
 string tvSupportSet

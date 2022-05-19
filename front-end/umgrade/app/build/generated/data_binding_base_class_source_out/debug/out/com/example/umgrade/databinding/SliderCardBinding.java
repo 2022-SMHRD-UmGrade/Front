@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -23,14 +22,9 @@ public final class SliderCardBinding implements ViewBinding {
   @NonNull
   public final Button btnNoticeEvent;
 
-  @NonNull
-  public final ImageView imgMapCard;
-
-  private SliderCardBinding(@NonNull CardView rootView, @NonNull Button btnNoticeEvent,
-      @NonNull ImageView imgMapCard) {
+  private SliderCardBinding(@NonNull CardView rootView, @NonNull Button btnNoticeEvent) {
     this.rootView = rootView;
     this.btnNoticeEvent = btnNoticeEvent;
-    this.imgMapCard = imgMapCard;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class SliderCardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgMapCard;
-      ImageView imgMapCard = ViewBindings.findChildViewById(rootView, id);
-      if (imgMapCard == null) {
-        break missingId;
-      }
-
-      return new SliderCardBinding((CardView) rootView, btnNoticeEvent, imgMapCard);
+      return new SliderCardBinding((CardView) rootView, btnNoticeEvent);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

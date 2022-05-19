@@ -37,6 +37,7 @@ drawable corner_shape
 drawable creditcard16
 drawable file16
 drawable frag_color
+drawable guide
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -47,10 +48,13 @@ drawable mapsearch
 drawable menu
 drawable more
 drawable mypage
+drawable notice
+drawable noticeresize
 drawable qr
 drawable round
 drawable round_layout
 drawable roundblack
+drawable support
 drawable umbrella
 drawable umbrella2
 drawable umbrella_person
@@ -214,10 +218,11 @@ id guideline8
 id guideline9
 id imageView
 id imageView2
+id imageView3
+id imageView4
 id imgCardAdd
 id imgCommentProfile
 id imgLogo
-id imgMapCard
 id imgMoreProfile
 id imgMypageProfile
 id imgPostProfile
@@ -360,6 +365,8 @@ id tvService5
 id tvService6
 id tvService7
 id tvService8
+id tvServiceCard1
+id tvServiceCard2
 id tvServiceInfo
 id tvServiceService
 id tvServiceText1
@@ -367,6 +374,8 @@ id tvServiceText2
 id tvServiceTitle
 id tvSet
 id tvSupport
+id tvSupportCard1
+id tvSupportCard2
 id tvSupportCount
 id tvSupportPostComment
 id tvSupportSet
@@ -474,8 +483,6 @@ string btnPostDelete
 string btnPostModify
 string btnProfileChange
 string btnProfileUpdate
-string btnServiceCard
-string btnSupportCard
 string btnSupportComment
 string btnSupportDelete
 string btnSupportWrite
@@ -619,6 +626,8 @@ string tvService5
 string tvService6
 string tvService7
 string tvService8
+string tvServiceCard1
+string tvServiceCard2
 string tvServiceInfo
 string tvServiceService
 string tvServiceText1
@@ -626,6 +635,8 @@ string tvServiceText2
 string tvServiceTitle
 string tvSet
 string tvSupport
+string tvSupportCard1
+string tvSupportCard2
 string tvSupportCount
 string tvSupportPostComment
 string tvSupportSet

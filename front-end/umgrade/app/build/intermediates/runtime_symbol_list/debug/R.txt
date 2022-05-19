@@ -2556,6 +2556,7 @@ int drawable file16 0x7f070081
 int drawable frag_color 0x7f070082
 int drawable googleg_disabled_color_18 0x7f070083
 int drawable googleg_standard_color_18 0x7f070084
+int drawable guide 0x7f0700cf
 int drawable home 0x7f070085
 int drawable ic_clock_black_24dp 0x7f070086
 int drawable ic_keyboard_black_24dp 0x7f070087
@@ -2604,6 +2605,8 @@ int drawable mtrl_popupmenu_background_overlay 0x7f0700b0
 int drawable mtrl_tabs_default_indicator 0x7f0700b1
 int drawable mypage 0x7f0700b2
 int drawable navigation_empty_icon 0x7f0700b3
+int drawable notice 0x7f0700d0
+int drawable noticeresize 0x7f0700d1
 int drawable notification_action_background 0x7f0700b4
 int drawable notification_bg 0x7f0700b5
 int drawable notification_bg_low 0x7f0700b6
@@ -2620,6 +2623,7 @@ int drawable qr 0x7f0700c0
 int drawable round 0x7f0700c2
 int drawable round_layout 0x7f0700c3
 int drawable roundblack 0x7f0700c4
+int drawable support 0x7f0700d2
 int drawable test_custom_background 0x7f0700c5
 int drawable test_level_drawable 0x7f0700c6
 int drawable tooltip_frame_dark 0x7f0700c7
@@ -3013,10 +3017,11 @@ int id ignoreRequest 0x7f08017c
 int id image 0x7f08017d
 int id imageView 0x7f08017e
 int id imageView2 0x7f08017f
+int id imageView3 0x7f08033d
+int id imageView4 0x7f08033e
 int id imgCardAdd 0x7f080180
 int id imgCommentProfile 0x7f080181
 int id imgLogo 0x7f080182
-int id imgMapCard 0x7f080183
 int id imgMoreProfile 0x7f080184
 int id imgMypageProfile 0x7f080185
 int id imgPostProfile 0x7f080186
@@ -3402,6 +3407,8 @@ int id tvService5 0x7f0802ff
 int id tvService6 0x7f080300
 int id tvService7 0x7f080301
 int id tvService8 0x7f080302
+int id tvServiceCard1 0x7f08033f
+int id tvServiceCard2 0x7f080340
 int id tvServiceInfo 0x7f080303
 int id tvServiceService 0x7f080304
 int id tvServiceText1 0x7f080305
@@ -3409,6 +3416,8 @@ int id tvServiceText2 0x7f080306
 int id tvServiceTitle 0x7f080307
 int id tvSet 0x7f080308
 int id tvSupport 0x7f080309
+int id tvSupportCard1 0x7f080341
+int id tvSupportCard2 0x7f080342
 int id tvSupportCount 0x7f08030a
 int id tvSupportPostComment 0x7f08030b
 int id tvSupportSet 0x7f08030c
@@ -3772,8 +3781,6 @@ int string btnPostDelete 0x7f10003f
 int string btnPostModify 0x7f100040
 int string btnProfileChange 0x7f100041
 int string btnProfileUpdate 0x7f100042
-int string btnServiceCard 0x7f100043
-int string btnSupportCard 0x7f100044
 int string btnSupportComment 0x7f100045
 int string btnSupportDelete 0x7f100046
 int string btnSupportWrite 0x7f100047
@@ -4045,6 +4052,8 @@ int string tvService5 0x7f10014e
 int string tvService6 0x7f10014f
 int string tvService7 0x7f100150
 int string tvService8 0x7f100151
+int string tvServiceCard1 0x7f10016c
+int string tvServiceCard2 0x7f10016d
 int string tvServiceInfo 0x7f100152
 int string tvServiceService 0x7f100153
 int string tvServiceText1 0x7f100154
@@ -4052,6 +4061,8 @@ int string tvServiceText2 0x7f100155
 int string tvServiceTitle 0x7f100156
 int string tvSet 0x7f100157
 int string tvSupport 0x7f100158
+int string tvSupportCard1 0x7f10016e
+int string tvSupportCard2 0x7f10016f
 int string tvSupportCount 0x7f100159
 int string tvSupportPostComment 0x7f10015a
 int string tvSupportSet 0x7f10015b
