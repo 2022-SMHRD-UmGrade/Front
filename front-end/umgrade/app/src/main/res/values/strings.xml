@@ -40,16 +40,20 @@
     <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
 
     <!-- map_card.xml -->
-    <string name="btnMapCard">UM-CYCLE\n보관함 찾기</string>
+    <string name="tvMapCard1">UM-CYCLE</string>
+    <string name="tvMapCard2">보관함 찾기</string>
 
     <!-- qr_card.xml -->
-    <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
+    <string name="tvQrCard1">QR 스캔으로</string>
+    <string name="tvQrCard2">빠른 대여</string>
 
     <!-- service_card.xml -->
-    <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
+    <string name="tvServiceCard1">UM-CYCLE</string>
+    <string name="tvServiceCard2">서비스 안내</string>
 
     <!-- support_card.xml -->
-    <string name="btnSupportCard">고객센터</string>
+    <string name="tvSupportCard1">1:1 문의</string>
+    <string name="tvSupportCard2">고객센터</string>
 
     <!-- mypage_card.xml -->
     <string name="tvNickMypageCard">USER</string>

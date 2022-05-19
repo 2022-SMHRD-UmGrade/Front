@@ -53,7 +53,13 @@ public final class CommentListBinding implements ViewBinding {
   public final TextView tvCommentTime;
 
   @NonNull
+  public final TextView tvPostSeq;
+
+  @NonNull
   public final TextView tvSeq;
+
+  @NonNull
+  public final TextView tvWriter;
 
   private CommentListBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText edtCommentContent, @NonNull Guideline guideline6,
@@ -61,7 +67,7 @@ public final class CommentListBinding implements ViewBinding {
       @NonNull TextView tvCommentDel, @NonNull TextView tvCommentModify,
       @NonNull TextView tvCommentNick, @NonNull TextView tvCommentReport,
       @NonNull TextView tvCommentSuccess, @NonNull TextView tvCommentTime,
-      @NonNull TextView tvSeq) {
+      @NonNull TextView tvPostSeq, @NonNull TextView tvSeq, @NonNull TextView tvWriter) {
     this.rootView = rootView;
     this.edtCommentContent = edtCommentContent;
     this.guideline6 = guideline6;
@@ -73,7 +79,9 @@ public final class CommentListBinding implements ViewBinding {
     this.tvCommentReport = tvCommentReport;
     this.tvCommentSuccess = tvCommentSuccess;
     this.tvCommentTime = tvCommentTime;
+    this.tvPostSeq = tvPostSeq;
     this.tvSeq = tvSeq;
+    this.tvWriter = tvWriter;
   }
 
   @Override
@@ -163,15 +171,27 @@ public final class CommentListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvPostSeq;
+      TextView tvPostSeq = ViewBindings.findChildViewById(rootView, id);
+      if (tvPostSeq == null) {
+        break missingId;
+      }
+
       id = R.id.tvSeq;
       TextView tvSeq = ViewBindings.findChildViewById(rootView, id);
       if (tvSeq == null) {
         break missingId;
       }
 
+      id = R.id.tvWriter;
+      TextView tvWriter = ViewBindings.findChildViewById(rootView, id);
+      if (tvWriter == null) {
+        break missingId;
+      }
+
       return new CommentListBinding((ConstraintLayout) rootView, edtCommentContent, guideline6,
           imgCommentProfile, tvCommentContent, tvCommentDel, tvCommentModify, tvCommentNick,
-          tvCommentReport, tvCommentSuccess, tvCommentTime, tvSeq);
+          tvCommentReport, tvCommentSuccess, tvCommentTime, tvPostSeq, tvSeq, tvWriter);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

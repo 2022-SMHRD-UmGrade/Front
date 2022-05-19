@@ -42,7 +42,6 @@
     <string name="btnKakaoLogin">카카오로 시작하기</string>
     <string name="btnLogin">로그인</string>
     <string name="btnLogout">로그아웃</string>
-    <string name="btnMapCard">UM-CYCLE\n보관함 찾기</string>
     <string name="btnModifyCancel">취소</string>
     <string name="btnModifySend">수정</string>
     <string name="btnMoreCommu">커뮤니티</string>
@@ -61,7 +60,6 @@
     <string name="btnPostModify">수정</string>
     <string name="btnProfileChange">완료</string>
     <string name="btnProfileUpdate">프로필 수정</string>
-    <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
     <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
     <string name="btnSupportCard">고객센터</string>
     <string name="btnSupportComment">전송</string>
@@ -164,6 +162,8 @@
     <string name="tvIntro">UM-CYCLE</string>
     <string name="tvJoin">회원가입하기</string>
     <string name="tvJoinTitle">회원가입</string>
+    <string name="tvMapCard1">UM-CYCLE</string>
+    <string name="tvMapCard2">보관함 찾기</string>
     <string name="tvModify">글수정</string>
     <string name="tvMore">(보기)</string>
     <string name="tvMoreNick">User Nick</string>
@@ -185,14 +185,18 @@
     <string name="tvPostNick">작성자 닉네임</string>
     <string name="tvPostPl1">(</string>
     <string name="tvPostPl2">)</string>
+    <string name="tvPostSeq">00</string>
     <string name="tvPostTime">2022.05.12. 17:21</string>
     <string name="tvPostTitle">글 제목</string>
     <string name="tvPrivacy">개인정보 처리방침</string>
     <string name="tvProfileNIckhint">※최대 10글자까지 입력 가능합니다</string>
     <string name="tvProfileTitle">프로필 수정</string>
+    <string name="tvQrCard1">QR 스캔으로</string>
+    <string name="tvQrCard2">빠른 대여</string>
     <string name="tvRatingMypageCard">U</string>
     <string name="tvRatingTextMypageCard">회원 등급</string>
     <string name="tvScanner">사각 테두리 안에 QR 코드를 인식해 주세요</string>
+    <string name="tvSeq">00</string>
     <string name="tvService1">1. 지도에서 주변에 있는 보관함을 검색합니다.</string>
     <string name="tvService2">2. 애플리케이션에서 보관함의 QR 코드 스캔합니다.</string>
     <string name="tvService3">3. 보관함의 잠금장치가 열리면 우산을 골라 대여합니다.</string>

@@ -2579,8 +2579,8 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
-drawable map_background
 drawable mapimg
+drawable mapsearch
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2617,6 +2617,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable qr
 drawable round
 drawable round_layout
 drawable roundblack
@@ -3358,6 +3359,8 @@ id tvFareTwo
 id tvIntro
 id tvJoin
 id tvJoinTitle
+id tvMapCard1
+id tvMapCard2
 id tvModify
 id tvMoreNick
 id tvMorePrivacy
@@ -3380,11 +3383,14 @@ id tvPostId
 id tvPostNick
 id tvPostPl1
 id tvPostPl2
+id tvPostSeq
 id tvPostTime
 id tvPostTitle
 id tvPrivacy
 id tvProfileNIckhint
 id tvProfileTitle
+id tvQrCard1
+id tvQrCard2
 id tvRatingMypageCard
 id tvRatingTextMypageCard
 id tvScanner
@@ -3415,6 +3421,7 @@ id tvUsageHistoryTitle
 id tvUserId
 id tvWelcomeMypageCard
 id tvWrite
+id tvWriter
 id unchecked
 id uniform
 id unlabeled
@@ -3748,7 +3755,6 @@ string btnJoin
 string btnKakaoLogin
 string btnLogin
 string btnLogout
-string btnMapCard
 string btnModifyCancel
 string btnModifySend
 string btnMoreCommu
@@ -3767,7 +3773,6 @@ string btnPostDelete
 string btnPostModify
 string btnProfileChange
 string btnProfileUpdate
-string btnQrCard
 string btnServiceCard
 string btnSupportCard
 string btnSupportComment
@@ -3998,6 +4003,8 @@ string tvFareTwo
 string tvIntro
 string tvJoin
 string tvJoinTitle
+string tvMapCard1
+string tvMapCard2
 string tvModify
 string tvMore
 string tvMoreNick
@@ -4019,14 +4026,18 @@ string tvPostId
 string tvPostNick
 string tvPostPl1
 string tvPostPl2
+string tvPostSeq
 string tvPostTime
 string tvPostTitle
 string tvPrivacy
 string tvProfileNIckhint
 string tvProfileTitle
+string tvQrCard1
+string tvQrCard2
 string tvRatingMypageCard
 string tvRatingTextMypageCard
 string tvScanner
+string tvSeq
 string tvService1
 string tvService2
 string tvService3

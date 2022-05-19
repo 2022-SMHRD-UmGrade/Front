@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -22,9 +23,18 @@ public final class MapCardBinding implements ViewBinding {
   @NonNull
   public final Button btnMapCard;
 
-  private MapCardBinding(@NonNull CardView rootView, @NonNull Button btnMapCard) {
+  @NonNull
+  public final TextView tvMapCard1;
+
+  @NonNull
+  public final TextView tvMapCard2;
+
+  private MapCardBinding(@NonNull CardView rootView, @NonNull Button btnMapCard,
+      @NonNull TextView tvMapCard1, @NonNull TextView tvMapCard2) {
     this.rootView = rootView;
     this.btnMapCard = btnMapCard;
+    this.tvMapCard1 = tvMapCard1;
+    this.tvMapCard2 = tvMapCard2;
   }
 
   @Override
@@ -60,7 +70,19 @@ public final class MapCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MapCardBinding((CardView) rootView, btnMapCard);
+      id = R.id.tvMapCard1;
+      TextView tvMapCard1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvMapCard1 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMapCard2;
+      TextView tvMapCard2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvMapCard2 == null) {
+        break missingId;
+      }
+
+      return new MapCardBinding((CardView) rootView, btnMapCard, tvMapCard1, tvMapCard2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
