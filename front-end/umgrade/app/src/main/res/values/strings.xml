@@ -246,8 +246,8 @@
     <!-- activity_password_change.xml -->
     <string name="tvPasswordChangeTitle">비밀번호변경</string>
     <string name="tvNowPwTitle">현재 비밀번호</string>
-    <string name="edtNowPw">현재 사용인 비밀번호를 입력해주세요</string>
-    <string name="tvNowPw">이전 비밀번호를 잘못 입력하셨습니다.</string>
+    <string name="edtNowPw">현재 사용 중인 비밀번호를 입력해주세요</string>
+    <string name="tvNowPw">현재 비밀번호를 잘못 입력하셨습니다.</string>
     <string name="tvNewPwTitle">새 비밀번호</string>
     <string name="edtNewPw">8자 이상 영문/숫자/특수문자 중 2가지 포함</string>
     <string name="tvNewPw">총 8자 이상, 용문/숫자/특수문자 중 2가지 이상 입력해주세요.</string>
