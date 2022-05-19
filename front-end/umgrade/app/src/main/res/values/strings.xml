@@ -287,4 +287,14 @@
     <!-- activity_usage_history.xml -->
     <string name="tvUsageHistoryTitle">이용내역</string>
 
+    <!-- usage_history_list.xml -->
+    <string name="tvRental">2022.05.01</string>
+    <string name="tvDash">-</string>
+    <string name="tvReturn">2022.05.08</string>
+    <string name="tvUmgSeq">01</string>
+    <string name="tvRentalLoc">대여 장소에서 대여</string>
+    <string name="tvReturnLoc">반납 장소에서 반납</string>
+    <string name="tvWon">￦</string>
+    <string name="tvRentalFare">0,000</string>
+
 </resources>

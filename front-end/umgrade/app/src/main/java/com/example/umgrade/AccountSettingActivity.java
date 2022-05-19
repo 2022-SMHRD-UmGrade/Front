@@ -45,6 +45,7 @@ public class AccountSettingActivity extends AppCompatActivity {
                     btnTelChange.setText("완료");
                     tvTel.setVisibility(View.GONE);
                     edtTel.setVisibility(View.VISIBLE);
+                    // editText focus 기능
                     edtTel.requestFocus();
                     edtTel.setSelection(edtTel.length());
                     // 저장된 전화번호를 edtTel에 출력
