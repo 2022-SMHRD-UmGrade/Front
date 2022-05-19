@@ -71,8 +71,10 @@
     <string name="ckMarketing">마케팅 정보 수신 동의</string>
     <string name="ckPersonal">개인정보 취급방침 동의(필수)</string>
     <string name="ckTerms">이용약관 동의(필수)</string>
+    <string name="edtAddress">수정할 주소를 입력하세요</string>
     <string name="edtComment">댓글 작성하기</string>
     <string name="edtCommentContent">수정할 내용</string>
+    <string name="edtEmail">수정할 이메일을 입력하세요</string>
     <string name="edtJoinAddr">주소</string>
     <string name="edtJoinEmail">이메일</string>
     <string name="edtJoinId">아이디</string>
@@ -90,6 +92,7 @@
     <string name="edtNickHint">닉네임을 입력하세요</string>
     <string name="edtNowPw">현재 사용 중인 비밀번호를 입력해주세요</string>
     <string name="edtSupportComment">문의 답변하기</string>
+    <string name="edtTel">수정할 전화번호를 입력하세요</string>
     <string name="edtWriteContent">본문</string>
     <string name="edtWriteTitle">제목</string>
     <string name="eventDash">-</string>

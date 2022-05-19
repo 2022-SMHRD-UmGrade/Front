@@ -68,13 +68,14 @@ id bottomNav
 id bottomNavigationView
 id btnAccountSetting
 id btnAccountSettingPre
+id btnAddrChange
 id btnAlarmSetting
 id btnCardRegisterPre
-id btnChange
 id btnChangePw
 id btnCmWrite
 id btnComment
 id btnCommuMenu
+id btnEmailChange
 id btnFare
 id btnIdCheck
 id btnJoin
@@ -111,6 +112,7 @@ id btnSupportComment
 id btnSupportDelete
 id btnSupportSend
 id btnSupportWrite
+id btnTelChange
 id btnTermsClose
 id btnUsageHistory
 id btnUsageHistoryPre
@@ -149,7 +151,9 @@ id divider15
 id divider16
 id divider17
 id divider18
+id divider19
 id divider2
+id divider20
 id divider3
 id divider4
 id divider5
@@ -157,8 +161,10 @@ id divider6
 id divider7
 id divider8
 id divider9
+id edtAddress
 id edtComment
 id edtCommentContent
+id edtEmail
 id edtJoinAddr
 id edtJoinEmail
 id edtJoinId
@@ -178,6 +184,7 @@ id edtNowPw
 id edtSupportComment
 id edtSupportContent
 id edtSupportTitle
+id edtTel
 id edtWriteContent
 id edtWriteTitle
 id eventDash
@@ -494,8 +501,10 @@ string ckAllCheck
 string ckMarketing
 string ckPersonal
 string ckTerms
+string edtAddress
 string edtComment
 string edtCommentContent
+string edtEmail
 string edtJoinAddr
 string edtJoinEmail
 string edtJoinId
@@ -513,6 +522,7 @@ string edtNewPw
 string edtNickHint
 string edtNowPw
 string edtSupportComment
+string edtTel
 string edtWriteContent
 string edtWriteTitle
 string eventDash

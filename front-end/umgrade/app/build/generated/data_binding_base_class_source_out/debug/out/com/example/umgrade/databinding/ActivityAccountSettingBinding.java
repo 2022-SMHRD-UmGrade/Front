@@ -29,6 +29,12 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
   public final Button btnPasswordChange;
 
   @NonNull
+  public final View divider19;
+
+  @NonNull
+  public final View divider20;
+
+  @NonNull
   public final View divider8;
 
   @NonNull
@@ -48,12 +54,15 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
 
   private ActivityAccountSettingBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton btnAccountSettingPre, @NonNull Button btnPasswordChange,
-      @NonNull View divider8, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout2, @NonNull TextView tvAccountID,
-      @NonNull TextView tvAccountSetting, @NonNull TextView tvDeletingAccount) {
+      @NonNull View divider19, @NonNull View divider20, @NonNull View divider8,
+      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
+      @NonNull TextView tvAccountID, @NonNull TextView tvAccountSetting,
+      @NonNull TextView tvDeletingAccount) {
     this.rootView = rootView;
     this.btnAccountSettingPre = btnAccountSettingPre;
     this.btnPasswordChange = btnPasswordChange;
+    this.divider19 = divider19;
+    this.divider20 = divider20;
     this.divider8 = divider8;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
@@ -101,6 +110,18 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.divider19;
+      View divider19 = ViewBindings.findChildViewById(rootView, id);
+      if (divider19 == null) {
+        break missingId;
+      }
+
+      id = R.id.divider20;
+      View divider20 = ViewBindings.findChildViewById(rootView, id);
+      if (divider20 == null) {
+        break missingId;
+      }
+
       id = R.id.divider8;
       View divider8 = ViewBindings.findChildViewById(rootView, id);
       if (divider8 == null) {
@@ -138,8 +159,8 @@ public final class ActivityAccountSettingBinding implements ViewBinding {
       }
 
       return new ActivityAccountSettingBinding((ConstraintLayout) rootView, btnAccountSettingPre,
-          btnPasswordChange, divider8, linearLayout, linearLayout2, tvAccountID, tvAccountSetting,
-          tvDeletingAccount);
+          btnPasswordChange, divider19, divider20, divider8, linearLayout, linearLayout2,
+          tvAccountID, tvAccountSetting, tvDeletingAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
