@@ -87,38 +87,82 @@ public class CommentActivity extends AppCompatActivity {
         tvCommentSuccess = findViewById(R.id.tvCommentSuccess); // 완료
 
         // 기본 숨김 상태
-        tvCommentSuccess.setVisibility(View.GONE);
-        edtCommentContent.setVisibility(View.GONE);
+        //tvCommentSuccess.setVisibility(View.GONE);
+        //edtCommentContent.setVisibility(View.GONE);
+
+        // 댓글 내용이 없을 경우 버튼 비활성화
+        edtComment.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                btnComment.setClickable(true);
+                btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
+                btnComment.setTextColor(Color.WHITE);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int count, int after) {
+                if (edtComment.length()==0){
+                    btnComment.setClickable(false);
+                    btnComment.setBackgroundColor(Color.parseColor("#B9B7BD"));
+                    btnComment.setTextColor(Color.parseColor("#888888"));
+                } else {
+                    btnComment.setClickable(true);
+                    btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
+                    btnComment.setTextColor(Color.WHITE);
+                }
+            }
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        // 댓글 포커스 시 버튼 색상 변경
+        edtComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean focus) {
+                if (focus){
+                    // 포커스 시
+                    btnComment.setClickable(false);
+                    btnComment.setBackgroundColor(Color.parseColor("#B9B7BD"));
+                    btnComment.setTextColor(Color.parseColor("#888888"));
+                }else{
+                    btnComment.setClickable(true);
+                    btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
+                    btnComment.setTextColor(Color.WHITE);
+                }
+            }
+        });
 
         // 수정 누르면 활성화
-        tvCommentModify.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvCommentSuccess.setVisibility(View.VISIBLE); // 수정 완료
-                edtCommentContent.setVisibility(View.VISIBLE); // 댓글 수정 란
-                tvCommentModify.setVisibility(View.GONE); // 수정 버튼 숨김
-                tvCommentContent.setVisibility(View.GONE); // 댓글 본문 숨김
-                tvCommentTime.setVisibility(View.GONE); // 댓글 작성 시각 숨김
-
-                // 기존에 작성한 댓글 수정란에 출력
-                edtCommentContent.setText(tvCommentContent.getText().toString());
-            }
-        });
-
-        // 완료 누르면 특정 항목 숨김/보임
-        tvCommentSuccess.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvCommentSuccess.setVisibility(View.GONE); // 수정 숨김
-                edtCommentContent.setVisibility(View.GONE); // 댓글 수정 숨김
-                tvCommentModify.setVisibility(View.VISIBLE); // 수정 버튼
-                tvCommentContent.setVisibility(View.VISIBLE); // 댓글 본문
-                tvCommentTime.setVisibility(View.VISIBLE); // 댓글 작성 시각
-
-                // 수정한 text 댓글 본문 출력
-                tvCommentContent.setText(edtCommentContent.getText().toString());
-            }
-        });
+//        tvCommentModify.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                tvCommentSuccess.setVisibility(View.VISIBLE); // 수정 완료
+//                edtCommentContent.setVisibility(View.VISIBLE); // 댓글 수정 란
+//                tvCommentModify.setVisibility(View.GONE); // 수정 버튼 숨김
+//                tvCommentContent.setVisibility(View.GONE); // 댓글 본문 숨김
+//                tvCommentTime.setVisibility(View.GONE); // 댓글 작성 시각 숨김
+//
+//                // 기존에 작성한 댓글 수정란에 출력
+//                edtCommentContent.setText(tvCommentContent.getText().toString());
+//            }
+//        });
+//
+//        // 완료 누르면 특정 항목 숨김/보임
+//        tvCommentSuccess.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                tvCommentSuccess.setVisibility(View.GONE); // 수정 숨김
+//                edtCommentContent.setVisibility(View.GONE); // 댓글 수정 숨김
+//                tvCommentModify.setVisibility(View.VISIBLE); // 수정 버튼
+//                tvCommentContent.setVisibility(View.VISIBLE); // 댓글 본문
+//                tvCommentTime.setVisibility(View.VISIBLE); // 댓글 작성 시각
+//
+//                // 수정한 text 댓글 본문 출력
+//                tvCommentContent.setText(edtCommentContent.getText().toString());
+//            }
+//        });
 
         Intent intent = getIntent();
         int article_seq = intent.getIntExtra("article_seq", 0);
@@ -130,7 +174,7 @@ public class CommentActivity extends AppCompatActivity {
         queue = Volley.newRequestQueue(CommentActivity.this);
 
         writecomment(article_seq, content);
-        initComment(article_seq);
+        initComment(article_seq, content);
 
         recyclerView = findViewById(R.id.rvComment);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
@@ -156,69 +200,24 @@ public class CommentActivity extends AppCompatActivity {
         });
         recyclerView.setAdapter(adapter);
 
-
-        // 댓글 내용이 없을 경우 버튼 비활성화
-        edtComment.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                btnComment.setClickable(true);
-                btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
-                btnComment.setTextColor(Color.WHITE);
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int count, int after) {
-                if (edtComment.length()==0){
-                    btnComment.setClickable(false);
-                    btnComment.setBackgroundColor(Color.parseColor("#B9B7BD"));
-                    btnComment.setTextColor(Color.parseColor("#888888"));
-                } else {
-                    btnComment.setClickable(true);
-                    btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
-                    btnComment.setTextColor(Color.WHITE);
-                    }
-                 }
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-
-        // 댓글 포커스 시 버튼 색상 변경
-        edtComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean focus) {
-                if (focus){
-                    // 포커스 시
-                    btnComment.setClickable(false);
-                    btnComment.setBackgroundColor(Color.parseColor("#B9B7BD"));
-                    btnComment.setTextColor(Color.parseColor("#888888"));
-                }else{
-                    btnComment.setClickable(true);
-                    btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
-                    btnComment.setTextColor(Color.WHITE);
-                }
-            }
-        });
-
-        tvCommentModify.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                updateComment(cmt_seq, content);
-                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
-                intent.putExtra("article_seq", article_seq);
-                intent.putExtra("cmt_seq", cmt_seq);
-                intent.putExtra("cmt_content", content);
-                startActivity(intent);
-            }
-        });
-
-        tvCommentDel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deleteComment(cmt_seq);
-            }
-        });
+//        tvCommentModify.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                updateComment(cmt_seq, content);
+//                Intent intent = new Intent(CommentActivity.this, PostActivity.class);
+//                intent.putExtra("article_seq", article_seq);
+//                intent.putExtra("cmt_seq", cmt_seq);
+//                intent.putExtra("cmt_content", content);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        tvCommentDel.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                deleteComment(cmt_seq);
+//            }
+//        });
 
 
 
@@ -267,7 +266,7 @@ public class CommentActivity extends AppCompatActivity {
 
     }
     //댓글 리스트 메서드
-    public void initComment(int article_seq) {
+    public void initComment(int article_seq, String content) {
         int method = Request.Method.GET;
         String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do?article_seq=" + article_seq;
 
@@ -316,9 +315,8 @@ public class CommentActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<>();
-
                 param.put("article_seq", String.valueOf(article_seq));
-
+                param.put("article_contnet", content);
                 return param;
             }
         };

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Thu May 19 15:25:27 KST 2022
+=======
+#Thu May 19 11:51:32 KST 2022
+>>>>>>> c9295cfd6f494820fdf99771263a9415668a6041
 path.4=14/classes.dex
 path.3=13/classes.dex
 path.2=12/classes.dex
