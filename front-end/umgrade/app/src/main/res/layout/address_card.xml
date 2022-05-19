@@ -36,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tvAddress"
+            android:textColor="#2c2c2c"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvAddressTitle"
             app:layout_constraintHorizontal_bias="0.0"

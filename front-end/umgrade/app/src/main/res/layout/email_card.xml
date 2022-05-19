@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/tvEmail"
+            android:textColor="#2c2c2c"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvEmailTitle"
             app:layout_constraintHorizontal_bias="0.0"
