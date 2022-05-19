@@ -106,6 +106,12 @@ public class MypageFragment extends Fragment {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String text = btnLogout.getText().toString(); // 로그아웃 버튼 텍스트
+                if(text.equals("로그아웃")){
+                    btnLogout.setText("로그인");
+                } else if(text.equals("로그인")){
+                    btnLogout.setText("로그아웃");
+                }
 
             }
         });

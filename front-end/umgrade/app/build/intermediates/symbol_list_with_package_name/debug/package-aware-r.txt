@@ -2857,6 +2857,7 @@ id cvMypage
 id cvMypage2
 id cvTel
 id cvWeather
+id cvusageHistoryListItem
 id dark
 id date_picker_actions
 id decelerate
@@ -3011,6 +3012,7 @@ id guideline8
 id guideline9
 id header_title
 id hideable
+id historyListImg
 id home
 id homeAsUp
 id honorRequest
@@ -3359,6 +3361,7 @@ id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
+id tvDash
 id tvDeletingAccount
 id tvEmail
 id tvEmailTitle
@@ -3405,6 +3408,11 @@ id tvQrCard1
 id tvQrCard2
 id tvRatingMypageCard
 id tvRatingTextMypageCard
+id tvRental
+id tvRentalFare
+id tvRentalLoc
+id tvReturn
+id tvReturnLoc
 id tvScanner
 id tvSeq
 id tvService1
@@ -3433,15 +3441,18 @@ id tvSupportTitle
 id tvTel
 id tvTelTitle
 id tvTerms
+id tvUmgSeq
 id tvUsageHistoryTitle
 id tvUserId
 id tvWelcomeMypageCard
+id tvWon
 id tvWrite
 id tvWriter
 id unchecked
 id uniform
 id unlabeled
 id up
+id usageHistoryListItem
 id useLogo
 id vertical
 id vertical_only
@@ -3712,6 +3723,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout usage_history_list
 layout weather_card
 layout zxing_barcode_scanner
 layout zxing_capture
@@ -4008,6 +4020,7 @@ string tvCommentTime
 string tvCommuTitle
 string tvCouponMypageCard
 string tvCouponTextMypageCard
+string tvDash
 string tvDeletingAccount
 string tvEmail
 string tvEmailTitle
@@ -4053,6 +4066,11 @@ string tvQrCard1
 string tvQrCard2
 string tvRatingMypageCard
 string tvRatingTextMypageCard
+string tvRental
+string tvRentalFare
+string tvRentalLoc
+string tvReturn
+string tvReturnLoc
 string tvScanner
 string tvSeq
 string tvService1
@@ -4081,9 +4099,11 @@ string tvSupportTitle
 string tvTel
 string tvTelTitle
 string tvTerms
+string tvUmgSeq
 string tvUsageHistoryTitle
 string tvUserId
 string tvWelcomeMypageCard
+string tvWon
 string tvWrite
 string tvWriter
 string tvcardAdd

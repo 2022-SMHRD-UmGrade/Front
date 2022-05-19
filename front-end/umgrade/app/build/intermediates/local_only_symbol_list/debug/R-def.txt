@@ -139,6 +139,7 @@ id cvMypage
 id cvMypage2
 id cvTel
 id cvWeather
+id cvusageHistoryListItem
 id divSupportPost1
 id divSupportPost2
 id divider
@@ -223,6 +224,7 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
+id historyListImg
 id imageView
 id imageView2
 id imageView3
@@ -316,6 +318,7 @@ id tvCommentTime
 id tvCommuTitle
 id tvCouponMypageCard
 id tvCouponTextMypageCard
+id tvDash
 id tvDeletingAccount
 id tvEmail
 id tvEmailTitle
@@ -362,6 +365,11 @@ id tvQrCard1
 id tvQrCard2
 id tvRatingMypageCard
 id tvRatingTextMypageCard
+id tvRental
+id tvRentalFare
+id tvRentalLoc
+id tvReturn
+id tvReturnLoc
 id tvScanner
 id tvSeq
 id tvService1
@@ -390,11 +398,14 @@ id tvSupportTitle
 id tvTel
 id tvTelTitle
 id tvTerms
+id tvUmgSeq
 id tvUsageHistoryTitle
 id tvUserId
 id tvWelcomeMypageCard
+id tvWon
 id tvWrite
 id tvWriter
+id usageHistoryListItem
 id zxing_barcode_surface
 id zxing_viewfinder_view
 layout activity_account_setting
@@ -452,6 +463,7 @@ layout support_card
 layout support_list
 layout tel_card
 layout terms_card
+layout usage_history_list
 layout weather_card
 menu frag_menu
 mipmap ic_launcher
@@ -581,6 +593,7 @@ string tvCommentTime
 string tvCommuTitle
 string tvCouponMypageCard
 string tvCouponTextMypageCard
+string tvDash
 string tvDeletingAccount
 string tvEmail
 string tvEmailTitle
@@ -626,6 +639,11 @@ string tvQrCard1
 string tvQrCard2
 string tvRatingMypageCard
 string tvRatingTextMypageCard
+string tvRental
+string tvRentalFare
+string tvRentalLoc
+string tvReturn
+string tvReturnLoc
 string tvScanner
 string tvSeq
 string tvService1
@@ -654,9 +672,11 @@ string tvSupportTitle
 string tvTel
 string tvTelTitle
 string tvTerms
+string tvUmgSeq
 string tvUsageHistoryTitle
 string tvUserId
 string tvWelcomeMypageCard
+string tvWon
 string tvWrite
 string tvWriter
 string tvcardAdd

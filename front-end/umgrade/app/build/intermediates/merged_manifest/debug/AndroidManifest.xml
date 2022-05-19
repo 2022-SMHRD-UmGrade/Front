@@ -141,11 +141,10 @@
             android:name="com.example.umgrade.IntroActivity"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
             android:name="com.example.umgrade.AccountSettingActivity"
-=======
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.userActivity.LoginActivity"
->>>>>>> c9295cfd6f494820fdf99771263a9415668a6041
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
