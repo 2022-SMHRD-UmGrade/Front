@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -22,9 +23,18 @@ public final class QrCardBinding implements ViewBinding {
   @NonNull
   public final Button btnQrCard;
 
-  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnQrCard) {
+  @NonNull
+  public final TextView tvQrCard1;
+
+  @NonNull
+  public final TextView tvQrCard2;
+
+  private QrCardBinding(@NonNull CardView rootView, @NonNull Button btnQrCard,
+      @NonNull TextView tvQrCard1, @NonNull TextView tvQrCard2) {
     this.rootView = rootView;
     this.btnQrCard = btnQrCard;
+    this.tvQrCard1 = tvQrCard1;
+    this.tvQrCard2 = tvQrCard2;
   }
 
   @Override
@@ -60,7 +70,19 @@ public final class QrCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new QrCardBinding((CardView) rootView, btnQrCard);
+      id = R.id.tvQrCard1;
+      TextView tvQrCard1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvQrCard1 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvQrCard2;
+      TextView tvQrCard2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvQrCard2 == null) {
+        break missingId;
+      }
+
+      return new QrCardBinding((CardView) rootView, btnQrCard, tvQrCard1, tvQrCard2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

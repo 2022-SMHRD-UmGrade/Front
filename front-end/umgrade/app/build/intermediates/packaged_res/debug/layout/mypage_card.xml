@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@color/lightBlueColor">
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/tvNickMypageCard"
@@ -34,6 +34,7 @@
             android:layout_marginStart="4dp"
             android:gravity="left"
             android:text="@string/tvWelcomeMypageCard"
+            android:textColor="#2c2c2c"
             app:layout_constraintBottom_toBottomOf="@+id/tvNickMypageCard"
             app:layout_constraintStart_toEndOf="@+id/tvNickMypageCard"
             app:layout_constraintTop_toTopOf="@+id/tvNickMypageCard" />
@@ -45,6 +46,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
             android:text="@string/tvComment1MypageCard"
+            android:textColor="#2c2c2c"
             app:layout_constraintStart_toStartOf="@+id/imgUmb"
             app:layout_constraintTop_toBottomOf="@+id/tvNickMypageCard" />
 
@@ -69,6 +71,7 @@
             android:layout_marginStart="2dp"
             android:gravity="left"
             android:text="@string/tvComment2MypageCard"
+            android:textColor="#2c2c2c"
             app:layout_constraintBottom_toBottomOf="@+id/tvCarbonMypageCard"
             app:layout_constraintStart_toEndOf="@+id/tvCarbonMypageCard"
             app:layout_constraintTop_toTopOf="@+id/tvCarbonMypageCard" />
@@ -94,6 +97,7 @@
             android:layout_marginBottom="16dp"
             android:gravity="right"
             android:text="@string/tvRatingTextMypageCard"
+            android:textColor="#2c2c2c"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tvRatingMypageCard"
             app:layout_constraintHorizontal_bias="0.5"
@@ -121,6 +125,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:text="@string/tvPointTextMypageCard"
+            android:textColor="#2c2c2c"
             app:layout_constraintBottom_toBottomOf="@+id/tvRatingMypageCard"
             app:layout_constraintEnd_toStartOf="@+id/tvPointMypageCard"
             app:layout_constraintHorizontal_bias="0.5"
@@ -147,6 +152,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:text="@string/tvCouponTextMypageCard"
+            android:textColor="#2c2c2c"
             app:layout_constraintBottom_toBottomOf="@+id/tvPointMypageCard"
             app:layout_constraintEnd_toStartOf="@+id/tvCouponMypageCard"
             app:layout_constraintHorizontal_bias="0.5"

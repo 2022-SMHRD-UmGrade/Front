@@ -40,16 +40,20 @@
     <string name="btnFare">UM-CYCLE 이용 요금 안내</string>
 
     <!-- map_card.xml -->
-    <string name="btnMapCard">UM-CYCLE\n보관함 찾기</string>
+    <string name="tvMapCard1">UM-CYCLE</string>
+    <string name="tvMapCard2">보관함 찾기</string>
 
     <!-- qr_card.xml -->
-    <string name="btnQrCard">QR 스캔으로\n빠른 대여</string>
+    <string name="tvQrCard1">QR 스캔으로</string>
+    <string name="tvQrCard2">빠른 대여</string>
 
     <!-- service_card.xml -->
-    <string name="btnServiceCard">UM-CYCLE\n서비스 안내</string>
+    <string name="tvServiceCard1">UM-CYCLE</string>
+    <string name="tvServiceCard2">서비스 안내</string>
 
     <!-- support_card.xml -->
-    <string name="btnSupportCard">고객센터</string>
+    <string name="tvSupportCard1">1:1 문의</string>
+    <string name="tvSupportCard2">고객센터</string>
 
     <!-- mypage_card.xml -->
     <string name="tvNickMypageCard">USER</string>
@@ -112,10 +116,14 @@
     <!-- comment_list.xml -->
     <string name="tvCommentNick">작성자 닉네임</string>
     <string name="tvWriter">작성자</string>
+    <string name="tvSeq">00</string>
+    <string name="tvPostSeq">00</string>
     <string name="tvCommentContent">댓글 내용</string>
+    <string name="edtCommentContent">수정할 내용</string>
     <string name="tvCommentTime">2022.05.13 10:42</string>
     <string name="tvCommentDel">삭제</string>
     <string name="tvCommentModify">수정</string>
+    <string name="tvCommentSuccess">완료</string>
     <string name="tvCommentReport">신고</string>
 
     <!-- activity_notice.xml -->
@@ -200,7 +208,7 @@
     <string name="tvProfileTitle">프로필 수정</string>
     <string name="edtNickHint">닉네임을 입력하세요</string>
     <string name="tvProfileNIckhint">※최대 10글자까지 입력 가능합니다</string>
-    <string name="btnNickChange">닉네임 변경</string>
+    <string name="btnProfileChange">완료</string>
 
     <!-- activity_support_post.xml-->
     <string name="supportPostTitle">문의글 제목</string>
@@ -238,8 +246,8 @@
     <!-- activity_password_change.xml -->
     <string name="tvPasswordChangeTitle">비밀번호변경</string>
     <string name="tvNowPwTitle">현재 비밀번호</string>
-    <string name="edtNowPw">현재 사용인 비밀번호를 입력해주세요</string>
-    <string name="tvNowPw">이전 비밀번호를 잘못 입력하셨습니다.</string>
+    <string name="edtNowPw">현재 사용 중인 비밀번호를 입력해주세요</string>
+    <string name="tvNowPw">현재 비밀번호를 잘못 입력하셨습니다.</string>
     <string name="tvNewPwTitle">새 비밀번호</string>
     <string name="edtNewPw">8자 이상 영문/숫자/특수문자 중 2가지 포함</string>
     <string name="tvNewPw">총 8자 이상, 용문/숫자/특수문자 중 2가지 이상 입력해주세요.</string>
@@ -256,10 +264,13 @@
     <!--card.xml-->
     <string name="tvEmailTitle">이메일</string>
     <string name="tvEmail">test@example.com</string>
+    <string name="edtEmail">수정할 이메일을 입력하세요</string>
     <string name="tvTelTitle">전화번호</string>
     <string name="tvTel">010-XXXX-XXXX</string>
+    <string name="edtTel">수정할 전화번호를 입력하세요</string>
     <string name="tvAddressTitle">주소</string>
     <string name="tvAddress">광주광역시 동구 예술길 31-15</string>
+    <string name="edtAddress">수정할 주소를 입력하세요</string>
     <string name="btnChange">변경하기</string>
 
     <!-- activity_payment.xml -->

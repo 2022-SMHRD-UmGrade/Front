@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:layout_marginTop="@dimen/loginViewsMargin"
     android:layout_marginBottom="@dimen/loginViewsMargin"
-    android:background="@color/whiteCardColor"
+    android:background="#FFFFFF"
     android:elevation="5dp"
     android:theme="@style/loginCard"
     app:cardCornerRadius="@dimen/loginCardRadius">
@@ -15,7 +15,7 @@
     <LinearLayout
         style="@style/linearParent"
         android:layout_gravity="center"
-        android:background="@color/lightBlueColor"
+        android:background="#ffffff"
         android:padding="@dimen/loginViewsMargin"
         tools:ignore="MissingConstraints">
 
@@ -54,9 +54,9 @@
                 android:backgroundTint="@color/blueColor"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:stateListAnimator="@null"
                 android:text="@string/btnIdCheck"
-                app:cornerRadius="5dp"
-                android:stateListAnimator="@null" />
+                app:cornerRadius="5dp" />
         </LinearLayout>
 
         <EditText
@@ -135,7 +135,7 @@
             android:layout_height="25dp"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:layout_weight="1"
-            android:buttonTint="#77A9D5"
+            android:buttonTint="@color/blueColor"
             android:text="@string/ckAllCheck"
             android:textSize="11dp"
             android:textStyle="bold" />

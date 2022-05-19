@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFDFD"
+    android:background="#EAEAEA"
     tools:context=".AccountSettingActivity">
 
     <LinearLayout
@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_weight="1"
+            android:background="#FFFFFF"
             android:orientation="horizontal">
 
             <ImageButton
@@ -57,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/lightBlueColor"
+            android:background="#FFFFFF"
             android:padding="20dp"
             android:text="@string/tvAccountID"
             android:textAlignment="textStart"
@@ -71,9 +72,10 @@
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/lightBlueColor"
+            android:backgroundTint="#FFFFFF"
             android:drawableRight="@drawable/arroaright_resize"
             android:drawableTint="@color/blueColor"
+            android:elevation="0dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text="@string/btnPasswordChange"
@@ -81,14 +83,7 @@
             android:textColor="@color/blueColor"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:cornerRadius="7dp" />
-
-        <include
-            layout="@layout/email_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1" />
+            app:cornerRadius="0dp" />
 
         <include
             layout="@layout/tel_card"
@@ -97,26 +92,46 @@
             android:layout_marginTop="15dp"
             android:layout_weight="1" />
 
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <include
+            layout="@layout/email_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/divider20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
         <include
             layout="@layout/address_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_weight="1" />
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/tvDeletingAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:linksClickable="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="4dp"
         android:autoLink="web"
+        android:linksClickable="true"
         android:text="@string/tvDeletingAccount"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.974" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@
     <!-- 카메라, 저장소 권한 설정 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 갤러리 접근 권한 설정 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature
@@ -54,7 +55,7 @@
             android:name=".service.SupportWriteActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountSettingActivity"
+            android:name=".main.MainActivity"
             android:exported="false" />
         <activity
             android:name=".UsageHistoryActivity"
@@ -129,7 +130,11 @@
             android:name=".IntroActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
+            android:name=".AccountSettingActivity"
+=======
             android:name=".userActivity.LoginActivity"
+>>>>>>> c9295cfd6f494820fdf99771263a9415668a6041
             android:exported="true"
             tools:ignore="DuplicateActivity">
             <intent-filter>

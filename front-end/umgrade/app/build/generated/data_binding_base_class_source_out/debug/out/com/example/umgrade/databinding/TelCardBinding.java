@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,10 +23,13 @@ public final class TelCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button btnChange;
+  public final Button btnTelChange;
 
   @NonNull
   public final CardView cvTel;
+
+  @NonNull
+  public final EditText edtTel;
 
   @NonNull
   public final Guideline guideline21;
@@ -39,12 +43,13 @@ public final class TelCardBinding implements ViewBinding {
   @NonNull
   public final TextView tvTelTitle;
 
-  private TelCardBinding(@NonNull CardView rootView, @NonNull Button btnChange,
-      @NonNull CardView cvTel, @NonNull Guideline guideline21, @NonNull Guideline guideline22,
-      @NonNull TextView tvTel, @NonNull TextView tvTelTitle) {
+  private TelCardBinding(@NonNull CardView rootView, @NonNull Button btnTelChange,
+      @NonNull CardView cvTel, @NonNull EditText edtTel, @NonNull Guideline guideline21,
+      @NonNull Guideline guideline22, @NonNull TextView tvTel, @NonNull TextView tvTelTitle) {
     this.rootView = rootView;
-    this.btnChange = btnChange;
+    this.btnTelChange = btnTelChange;
     this.cvTel = cvTel;
+    this.edtTel = edtTel;
     this.guideline21 = guideline21;
     this.guideline22 = guideline22;
     this.tvTel = tvTel;
@@ -78,13 +83,19 @@ public final class TelCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnChange;
-      Button btnChange = ViewBindings.findChildViewById(rootView, id);
-      if (btnChange == null) {
+      id = R.id.btnTelChange;
+      Button btnTelChange = ViewBindings.findChildViewById(rootView, id);
+      if (btnTelChange == null) {
         break missingId;
       }
 
       CardView cvTel = (CardView) rootView;
+
+      id = R.id.edtTel;
+      EditText edtTel = ViewBindings.findChildViewById(rootView, id);
+      if (edtTel == null) {
+        break missingId;
+      }
 
       id = R.id.guideline21;
       Guideline guideline21 = ViewBindings.findChildViewById(rootView, id);
@@ -110,8 +121,8 @@ public final class TelCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TelCardBinding((CardView) rootView, btnChange, cvTel, guideline21, guideline22,
-          tvTel, tvTelTitle);
+      return new TelCardBinding((CardView) rootView, btnTelChange, cvTel, edtTel, guideline21,
+          guideline22, tvTel, tvTelTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

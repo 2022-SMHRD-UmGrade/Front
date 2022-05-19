@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:layout_marginTop="@dimen/loginViewsMargin"
     android:layout_marginBottom="@dimen/loginViewsMargin"
-    android:background="@color/whiteCardColor"
+    android:background="#FFFFFF"
     android:elevation="5dp"
     android:theme="@style/loginCard"
     app:cardCornerRadius="@dimen/loginCardRadius">
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:background="@color/lightBlueColor"
+        android:background="#FFFFFF"
         android:padding="@dimen/loginViewsMargin">
 
         <ImageView
@@ -28,7 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:src="@drawable/umbrella" />
 
         <EditText
@@ -76,7 +76,7 @@
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:layout_marginBottom="30dp"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:onClick="viewRegisterClicked"
             android:text="@string/tvJoin"
             android:textAlignment="viewEnd"

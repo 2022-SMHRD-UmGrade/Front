@@ -194,7 +194,7 @@ public class PostActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://192.168.0.3:8081/myapp/BoardDelete.do";
+                String server_url = "http://220.80.203.18:8081/myapp/BoardDelete.do";
 
                 request = new StringRequest(
                         method,

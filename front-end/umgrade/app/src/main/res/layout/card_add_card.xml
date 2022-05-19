@@ -32,7 +32,7 @@
             android:id="@+id/imgCardAdd"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:tint="#96B7D1"
+            android:tint="#98B2DA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
