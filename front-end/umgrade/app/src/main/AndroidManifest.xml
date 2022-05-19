@@ -55,9 +55,6 @@
             android:name=".service.SupportWriteActivity"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".UsageHistoryActivity"
             android:exported="false" />
         <activity
@@ -124,7 +121,7 @@
             android:name=".service.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
@@ -133,9 +130,8 @@
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".userActivity.LoginActivity"
-            android:exported="true"
-            tools:ignore="DuplicateActivity">
+            android:name=".main.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

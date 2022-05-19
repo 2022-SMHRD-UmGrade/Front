@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -21,7 +22,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.umgrade.PrivacyPopupActivity;
 import com.example.umgrade.R;
+import com.example.umgrade.service.ServiceInfoPopupActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +34,7 @@ public class JoinActivity extends AppCompatActivity{
     CheckBox ckAllCheck, ckTerms, ckPersonal, ckMarketing;
     EditText edtJoinId, edtJoinPw,edtJoinPwCheck, edtJoinName, edtJoinNick, edtJoinEmail, edtJoinPhone, edtJoinAddr;
     Button btnJoin;
+    TextView tvMoreService, tvMorePrivacy;
 
     RequestQueue queue;
     StringRequest request;
@@ -53,6 +57,9 @@ public class JoinActivity extends AppCompatActivity{
         ckTerms = (CheckBox) findViewById(R.id.ckTerms);
         ckPersonal = (CheckBox) findViewById(R.id.ckPersonal);
         ckMarketing = (CheckBox) findViewById(R.id.ckMarketing);
+        
+        tvMoreService = findViewById(R.id.tvMoreService); // 이용약관 동의
+        tvMorePrivacy = findViewById(R.id.tvMorePrivacy); // 개인정보 동의
 
         btnJoin = findViewById(R.id.btnJoin);
 
@@ -63,6 +70,22 @@ public class JoinActivity extends AppCompatActivity{
         ckTerms.setChecked(false);
         ckPersonal.setChecked(false);
         ckMarketing.setChecked(false);
+
+        tvMoreService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, ServiceInfoPopupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tvMorePrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, PrivacyPopupActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // AllCheck 값이 true일 때 전체 Check 값이 true, false면 전체 값도 false
         ckAllCheck.setOnClickListener(new View.OnClickListener() {

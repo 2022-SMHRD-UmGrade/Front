@@ -57,13 +57,16 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Intent intent = new Intent(ProfileUpdateActivity.this, MypageFragment.class);
                 MypageFragment fragment = new MypageFragment();
                 String nickUpdate = edtNickChange.getText().toString();
                 // 닉네임 값을 마이페이지로 전달
                 Bundle bundle = new Bundle();
                 bundle.putString("nickUpdate", nickUpdate);
+                //intent.putExtra("nickUpdate", bundle);
+                //startActivity(intent);
                 fragment.setArguments(bundle);
-//                Toast.makeText(ProfileUpdateActivity.this, "nickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ProfileUpdateActivity.this, "ActivityNickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
                 // 화면종료
                 finish();
             }
