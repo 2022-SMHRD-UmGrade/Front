@@ -130,7 +130,7 @@ public class CommentActivity extends AppCompatActivity {
             }
         });
         if(tvCommentNick.equals(vo.getUser_id())) {
-            
+
         }
         // 수정 누르면 활성화
 //        tvCommentModify.setOnClickListener(new View.OnClickListener() {

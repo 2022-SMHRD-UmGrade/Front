@@ -5,19 +5,17 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
+
 
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
+import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.main.MainActivity;
 import com.example.umgrade.main.QrActivity;
 import com.example.umgrade.R;
@@ -25,14 +23,15 @@ import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.notice.NoticeActivity;
-import com.example.umgrade.userActivity.MypageFragment;
-import com.example.umgrade.service.ServiceActivity;
+import com.example.umgrade.vo.User;
 
 public class MainFragment extends Fragment {
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     CardView cvMypage;
+
     View btnFareLayout;
+    User vo = UserInfo.info;
 
     public static MainFragment newInstance(){
         return new MainFragment();
@@ -45,6 +44,7 @@ public class MainFragment extends Fragment {
 
         // 마이페이지 카드 클릭 시 frag_mypage로 이동
         cvMypage = view.findViewById(R.id.cvMypage);
+
         cvMypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
