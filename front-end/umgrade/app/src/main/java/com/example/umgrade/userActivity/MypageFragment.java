@@ -21,6 +21,8 @@ import com.example.umgrade.PaymentActivity;
 import com.example.umgrade.ProfileUpdateActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.UsageHistoryActivity;
+import com.example.umgrade.info.UserInfo;
+import com.example.umgrade.vo.User;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -31,7 +33,7 @@ public class MypageFragment extends Fragment {
     Button btnProfileUpdate, btnPayment, btnUsageHistory, btnAccountSetting, btnLogout;
     TextView tvNickMypageCard, tvUserId, tvRatingMypageCard, tvPointMypageCard, tvCouponMypageCard;
     ImageView imgMypageProfile;
-
+    User vo;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -106,10 +108,19 @@ public class MypageFragment extends Fragment {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                UserInfo.info = vo;
                 String text = btnLogout.getText().toString(); // 로그아웃 버튼 텍스트
                 if(text.equals("로그아웃")){
+                    vo = null;
+                    Toast.makeText(getActivity(),
+                            "로그아웃 되었습니다.",
+                            Toast.LENGTH_SHORT).show();
                     btnLogout.setText("로그인");
                 } else if(text.equals("로그인")){
+                    if(vo == null) {
+                        Intent intent = new Intent(getActivity(), LoginActivity.class);
+                        startActivity(intent);
+                    }
                     btnLogout.setText("로그아웃");
                 }
 

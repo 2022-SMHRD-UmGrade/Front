@@ -86,10 +86,6 @@ public class CommentActivity extends AppCompatActivity {
         edtCommentContent = findViewById(R.id.edtCommentContent); // 댓글 수정 창
         tvCommentSuccess = findViewById(R.id.tvCommentSuccess); // 완료
 
-        // 기본 숨김 상태
-        //tvCommentSuccess.setVisibility(View.GONE);
-        //edtCommentContent.setVisibility(View.GONE);
-
         // 댓글 내용이 없을 경우 버튼 비활성화
         edtComment.addTextChangedListener(new TextWatcher() {
             @Override
@@ -133,7 +129,9 @@ public class CommentActivity extends AppCompatActivity {
                 }
             }
         });
-
+        if(tvCommentNick.equals(vo.getUser_id())) {
+            
+        }
         // 수정 누르면 활성화
 //        tvCommentModify.setOnClickListener(new View.OnClickListener() {
 //            @Override
