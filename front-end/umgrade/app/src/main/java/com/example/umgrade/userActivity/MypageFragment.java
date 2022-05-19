@@ -53,13 +53,18 @@ public class MypageFragment extends Fragment {
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
+
         // 닉네임 란에 수정한 닉네임 출력
         Bundle bundle = new Bundle();
+        String nickUpdate = "nickUpdate";
+
         if(getArguments() != null){
-            String nickUpdate = bundle.getString("nickUpdate");
+
+            //nickUpdate = bundle.getString("nickUpdate", "0");
+            nickUpdate = getArguments().getString("nickUpdate");
             // 왜 출력이 안되니
-            Toast.makeText(getActivity(), "nickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
-            tvNickMypageCard.setText(nickUpdate);
+            Toast.makeText(getActivity(), "FragNickUpdate : "+ nickUpdate, Toast.LENGTH_SHORT).show();
+            //tvNickMypageCard.setText(nickUpdate);
         }
 
         // 프로필 수정 페이지 이동
