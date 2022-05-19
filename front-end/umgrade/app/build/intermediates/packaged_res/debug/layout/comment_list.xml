@@ -85,8 +85,11 @@
         android:text="@string/tvCommentReport"
         android:textColor="@color/blueColor"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCommentDel"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCommentDel"
+        app:layout_constraintTop_toTopOf="@+id/tvCommentDel" />
 
     <TextView
         android:id="@+id/tvCommentModify"
@@ -111,9 +114,11 @@
         android:text="@string/tvCommentDel"
         android:textColor="@color/blueColor"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCommentReport"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvCommentReport"
-        app:layout_constraintTop_toTopOf="@+id/tvCommentReport" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCommentSuccess"
+        app:layout_constraintTop_toTopOf="@+id/tvCommentSuccess" />
 
     <EditText
         android:id="@+id/edtCommentContent"
@@ -137,30 +142,42 @@
         android:id="@+id/tvCommentSuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:text="@string/tvCommentSuccess"
         android:textColor="@color/blueColor"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCommentDel"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvCommentDel"
-        app:layout_constraintTop_toTopOf="@+id/tvCommentDel" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostSeq" />
 
     <TextView
         android:id="@+id/tvSeq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="22dp"
         android:text="@string/tvSeq"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPostSeq"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvPostSeq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/tvPostSeq"
         app:layout_constraintEnd_toStartOf="@+id/tvSeq"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/tvWriter"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

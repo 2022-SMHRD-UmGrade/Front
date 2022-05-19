@@ -4,6 +4,7 @@ package com.example.umgrade.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,16 +23,18 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
 
     //viewHolder start ~
     public static class ViewHolder extends RecyclerView.ViewHolder{
+        TextView tvPostSeq;
         TextView tvSeq;
         TextView tvCommentNick;
-        TextView tvCommentContent;
+        EditText edtCommentContent;
         TextView tvCommentTime;
 
         public ViewHolder(View listView) {
             super(listView);
+            tvPostSeq = listView.findViewById(R.id.tvPostSeq);
             tvSeq = listView.findViewById(R.id.tvSeq);
             tvCommentNick = listView.findViewById(R.id.tvCommentNick);
-            tvCommentContent = listView.findViewById(R.id.tvCommentContent);
+            edtCommentContent = listView.findViewById(R.id.edtCommentContent);
             tvCommentTime = listView.findViewById(R.id.tvCommentTime);
 
             listView.setOnClickListener(new View.OnClickListener() {
@@ -47,9 +50,10 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         }
 
         public void setItem(Comment list) {
+            tvPostSeq.setText(String.valueOf(list.getCmt_seq()));
             tvSeq.setText(String.valueOf(list.getArticle_seq()));
             tvCommentNick.setText(list.getCmt_id());
-            tvCommentContent.setText(list.getCmt_content());
+            edtCommentContent.setText(list.getCmt_content());
             tvCommentTime.setText(list.getCmt_date());
         }
     }
