@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvCommentContent" />
 
     <TextView
-        android:id="@+id/tvSeq"
+        android:id="@+id/tvWriter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -144,5 +144,23 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvCommentDel"
         app:layout_constraintEnd_toStartOf="@+id/tvCommentDel"
         app:layout_constraintTop_toTopOf="@+id/tvCommentDel" />
+
+    <TextView
+        android:id="@+id/tvSeq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/tvSeq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPostSeq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvPostSeq"
+        app:layout_constraintEnd_toStartOf="@+id/tvSeq"
+        tools:layout_editor_absoluteY="7dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

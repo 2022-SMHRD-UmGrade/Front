@@ -483,6 +483,7 @@ string ckMarketing
 string ckPersonal
 string ckTerms
 string edtComment
+string edtCommentContent
 string edtJoinAddr
 string edtJoinEmail
 string edtJoinId

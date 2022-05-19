@@ -112,6 +112,8 @@
     <!-- comment_list.xml -->
     <string name="tvCommentNick">작성자 닉네임</string>
     <string name="tvWriter">작성자</string>
+    <string name="tvSeq">00</string>
+    <string name="tvPostSeq">00</string>
     <string name="tvCommentContent">댓글 내용</string>
     <string name="edtCommentContent">수정할 내용</string>
     <string name="tvCommentTime">2022.05.13 10:42</string>

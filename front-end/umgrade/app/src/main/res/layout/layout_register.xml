@@ -15,7 +15,7 @@
     <LinearLayout
         style="@style/linearParent"
         android:layout_gravity="center"
-        android:background="@color/lightBlueColor"
+        android:background="#ffffff"
         android:padding="@dimen/loginViewsMargin"
         tools:ignore="MissingConstraints">
 

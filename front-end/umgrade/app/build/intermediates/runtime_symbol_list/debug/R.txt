@@ -3805,6 +3805,7 @@ int string common_signin_button_text 0x7f100066
 int string common_signin_button_text_long 0x7f100067
 int string define_zxingandroidembedded 0x7f100068
 int string edtComment 0x7f100069
+int string edtCommentContent 0x7f100166
 int string edtJoinAddr 0x7f10006a
 int string edtJoinEmail 0x7f10006b
 int string edtJoinId 0x7f10006c

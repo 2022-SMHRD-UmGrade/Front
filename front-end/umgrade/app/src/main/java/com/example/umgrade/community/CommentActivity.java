@@ -51,7 +51,7 @@ public class CommentActivity extends AppCompatActivity {
     Button btnComment;
     EditText edtComment, edtCommentContent ;
 
-    TextView tvCommentNick, tvSeq, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport, tvCommentSuccess;
+    TextView tvCommentNick, tvSeq, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport, tvCommentSuccess, tvPostSeq, tvWriter;
 
     ImageView imgCommentProfile;
 
@@ -71,7 +71,9 @@ public class CommentActivity extends AppCompatActivity {
         vo = UserInfo.info;
 
         tvCommentContent = findViewById(R.id.tvCommentContent); // 댓글 본문
-        tvSeq = findViewById(R.id.tvSeq);
+        tvSeq = findViewById(R.id.tvSeq); // 댓글 순번
+        tvPostSeq = findViewById(R.id.tvPostSeq); // 게시물 순번
+        tvWriter = findViewById(R.id.tvWriter); // 작성자
         tvCommentNick = findViewById(R.id.tvCommentNick); // 작성자 닉네임
         tvCommentTime = findViewById(R.id.tvCommentTime); // 댓글 작성시각
         tvCommentDel = findViewById(R.id.tvCommentDel); // 삭제

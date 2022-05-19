@@ -3806,6 +3806,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string define_zxingandroidembedded
 string edtComment
+string edtCommentContent
 string edtJoinAddr
 string edtJoinEmail
 string edtJoinId
