@@ -70,6 +70,9 @@ public class AccountSettingActivity extends AppCompatActivity {
                     btnEmailChange.setText("완료");
                     tvEmail.setVisibility(View.GONE);
                     edtEmail.setVisibility(View.VISIBLE);
+                    // editText focus 기능
+                    edtEmail.requestFocus();
+                    edtEmail.setSelection(edtEmail.length());
                     // tvEmail 값 가져오기
                     edtEmail.setText(tvEmail.getText().toString());
                 } else if (state.equals("완료")){
@@ -92,6 +95,9 @@ public class AccountSettingActivity extends AppCompatActivity {
                     btnAddrChange.setText("완료");
                     tvAddress.setVisibility(View.GONE);
                     edtAddress.setVisibility(View.VISIBLE);
+                    // editText focus 기능
+                    edtAddress.requestFocus();
+                    edtAddress.setSelection(edtTel.length());
                     // tvAddress 값 가져오기
                     edtAddress.setText(tvAddress.getText().toString());
                 } else if (state.equals("완료")){
