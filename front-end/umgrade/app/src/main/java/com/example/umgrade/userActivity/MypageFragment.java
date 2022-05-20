@@ -2,7 +2,9 @@ package com.example.umgrade.userActivity;
 
 import static android.app.Activity.RESULT_OK;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -16,6 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +45,7 @@ public class MypageFragment extends Fragment {
     TextView tvNickMypageCard, tvUserId, tvRatingMypageCard, tvPointMypageCard, tvCouponMypageCard;
     ImageView imgMypageProfile;
     User vo = UserInfo.info;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -60,6 +64,22 @@ public class MypageFragment extends Fragment {
         tvRatingMypageCard = view.findViewById(R.id.tvRatingMypageCard); // 회원 등급
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
+
+        // start
+        // SharedPreference
+
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("sf", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        // 데이터를 담는 부분
+        editor.putString("test", "Hello World");
+        editor.commit();
+        // end
+
+        String test = sharedPreferences.getString("main", "no data");
+        Log.d("확인", test);
+
+
 
         // 팅겨서 일단 주석처리
 //        tvNickMypageCard.setText(vo.getUser_nick());

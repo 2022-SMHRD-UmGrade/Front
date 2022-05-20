@@ -10,10 +10,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,6 +43,24 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         edtNickChange = findViewById(R.id.edtNickChange); // 수정할 닉네임
         btnProfileChange = findViewById(R.id.btnProfileChange); // 프로필 변경
         btnProfileUpdatePre = findViewById(R.id.btnProfileUpdatePre); // 뒤로가기 버튼
+
+        SharedPreferences sharedPreferences = getSharedPreferences("sf", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        // 꺼내는 파트
+        String test = sharedPreferences.getString("test", "no data");
+        Log.d("확인", test);
+        //
+
+        // 넣는 파트
+        editor.putString("main", "메인에서 갑니다");
+        editor.commit();
+
+
+
+
+
+
 
         // 이미지 클릭해서 갤러리 접근
         imgProfileChange.setOnClickListener(new View.OnClickListener() {
