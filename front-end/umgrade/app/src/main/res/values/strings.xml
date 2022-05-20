@@ -297,4 +297,7 @@
     <string name="tvWon">￦</string>
     <string name="tvRentalFare">0,000</string>
 
+    <!-- activity_pay_view.xml -->
+    <string name="btnPayview">닫기</string>
+
 </resources>

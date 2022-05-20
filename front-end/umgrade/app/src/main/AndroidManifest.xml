@@ -117,7 +117,7 @@
             android:name=".service.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".PayViewActivity"
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
@@ -126,7 +126,7 @@
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".PayViewActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

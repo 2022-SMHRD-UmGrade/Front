@@ -22,7 +22,7 @@ public class PayViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pay_view);
 
         webView = findViewById(R.id.webView);
-        //btnPayview = findViewById(R.id.btnPayview);
+        btnPayview = findViewById(R.id.btnPayview); // 닫기 버튼
 
         User vo = UserInfo.info;
         Intent intent = getIntent();

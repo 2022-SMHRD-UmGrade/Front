@@ -256,8 +256,8 @@
 131-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:118:13-37
 132        <activity
 132-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:119:9-121:40
-133            android:name="com.example.umgrade.main.MainActivity"
-133-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:120:13-46
+133            android:name="com.example.umgrade.PayViewActivity"
+133-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:120:13-44
 134            android:exported="false" />
 134-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:121:13-37
 135        <activity
@@ -274,8 +274,8 @@
 140-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:127:13-37
 141        <activity
 141-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:128:9-136:20
-142            android:name="com.example.umgrade.PayViewActivity"
-142-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-44
+142            android:name="com.example.umgrade.main.MainActivity"
+142-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-46
 143            android:exported="true" >
 143-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:130:13-36
 144            <intent-filter>

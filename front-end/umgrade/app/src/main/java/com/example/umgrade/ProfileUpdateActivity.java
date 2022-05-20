@@ -44,22 +44,15 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileChange = findViewById(R.id.btnProfileChange); // 프로필 변경
         btnProfileUpdatePre = findViewById(R.id.btnProfileUpdatePre); // 뒤로가기 버튼
 
-        SharedPreferences sharedPreferences = getSharedPreferences("sf", MODE_PRIVATE);
+        // 데이터 저장
+        SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         // 꺼내는 파트
-        String test = sharedPreferences.getString("test", "no data");
-        Log.d("확인", test);
-        //
-
-        // 넣는 파트
-        editor.putString("main", "메인에서 갑니다");
-        editor.commit();
-
-
-
-
-
+        //String nick = sharedPreferences.getString("nick", "no data");
+        // 기존 닉네임 출력
+        //edtNickChange.setText(nick);
+        //Log.d("확인", nick);
 
 
         // 이미지 클릭해서 갤러리 접근
@@ -76,8 +69,8 @@ public class ProfileUpdateActivity extends AppCompatActivity {
 
         // 닉네임/이미지 란에 기존 값 출력
 //        Intent intentUpdate = getIntent();
-        Bundle extras = getIntent().getExtras();
-        edtNickChange.setText(extras.getString("nick"));
+//        Bundle extras = getIntent().getExtras();
+//        edtNickChange.setText(extras.getString("nick"));
 //        byte[] byteArray = getIntent().getByteArrayExtra("byteArray");
 //        Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
 //
@@ -87,23 +80,13 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-
-                //Intent intent = new Intent(ProfileUpdateActivity.this, MypageFragment.class);
-                MypageFragment fragment = new MypageFragment();
                 String nickUpdate = edtNickChange.getText().toString();
-                // 닉네임 값을 마이페이지로 전달
-                Bundle bundle = new Bundle();
-                bundle.putString("nickUpdate", nickUpdate);
-                //intent.putExtra("nickUpdate", bundle);
-                //startActivity(intent);
-                fragment.setArguments(bundle);
-                //Toast.makeText(ProfileUpdateActivity.this, "ActivityNickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
+                // 넣는 파트
+                editor.putString("nickUpdate", nickUpdate);
+                editor.commit();
                 // 화면종료
                 //finish();
                 onBackPressed();
-                transaction.replace(R.id.container, fragment).commit();
             }
         });
 

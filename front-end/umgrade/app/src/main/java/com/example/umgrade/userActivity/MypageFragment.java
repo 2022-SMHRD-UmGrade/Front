@@ -67,35 +67,34 @@ public class MypageFragment extends Fragment {
 
         // start
         // SharedPreference
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("sf", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("save", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
+        // 닉네임 저장
+        String nick = tvNickMypageCard.getText().toString();
+
         // 데이터를 담는 부분
-        editor.putString("test", "Hello World");
+        editor.putString("nick", nick);
         editor.commit();
         // end
 
-        String test = sharedPreferences.getString("main", "no data");
-        Log.d("확인", test);
+        // 데이터 꺼내기
+        String nickUpdate = sharedPreferences.getString("nickUpdate", "no data");
+        tvNickMypageCard.setText(nickUpdate);
+        Log.d("확인", nickUpdate);
 
         vo = UserInfo.info;
-
-
-        tvNickMypageCard.setText(vo.getUser_nick());
-        tvUserId.setText(vo.getUser_id());
-        tvRatingMypageCard.setText(vo.getUser_type());
-        tvPointMypageCard.setText(vo.getUser_point());
-
-        String user_id = vo.getUser_id();
-        // 닉네임 란에 수정한 닉네임 출력
-        Bundle bundle = new Bundle();
-        String nickUpdate = "nickUpdate";
 
         // 팅겨서 일단 주석처리
 //        tvNickMypageCard.setText(vo.getUser_nick());
 //        tvUserId.setText(vo.getUser_id());
 //        tvRatingMypageCard.setText(vo.getUser_type());
 //        tvPointMypageCard.setText(vo.getUser_point());
+//        String user_id = vo.getUser_id();
+
+        // 닉네임 란에 수정한 닉네임 출력
+//        Bundle bundle = new Bundle();
+//        String nickUpdate = "nickUpdate";
 
 
         // 닉네임 란에 수정한 닉네임 출력
@@ -121,7 +120,7 @@ public class MypageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // 닉네임 저장
-                String nick = tvNickMypageCard.getText().toString();
+//                String nick = tvNickMypageCard.getText().toString();
 
                 // 이미지 비트맵으로 저장
                 // getDrawable() 에서 에러남
@@ -138,7 +137,7 @@ public class MypageFragment extends Fragment {
 
                 // 닉네임 값을 수정페이지로 전달
                 Intent intent = new Intent(getActivity(), ProfileUpdateActivity.class);
-                intent.putExtra("nick", nick);
+//                intent.putExtra("nick", nick);
                 //intent.putExtra("byteArray", byteArray);
 
                 // 화면전환
@@ -153,7 +152,7 @@ public class MypageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PaymentActivity.class);
-                intent.putExtra("user_id", user_id);
+//                intent.putExtra("user_id", user_id);
                 startActivity(intent);
             }
         });
