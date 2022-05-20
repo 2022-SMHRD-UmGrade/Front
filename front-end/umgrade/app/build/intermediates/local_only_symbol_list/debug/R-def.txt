@@ -50,6 +50,7 @@ drawable more
 drawable mypage
 drawable notice
 drawable noticeresize
+drawable profile_card
 drawable qr
 drawable round
 drawable round_layout
@@ -250,6 +251,7 @@ id lvUsageHistoryList
 id lvborad
 id mainScroll
 id map_View
+id myPageLayout
 id noticePost
 id noticePost2
 id noticePostCnt

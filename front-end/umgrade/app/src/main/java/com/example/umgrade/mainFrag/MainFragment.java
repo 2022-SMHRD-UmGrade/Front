@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +30,7 @@ import com.example.umgrade.vo.User;
 public class MainFragment extends Fragment {
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
-    CardView cvMypage;
+    View myPageLayout;
 
     View btnFareLayout;
     User vo = UserInfo.info;
@@ -43,11 +45,12 @@ public class MainFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         // 마이페이지 카드 클릭 시 frag_mypage로 이동
-        cvMypage = view.findViewById(R.id.cvMypage);
+        myPageLayout = view.findViewById(R.id.myPageLayout);
 
-        cvMypage.setOnClickListener(new View.OnClickListener() {
+        myPageLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 ((MainActivity)getActivity()).changeMypage(newInstance());
                 // Log.v("tetetetetet","teteltetet");
                 //((MainActivity)getActivity()).getSupportFragmentManager().beginTransaction().replace(R.id.container, MainActivity.frag_mypage).commit();
