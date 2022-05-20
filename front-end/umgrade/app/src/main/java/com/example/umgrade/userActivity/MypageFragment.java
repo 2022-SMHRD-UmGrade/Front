@@ -65,23 +65,14 @@ public class MypageFragment extends Fragment {
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
-        // start
         // SharedPreference
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("save", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        // 닉네임 저장
-//        String nick = tvNickMypageCard.getText().toString();
-
-        // 데이터를 담는 부분
-//        editor.putString("nick", nick);
-//        editor.commit();
-        // end
-
-        // 데이터 꺼내기
+        // ProfileUpdatedActivity에서 데이터 꺼내기
         String nickUpdate = sharedPreferences.getString("nickUpdate", "no data");
         tvNickMypageCard.setText(nickUpdate);
         Log.d("확인", nickUpdate);
+        // SharedPreference end
 
         vo = UserInfo.info;
 

@@ -44,14 +44,13 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileChange = findViewById(R.id.btnProfileChange); // 프로필 변경
         btnProfileUpdatePre = findViewById(R.id.btnProfileUpdatePre); // 뒤로가기 버튼
 
-        // 데이터 저장
+        // SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        // 꺼내는 파트
+        // MypageFragment에서 데이터 꺼냄
         //String nick = sharedPreferences.getString("nick", "no data");
         //Log.d("확인", nick);
-
 
         // 이미지 클릭해서 갤러리 접근
         imgProfileChange.setOnClickListener(new View.OnClickListener() {
@@ -73,10 +72,13 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 기존 값 출력
                 String nickUpdate = edtNickChange.getText().toString();
-                // 넣는 파트
+
+                // SharedPreference에 데이터 넣는 파트
                 editor.putString("nickUpdate", nickUpdate);
                 editor.commit();
+                
                 // 화면종료
                 //finish();
                 onBackPressed();
