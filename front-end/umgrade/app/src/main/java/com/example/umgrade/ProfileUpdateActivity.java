@@ -13,8 +13,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +28,8 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.umgrade.mainFrag.MainFragment;
 import com.example.umgrade.userActivity.MypageFragment;
+
+import java.io.ByteArrayOutputStream;
 
 public class ProfileUpdateActivity extends AppCompatActivity {
 
@@ -45,6 +49,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileUpdatePre = findViewById(R.id.btnProfileUpdatePre); // 뒤로가기 버튼
 
         // SharedPreferences
+        // name : 저장소 이름
         SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
@@ -72,11 +77,19 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         btnProfileChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 기존 값 출력
+                // 값 가져오기
                 String nickUpdate = edtNickChange.getText().toString();
+//                Bitmap imgUpdate = imgProfileChange.;
+                // imgProfileChange 그림을 bitmap으로 가져오기
+                BitmapDrawable drawable = (BitmapDrawable) imgProfileChange.getDrawable();
+                Bitmap bitmap = drawable.getBitmap();
 
+                String image = BitmapToString(bitmap);
+                editor.putString("imageString", image);
                 // SharedPreference에 데이터 넣는 파트
+                // 이름, 값
                 editor.putString("nickUpdate", nickUpdate);
+//                editor.putString("bitmap", );
                 editor.commit();
                 
                 // 화면종료
@@ -113,4 +126,12 @@ public class ProfileUpdateActivity extends AppCompatActivity {
                     }
                 }
             });
+
+    public static String BitmapToString(Bitmap bitmap) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 70, baos);
+        byte[] bytes = baos.toByteArray();
+        String temp = Base64.encodeToString(bytes, Base64.DEFAULT);
+        return temp;
+    }
 }

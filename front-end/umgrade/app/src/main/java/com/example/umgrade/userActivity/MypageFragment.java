@@ -17,7 +17,9 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,12 +68,17 @@ public class MypageFragment extends Fragment {
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
         // SharedPreference
+        // name : 저장소 이름
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("save", Context.MODE_PRIVATE);
 
         // ProfileUpdatedActivity에서 데이터 꺼내기
+        // 꺼내올 값, 값 없을때 출력할 값
         String nickUpdate = sharedPreferences.getString("nickUpdate", "no data");
+        String image = sharedPreferences.getString("imageString", "no data");
+        Bitmap bitmap = StringToBitmap(image);
         tvNickMypageCard.setText(nickUpdate);
-        Log.d("확인", nickUpdate);
+//        imgMypageProfile.setImageBitmap(bitmap);
+        Log.d("확인", nickUpdate+image);
         // SharedPreference end
 
         vo = UserInfo.info;
@@ -151,5 +158,16 @@ public class MypageFragment extends Fragment {
         });
 
         return view;
+    }
+
+    public static Bitmap StringToBitmap(String encodedString) {
+        try {
+            byte[] encodeByte = Base64.decode(encodedString, Base64.DEFAULT);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
+            return bitmap;
+        } catch (Exception e) {
+            e.getMessage();
+            return null;
+        }
     }
 }
