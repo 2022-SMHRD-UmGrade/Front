@@ -99,6 +99,7 @@ id btnPasswordChange
 id btnPasswordChangePre
 id btnPayment
 id btnPaymentPre
+id btnPayview
 id btnPostComment
 id btnPostDelete
 id btnPostModify
@@ -119,7 +120,6 @@ id btnUsageHistory
 id btnUsageHistoryPre
 id btnWriteCancel
 id btnWriteSend
-id button3
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -503,6 +503,7 @@ string btnMoreUserInfo
 string btnNoticeEvent
 string btnPasswordChange
 string btnPayment
+string btnPayview
 string btnPostComment
 string btnPostDelete
 string btnPostModify

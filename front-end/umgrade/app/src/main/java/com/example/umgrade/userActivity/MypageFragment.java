@@ -71,11 +71,11 @@ public class MypageFragment extends Fragment {
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         // 닉네임 저장
-        String nick = tvNickMypageCard.getText().toString();
+//        String nick = tvNickMypageCard.getText().toString();
 
         // 데이터를 담는 부분
-        editor.putString("nick", nick);
-        editor.commit();
+//        editor.putString("nick", nick);
+//        editor.commit();
         // end
 
         // 데이터 꺼내기
@@ -92,60 +92,21 @@ public class MypageFragment extends Fragment {
 //        tvPointMypageCard.setText(vo.getUser_point());
 //        String user_id = vo.getUser_id();
 
-        // 닉네임 란에 수정한 닉네임 출력
-//        Bundle bundle = new Bundle();
-//        String nickUpdate = "nickUpdate";
-
-
-        // 닉네임 란에 수정한 닉네임 출력
-//        Bundle bundle = new Bundle();
-//        String nickUpdate = "nickUpdate";
-//
-//        if(getArguments() != null){
-//            //nickUpdate = bundle.getString("nickUpdate", "0");
-//            nickUpdate = getArguments().getString("nickUpdate");
-//            // 왜 출력이 안되니
-//            Toast.makeText(getActivity(), "FragNickUpdate : "+ nickUpdate, Toast.LENGTH_SHORT).show();
-//            //tvNickMypageCard.setText(nickUpdate);
-//        }
-//        Bundle extra = this.getArguments();
-//        if(extra != null){
-//            extra = getArguments();
-//            String nickUpdate = extra.getString("nickUpdate");
-//            Toast.makeText(getActivity(),"FragNickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
-//        }
-
         // 프로필 수정 페이지 이동
         btnProfileUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // 닉네임 저장
-//                String nick = tvNickMypageCard.getText().toString();
-
-                // 이미지 비트맵으로 저장
-                // getDrawable() 에서 에러남
-//                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-//
-//                BitmapDrawable profileImg = (BitmapDrawable) imgMypageProfile.getDrawable();
-//                Bitmap bitmap = profileImg.getBitmap();
-//                float scale = (float) (1024/(float)bitmap.getWidth());
-//                int img_w = (int) (bitmap.getWidth() * scale);
-//                int img_h = (int) (bitmap.getHeight() * scale);
-//                Bitmap resize = Bitmap.createScaledBitmap(bitmap, img_w, img_h, true);
-//                resize.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-//                byte[] byteArray = stream.toByteArray();
+                String nick = tvNickMypageCard.getText().toString();
 
                 // 닉네임 값을 수정페이지로 전달
                 Intent intent = new Intent(getActivity(), ProfileUpdateActivity.class);
-//                intent.putExtra("nick", nick);
-                //intent.putExtra("byteArray", byteArray);
+                intent.putExtra("nick", nick);
 
                 // 화면전환
                 startActivity(intent);
             }
         });
-
-
 
         // 결제관리 페이지 이동
         btnPayment.setOnClickListener(new View.OnClickListener() {

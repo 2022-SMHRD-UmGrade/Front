@@ -50,8 +50,6 @@ public class ProfileUpdateActivity extends AppCompatActivity {
 
         // 꺼내는 파트
         //String nick = sharedPreferences.getString("nick", "no data");
-        // 기존 닉네임 출력
-        //edtNickChange.setText(nick);
         //Log.d("확인", nick);
 
 
@@ -68,13 +66,8 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         });
 
         // 닉네임/이미지 란에 기존 값 출력
-//        Intent intentUpdate = getIntent();
-//        Bundle extras = getIntent().getExtras();
-//        edtNickChange.setText(extras.getString("nick"));
-//        byte[] byteArray = getIntent().getByteArrayExtra("byteArray");
-//        Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-//
-//        imgProfileChange.setImageBitmap(bitmap);
+        Intent intentUpdate = getIntent();
+        edtNickChange.setText(intentUpdate.getStringExtra("nick"));
 
         // 버튼 누르면 닉네임 값을 마이페이지로 전달
         btnProfileChange.setOnClickListener(new View.OnClickListener() {
