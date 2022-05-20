@@ -44,8 +44,12 @@ public class MypageFragment extends Fragment {
     Button btnProfileUpdate, btnPayment, btnUsageHistory, btnAccountSetting, btnLogout;
     TextView tvNickMypageCard, tvUserId, tvRatingMypageCard, tvPointMypageCard, tvCouponMypageCard;
     ImageView imgMypageProfile;
+<<<<<<< HEAD
     User vo = UserInfo.info;
 
+=======
+    User vo;
+>>>>>>> 7312602f63a0cc90cf9c780536b6a60697df4ec3
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -65,6 +69,7 @@ public class MypageFragment extends Fragment {
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
+<<<<<<< HEAD
         // start
         // SharedPreference
 
@@ -78,8 +83,29 @@ public class MypageFragment extends Fragment {
 
         String test = sharedPreferences.getString("main", "no data");
         Log.d("확인", test);
+=======
+<<<<<<< HEAD
+        vo = UserInfo.info;
 
+=======
+>>>>>>> 4130fd22f81b77374e54f99ee8d6c92d8b369552
+        tvNickMypageCard.setText(vo.getUser_nick());
+        tvUserId.setText(vo.getUser_id());
+        tvRatingMypageCard.setText(vo.getUser_type());
+        tvPointMypageCard.setText(vo.getUser_point());
+<<<<<<< HEAD
+=======
+>>>>>>> 7312602f63a0cc90cf9c780536b6a60697df4ec3
 
+>>>>>>> 4130fd22f81b77374e54f99ee8d6c92d8b369552
+
+<<<<<<< HEAD
+=======
+        String user_id = vo.getUser_id();
+        // 닉네임 란에 수정한 닉네임 출력
+        Bundle bundle = new Bundle();
+        String nickUpdate = "nickUpdate";
+>>>>>>> 7312602f63a0cc90cf9c780536b6a60697df4ec3
 
         // 팅겨서 일단 주석처리
 //        tvNickMypageCard.setText(vo.getUser_nick());
@@ -143,6 +169,7 @@ public class MypageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PaymentActivity.class);
+                intent.putExtra("user_id", user_id);
                 startActivity(intent);
             }
         });

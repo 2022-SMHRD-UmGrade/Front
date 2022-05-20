@@ -2,18 +2,23 @@
 
 package com.example.umgrade.main;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Base64;
@@ -46,7 +51,6 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
     private MapView mapView;
     double mCurrentLng;
     double mCurrentLat;
-
     User vo;
 
     RequestQueue queue;
@@ -72,7 +76,9 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
                     public void onResponse(String response) {
 
                         getAppKeyHash();
-                        initView();
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            initView();
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -103,7 +109,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         }
     }
 
-    //지도 띄우는 메서드
+   //지도 띄우는 메서드
    public void initView() {
 
         mapView = new MapView(this);
@@ -124,11 +130,34 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         mapView.setCurrentLocationEventListener(MapActivity.this);
         mapView.setPOIItemEventListener(this);
 
+
+
+    }
+
+    // 시스템 위치 서비스에 대한 액세스를 제공하는 메서드
+    public boolean checkLocationServiceStatus(){
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+    }
+
+    // 현재 위치 업데이트 setCurrentLocationEventListener
+    @Override
+    public void onCurrentLocationUpdate(MapView mapView, MapPoint mapPoint, float accuracyInMeters) {
+        MapPoint.GeoCoordinate mapPointGeo = mapPoint.getMapPointGeoCoord();
+        Log.i(TAG, String.format("MapView onCurrentLocationUpdate (%f,%f) accuracy (%f)", mapPointGeo.latitude, mapPointGeo.longitude, accuracyInMeters));
+        MapPoint currentMapPoint = MapPoint.mapPointWithGeoCoord(mapPointGeo.latitude, mapPointGeo.longitude);
+        //이 좌표로 지도 중심 이동
+        mapView.setMapCenterPoint(currentMapPoint, true);
+        //현재 좌표 저장
+        mCurrentLat = mapPointGeo.latitude; //위도
+        mCurrentLng = mapPointGeo.longitude; //경도
+        Log.d(TAG, "현재위치 => " + mCurrentLat + "  " + mCurrentLng);
+
         MapPOIItem marker = new MapPOIItem();
         //맵 포인트 위도경도 설정
-        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(mCurrentLat, mCurrentLng);
+        mapPoint = MapPoint.mapPointWithGeoCoord(mCurrentLat, mCurrentLng);
 
-        marker.setItemName("Default Name");
+        marker.setItemName("Ubox1");
 
         marker.setTag(0);
         marker.setMapPoint(mapPoint);
@@ -151,30 +180,8 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         marker1.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양.
         mapView.addPOIItem(marker1);
 
-
-    }
-
-    // 시스템 위치 서비스에 대한 액세스를 제공하는 메서드
-    public boolean checkLocationServiceStatus(){
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-    }
-
-    // 현재 위치 업데이트 setCurrentLocationEventListener
-    @Override
-    public void onCurrentLocationUpdate(MapView mapView, MapPoint mapPoint, float accuracyInMeters) {
-        MapPoint.GeoCoordinate mapPointGeo = mapPoint.getMapPointGeoCoord();
-        Log.i(TAG, String.format("MapView onCurrentLocationUpdate (%f,%f) accuracy (%f)", mapPointGeo.latitude, mapPointGeo.longitude, accuracyInMeters));
-        MapPoint currentMapPoint = MapPoint.mapPointWithGeoCoord(mapPointGeo.latitude, mapPointGeo.longitude);
-        //이 좌표로 지도 중심 이동
-        mapView.setMapCenterPoint(currentMapPoint, true);
-        //현재 좌표 저장
-        mCurrentLat = mapPointGeo.latitude;
-        mCurrentLng = mapPointGeo.longitude;
-        Log.d(TAG, "현재위치 => " + mCurrentLat + "  " + mCurrentLng);
-
         //트래킹 모드가 아닌 단순 현재위치 업데이트일 경우, 한번만 위치 업데이트하고 트래킹을 중단시키기 위한 로직
-        boolean isTrackingMode = true;
+        boolean isTrackingMode = false;
         if (!isTrackingMode) {
             mapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOff);
         }
@@ -298,4 +305,5 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
     public void onPointerCaptureChanged(boolean hasCapture) {
         super.onPointerCaptureChanged(hasCapture);
     }
+
 }

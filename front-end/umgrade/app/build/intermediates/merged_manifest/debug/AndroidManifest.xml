@@ -7,19 +7,14 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
-
     <!-- 인터넷 권한 설정 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 인터넷 연결 확인 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- 지도 API 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 연결 확인 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 지도 API 권한 설정 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <!-- 카메라, 저장소 권한 설정 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 카메라, 저장소 권한 설정 -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- 갤러리 접근 권한 설정 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 갤러리 접근 권한 설정 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature
@@ -48,12 +43,15 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="umgrade"
-        android:networkSecurityConfig="@xml/network_security_config2"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.umgrade.PayViewActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.umgrade.CardRegisterActivity"
             android:exported="false" />
@@ -132,7 +130,7 @@
             android:name="com.example.umgrade.service.ServiceActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.userActivity.LoginActivity"
+            android:name="com.example.umgrade.main.MainActivity"
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.IntroActivity"
@@ -141,7 +139,7 @@
             android:name="com.example.umgrade.AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.main.MainActivity"
+            android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
