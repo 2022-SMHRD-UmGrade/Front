@@ -1,12 +1,20 @@
 package com.example.umgrade.userActivity;
 
+import static android.app.Activity.RESULT_OK;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,23 +61,29 @@ public class MypageFragment extends Fragment {
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
-        tvNickMypageCard.setText(vo.getUser_nick());
-        tvUserId.setText(vo.getUser_id());
-        tvRatingMypageCard.setText(vo.getUser_type());
-        tvPointMypageCard.setText(vo.getUser_point());
+        // 팅겨서 일단 주석처리
+//        tvNickMypageCard.setText(vo.getUser_nick());
+//        tvUserId.setText(vo.getUser_id());
+//        tvRatingMypageCard.setText(vo.getUser_type());
+//        tvPointMypageCard.setText(vo.getUser_point());
 
 
         // 닉네임 란에 수정한 닉네임 출력
-        Bundle bundle = new Bundle();
-        String nickUpdate = "nickUpdate";
-
-        if(getArguments() != null){
-
-            //nickUpdate = bundle.getString("nickUpdate", "0");
-            nickUpdate = getArguments().getString("nickUpdate");
-            // 왜 출력이 안되니
-            Toast.makeText(getActivity(), "FragNickUpdate : "+ nickUpdate, Toast.LENGTH_SHORT).show();
-            //tvNickMypageCard.setText(nickUpdate);
+//        Bundle bundle = new Bundle();
+//        String nickUpdate = "nickUpdate";
+//
+//        if(getArguments() != null){
+//            //nickUpdate = bundle.getString("nickUpdate", "0");
+//            nickUpdate = getArguments().getString("nickUpdate");
+//            // 왜 출력이 안되니
+//            Toast.makeText(getActivity(), "FragNickUpdate : "+ nickUpdate, Toast.LENGTH_SHORT).show();
+//            //tvNickMypageCard.setText(nickUpdate);
+//        }
+        Bundle extra = this.getArguments();
+        if(extra != null){
+            extra = getArguments();
+            String nickUpdate = extra.getString("nickUpdate");
+            Toast.makeText(getActivity(),"FragNickUpdate : "+nickUpdate, Toast.LENGTH_SHORT).show();
         }
 
         // 프로필 수정 페이지 이동
@@ -79,13 +93,30 @@ public class MypageFragment extends Fragment {
                 // 닉네임 저장
                 String nick = tvNickMypageCard.getText().toString();
 
+                // 이미지 비트맵으로 저장
+                // getDrawable() 에서 에러남
+//                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+//
+//                BitmapDrawable profileImg = (BitmapDrawable) imgMypageProfile.getDrawable();
+//                Bitmap bitmap = profileImg.getBitmap();
+//                float scale = (float) (1024/(float)bitmap.getWidth());
+//                int img_w = (int) (bitmap.getWidth() * scale);
+//                int img_h = (int) (bitmap.getHeight() * scale);
+//                Bitmap resize = Bitmap.createScaledBitmap(bitmap, img_w, img_h, true);
+//                resize.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+//                byte[] byteArray = stream.toByteArray();
+
                 // 닉네임 값을 수정페이지로 전달
                 Intent intent = new Intent(getActivity(), ProfileUpdateActivity.class);
                 intent.putExtra("nick", nick);
+                //intent.putExtra("byteArray", byteArray);
 
+                // 화면전환
                 startActivity(intent);
             }
         });
+
+
 
         // 결제관리 페이지 이동
         btnPayment.setOnClickListener(new View.OnClickListener() {
