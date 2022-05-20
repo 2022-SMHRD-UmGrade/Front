@@ -226,8 +226,8 @@
     <string name="tvFareService">이용 요금 안내</string>
     <string name="tvFare">기본요금 = 기본 800원 + 하루(24시간)당 요금 * 800원</string>
     <string name="tvFareOne">* 이용 요금은 우산 반납 시 자동 결제됩니다.</string>
-    <string name="tvFareTwo">* 우산 대여 후 30분 이내에 반납할 경우 대여 비용이 발생하지 않습니다.</string>
-    <string name="tvFareThree">* 정해진 기간 동안 반납하지 않을 시 미납금 8,000원이 자동으로 결제됩니다.</string>
+    <string name="tvFareTwo">* 우산 대여 후 60분 이내에 반납할 경우 대여 비용이 발생하지 않습니다.</string>
+    <string name="tvFareThree">* 미반납일이 7일을 초과할 경우 반납하지 않은 우산은 분실 처리되며, 대여 비용 5,600원에 미납금 8,000원이 자동으로 결제됩니다.</string>
 
     <!-- activity_service.xml -->
     <string name="tvServiceTitle">UM-CYCLE 서비스 안내</string>
