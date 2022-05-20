@@ -271,7 +271,7 @@
     <string name="tvAddressTitle">주소</string>
     <string name="tvAddress">광주광역시 동구 예술길 31-15</string>
     <string name="edtAddress">수정할 주소를 입력하세요</string>
-    <string name="btnChange">변경하기</string>
+    <string name="btnChange">수정</string>
 
     <!-- activity_payment.xml -->
     <string name="tvPaymentTitle">결제관리</string>

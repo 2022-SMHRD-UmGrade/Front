@@ -32,7 +32,7 @@
     <string name="boardTime">2022.05.12. 17:21</string>
     <string name="boardTitle">글 제목</string>
     <string name="btnAccountSetting">정보수정</string>
-    <string name="btnChange">변경하기</string>
+    <string name="btnChange">수정</string>
     <string name="btnChangePw">비밀번호 변경하기</string>
     <string name="btnCmWrite">글쓰기</string>
     <string name="btnComment">등록</string>

@@ -41,7 +41,7 @@ public class AccountSettingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 누르면 버튼 텍스트 변경
                 String state = btnTelChange.getText().toString();
-                if(state.equals("변경하기")){
+                if(state.equals("수정")){
                     btnTelChange.setText("완료");
                     tvTel.setVisibility(View.GONE);
                     edtTel.setVisibility(View.VISIBLE);
@@ -51,7 +51,7 @@ public class AccountSettingActivity extends AppCompatActivity {
                     // 저장된 전화번호를 edtTel에 출력
                     edtTel.setText(tvTel.getText().toString());
                 } else if (state.equals("완료")){
-                    btnTelChange.setText("변경하기");
+                    btnTelChange.setText("수정");
                     tvTel.setVisibility(View.VISIBLE);
                     edtTel.setVisibility(View.GONE);
                     // 수정된 값을 tvTel에 출력
@@ -66,14 +66,14 @@ public class AccountSettingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 누르면 버튼 텍스트 변경
                 String state = btnEmailChange.getText().toString();
-                if(state.equals("변경하기")){
+                if(state.equals("수정")){
                     btnEmailChange.setText("완료");
                     tvEmail.setVisibility(View.GONE);
                     edtEmail.setVisibility(View.VISIBLE);
                     // tvEmail 값 가져오기
                     edtEmail.setText(tvEmail.getText().toString());
                 } else if (state.equals("완료")){
-                    btnEmailChange.setText("변경하기");
+                    btnEmailChange.setText("수정");
                     tvEmail.setVisibility(View.VISIBLE);
                     edtEmail.setVisibility(View.GONE);
                     // edtEmail 값 가져오기
@@ -88,14 +88,14 @@ public class AccountSettingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 누르면 버튼 텍스트 변경
                 String state = btnAddrChange.getText().toString();
-                if(state.equals("변경하기")){
+                if(state.equals("수정")){
                     btnAddrChange.setText("완료");
                     tvAddress.setVisibility(View.GONE);
                     edtAddress.setVisibility(View.VISIBLE);
                     // tvAddress 값 가져오기
                     edtAddress.setText(tvAddress.getText().toString());
                 } else if (state.equals("완료")){
-                    btnAddrChange.setText("변경하기");
+                    btnAddrChange.setText("수정");
                     edtAddress.setVisibility(View.GONE);
                     tvAddress.setVisibility(View.VISIBLE);
                     // edtAddress 값 가져오기
