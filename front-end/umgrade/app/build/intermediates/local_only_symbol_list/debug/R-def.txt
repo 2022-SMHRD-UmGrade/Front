@@ -119,6 +119,7 @@ id btnUsageHistory
 id btnUsageHistoryPre
 id btnWriteCancel
 id btnWriteSend
+id button3
 id ckAllCheck
 id ckMarketing
 id ckPersonal
@@ -216,6 +217,7 @@ id guideline17
 id guideline18
 id guideline19
 id guideline2
+id guideline20
 id guideline21
 id guideline22
 id guideline3

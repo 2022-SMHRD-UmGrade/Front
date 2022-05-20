@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.User;
 
 public class PayViewActivity extends AppCompatActivity {
     WebView webView;
+    Button btnPayview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class PayViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pay_view);
 
         webView = findViewById(R.id.webView);
+        //btnPayview = findViewById(R.id.btnPayview);
 
         User vo = UserInfo.info;
         Intent intent = getIntent();

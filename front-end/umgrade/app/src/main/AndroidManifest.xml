@@ -36,7 +36,7 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".PayViewActivity"
+            android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".CardRegisterActivity"
@@ -126,7 +126,7 @@
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".userActivity.LoginActivity"
+            android:name=".PayViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
