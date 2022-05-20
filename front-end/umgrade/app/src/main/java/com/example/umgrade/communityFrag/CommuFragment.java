@@ -81,7 +81,6 @@ public class CommuFragment extends Fragment {
                 intent.putExtra("article_date", date);
                 intent.putExtra("article_file", file);
                 startActivity(intent);
-
             }
         });
         recyclerView.setAdapter(adapter);

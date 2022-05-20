@@ -406,6 +406,7 @@ id tvWon
 id tvWrite
 id tvWriter
 id usageHistoryListItem
+id webView
 id zxing_barcode_surface
 id zxing_viewfinder_view
 layout activity_account_setting
@@ -422,6 +423,7 @@ layout activity_modify
 layout activity_notice
 layout activity_notice_post
 layout activity_password_change
+layout activity_pay_view
 layout activity_payment
 layout activity_post
 layout activity_privacy_popup
@@ -694,4 +696,3 @@ style myButton
 style parent
 style viewParent
 xml network_security_config
-xml network_security_config2

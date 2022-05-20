@@ -33,7 +33,7 @@ public class MypageFragment extends Fragment {
     Button btnProfileUpdate, btnPayment, btnUsageHistory, btnAccountSetting, btnLogout;
     TextView tvNickMypageCard, tvUserId, tvRatingMypageCard, tvPointMypageCard, tvCouponMypageCard;
     ImageView imgMypageProfile;
-    User vo = UserInfo.info;
+    User vo;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -53,14 +53,14 @@ public class MypageFragment extends Fragment {
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
-<<<<<<< HEAD
+        vo = UserInfo.info;
+
         tvNickMypageCard.setText(vo.getUser_nick());
         tvUserId.setText(vo.getUser_id());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
-=======
->>>>>>> 614730e55668a4c8aef01a75a6c5647a7219fdc4
 
+        String user_id = vo.getUser_id();
         // 닉네임 란에 수정한 닉네임 출력
         Bundle bundle = new Bundle();
         String nickUpdate = "nickUpdate";
@@ -94,6 +94,7 @@ public class MypageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PaymentActivity.class);
+                intent.putExtra("user_id", user_id);
                 startActivity(intent);
             }
         });

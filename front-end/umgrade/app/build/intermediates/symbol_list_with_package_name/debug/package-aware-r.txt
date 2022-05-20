@@ -3463,6 +3463,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id webView
 id west
 id wide
 id withText
@@ -3586,6 +3587,7 @@ layout activity_modify
 layout activity_notice
 layout activity_notice_post
 layout activity_password_change
+layout activity_pay_view
 layout activity_payment
 layout activity_post
 layout activity_privacy_popup
@@ -5305,7 +5307,6 @@ styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_widt
 styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_laser_visibility zxing_viewfinder_mask
 styleable zxing_view zxing_scanner_layout
 xml network_security_config
-xml network_security_config2
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start
