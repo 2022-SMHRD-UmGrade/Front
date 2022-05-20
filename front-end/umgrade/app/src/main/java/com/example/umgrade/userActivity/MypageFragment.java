@@ -53,12 +53,19 @@ public class MypageFragment extends Fragment {
         tvPointMypageCard = view.findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = view.findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
+<<<<<<< HEAD
         vo = UserInfo.info;
 
+=======
+>>>>>>> 4130fd22f81b77374e54f99ee8d6c92d8b369552
         tvNickMypageCard.setText(vo.getUser_nick());
         tvUserId.setText(vo.getUser_id());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4130fd22f81b77374e54f99ee8d6c92d8b369552
 
         String user_id = vo.getUser_id();
         // 닉네임 란에 수정한 닉네임 출력
