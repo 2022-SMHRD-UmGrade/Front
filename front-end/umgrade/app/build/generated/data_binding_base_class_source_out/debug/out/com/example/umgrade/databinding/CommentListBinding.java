@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.umgrade.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,6 +30,9 @@ public final class CommentListBinding implements ViewBinding {
 
   @NonNull
   public final Guideline guideline6;
+
+  @NonNull
+  public final CircleImageView imgCommentProfile;
 
   @NonNull
   public final TextView tvCommentContent;
@@ -62,15 +66,17 @@ public final class CommentListBinding implements ViewBinding {
 
   private CommentListBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout commentListItem, @NonNull EditText edtCommentContent,
-      @NonNull Guideline guideline6, @NonNull TextView tvCommentContent,
-      @NonNull TextView tvCommentDel, @NonNull TextView tvCommentModify,
-      @NonNull TextView tvCommentNick, @NonNull TextView tvCommentReport,
-      @NonNull TextView tvCommentSuccess, @NonNull TextView tvCommentTime,
-      @NonNull TextView tvPostSeq, @NonNull TextView tvSeq, @NonNull TextView tvWriter) {
+      @NonNull Guideline guideline6, @NonNull CircleImageView imgCommentProfile,
+      @NonNull TextView tvCommentContent, @NonNull TextView tvCommentDel,
+      @NonNull TextView tvCommentModify, @NonNull TextView tvCommentNick,
+      @NonNull TextView tvCommentReport, @NonNull TextView tvCommentSuccess,
+      @NonNull TextView tvCommentTime, @NonNull TextView tvPostSeq, @NonNull TextView tvSeq,
+      @NonNull TextView tvWriter) {
     this.rootView = rootView;
     this.commentListItem = commentListItem;
     this.edtCommentContent = edtCommentContent;
     this.guideline6 = guideline6;
+    this.imgCommentProfile = imgCommentProfile;
     this.tvCommentContent = tvCommentContent;
     this.tvCommentDel = tvCommentDel;
     this.tvCommentModify = tvCommentModify;
@@ -121,6 +127,12 @@ public final class CommentListBinding implements ViewBinding {
       id = R.id.guideline6;
       Guideline guideline6 = ViewBindings.findChildViewById(rootView, id);
       if (guideline6 == null) {
+        break missingId;
+      }
+
+      id = R.id.imgCommentProfile;
+      CircleImageView imgCommentProfile = ViewBindings.findChildViewById(rootView, id);
+      if (imgCommentProfile == null) {
         break missingId;
       }
 
@@ -185,8 +197,9 @@ public final class CommentListBinding implements ViewBinding {
       }
 
       return new CommentListBinding((ConstraintLayout) rootView, commentListItem, edtCommentContent,
-          guideline6, tvCommentContent, tvCommentDel, tvCommentModify, tvCommentNick,
-          tvCommentReport, tvCommentSuccess, tvCommentTime, tvPostSeq, tvSeq, tvWriter);
+          guideline6, imgCommentProfile, tvCommentContent, tvCommentDel, tvCommentModify,
+          tvCommentNick, tvCommentReport, tvCommentSuccess, tvCommentTime, tvPostSeq, tvSeq,
+          tvWriter);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -59,7 +59,7 @@ public class CommuActivity extends AppCompatActivity {
         navMypage = findViewById(R.id.navMypage);
         navMore = findViewById(R.id.navMore);
 
-<<<<<<< HEAD
+
         queue = Volley.newRequestQueue(CommuActivity.this);
 
         Intent intent = getIntent();
@@ -111,107 +111,87 @@ public class CommuActivity extends AppCompatActivity {
             }
         });
 
-        // 프래그먼트 전환
-        bottomNavCommu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
 
-                if (itemId == R.id.fragMain) {
-                    Intent intent = new Intent(CommuActivity.this, MainActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragCommu) {
-                    Intent intent = new Intent(CommuActivity.this, CommuActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragMyPage) {
-//                    Intent intent = new Intent(CommuActivity.this, MainActivity.class);
-//                    startActivity(intent);
-                } else if (itemId == R.id.fragMore) {
-                    Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
-                    startActivity(intent);
-                }
-
-                return false;
-=======
-        navMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(CommuActivity.this, MainActivity.class);
-                startActivity(intent);
-                overridePendingTransition(0, 0);
->>>>>>> c2f3749a94efc31d0b38d05993831e7281fcfefc
-            }
-        });
-        navMypage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(CommuActivity.this, MypageActivity.class);
-                startActivity(intent);
-                overridePendingTransition(0, 0);
-            }
-        });
-        navMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
-                startActivity(intent);overridePendingTransition(0, 0);
-            }
-        });
-
-
-    }
-
-    public void initBoard() {
-        int method = Request.Method.GET;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
-
-        request = new StringRequest(
-                method,
-                server_url,
-
-                new Response.Listener<String>() {
+                navMain.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onResponse(String response) {
+                    public void onClick(View view) {
+                        Intent intent = new Intent(CommuActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        overridePendingTransition(0, 0);
 
-                        Toast.makeText(CommuActivity.this,
-                                "게시판 불러오기 성공",
-                                Toast.LENGTH_SHORT).show();
-                        Log.d("asdf", response);
-                        try {
-                            JSONArray boardArray = new JSONArray(response);
+                    }
+                });
+                navMypage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(CommuActivity.this, MypageActivity.class);
+                        startActivity(intent);
+                        overridePendingTransition(0, 0);
+                    }
+                });
+                navMore.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
+                        startActivity(intent);
+                        overridePendingTransition(0, 0);
+                    }
+                });
 
-                            for (int i = 0; i < boardArray.length(); i++) {
-                                JSONObject Object = boardArray.getJSONObject(i);
 
-                                int seq = Integer.parseInt(Object.getString("article_seq"));
-                                String title = Object.getString("article_title");
-                                String content = Object.getString("article_content");
-                                String date = Object.getString("article_date");
-                                String file = Object.getString("article_file");
-                                String id = Object.getString("article_id");
-                                int cnt = Integer.parseInt(Object.getString("article_cnt"));
-                                Board item = new Board(seq, title, content, date, file, id, cnt);
-                                items.add(item);
+            }
+
+            public void initBoard() {
+                int method = Request.Method.GET;
+                String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
+
+                request = new StringRequest(
+                        method,
+                        server_url,
+
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+
+                                Toast.makeText(CommuActivity.this,
+                                        "게시판 불러오기 성공",
+                                        Toast.LENGTH_SHORT).show();
+                                Log.d("asdf", response);
+                                try {
+                                    JSONArray boardArray = new JSONArray(response);
+
+                                    for (int i = 0; i < boardArray.length(); i++) {
+                                        JSONObject Object = boardArray.getJSONObject(i);
+
+                                        int seq = Integer.parseInt(Object.getString("article_seq"));
+                                        String title = Object.getString("article_title");
+                                        String content = Object.getString("article_content");
+                                        String date = Object.getString("article_date");
+                                        String file = Object.getString("article_file");
+                                        String id = Object.getString("article_id");
+                                        int cnt = Integer.parseInt(Object.getString("article_cnt"));
+                                        Board item = new Board(seq, title, content, date, file, id, cnt);
+                                        items.add(item);
+
+                                    }
+                                    adapter.setItems(items);
+                                    adapter.notifyDataSetChanged();
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
 
                             }
-                            adapter.setItems(items);
-                            adapter.notifyDataSetChanged();
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                Toast.makeText(CommuActivity.this,
+                                        "게시판 불러오기 실패!" + error.toString(),
+                                        Toast.LENGTH_SHORT).show();
+                            }
                         }
+                ); //end
 
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(CommuActivity.this,
-                                "게시판 불러오기 실패!" + error.toString(),
-                                Toast.LENGTH_SHORT).show();
-                    }
-                }
-        ); //end
-
-        queue.add(request);
-    }
-}
+                queue.add(request);
+            }
+        }
