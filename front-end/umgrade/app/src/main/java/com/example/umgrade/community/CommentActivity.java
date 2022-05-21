@@ -49,7 +49,7 @@ import java.util.Map;
 public class CommentActivity extends AppCompatActivity {
 
     Button btnComment;
-    EditText edtComment, edtCommentContent ;
+    EditText edtComment, edtCommentContent;
 
     TextView tvCommentNick, tvSeq, tvCommentContent, tvCommentTime, tvCommentDel, tvCommentModify, tvCommentReport, tvCommentSuccess, tvPostSeq, tvWriter;
 
@@ -97,7 +97,7 @@ public class CommentActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int count, int after) {
-                if (edtComment.length()==0){
+                if (edtComment.length() == 0) {
                     btnComment.setClickable(false);
                     btnComment.setBackgroundColor(Color.parseColor("#B9B7BD"));
                     btnComment.setTextColor(Color.parseColor("#888888"));
@@ -107,6 +107,7 @@ public class CommentActivity extends AppCompatActivity {
                     btnComment.setTextColor(Color.WHITE);
                 }
             }
+
             @Override
             public void afterTextChanged(Editable editable) {
 
@@ -117,21 +118,21 @@ public class CommentActivity extends AppCompatActivity {
         edtComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean focus) {
-                if (focus){
+                if (focus) {
                     // 포커스 시
                     btnComment.setClickable(false);
                     btnComment.setBackgroundColor(Color.parseColor("#B9B7BD"));
                     btnComment.setTextColor(Color.parseColor("#888888"));
-                }else{
+                } else {
                     btnComment.setClickable(true);
                     btnComment.setBackgroundColor(Color.parseColor("#2196F3"));
                     btnComment.setTextColor(Color.WHITE);
                 }
             }
         });
-        if(tvCommentNick.equals(vo.getUser_id())) {
-
-        }
+//        if(tvCommentNick.equals(vo.getUser_id())) {
+//
+//        }
         // 수정 누르면 활성화
 //        tvCommentModify.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -218,9 +219,6 @@ public class CommentActivity extends AppCompatActivity {
 //        });
 
 
-
-
-
 //        tvCommentNick = findViewById(R.id.tvCommentNick);
 //        tvWriter = findViewById(R.id.tvWriter);
 //        tvCommentContent = findViewById(R.id.tvCommentContent);
@@ -263,6 +261,7 @@ public class CommentActivity extends AppCompatActivity {
 //        Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgCommentProfile);
 
     }
+
     //댓글 리스트 메서드
     public void initComment(int article_seq, String content) {
         int method = Request.Method.GET;
@@ -308,7 +307,7 @@ public class CommentActivity extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
-        ){
+        ) {
             @NonNull
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
@@ -321,6 +320,7 @@ public class CommentActivity extends AppCompatActivity {
         queue.add(request);
 
     }
+
     //댓글 작성 메서드
     public void writecomment(int seq, String content) {
         btnComment.setOnClickListener(new View.OnClickListener() {
@@ -336,7 +336,7 @@ public class CommentActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
                                 Toast.makeText(CommentActivity.this,
-                                        "댓글 추가 성공!"+response,
+                                        "댓글 추가 성공!" + response,
                                         Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(CommentActivity.this, PostActivity.class);
                                 intent.putExtra("article_seq", seq);
@@ -350,11 +350,11 @@ public class CommentActivity extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 Toast.makeText(CommentActivity.this,
-                                        "댓글 추가 실패!"+error.toString(),
+                                        "댓글 추가 실패!" + error.toString(),
                                         Toast.LENGTH_SHORT).show();
                             }
                         }
-                ){
+                ) {
                     @NonNull
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
@@ -393,14 +393,14 @@ public class CommentActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Toast.makeText(CommentActivity.this,
-                                "댓글 수정 실패!"+error.toString(),
+                                "댓글 수정 실패!" + error.toString(),
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
-        ){
+        ) {
             @NonNull
             @Override
-            protected Map<String, String> getParams() throws AuthFailureError{
+            protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<>();
                 param.put("cmt_seq", String.valueOf(cmt_seq));
                 param.put("cmt_content", content);
@@ -428,14 +428,14 @@ public class CommentActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Toast.makeText(CommentActivity.this,
-                                "댓글 삭제 실패!"+error.toString(),
+                                "댓글 삭제 실패!" + error.toString(),
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
-        ){
+        ) {
             @NonNull
             @Override
-            protected Map<String, String> getParams() throws AuthFailureError{
+            protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<>();
                 param.put("cmt_seq", String.valueOf(cmt_seq));
                 return param;

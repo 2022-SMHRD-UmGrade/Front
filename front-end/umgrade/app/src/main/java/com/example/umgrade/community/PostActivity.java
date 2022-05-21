@@ -144,8 +144,6 @@ public class PostActivity extends AppCompatActivity {
                         catch(JSONException e) {
                             e.printStackTrace();
                         }
-
-
                     }
                 },
                 new Response.ErrorListener() {
@@ -179,11 +177,11 @@ public class PostActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 vo = UserInfo.info;
-                Log.d("user_id", vo.getUser_id());
                 Intent intent = new Intent(PostActivity.this, CommentActivity.class);
                 intent.putExtra("article_seq", seq);
                 intent.putExtra("article_content", content);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -205,7 +203,9 @@ public class PostActivity extends AppCompatActivity {
                                 Toast.makeText(PostActivity.this,
                                         "게시글 삭제 성공!"+response,
                                         Toast.LENGTH_SHORT).show();
-                                replace(commuFragment);
+                                Intent intent = new Intent(PostActivity.this, CommuActivity.class);
+                                startActivity(intent);
+                                finish();
                             }
                         },
                         new Response.ErrorListener() {
@@ -214,7 +214,6 @@ public class PostActivity extends AppCompatActivity {
                                 Toast.makeText(PostActivity.this,
                                         "게시글 삭제 실패!"+error.toString(),
                                         Toast.LENGTH_SHORT).show();
-
                             }
                         }
                 ){
@@ -222,9 +221,7 @@ public class PostActivity extends AppCompatActivity {
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError{
                         Map<String, String> param = new HashMap<>();
-
                         param.put("article_seq", String.valueOf(seq));
-
                         return param;
                     }
                 };
@@ -232,12 +229,4 @@ public class PostActivity extends AppCompatActivity {
             }
         });
     }
-
-    public void replace(Fragment commuFragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, commuFragment);
-        fragmentTransaction.commit();
-    }
-
 }

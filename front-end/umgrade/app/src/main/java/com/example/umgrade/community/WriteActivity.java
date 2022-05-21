@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.umgrade.R;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.User;
+import com.google.firestore.v1.Write;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,6 +42,8 @@ public class WriteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
+
+        vo = UserInfo.info;
 
         edtWriteTitle = findViewById(R.id.edtWriteTitle);
         edtWriteContent = findViewById(R.id.edtWriteContent);
@@ -84,6 +88,9 @@ public class WriteActivity extends AppCompatActivity {
                                 Toast.makeText(WriteActivity.this,
                                         "등록 성공!" + response,
                                         Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(WriteActivity.this, CommuActivity.class);
+                                startActivity(intent);
+                                finish();
                                 Log.d("asdf", response);
 
 

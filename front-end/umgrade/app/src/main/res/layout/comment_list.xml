@@ -2,22 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commentListItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="6dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgCommentProfile"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="6dp"
-        android:layout_weight="1"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logoumbrella"
-        app:civ_circle_background_color="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/imgCommentProfile"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="6dp"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/logoumbrella"-->
+<!--        app:civ_circle_background_color="#FFFFFF"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/tvCommentNick"
@@ -29,7 +30,8 @@
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imgCommentProfile"
-        app:layout_constraintTop_toTopOf="@+id/imgCommentProfile" />
+        app:layout_constraintTop_toTopOf="@+id/imgCommentProfile"
+        tools:ignore="UnknownId" />
 
     <TextView
         android:id="@+id/tvCommentContent"
