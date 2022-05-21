@@ -300,4 +300,10 @@
     <!-- activity_pay_view.xml -->
     <string name="btnPayview">닫기</string>
 
+    <!-- bottomNav -->
+    <string name="navMain">홈</string>
+    <string name="navCommu">커뮤니티</string>
+    <string name="navMypage">마이페이지</string>
+    <string name="navMore">더보기</string>
+
 </resources>

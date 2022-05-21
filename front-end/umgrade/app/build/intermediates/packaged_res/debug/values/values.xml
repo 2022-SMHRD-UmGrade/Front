@@ -111,6 +111,10 @@
     <string name="fragMain">홈</string>
     <string name="fragMore">더보기</string>
     <string name="fragMyPage">마이페이지</string>
+    <string name="navCommu">커뮤니티</string>
+    <string name="navMain">홈</string>
+    <string name="navMore">더보기</string>
+    <string name="navMypage">마이페이지</string>
     <string name="noticePost">공지사항</string>
     <string name="noticePostCnt">조회 13</string>
     <string name="noticePostContent">공지사항 본문</string>
