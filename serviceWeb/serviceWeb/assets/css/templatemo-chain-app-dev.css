@@ -197,6 +197,12 @@ p {
   color: #afafaf;
 }
 
+.logo img{
+  width: 100%;
+  overflow: hidden;
+  height: 60px;
+}
+
 img {
   width: 100%;
   overflow: hidden;
