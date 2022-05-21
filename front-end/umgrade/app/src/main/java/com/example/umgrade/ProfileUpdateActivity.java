@@ -79,7 +79,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 값 가져오기
                 String nickUpdate = edtNickChange.getText().toString();
-//                Bitmap imgUpdate = imgProfileChange.;
+
                 // imgProfileChange 그림을 bitmap으로 가져오기
                 BitmapDrawable drawable = (BitmapDrawable) imgProfileChange.getDrawable();
                 Bitmap bitmap = drawable.getBitmap();

@@ -77,7 +77,8 @@ public class MypageFragment extends Fragment {
         String image = sharedPreferences.getString("imageString", "no data");
         Bitmap bitmap = StringToBitmap(image);
         tvNickMypageCard.setText(nickUpdate);
-//        imgMypageProfile.setImageBitmap(bitmap);
+        // null값 나옴
+        //imgMypageProfile.setImageBitmap(bitmap);
         Log.d("확인", nickUpdate+image);
         // SharedPreference end
 
