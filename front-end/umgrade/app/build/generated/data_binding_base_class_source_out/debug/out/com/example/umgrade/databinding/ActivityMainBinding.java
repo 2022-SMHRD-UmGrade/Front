@@ -40,6 +40,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
+  public final View divider21;
+
+  @NonNull
   public final Guideline guideline2;
 
   @NonNull
@@ -62,6 +65,18 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout myPageLayout;
+
+  @NonNull
+  public final Button navCommu;
+
+  @NonNull
+  public final Button navMain;
+
+  @NonNull
+  public final Button navMore;
+
+  @NonNull
+  public final Button navMypage;
 
   @NonNull
   public final TextView tvCarbonMypageCard;
@@ -98,11 +113,13 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNavMain, @NonNull Button btnFare,
-      @NonNull FrameLayout container, @NonNull View divider, @NonNull Guideline guideline2,
-      @NonNull Guideline guideline3, @NonNull CircleImageView imgMypageProfile,
-      @NonNull ImageView imgUmb, @NonNull SliderCardBinding include2,
-      @NonNull LinearLayout linearLayout4, @NonNull ScrollView mainScroll,
-      @NonNull ConstraintLayout myPageLayout, @NonNull TextView tvCarbonMypageCard,
+      @NonNull FrameLayout container, @NonNull View divider, @NonNull View divider21,
+      @NonNull Guideline guideline2, @NonNull Guideline guideline3,
+      @NonNull CircleImageView imgMypageProfile, @NonNull ImageView imgUmb,
+      @NonNull SliderCardBinding include2, @NonNull LinearLayout linearLayout4,
+      @NonNull ScrollView mainScroll, @NonNull ConstraintLayout myPageLayout,
+      @NonNull Button navCommu, @NonNull Button navMain, @NonNull Button navMore,
+      @NonNull Button navMypage, @NonNull TextView tvCarbonMypageCard,
       @NonNull TextView tvComment1MypageCard, @NonNull TextView tvComment2MypageCard,
       @NonNull TextView tvCouponMypageCard, @NonNull TextView tvCouponTextMypageCard,
       @NonNull TextView tvNickMypageCard, @NonNull TextView tvPointMypageCard,
@@ -113,6 +130,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnFare = btnFare;
     this.container = container;
     this.divider = divider;
+    this.divider21 = divider21;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
     this.imgMypageProfile = imgMypageProfile;
@@ -121,6 +139,10 @@ public final class ActivityMainBinding implements ViewBinding {
     this.linearLayout4 = linearLayout4;
     this.mainScroll = mainScroll;
     this.myPageLayout = myPageLayout;
+    this.navCommu = navCommu;
+    this.navMain = navMain;
+    this.navMore = navMore;
+    this.navMypage = navMypage;
     this.tvCarbonMypageCard = tvCarbonMypageCard;
     this.tvComment1MypageCard = tvComment1MypageCard;
     this.tvComment2MypageCard = tvComment2MypageCard;
@@ -185,6 +207,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.divider21;
+      View divider21 = ViewBindings.findChildViewById(rootView, id);
+      if (divider21 == null) {
+        break missingId;
+      }
+
       id = R.id.guideline2;
       Guideline guideline2 = ViewBindings.findChildViewById(rootView, id);
       if (guideline2 == null) {
@@ -231,6 +259,30 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.myPageLayout;
       ConstraintLayout myPageLayout = ViewBindings.findChildViewById(rootView, id);
       if (myPageLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.navCommu;
+      Button navCommu = ViewBindings.findChildViewById(rootView, id);
+      if (navCommu == null) {
+        break missingId;
+      }
+
+      id = R.id.navMain;
+      Button navMain = ViewBindings.findChildViewById(rootView, id);
+      if (navMain == null) {
+        break missingId;
+      }
+
+      id = R.id.navMore;
+      Button navMore = ViewBindings.findChildViewById(rootView, id);
+      if (navMore == null) {
+        break missingId;
+      }
+
+      id = R.id.navMypage;
+      Button navMypage = ViewBindings.findChildViewById(rootView, id);
+      if (navMypage == null) {
         break missingId;
       }
 
@@ -301,11 +353,11 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavMain, btnFare, container,
-          divider, guideline2, guideline3, imgMypageProfile, imgUmb, binding_include2,
-          linearLayout4, mainScroll, myPageLayout, tvCarbonMypageCard, tvComment1MypageCard,
-          tvComment2MypageCard, tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard,
-          tvPointMypageCard, tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard,
-          tvWelcomeMypageCard);
+          divider, divider21, guideline2, guideline3, imgMypageProfile, imgUmb, binding_include2,
+          linearLayout4, mainScroll, myPageLayout, navCommu, navMain, navMore, navMypage,
+          tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard, tvCouponMypageCard,
+          tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard, tvPointTextMypageCard,
+          tvRatingMypageCard, tvRatingTextMypageCard, tvWelcomeMypageCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

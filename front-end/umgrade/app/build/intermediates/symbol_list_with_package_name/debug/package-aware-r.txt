@@ -2545,6 +2545,10 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable commu_blue
+drawable commu_blue_xml
+drawable commu_gray
+drawable commu_gray_xml
 drawable community
 drawable corner_shape
 drawable creditcard16
@@ -2559,6 +2563,10 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable guide
 drawable home
+drawable home_blue
+drawable home_blue_xml
+drawable home_gray
+drawable home_gray_xml
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2597,6 +2605,10 @@ drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable menu
 drawable more
+drawable more_blue
+drawable more_blue_xml
+drawable more_gray
+drawable more_gray_xml
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2608,6 +2620,10 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_overlay
 drawable mtrl_tabs_default_indicator
 drawable mypage
+drawable mypage_blue
+drawable mypage_blue_xml
+drawable mypage_gray
+drawable mypage_gray_xml
 drawable navigation_empty_icon
 drawable notice
 drawable noticeresize
@@ -2905,6 +2921,9 @@ id divider18
 id divider19
 id divider2
 id divider20
+id divider21
+id divider22
+id divider23
 id divider3
 id divider4
 id divider5
@@ -3148,6 +3167,10 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id myPageLayout
+id navCommu
+id navMain
+id navMore
+id navMypage
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3994,6 +4017,10 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string navCommu
+string navMain
+string navMore
+string navMypage
 string noticePost
 string noticePostCnt
 string noticePostContent

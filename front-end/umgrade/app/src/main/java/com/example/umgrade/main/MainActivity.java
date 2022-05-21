@@ -28,6 +28,7 @@ import com.example.umgrade.mainFrag.MainFragment;
 import com.example.umgrade.notice.NoticeActivity;
 import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
+import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.userActivity.MypageFragment;
 import com.example.umgrade.vo.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -39,9 +40,9 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavMain;
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
+    Button navMain, navCommu, navMypage, navMore;
     View myPageLayout;
 
     View btnFareLayout;
@@ -51,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        bottomNavMain = findViewById(R.id.bottomNavMain);
 
         // 마이페이지 카드 클릭 시 frag_mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
@@ -133,28 +132,36 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // 프래그먼트 전환
-        bottomNavMain.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        // 페이지 전환
+        navMain = findViewById(R.id.navMain);
+        navCommu = findViewById(R.id.navCommu);
+        navMypage = findViewById(R.id.navMypage);
+        navMore = findViewById(R.id.navMore);
+
+        navCommu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-
-                if(itemId == R.id.fragMain){
-                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragCommu){
-                    Intent intent = new Intent(MainActivity.this, CommuActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragMyPage){
-//                    Intent intent = new Intent(MoreActivity.this, MainActivity.class);
-//                    startActivity(intent);
-                } else if (itemId == R.id.fragMore){
-                    Intent intent = new Intent(MainActivity.this, MoreActivity.class);
-                    startActivity(intent);
-                }
-
-                return true;
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CommuActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
             }
-        }); // bottomNav end
+        });
+        navMypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MypageActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+        navMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MoreActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+
     }
 }

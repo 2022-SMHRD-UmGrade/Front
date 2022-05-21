@@ -24,6 +24,7 @@ import com.example.umgrade.R;
 import com.example.umgrade.adapter.BoardAdapter;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.main.MainActivity;
+import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.vo.Board;
 import com.example.umgrade.vo.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -37,10 +38,8 @@ import java.util.ArrayList;
 
 public class CommuActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavCommu;
-
     Button btnCmWrite; // 글작성 버튼
-
+    Button navMain, navCommu, navMypage, navMore;
     RecyclerView recyclerView;
     BoardAdapter adapter = new BoardAdapter();
     ArrayList<Board> items = new ArrayList<>();
@@ -54,8 +53,13 @@ public class CommuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_commu);
 
-        bottomNavCommu = findViewById(R.id.bottomNavCommu);
+        // 페이지 전환
+        navMain = findViewById(R.id.navMain);
+        navCommu = findViewById(R.id.navCommu);
+        navMypage = findViewById(R.id.navMypage);
+        navMore = findViewById(R.id.navMore);
 
+<<<<<<< HEAD
         queue = Volley.newRequestQueue(CommuActivity.this);
 
         Intent intent = getIntent();
@@ -128,8 +132,32 @@ public class CommuActivity extends AppCompatActivity {
                 }
 
                 return false;
+=======
+        navMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommuActivity.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+>>>>>>> c2f3749a94efc31d0b38d05993831e7281fcfefc
             }
-        }); // bottomNav end
+        });
+        navMypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommuActivity.this, MypageActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+        navMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
+                startActivity(intent);overridePendingTransition(0, 0);
+            }
+        });
+
 
     }
 
