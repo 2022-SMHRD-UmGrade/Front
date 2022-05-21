@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
         myPageLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MypageActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
                 // Log.v("tetetetetet","teteltetet");
                 //((MainActivity)getActivity()).getSupportFragmentManager().beginTransaction().replace(R.id.container, MainActivity.frag_mypage).commit();
                 //MypageFragment frag_mypage = new MypageFragment();
