@@ -52,6 +52,7 @@ public class CommuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CommuActivity.this, MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
         navMypage.setOnClickListener(new View.OnClickListener() {
@@ -59,13 +60,14 @@ public class CommuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CommuActivity.this, MypageActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
         navMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
-                startActivity(intent);
+                startActivity(intent);overridePendingTransition(0, 0);
             }
         });
 

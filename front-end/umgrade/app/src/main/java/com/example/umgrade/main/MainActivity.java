@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CommuActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
         navMypage.setOnClickListener(new View.OnClickListener() {
@@ -150,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MypageActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
         navMore.setOnClickListener(new View.OnClickListener() {
@@ -157,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MoreActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
 
