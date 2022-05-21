@@ -50,6 +50,15 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.umgrade.userActivity.MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.MoreActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.main.MainActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="false" />
         <activity
@@ -139,7 +148,7 @@
             android:name="com.example.umgrade.AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.main.MainActivity"
+            android:name="com.example.umgrade.community.CommuActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

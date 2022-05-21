@@ -82,7 +82,7 @@ public class MoreFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // 커뮤니티 프래그먼트로 이동
-                ((MainActivity)getActivity()).changeCommu(newInstance());
+//                ((MainActivity)getActivity()).changeCommu(newInstance());
             }
         });
 

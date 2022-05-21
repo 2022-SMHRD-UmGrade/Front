@@ -70,6 +70,10 @@ id boardSeq
 id boardTime
 id boardTitle
 id bottomNav
+id bottomNavCommu
+id bottomNavMain
+id bottomNavMore
+id bottomNavMypage
 id bottomNavigationView
 id btnAccountSetting
 id btnAccountSettingPre
@@ -224,6 +228,9 @@ id guideline2
 id guideline20
 id guideline21
 id guideline22
+id guideline23
+id guideline24
+id guideline25
 id guideline3
 id guideline4
 id guideline5
@@ -420,6 +427,7 @@ id zxing_viewfinder_view
 layout activity_account_setting
 layout activity_card_register
 layout activity_comment
+layout activity_commu
 layout activity_event_post
 layout activity_fare
 layout activity_intro
@@ -428,6 +436,8 @@ layout activity_login
 layout activity_main
 layout activity_map
 layout activity_modify
+layout activity_more
+layout activity_mypage
 layout activity_notice
 layout activity_notice_post
 layout activity_password_change

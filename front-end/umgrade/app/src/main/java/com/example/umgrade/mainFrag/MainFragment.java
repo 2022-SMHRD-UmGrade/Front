@@ -50,7 +50,7 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                ((MainActivity)getActivity()).changeMypage(newInstance());
+//                ((MainActivity)getActivity()).changeMypage(newInstance());
                 // Log.v("tetetetetet","teteltetet");
                 //((MainActivity)getActivity()).getSupportFragmentManager().beginTransaction().replace(R.id.container, MainActivity.frag_mypage).commit();
                 //MypageFragment frag_mypage = new MypageFragment();

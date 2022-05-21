@@ -36,6 +36,15 @@
         android:theme="@style/Theme.Umgrade"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".userActivity.MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity
@@ -126,7 +135,7 @@
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".community.CommuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
