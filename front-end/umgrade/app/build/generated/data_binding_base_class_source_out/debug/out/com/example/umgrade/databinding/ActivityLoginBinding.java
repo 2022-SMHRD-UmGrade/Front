@@ -4,8 +4,8 @@ package com.example.umgrade.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ScrollView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,16 +21,16 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ScrollView scrollView2;
+  public final ImageView imgJoinTitle;
 
   @NonNull
-  public final TextView tvJoinTitle;
+  public final ScrollView scrollView2;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ScrollView scrollView2,
-      @NonNull TextView tvJoinTitle) {
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imgJoinTitle,
+      @NonNull ScrollView scrollView2) {
     this.rootView = rootView;
+    this.imgJoinTitle = imgJoinTitle;
     this.scrollView2 = scrollView2;
-    this.tvJoinTitle = tvJoinTitle;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.imgJoinTitle;
+      ImageView imgJoinTitle = ViewBindings.findChildViewById(rootView, id);
+      if (imgJoinTitle == null) {
+        break missingId;
+      }
+
       id = R.id.scrollView2;
       ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
       if (scrollView2 == null) {
         break missingId;
       }
 
-      id = R.id.tvJoinTitle;
-      TextView tvJoinTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvJoinTitle == null) {
-        break missingId;
-      }
-
-      return new ActivityLoginBinding((ConstraintLayout) rootView, scrollView2, tvJoinTitle);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, imgJoinTitle, scrollView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

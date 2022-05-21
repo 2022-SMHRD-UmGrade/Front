@@ -47,7 +47,7 @@ public class MoreFragment extends Fragment {
 
         imgMoreProfile = (ImageView) view.findViewById(R.id.imgMoreProfile);
         // 이미지 원형으로
-        Glide.with(this).load(R.drawable.umbrella2).circleCrop().into(imgMoreProfile);
+        Glide.with(this).load(R.drawable.logoumbrella).circleCrop().into(imgMoreProfile);
 
         // 회원정보수정
         btnMoreUserInfo.setOnClickListener(new View.OnClickListener() {

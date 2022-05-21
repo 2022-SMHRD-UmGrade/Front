@@ -43,7 +43,6 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-
         // 마이페이지 카드 클릭 시 frag_mypage로 이동
         myPageLayout = view.findViewById(R.id.myPageLayout);
 
@@ -111,7 +110,7 @@ public class MainFragment extends Fragment {
 
 
         imgMypageProfile = (ImageView) view.findViewById(R.id.imgMypageProfile);
-        Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgMypageProfile);
+        Glide.with(this).load(R.drawable.logoumbrella).circleCrop().into(imgMypageProfile);
 
         btnFare = view.findViewById(R.id.btnFare);
         // 로그인 시 btnFare에 "오늘까지의 UM-CYCLE 이용 요금은 n,nnn원 입니다." 출력

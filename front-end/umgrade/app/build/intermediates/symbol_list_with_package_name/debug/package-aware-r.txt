@@ -2572,6 +2572,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable login_shape_bk
+drawable logo
+drawable logotext
+drawable logoumbrella
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2633,6 +2636,7 @@ drawable tooltip_frame_light
 drawable umbrella
 drawable umbrella2
 drawable umbrella_person
+drawable umcycletext
 drawable usersetting16
 drawable white_radius
 id ALT
@@ -3034,6 +3038,7 @@ id imageView3
 id imageView4
 id imgCardAdd
 id imgCommentProfile
+id imgJoinTitle
 id imgLogo
 id imgMoreProfile
 id imgMypageProfile
@@ -3375,7 +3380,6 @@ id tvFareService
 id tvFareThree
 id tvFareTitle
 id tvFareTwo
-id tvIntro
 id tvJoin
 id tvJoinTitle
 id tvMapCard1

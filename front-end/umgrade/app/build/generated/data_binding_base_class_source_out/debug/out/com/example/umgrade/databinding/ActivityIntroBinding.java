@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -23,14 +22,9 @@ public final class ActivityIntroBinding implements ViewBinding {
   @NonNull
   public final ImageView introLogo;
 
-  @NonNull
-  public final TextView tvIntro;
-
-  private ActivityIntroBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView introLogo,
-      @NonNull TextView tvIntro) {
+  private ActivityIntroBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView introLogo) {
     this.rootView = rootView;
     this.introLogo = introLogo;
-    this.tvIntro = tvIntro;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class ActivityIntroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvIntro;
-      TextView tvIntro = ViewBindings.findChildViewById(rootView, id);
-      if (tvIntro == null) {
-        break missingId;
-      }
-
-      return new ActivityIntroBinding((ConstraintLayout) rootView, introLogo, tvIntro);
+      return new ActivityIntroBinding((ConstraintLayout) rootView, introLogo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

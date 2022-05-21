@@ -173,7 +173,7 @@ public class PostActivity extends AppCompatActivity {
 
         // 프로필 사진 원형으로
         imgPostProfile = (ImageView) findViewById(R.id.imgPostProfile);
-        Glide.with(this).load(R.drawable.umbrella).circleCrop().into(imgPostProfile);
+        Glide.with(this).load(R.drawable.logoumbrella).circleCrop().into(imgPostProfile);
 
         btnPostComment.setOnClickListener(new View.OnClickListener() {
             @Override

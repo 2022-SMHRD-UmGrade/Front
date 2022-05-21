@@ -43,6 +43,9 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_login_bk
 drawable login_shape_bk
+drawable logo
+drawable logotext
+drawable logoumbrella
 drawable mapimg
 drawable mapsearch
 drawable menu
@@ -59,6 +62,7 @@ drawable support
 drawable umbrella
 drawable umbrella2
 drawable umbrella_person
+drawable umcycletext
 drawable usersetting16
 id boardListItem
 id boardNick
@@ -234,6 +238,7 @@ id imageView3
 id imageView4
 id imgCardAdd
 id imgCommentProfile
+id imgJoinTitle
 id imgLogo
 id imgMoreProfile
 id imgMypageProfile
@@ -332,7 +337,6 @@ id tvFareService
 id tvFareThree
 id tvFareTitle
 id tvFareTwo
-id tvIntro
 id tvJoin
 id tvJoinTitle
 id tvMapCard1
