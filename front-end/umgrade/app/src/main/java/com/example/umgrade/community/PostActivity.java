@@ -98,7 +98,7 @@ public class PostActivity extends AppCompatActivity {
     //단일 게시글 불러오는 메서드
     private void getData(int seq, String title, String nick, String content, String date, String file) {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardOne.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardOne.do";
 
         request = new StringRequest(
                 method,
@@ -192,7 +192,7 @@ public class PostActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardDelete.do";
+                String server_url = "http://192.168.0.3:8081/myapp/BoardDelete.do";
 
                 request = new StringRequest(
                         method,

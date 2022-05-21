@@ -91,7 +91,6 @@ public class ModifyActivity extends AppCompatActivity {
                 intent.putExtra("article_seq", seq);
                 adapter.notifyDataSetChanged();
                 startActivity(intent);
-                //replace(CommuFragment);
             }
         });
 
@@ -101,7 +100,7 @@ public class ModifyActivity extends AppCompatActivity {
     public void getUpdate(int seq, String title, String content) {
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardUpdate.do";
+        String server_url = "http://192.168.0.3:8081/myapp/BoardUpdate.do";
 
         request = new StringRequest(
                 method,
@@ -129,24 +128,13 @@ public class ModifyActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<String, String>();
-
                 param.put("article_seq", String.valueOf(seq));
                 param.put("article_title", title);
                 param.put("article_content", content);
                 param.put("article_file", "N");
-
                 return param;
             }
-
         };
         queue.add(request);
     }
-
-    public void replace(Fragment commuFragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, commuFragment);
-        fragmentTransaction.commit();
-    }
-
 }

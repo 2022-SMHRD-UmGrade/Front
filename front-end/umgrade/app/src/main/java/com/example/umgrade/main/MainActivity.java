@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -43,15 +44,26 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     Button navMain, navCommu, navMypage, navMore;
+    TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard;
     View myPageLayout;
 
     View btnFareLayout;
-    User vo = UserInfo.info;
+    User vo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        vo = UserInfo.info;
+
+        tvNickMypageCard = findViewById(R.id.tvNickMypageCard);
+        tvRatingMypageCard = findViewById(R.id.tvRatingMypageCard);
+        tvPointMypageCard = findViewById(R.id.tvPointMypageCard);
+
+        tvNickMypageCard.setText(vo.getUser_nick());
+        tvRatingMypageCard.setText(vo.getUser_type());
+        tvPointMypageCard.setText(vo.getUser_point());
 
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
@@ -76,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ServiceActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -86,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NoticeActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -96,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -106,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SupportActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -116,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, QrActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -131,10 +148,9 @@ public class MainActivity extends AppCompatActivity {
                 // 요금 안내 페이지로 이동
                 Intent intent = new Intent(MainActivity.this, FareActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
-
-
         // 페이지 전환
         navMain = findViewById(R.id.navMain);
         navCommu = findViewById(R.id.navCommu);

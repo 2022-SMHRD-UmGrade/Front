@@ -143,7 +143,7 @@ public class CommuActivity extends AppCompatActivity {
 
             public void initBoard() {
                 int method = Request.Method.GET;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
+                String server_url = "http://192.168.0.3:8081/myapp/BoardList.do";
 
                 request = new StringRequest(
                         method,

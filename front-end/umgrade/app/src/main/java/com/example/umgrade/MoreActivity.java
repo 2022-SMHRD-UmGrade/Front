@@ -9,9 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.umgrade.community.CommuActivity;
+import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.main.MainActivity;
 import com.example.umgrade.main.MapActivity;
 import com.example.umgrade.main.QrActivity;
@@ -19,6 +21,7 @@ import com.example.umgrade.notice.NoticeActivity;
 import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.userActivity.MypageActivity;
+import com.example.umgrade.vo.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -27,12 +30,15 @@ public class MoreActivity extends AppCompatActivity {
     Button btnMoreUserInfo, btnMoreSearch, btnMoreQr, btnMoreCommu,
             btnMoreNotice, btnMoreService, btnMoreSupport, btnMoreTerms;
     Button navMain, navCommu, navMypage, navMore;
+    TextView tvMoreNick;
     ImageView imgMoreProfile;
-
+    User vo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more);
+
+        vo = UserInfo.info;
 
         btnMoreUserInfo = findViewById(R.id.btnMoreUserInfo);
         btnMoreSearch = findViewById(R.id.btnMoreSearch);
@@ -42,6 +48,9 @@ public class MoreActivity extends AppCompatActivity {
         btnMoreService = findViewById(R.id.btnMoreService);
         btnMoreSupport = findViewById(R.id.btnMoreSupport);
         btnMoreTerms = findViewById(R.id.btnMoreTerms);
+        tvMoreNick = findViewById(R.id.tvMoreNick);
+
+        tvMoreNick.setText(vo.getUser_nick());
 
         imgMoreProfile = (ImageView) findViewById(R.id.imgMoreProfile);
         // 이미지 원형으로

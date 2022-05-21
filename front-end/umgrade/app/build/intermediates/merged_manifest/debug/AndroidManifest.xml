@@ -56,9 +56,6 @@
             android:name="com.example.umgrade.MoreActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.userActivity.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.umgrade.CardRegisterActivity"
             android:exported="false" />
         <activity
@@ -149,6 +146,9 @@
             android:exported="false" />
         <activity
             android:name="com.example.umgrade.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

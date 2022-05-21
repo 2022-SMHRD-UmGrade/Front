@@ -16,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.umgrade.AccountSettingActivity;
 import com.example.umgrade.MoreActivity;
 import com.example.umgrade.PaymentActivity;
@@ -33,7 +36,10 @@ public class MypageActivity extends AppCompatActivity {
     Button navMain, navCommu, navMypage, navMore;
     TextView tvNickMypageCard, tvUserId, tvRatingMypageCard, tvPointMypageCard, tvCouponMypageCard;
     ImageView imgMypageProfile;
-    User vo = UserInfo.info;
+    User vo;
+
+    RequestQueue queue;
+    StringRequest request;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,37 +60,39 @@ public class MypageActivity extends AppCompatActivity {
         tvCouponMypageCard = findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
         vo = UserInfo.info;
+        Log.d("vo1", vo.toString());
 
-        // 팅겨서 일단 주석처리
-//        tvNickMypageCard.setText(vo.getUser_nick());
-//        tvUserId.setText(vo.getUser_id());
-//        tvRatingMypageCard.setText(vo.getUser_type());
-//        tvPointMypageCard.setText(vo.getUser_point());
-//        String user_id = vo.getUser_id();
+        queue = Volley.newRequestQueue(MypageActivity.this);
 
-        // 유저 닉네임 출력
-        tvNickMypageCard.setText("USER");
-        // 수정한 값 출력
-        Intent intentUpdate = getIntent();
-        String nickUpdate = intentUpdate.getStringExtra("nickUpdate");
+        Intent intent = getIntent();
+        String nick = intent.getStringExtra("user_nick");
+
+        tvNickMypageCard.setText(vo.getUser_nick());
+        tvUserId.setText(vo.getUser_id());
+        tvRatingMypageCard.setText(vo.getUser_type());
+        tvPointMypageCard.setText(vo.getUser_point());
+        String user_id = vo.getUser_id();
+
+
+
         // 출력된 값과 수정한 값이 다를 때만 닉네임 변경
-        if (!tvNickMypageCard.equals(nickUpdate)){
-            tvNickMypageCard.setText(nickUpdate);
-        }
+//        if (!tvNickMypageCard.equals(nickUpdate)){
+//            tvNickMypageCard.setText(nickUpdate);
+//        }
 
         // 프로필 수정 페이지 이동
         btnProfileUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // 닉네임 저장
-                String nick = tvNickMypageCard.getText().toString();
-
+                vo = UserInfo.info;
                 // 닉네임 값을 수정페이지로 전달
                 Intent intent = new Intent(MypageActivity.this, ProfileUpdateActivity.class);
-                intent.putExtra("nick", nick);
-
+                intent.putExtra("nick", vo.getUser_nick());
+                Log.d("vo2", vo.toString());
                 // 화면전환
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -93,8 +101,9 @@ public class MypageActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MypageActivity.this, PaymentActivity.class);
-//                intent.putExtra("user_id", user_id);
+                intent.putExtra("user_id", user_id);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -127,11 +136,15 @@ public class MypageActivity extends AppCompatActivity {
                     Toast.makeText(MypageActivity.this,
                             "로그아웃 되었습니다.",
                             Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MypageActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    finish();
                     btnLogout.setText("로그인");
                 } else if (text.equals("로그인")) {
                     if (vo == null) {
                         Intent intent = new Intent(MypageActivity.this, LoginActivity.class);
                         startActivity(intent);
+                        finish();
                     }
                     btnLogout.setText("로그아웃");
                 }

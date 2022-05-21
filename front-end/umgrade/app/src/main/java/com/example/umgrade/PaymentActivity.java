@@ -70,7 +70,7 @@ public class PaymentActivity extends AppCompatActivity {
     //결제 관련 메서드
     public void payment(String user_id) {
         int method = Request.Method.GET;
-        String server_url = "http://220.80.203.18:8081/myapp/pay?id="+user_id;
+        String server_url = "http://192.168.0.3:8081/myapp/pay?id="+user_id;
 
         request = new StringRequest(
                 method,

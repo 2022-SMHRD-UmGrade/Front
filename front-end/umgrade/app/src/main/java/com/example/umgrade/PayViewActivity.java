@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -32,7 +33,16 @@ public class PayViewActivity extends AppCompatActivity {
         settings.setJavaScriptEnabled(true); //자바스크립트 사용허용
 
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://220.80.203.18:8081/myapp/pay?id="+user_id);
+        webView.loadUrl("http://192.168.0.3:8081/myapp/pay?id="+user_id);
+
+        btnPayview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PayViewActivity.this, PaymentActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 }

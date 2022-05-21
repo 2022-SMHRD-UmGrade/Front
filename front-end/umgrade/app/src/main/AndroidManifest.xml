@@ -42,9 +42,6 @@
             android:name=".MoreActivity"
             android:exported="false" />
         <activity
-            android:name=".userActivity.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".CardRegisterActivity"
             android:exported="false" />
         <activity
@@ -136,6 +133,9 @@
             android:exported="false" />
         <activity
             android:name=".main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userActivity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
