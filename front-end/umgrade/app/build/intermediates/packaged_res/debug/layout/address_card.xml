@@ -80,6 +80,7 @@
             android:background="@color/lightBlueColor"
             android:hint="@string/edtAddress"
             android:inputType="textPostalAddress"
+            android:padding="3dp"
             android:textSize="14sp"
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/tvAddressTitle"

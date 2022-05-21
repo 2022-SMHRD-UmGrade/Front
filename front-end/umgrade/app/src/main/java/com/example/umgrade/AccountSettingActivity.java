@@ -45,11 +45,11 @@ public class AccountSettingActivity extends AppCompatActivity {
                     btnTelChange.setText("완료");
                     tvTel.setVisibility(View.GONE);
                     edtTel.setVisibility(View.VISIBLE);
-                    // editText focus 기능
-                    edtTel.requestFocus();
-                    edtTel.setSelection(edtTel.length());
                     // 저장된 전화번호를 edtTel에 출력
                     edtTel.setText(tvTel.getText().toString());
+                    // editText focus 기능
+                    edtTel.setSelection(edtTel.length());
+                    edtTel.requestFocus();
                 } else if (state.equals("완료")){
                     btnTelChange.setText("수정");
                     tvTel.setVisibility(View.VISIBLE);
@@ -70,11 +70,11 @@ public class AccountSettingActivity extends AppCompatActivity {
                     btnEmailChange.setText("완료");
                     tvEmail.setVisibility(View.GONE);
                     edtEmail.setVisibility(View.VISIBLE);
+                    // tvEmail 값 가져오기
+                    edtEmail.setText(tvEmail.getText().toString());
                     // editText focus 기능
                     edtEmail.requestFocus();
                     edtEmail.setSelection(edtEmail.length());
-                    // tvEmail 값 가져오기
-                    edtEmail.setText(tvEmail.getText().toString());
                 } else if (state.equals("완료")){
                     btnEmailChange.setText("수정");
                     tvEmail.setVisibility(View.VISIBLE);
@@ -95,11 +95,11 @@ public class AccountSettingActivity extends AppCompatActivity {
                     btnAddrChange.setText("완료");
                     tvAddress.setVisibility(View.GONE);
                     edtAddress.setVisibility(View.VISIBLE);
-                    // editText focus 기능
-                    edtAddress.requestFocus();
-                    edtAddress.setSelection(edtTel.length());
                     // tvAddress 값 가져오기
                     edtAddress.setText(tvAddress.getText().toString());
+                    // editText focus 기능
+                    edtAddress.requestFocus();
+                    edtAddress.setSelection(edtAddress.length());
                 } else if (state.equals("완료")){
                     btnAddrChange.setText("수정");
                     edtAddress.setVisibility(View.GONE);
