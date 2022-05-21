@@ -101,6 +101,89 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lvborad"
-        app:menu="@menu/frag_menu" />
+        >
+
+        <View
+            android:id="@+id/divider21"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/navMain"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/home_gray_xml"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingTop="25dp"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:textColor="@color/blueColor"
+                android:textSize="11sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/navCommu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/commu_blue_xml"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:text="@string/navCommu"
+                android:textColor="@color/blueColor"
+                android:textSize="11sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/navMypage"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/mypage_gray_xml"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingTop="25dp"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:textColor="@color/blueColor"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/navMore"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/more_gray_xml"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingTop="25dp"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:textColor="@color/blueColor"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

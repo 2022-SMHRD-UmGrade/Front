@@ -17,16 +17,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.umgrade.AccountSettingActivity;
+import com.example.umgrade.MoreActivity;
 import com.example.umgrade.PaymentActivity;
 import com.example.umgrade.ProfileUpdateActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.UsageHistoryActivity;
+import com.example.umgrade.community.CommuActivity;
 import com.example.umgrade.info.UserInfo;
+import com.example.umgrade.main.MainActivity;
 import com.example.umgrade.vo.User;
 
 public class MypageActivity extends AppCompatActivity {
 
     Button btnProfileUpdate, btnPayment, btnUsageHistory, btnAccountSetting, btnLogout;
+    Button navMain, navCommu, navMypage, navMore;
     TextView tvNickMypageCard, tvUserId, tvRatingMypageCard, tvPointMypageCard, tvCouponMypageCard;
     ImageView imgMypageProfile;
     User vo = UserInfo.info;
@@ -138,6 +142,35 @@ public class MypageActivity extends AppCompatActivity {
 
             }
         });
+
+        // 페이지 전환
+        navMain = findViewById(R.id.navMain);
+        navCommu = findViewById(R.id.navCommu);
+        navMypage = findViewById(R.id.navMypage);
+        navMore = findViewById(R.id.navMore);
+
+        navCommu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MypageActivity.this, CommuActivity.class);
+                startActivity(intent);
+            }
+        });
+        navMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MypageActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        navMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MypageActivity.this, MoreActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

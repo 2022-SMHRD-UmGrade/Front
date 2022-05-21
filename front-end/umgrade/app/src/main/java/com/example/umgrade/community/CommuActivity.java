@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import com.android.volley.RequestQueue;
@@ -15,6 +16,7 @@ import com.example.umgrade.MoreActivity;
 import com.example.umgrade.R;
 import com.example.umgrade.adapter.BoardAdapter;
 import com.example.umgrade.main.MainActivity;
+import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.vo.Board;
 import com.example.umgrade.vo.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,10 +26,8 @@ import java.util.ArrayList;
 
 public class CommuActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavCommu;
-
     Button btnCmWrite; // 글작성 버튼
-
+    Button navMain, navCommu, navMypage, navMore;
     RecyclerView recyclerView;
     BoardAdapter adapter = new BoardAdapter();
     ArrayList<Board> items = new ArrayList<>();
@@ -41,31 +41,34 @@ public class CommuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_commu);
 
-        bottomNavCommu = findViewById(R.id.bottomNavCommu);
+        // 페이지 전환
+        navMain = findViewById(R.id.navMain);
+        navCommu = findViewById(R.id.navCommu);
+        navMypage = findViewById(R.id.navMypage);
+        navMore = findViewById(R.id.navMore);
 
-        // 프래그먼트 전환
-        bottomNavCommu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        navMain.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-
-                if(itemId == R.id.fragMain){
-                    Intent intent = new Intent(CommuActivity.this, MainActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragCommu){
-                    Intent intent = new Intent(CommuActivity.this, CommuActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragMyPage){
-//                    Intent intent = new Intent(CommuActivity.this, MainActivity.class);
-//                    startActivity(intent);
-                } else if (itemId == R.id.fragMore){
-                    Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
-                    startActivity(intent);
-                }
-
-                return false;
+            public void onClick(View view) {
+                Intent intent = new Intent(CommuActivity.this, MainActivity.class);
+                startActivity(intent);
             }
-        }); // bottomNav end
+        });
+        navMypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommuActivity.this, MypageActivity.class);
+                startActivity(intent);
+            }
+        });
+        navMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommuActivity.this, MoreActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

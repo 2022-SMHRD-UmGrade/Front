@@ -40,7 +40,6 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity extends AppCompatActivity {
 
-    //BottomNavigationView bottomNavMain;
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     Button navMain, navCommu, navMypage, navMore;
@@ -53,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //bottomNavMain = findViewById(R.id.bottomNavMain);
 
         // 마이페이지 카드 클릭 시 frag_mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);

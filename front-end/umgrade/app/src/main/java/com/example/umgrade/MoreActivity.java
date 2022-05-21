@@ -26,15 +26,13 @@ public class MoreActivity extends AppCompatActivity {
 
     Button btnMoreUserInfo, btnMoreSearch, btnMoreQr, btnMoreCommu,
             btnMoreNotice, btnMoreService, btnMoreSupport, btnMoreTerms;
+    Button navMain, navCommu, navMypage, navMore;
     ImageView imgMoreProfile;
-    BottomNavigationView bottomNavMore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more);
-
-        bottomNavMore = findViewById(R.id.bottomNavMore);
 
         btnMoreUserInfo = findViewById(R.id.btnMoreUserInfo);
         btnMoreSearch = findViewById(R.id.btnMoreSearch);
@@ -123,28 +121,32 @@ public class MoreActivity extends AppCompatActivity {
             }
         });
 
-        // 프래그먼트 전환
-        bottomNavMore.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        // 페이지 전환
+        navMain = findViewById(R.id.navMain);
+        navCommu = findViewById(R.id.navCommu);
+        navMypage = findViewById(R.id.navMypage);
+        navMore = findViewById(R.id.navMore);
+
+        navCommu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-
-                if(itemId == R.id.fragMain){
-                    Intent intent = new Intent(MoreActivity.this, MainActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragCommu){
-                    Intent intent = new Intent(MoreActivity.this, CommuActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragMyPage){
-                    Intent intent = new Intent(MoreActivity.this, MypageActivity.class);
-                    startActivity(intent);
-                } else if (itemId == R.id.fragMore){
-                    Intent intent = new Intent(MoreActivity.this, MoreActivity.class);
-                    startActivity(intent);
-                }
-
-                return true;
+            public void onClick(View view) {
+                Intent intent = new Intent(MoreActivity.this, CommuActivity.class);
+                startActivity(intent);
             }
-        }); // bottomNav end
+        });
+        navMypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MoreActivity.this, MypageActivity.class);
+                startActivity(intent);
+            }
+        });
+        navMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MoreActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
