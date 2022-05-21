@@ -8,26 +8,12 @@
 
     <ImageView
         android:id="@+id/introLogo"
-        android:layout_width="230dp"
-        android:layout_height="256dp"
-        android:layout_marginTop="161dp"
+        android:layout_width="295dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/umbrella2" />
-
-    <TextView
-        android:id="@+id/tvIntro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/tvIntro"
-        android:textColor="@color/blueColor"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/introLogo"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/introLogo"
-        app:layout_constraintTop_toBottomOf="@+id/introLogo" />
+        app:srcCompat="@drawable/logotext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
