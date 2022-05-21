@@ -23,6 +23,9 @@ public final class CommentListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ConstraintLayout commentListItem;
+
+  @NonNull
   public final EditText edtCommentContent;
 
   @NonNull
@@ -62,13 +65,15 @@ public final class CommentListBinding implements ViewBinding {
   public final TextView tvWriter;
 
   private CommentListBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText edtCommentContent, @NonNull Guideline guideline6,
-      @NonNull CircleImageView imgCommentProfile, @NonNull TextView tvCommentContent,
-      @NonNull TextView tvCommentDel, @NonNull TextView tvCommentModify,
-      @NonNull TextView tvCommentNick, @NonNull TextView tvCommentReport,
-      @NonNull TextView tvCommentSuccess, @NonNull TextView tvCommentTime,
-      @NonNull TextView tvPostSeq, @NonNull TextView tvSeq, @NonNull TextView tvWriter) {
+      @NonNull ConstraintLayout commentListItem, @NonNull EditText edtCommentContent,
+      @NonNull Guideline guideline6, @NonNull CircleImageView imgCommentProfile,
+      @NonNull TextView tvCommentContent, @NonNull TextView tvCommentDel,
+      @NonNull TextView tvCommentModify, @NonNull TextView tvCommentNick,
+      @NonNull TextView tvCommentReport, @NonNull TextView tvCommentSuccess,
+      @NonNull TextView tvCommentTime, @NonNull TextView tvPostSeq, @NonNull TextView tvSeq,
+      @NonNull TextView tvWriter) {
     this.rootView = rootView;
+    this.commentListItem = commentListItem;
     this.edtCommentContent = edtCommentContent;
     this.guideline6 = guideline6;
     this.imgCommentProfile = imgCommentProfile;
@@ -111,6 +116,8 @@ public final class CommentListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      ConstraintLayout commentListItem = (ConstraintLayout) rootView;
+
       id = R.id.edtCommentContent;
       EditText edtCommentContent = ViewBindings.findChildViewById(rootView, id);
       if (edtCommentContent == null) {
@@ -189,9 +196,10 @@ public final class CommentListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new CommentListBinding((ConstraintLayout) rootView, edtCommentContent, guideline6,
-          imgCommentProfile, tvCommentContent, tvCommentDel, tvCommentModify, tvCommentNick,
-          tvCommentReport, tvCommentSuccess, tvCommentTime, tvPostSeq, tvSeq, tvWriter);
+      return new CommentListBinding((ConstraintLayout) rootView, commentListItem, edtCommentContent,
+          guideline6, imgCommentProfile, tvCommentContent, tvCommentDel, tvCommentModify,
+          tvCommentNick, tvCommentReport, tvCommentSuccess, tvCommentTime, tvPostSeq, tvSeq,
+          tvWriter);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -59,9 +59,6 @@
             android:name="com.example.umgrade.main.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.userActivity.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.umgrade.CardRegisterActivity"
             android:exported="false" />
         <activity
@@ -127,6 +124,9 @@
             android:name="com.example.umgrade.userActivity.JoinActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.umgrade.community.CommuActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.umgrade.community.PostActivity"
             android:exported="false" />
         <activity
@@ -148,7 +148,7 @@
             android:name="com.example.umgrade.AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.community.CommuActivity"
+            android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

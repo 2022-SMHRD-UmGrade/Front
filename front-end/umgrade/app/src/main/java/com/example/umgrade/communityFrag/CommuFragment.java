@@ -121,7 +121,7 @@ public class CommuFragment extends Fragment {
                         try {
                             JSONArray boardArray = new JSONArray(response);
 
-                            for(int i=0; i<boardArray.length(); i++) {
+                            for (int i = 0; i < boardArray.length(); i++) {
                                 JSONObject Object = boardArray.getJSONObject(i);
 
                                 int seq = Integer.parseInt(Object.getString("article_seq"));

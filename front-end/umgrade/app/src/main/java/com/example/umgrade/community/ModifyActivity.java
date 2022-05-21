@@ -87,7 +87,7 @@ public class ModifyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getUpdate(seq, edtModifyTitle.getText().toString(), edtModifyContent.getText().toString());
-                Intent intent = new Intent(getApplicationContext(), PostActivity.class);
+                Intent intent = new Intent(ModifyActivity.this, CommuActivity.class);
                 intent.putExtra("article_seq", seq);
                 adapter.notifyDataSetChanged();
                 startActivity(intent);
