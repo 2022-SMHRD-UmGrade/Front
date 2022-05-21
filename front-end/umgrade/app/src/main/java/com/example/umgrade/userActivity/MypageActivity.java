@@ -53,20 +53,6 @@ public class MypageActivity extends AppCompatActivity {
         tvPointMypageCard = findViewById(R.id.tvPointMypageCard); // 보유 포인트
         tvCouponMypageCard = findViewById(R.id.tvCouponMypageCard); // 보유 쿠폰
 
-        // SharedPreference
-        // name : 저장소 이름
-        //SharedPreferences sharedPreferences = MypageActivity.getSharedPreferences("save", Context.MODE_PRIVATE);
-        // ProfileUpdatedActivity에서 데이터 꺼내기
-        // 꺼내올 값, 값 없을때 출력할 값
-        //String nickUpdate = sharedPreferences.getString("nickUpdate", "no data");
-        //String image = sharedPreferences.getString("imageString", "no data");
-        //Bitmap bitmap = StringToBitmap(image);
-        //tvNickMypageCard.setText(nickUpdate);
-        // null값 나옴
-        //imgMypageProfile.setImageBitmap(bitmap);
-        //Log.d("확인", nickUpdate+image);
-        // SharedPreference end
-
         vo = UserInfo.info;
 
         // 팅겨서 일단 주석처리
@@ -75,6 +61,16 @@ public class MypageActivity extends AppCompatActivity {
 //        tvRatingMypageCard.setText(vo.getUser_type());
 //        tvPointMypageCard.setText(vo.getUser_point());
 //        String user_id = vo.getUser_id();
+
+        // 유저 닉네임 출력
+        tvNickMypageCard.setText("USER");
+        // 수정한 값 출력
+        Intent intentUpdate = getIntent();
+        String nickUpdate = intentUpdate.getStringExtra("nickUpdate");
+        // 출력된 값과 수정한 값이 다를 때만 닉네임 변경
+        if (!tvNickMypageCard.equals(nickUpdate)){
+            tvNickMypageCard.setText(nickUpdate);
+        }
 
         // 프로필 수정 페이지 이동
         btnProfileUpdate.setOnClickListener(new View.OnClickListener() {

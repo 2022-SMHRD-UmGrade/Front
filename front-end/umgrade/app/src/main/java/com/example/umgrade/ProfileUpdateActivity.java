@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.umgrade.mainFrag.MainFragment;
+import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.userActivity.MypageFragment;
 
 import java.io.ByteArrayOutputStream;
@@ -47,15 +48,6 @@ public class ProfileUpdateActivity extends AppCompatActivity {
         edtNickChange = findViewById(R.id.edtNickChange); // 수정할 닉네임
         btnProfileChange = findViewById(R.id.btnProfileChange); // 프로필 변경
         btnProfileUpdatePre = findViewById(R.id.btnProfileUpdatePre); // 뒤로가기 버튼
-
-        // SharedPreferences
-        // name : 저장소 이름
-        SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        // MypageFragment에서 데이터 꺼냄
-        //String nick = sharedPreferences.getString("nick", "no data");
-        //Log.d("확인", nick);
 
         // 이미지 클릭해서 갤러리 접근
         imgProfileChange.setOnClickListener(new View.OnClickListener() {
@@ -79,22 +71,11 @@ public class ProfileUpdateActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 값 가져오기
                 String nickUpdate = edtNickChange.getText().toString();
-
-                // imgProfileChange 그림을 bitmap으로 가져오기
-                BitmapDrawable drawable = (BitmapDrawable) imgProfileChange.getDrawable();
-                Bitmap bitmap = drawable.getBitmap();
-
-                String image = BitmapToString(bitmap);
-                editor.putString("imageString", image);
-                // SharedPreference에 데이터 넣는 파트
-                // 이름, 값
-                editor.putString("nickUpdate", nickUpdate);
-//                editor.putString("bitmap", );
-                editor.commit();
-                
+                Intent intent = new Intent(ProfileUpdateActivity.this, MypageActivity.class);
+                intent.putExtra("nickUpdate", nickUpdate);
+                startActivity(intent);
                 // 화면종료
-                //finish();
-                onBackPressed();
+                finish();
             }
         });
 

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 마이페이지 카드 클릭 시 frag_mypage로 이동
+        // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
 
         myPageLayout.setOnClickListener(new View.OnClickListener() {
