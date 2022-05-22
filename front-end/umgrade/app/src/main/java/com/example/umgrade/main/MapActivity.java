@@ -66,7 +66,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         vo = UserInfo.info;
 
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/Android/Login";
+        String server_url = "http://220.80.203.18:8081/myapp/Android/Login";
 
         request = new StringRequest(
                 method,
@@ -157,7 +157,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         //맵 포인트 위도경도 설정
         mapPoint = MapPoint.mapPointWithGeoCoord(mCurrentLat, mCurrentLng);
 
-        marker.setItemName("Ubox1");
+        marker.setItemName("Ubox1,10/10");
 
         marker.setTag(0);
         marker.setMapPoint(mapPoint);

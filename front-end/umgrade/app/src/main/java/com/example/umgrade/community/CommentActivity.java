@@ -211,12 +211,6 @@ public class CommentActivity extends AppCompatActivity {
 //            }
 //        });
 //
-//        tvCommentDel.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                deleteComment(cmt_seq);
-//            }
-//        });
 
 
 //        tvCommentNick = findViewById(R.id.tvCommentNick);
@@ -264,8 +258,9 @@ public class CommentActivity extends AppCompatActivity {
 
     //댓글 리스트 메서드
     public void initComment(int article_seq, String content) {
+
         int method = Request.Method.GET;
-        String server_url = "http://192.168.0.3:8081/myapp/BoardComment.do?article_seq=" + article_seq;
+        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do?article_seq=" + article_seq;
 
         request = new StringRequest(
                 method,
@@ -288,9 +283,17 @@ public class CommentActivity extends AppCompatActivity {
                                 String date = object.getString("cmt_date");
                                 String id = object.getString("cmt_id");
                                 int likes = Integer.parseInt(object.getString("cmt_likes"));
-
                                 Comment list = new Comment(seq, seq1, content, date, id, likes);
+
                                 lists.add(list);
+
+//                                tvCommentDel.setOnClickListener(new View.OnClickListener() {
+//                                    @Override
+//                                    public void onClick(View v) {
+//                                        deleteComment(list.getCmt_seq());
+//                                    }
+//                                });
+
                             }
                             adapter.setLists(lists);
                             adapter.notifyDataSetChanged();
@@ -327,7 +330,7 @@ public class CommentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://192.168.0.3:8081/myapp/InsertCmt.do";
+                String server_url = "http://220.80.203.18:8081/myapp/InsertCmt.do";
 
                 request = new StringRequest(
                         method,
@@ -376,7 +379,7 @@ public class CommentActivity extends AppCompatActivity {
     //댓글 수정 메서드
     public void updateComment(int cmt_seq, String content) {
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/CommentUpdate.do";
+        String server_url = "http://220.80.203.18:8081/myapp/CommentUpdate.do";
 
         request = new StringRequest(
                 method,
@@ -413,7 +416,7 @@ public class CommentActivity extends AppCompatActivity {
     //댓글 삭제 메서드
     public void deleteComment(int cmt_seq) {
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/CommentDelete.do";
+        String server_url = "http://220.80.203.18:8081/myapp/CommentDelete.do";
 
         request = new StringRequest(
                 method,

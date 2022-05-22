@@ -8,17 +8,12 @@
   "variantName": "debug",
   "elements": [
     {
-      "type": "ONE_OF_MANY",
-      "filters": [
-        {
-          "filterType": "ABI",
-          "value": "x86_64"
-        }
-      ],
+      "type": "UNIVERSAL",
+      "filters": [],
       "attributes": [],
       "versionCode": 1,
       "versionName": "1.0",
-      "outputFile": "resources-x86_64Debug.ap_"
+      "outputFile": "resources-universalDebug.ap_"
     }
   ],
   "elementType": "File"
