@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="75dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blueColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoumbrella" />
+
+        <TextView
+            android:id="@+id/mapCardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/mapCardTitle"
+            android:textColor="@color/blueColor"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/mapCardSeq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/mapCardSeq"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mapCardLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/mapCardLoc"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mapCardTitle"
+            app:layout_constraintTop_toBottomOf="@+id/mapCardTitle" />
+
+        <TextView
+            android:id="@+id/mapCardUmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/mapCardUmb"
+            android:textColor="@color/blueColor"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/mapCardLoc"
+            app:layout_constraintTop_toBottomOf="@+id/mapCardLoc" />
+
+        <TextView
+            android:id="@+id/mapCardUmbCnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/mapCardUmbCnt"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/mapCardUmb"
+            app:layout_constraintStart_toEndOf="@+id/mapCardUmb"
+            app:layout_constraintTop_toTopOf="@+id/mapCardUmb" />
+
+        <TextView
+            android:id="@+id/mapCardUmbChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/mapCardUmbChild"
+            android:textColor="@color/blueColor"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/mapCardUmb"
+            app:layout_constraintTop_toBottomOf="@+id/mapCardUmb" />
+
+        <TextView
+            android:id="@+id/mapCardUmbChildCnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/mapCardUmbChildCnt"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/mapCardUmbChild"
+            app:layout_constraintStart_toEndOf="@+id/mapCardUmbChild"
+            app:layout_constraintTop_toTopOf="@+id/mapCardUmbChild" />
+
+        <TextView
+            android:id="@+id/mapCardQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/mapCardQr"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider24" />
+
+        <View
+            android:id="@+id/divider24"
+            android:layout_width="278dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            tools:layout_editor_absoluteX="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -23,7 +23,9 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Base64;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -56,10 +58,26 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
     RequestQueue queue;
     StringRequest request;
 
+    TextView mapCardLoc, mapCardUmbCnt, mapCardSeq, mapCardQr;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+
+        mapCardLoc = findViewById(R.id.mapCardLoc); // 설치장소
+        mapCardUmbCnt = findViewById(R.id.mapCardUmbCnt); // 우산 수량
+        mapCardSeq = findViewById(R.id.mapCardSeq); // 보관함 번호
+        mapCardQr = findViewById(R.id.mapCardQr); // QR찍기
+
+        // 대여하기 누르면 QR찍기 전환
+        mapCardQr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MapActivity.this, QrActivity.class);
+                startActivity(intent);
+            }
+        });
 
         queue = Volley.newRequestQueue(MapActivity.this);
 
