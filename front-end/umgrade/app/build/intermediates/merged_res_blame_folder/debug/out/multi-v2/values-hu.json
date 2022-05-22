@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hu\\values-hu.xml",
+=======
             "outputFile": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hu\\values-hu.xml",
+>>>>>>> db9295bac62aede6365ddeb6fae1fabb1e591021
             "map": [
                 {
                     "source": "C:\\Users\\smhrd\\.gradle\\caches\\transforms-3\\2a33805d075e88645d74e7f733e99d60\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-hu\\values-hu.xml",

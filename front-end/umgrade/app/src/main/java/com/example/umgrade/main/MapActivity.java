@@ -175,7 +175,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         //맵 포인트 위도경도 설정
         mapPoint = MapPoint.mapPointWithGeoCoord(mCurrentLat, mCurrentLng);
 
-        marker.setItemName("Ubox1");
+        marker.setItemName("Ubox1,10/10");
 
         marker.setTag(0);
         marker.setMapPoint(mapPoint);

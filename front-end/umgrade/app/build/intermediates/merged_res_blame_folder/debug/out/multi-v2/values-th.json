@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
+=======
             "outputFile": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
+>>>>>>> db9295bac62aede6365ddeb6fae1fabb1e591021
             "map": [
                 {
                     "source": "C:\\Users\\smhrd\\.gradle\\caches\\transforms-3\\8c8bd08bd5ab439882315c15d3205b6b\\transformed\\material-1.5.0\\res\\values-th\\values-th.xml",
