@@ -65,11 +65,15 @@
             android:id="@+id/btnKakaoLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FAE100"
+            android:backgroundTint="#FEE500"
+            android:drawableLeft="@drawable/kakao_shape_size"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingRight="55dp"
             android:text="@string/btnKakaoLogin"
-            android:textColor="#4C2626"
+            android:textColor="#191919"
             android:textStyle="bold"
-            app:cornerRadius="5dp" />
+            app:cornerRadius="7dp" />
 
         <TextView
             android:id="@+id/tvJoin"

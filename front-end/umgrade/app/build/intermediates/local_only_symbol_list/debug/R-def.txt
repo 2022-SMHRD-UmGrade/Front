@@ -50,6 +50,8 @@ drawable home_gray_xml
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_login_bk
+drawable kakao_shape
+drawable kakao_shape_size
 drawable login_shape_bk
 drawable loginback
 drawable logo

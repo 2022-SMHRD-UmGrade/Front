@@ -2578,6 +2578,8 @@ int drawable ic_mtrl_checked_circle 0x7f070097
 int drawable ic_mtrl_chip_checked_black 0x7f070098
 int drawable ic_mtrl_chip_checked_circle 0x7f070099
 int drawable ic_mtrl_chip_close_circle 0x7f07009a
+int drawable kakao_shape 0x7f0700e8
+int drawable kakao_shape_size 0x7f0700e9
 int drawable login_shape_bk 0x7f07009b
 int drawable loginback 0x7f07009c
 int drawable logo 0x7f07009d

@@ -6,61 +6,6 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-<<<<<<< HEAD
-8-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="32" />
-9-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml
-10    <!-- 인터넷 권한 설정 -->
-11    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 연결 확인 -->
-11-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:6:5-67
-11-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:6:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 지도 API 권한 설정 -->
-12-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:7:5-79
-12-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:7:22-76
-13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:8:5-81
-13-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:8:22-78
-14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:9:5-79
-14-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:9:22-76
-15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 카메라, 저장소 권한 설정 -->
-15-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:10:5-85
-15-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:10:22-82
-16    <uses-permission android:name="android.permission.CAMERA" />
-16-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:11:5-65
-16-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:11:22-62
-17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 갤러리 접근 권한 설정 -->
-17-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:12:5-81
-17-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:12:22-78
-18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:13:5-80
-18-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:13:22-77
-19
-20    <uses-feature
-20-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:15:5-17:36
-21        android:name="android.hardware.camera"
-21-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:16:9-47
-22        android:required="false" />
-22-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:17:9-33
-23    <uses-feature
-23-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:18:5-20:36
-24        android:name="android.hardware.camera.autofocus"
-24-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:19:9-57
-25        android:required="false" />
-25-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:20:9-33
-26    <uses-feature
-26-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:21:5-23:36
-27        android:name="android.hardware.camera.flash"
-27-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:22:9-53
-28        android:required="false" />
-28-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:23:9-33
-29    <uses-feature
-29-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:24:5-26:36
-30        android:name="android.hardware.camera.front"
-30-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:25:9-53
-31        android:required="false" />
-31-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:26:9-33
-=======
 8-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
 9-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml
@@ -114,7 +59,6 @@
 30-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:25:9-53
 31        android:required="false" />
 31-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:26:9-33
->>>>>>> db9295bac62aede6365ddeb6fae1fabb1e591021
 32    <uses-feature
 32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
 33        android:name="android.hardware.screen.landscape"
@@ -129,246 +73,13 @@
 37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\smhrd\.gradle\caches\transforms-3\2a33805d075e88645d74e7f733e99d60\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
 38
 39    <application
-<<<<<<< HEAD
-39-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:28:5-146:19
-40        android:allowBackup="true"
-40-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:29:9-35
-=======
 39-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:28:5-146:19
 40        android:allowBackup="true"
 40-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:29:9-35
->>>>>>> db9295bac62aede6365ddeb6fae1fabb1e591021
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 41-->[androidx.core:core:1.7.0] C:\Users\smhrd\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 42        android:debuggable="true"
 43        android:hardwareAccelerated="true"
-<<<<<<< HEAD
-43-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:30:9-43
-44        android:icon="@mipmap/ic_launcher"
-44-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:31:9-43
-45        android:label="umgrade"
-45-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:32:9-32
-46        android:networkSecurityConfig="@xml/network_security_config"
-46-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:33:9-69
-47        android:roundIcon="@mipmap/ic_launcher_round"
-47-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:34:9-54
-48        android:supportsRtl="true"
-48-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:35:9-35
-49        android:testOnly="true"
-50        android:theme="@style/Theme.Umgrade"
-50-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:36:9-45
-51        android:usesCleartextTraffic="true" >
-51-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:37:9-44
-52        <activity
-52-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:38:9-40:40
-53            android:name="com.example.umgrade.userActivity.MypageActivity"
-53-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:39:13-56
-54            android:exported="false" />
-54-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:40:13-37
-55        <activity
-55-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:41:9-43:40
-56            android:name="com.example.umgrade.MoreActivity"
-56-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:42:13-41
-57            android:exported="false" />
-57-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:43:13-37
-58        <activity
-58-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:44:9-46:40
-59            android:name="com.example.umgrade.CardRegisterActivity"
-59-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:45:13-49
-60            android:exported="false" />
-60-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:46:13-37
-61        <activity
-61-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:47:9-49:40
-62            android:name="com.example.umgrade.PasswordChangeActivity"
-62-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:48:13-51
-63            android:exported="false" />
-63-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:49:13-37
-64        <activity
-64-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:50:9-52:40
-65            android:name="com.example.umgrade.service.SupportPostActivity"
-65-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:51:13-56
-66            android:exported="false" />
-66-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:52:13-37
-67        <activity
-67-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:53:9-55:40
-68            android:name="com.example.umgrade.service.SupportWriteActivity"
-68-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:54:13-57
-69            android:exported="false" />
-69-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:55:13-37
-70        <activity
-70-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:56:9-58:40
-71            android:name="com.example.umgrade.UsageHistoryActivity"
-71-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:57:13-49
-72            android:exported="false" />
-72-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:58:13-37
-73        <activity
-73-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:59:9-61:40
-74            android:name="com.example.umgrade.PaymentActivity"
-74-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:60:13-44
-75            android:exported="false" />
-75-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:61:13-37
-76        <activity
-76-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:62:9-64:40
-77            android:name="com.example.umgrade.ProfileUpdateActivity"
-77-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:63:13-50
-78            android:exported="false" />
-78-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:64:13-37
-79        <activity
-79-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:65:9-68:50
-80            android:name="com.example.umgrade.PrivacyPopupActivity"
-80-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:66:13-49
-81            android:exported="false"
-81-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:67:13-37
-82            android:theme="@style/DialogTheme" />
-82-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:68:13-47
-83        <activity
-83-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:69:9-72:50
-84            android:name="com.example.umgrade.service.ServiceInfoPopupActivity"
-84-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:70:13-61
-85            android:exported="false"
-85-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:71:13-37
-86            android:theme="@style/DialogTheme" />
-86-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:72:13-47
-87        <activity
-87-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:73:9-75:40
-88            android:name="com.example.umgrade.TermsActivity"
-88-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:74:13-42
-89            android:exported="false" />
-89-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:75:13-37
-90
-91        <meta-data
-91-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:77:9-79:64
-92            android:name="com.kakao.sdk.AppKey"
-92-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:78:13-48
-93            android:value="49ef1afb711e53c2c92c917ccb2d1f7a" />
-93-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:79:13-61
-94
-95        <activity
-95-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:81:9-85:49
-96            android:name="com.example.umgrade.main.QrActivity"
-96-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:82:13-44
-97            android:exported="false"
-97-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:83:13-37
-98            android:screenOrientation="fullSensor" />
-98-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:84:13-51
-99        <activity
-99-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:86:9-88:40
-100            android:name="com.example.umgrade.community.CommentActivity"
-100-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:87:13-54
-101            android:exported="false" />
-101-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:88:13-37
-102        <activity
-102-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:89:9-91:40
-103            android:name="com.example.umgrade.FareActivity"
-103-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:90:13-41
-104            android:exported="false" />
-104-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:91:13-37
-105        <activity
-105-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:92:9-94:40
-106            android:name="com.example.umgrade.service.SupportActivity"
-106-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:93:13-52
-107            android:exported="false" />
-107-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:94:13-37
-108        <activity
-108-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:95:9-97:40
-109            android:name="com.example.umgrade.main.MapActivity"
-109-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:96:13-45
-110            android:exported="false" />
-110-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:97:13-37
-111        <activity
-111-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:98:9-100:40
-112            android:name="com.example.umgrade.notice.EventPostActivity"
-112-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:99:13-53
-113            android:exported="false" />
-113-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:100:13-37
-114        <activity
-114-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:101:9-103:40
-115            android:name="com.example.umgrade.notice.NoticePostActivity"
-115-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:102:13-54
-116            android:exported="false" />
-116-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:103:13-37
-117        <activity
-117-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:104:9-106:40
-118            android:name="com.example.umgrade.notice.NoticeActivity"
-118-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:105:13-50
-119            android:exported="false" />
-119-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:106:13-37
-120        <activity
-120-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:107:9-109:40
-121            android:name="com.example.umgrade.userActivity.JoinActivity"
-121-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:108:13-54
-122            android:exported="false" />
-122-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:109:13-37
-123        <activity
-123-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:110:9-112:40
-124            android:name="com.example.umgrade.community.CommuActivity"
-124-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:111:13-52
-125            android:exported="false" />
-125-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:112:13-37
-126        <activity
-126-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:113:9-115:40
-127            android:name="com.example.umgrade.community.PostActivity"
-127-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:114:13-51
-128            android:exported="false" />
-128-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:115:13-37
-129        <activity
-129-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:116:9-118:40
-130            android:name="com.example.umgrade.community.ModifyActivity"
-130-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:117:13-53
-131            android:exported="false" />
-131-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:118:13-37
-132        <activity
-132-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:119:9-121:40
-133            android:name="com.example.umgrade.community.WriteActivity"
-133-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:120:13-52
-134            android:exported="false" />
-134-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:121:13-37
-135        <activity
-135-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:122:9-124:40
-136            android:name="com.example.umgrade.service.ServiceActivity"
-136-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:123:13-52
-137            android:exported="false" />
-137-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:124:13-37
-138        <activity
-138-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:125:9-127:40
-139            android:name="com.example.umgrade.PayViewActivity"
-139-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:126:13-44
-140            android:exported="false" />
-140-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:127:13-37
-141        <activity
-141-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:128:9-130:40
-142            android:name="com.example.umgrade.IntroActivity"
-142-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-42
-143            android:exported="false" />
-143-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:130:13-37
-144        <activity
-144-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:131:9-133:40
-145            android:name="com.example.umgrade.AccountSettingActivity"
-145-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:132:13-51
-146            android:exported="false" />
-146-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:133:13-37
-147        <activity
-147-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:134:9-136:40
-148            android:name="com.example.umgrade.main.MainActivity"
-148-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:135:13-46
-149            android:exported="false" />
-149-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:136:13-37
-150        <activity
-150-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:137:9-145:20
-151            android:name="com.example.umgrade.userActivity.LoginActivity"
-151-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:138:13-55
-152            android:exported="true" >
-152-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:139:13-36
-153            <intent-filter>
-153-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:140:13-144:29
-154                <action android:name="android.intent.action.MAIN" />
-154-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:141:17-69
-154-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:141:25-66
-155
-156                <category android:name="android.intent.category.LAUNCHER" />
-156-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:143:17-77
-156-->C:\Users\smhrd\Desktop\2nd\front_end\front-end\umgrade\app\src\main\AndroidManifest.xml:143:27-74
-=======
 43-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:30:9-43
 44        android:icon="@mipmap/ic_launcher"
 44-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:31:9-43
@@ -594,7 +305,6 @@
 156                <category android:name="android.intent.category.LAUNCHER" />
 156-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:143:17-77
 156-->C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:143:27-74
->>>>>>> db9295bac62aede6365ddeb6fae1fabb1e591021
 157            </intent-filter>
 158        </activity>
 159

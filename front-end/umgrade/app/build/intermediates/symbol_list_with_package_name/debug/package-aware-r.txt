@@ -2579,6 +2579,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable kakao_shape
+drawable kakao_shape_size
 drawable login_shape_bk
 drawable loginback
 drawable logo
