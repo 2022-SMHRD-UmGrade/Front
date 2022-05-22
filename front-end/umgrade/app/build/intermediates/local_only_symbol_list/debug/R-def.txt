@@ -511,6 +511,7 @@ layout usage_history_list
 layout weather_card
 menu frag_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 string boardNick
