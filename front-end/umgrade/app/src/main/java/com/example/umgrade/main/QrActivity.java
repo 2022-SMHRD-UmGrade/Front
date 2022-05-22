@@ -1,16 +1,24 @@
 package com.example.umgrade.main;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.umgrade.R;
+import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.vo.User;
 import com.google.zxing.ResultPoint;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -20,7 +28,9 @@ import com.journeyapps.barcodescanner.BarcodeResult;
 import com.journeyapps.barcodescanner.CaptureManager;
 import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class QrActivity extends AppCompatActivity {
 
@@ -35,6 +45,10 @@ public class QrActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
 
+        vo = UserInfo.info;
+
+        queue = Volley.newRequestQueue(QrActivity.this);
+
         customBarcodeView = (DecoratedBarcodeView) findViewById(R.id.customBarcodeView);
         capture = new CaptureManager(this, customBarcodeView);
 
@@ -44,6 +58,12 @@ public class QrActivity extends AppCompatActivity {
             @Override
             public void barcodeResult(BarcodeResult result) {
                 readBarcode(result.toString());
+                Intent intent = new Intent(QrActivity.this, MainActivity.class);
+                intent.putExtra("qrNum",result.toString());
+                intent.putExtra("userId", vo.getUser_id());
+                startActivity(intent);
+                Log.d("result", result.toString());
+                finish();
             }
             @Override
             public void possibleResultPoints(List<ResultPoint> resultPoints){
@@ -58,6 +78,7 @@ public class QrActivity extends AppCompatActivity {
 //        // 문구 변경
 //        qrScan.setPrompt("사각 테두리 안에 QR코드를 인식해 주세요.");
 //        // 커스텀 불러오기
+//
 //        qrScan.setCaptureActivity(CustomScannerActivity.class);
 //        qrScan.initiateScan();
 
@@ -85,7 +106,39 @@ public class QrActivity extends AppCompatActivity {
     }
 
     public void readBarcode(String barcode){
+        vo = UserInfo.info;
         Toast.makeText(getApplicationContext(), barcode, Toast.LENGTH_LONG).show();
+        Log.d("barcode", barcode);
+        int method = Request.Method.POST;
+        String server_url = "http://192.168.0.3/myapp/Android/Rent?qrNum"+barcode;
+        request = new StringRequest(
+                method,
+                server_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(QrActivity.this,
+                                "실패!"+error.toString(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @NonNull
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> param = new HashMap<>();
+                param.put("qrNum", barcode);
+                param.put("userId", vo.getUser_id());
+                return param;
+            }
+        };
+
     }
 
 

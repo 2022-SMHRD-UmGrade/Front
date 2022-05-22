@@ -23,13 +23,13 @@ public final class WeatherCardBinding implements ViewBinding {
   public final CardView cvWeather;
 
   @NonNull
-  public final TextView textView6;
+  public final TextView tvWeather;
 
   private WeatherCardBinding(@NonNull CardView rootView, @NonNull CardView cvWeather,
-      @NonNull TextView textView6) {
+      @NonNull TextView tvWeather) {
     this.rootView = rootView;
     this.cvWeather = cvWeather;
-    this.textView6 = textView6;
+    this.tvWeather = tvWeather;
   }
 
   @Override
@@ -61,13 +61,13 @@ public final class WeatherCardBinding implements ViewBinding {
     missingId: {
       CardView cvWeather = (CardView) rootView;
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
+      id = R.id.tvWeather;
+      TextView tvWeather = ViewBindings.findChildViewById(rootView, id);
+      if (tvWeather == null) {
         break missingId;
       }
 
-      return new WeatherCardBinding((CardView) rootView, cvWeather, textView6);
+      return new WeatherCardBinding((CardView) rootView, cvWeather, tvWeather);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

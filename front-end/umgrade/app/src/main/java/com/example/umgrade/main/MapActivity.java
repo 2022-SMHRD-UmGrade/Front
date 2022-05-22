@@ -69,22 +69,22 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         mapCardUmbCnt = findViewById(R.id.mapCardUmbCnt); // 우산 수량
         mapCardSeq = findViewById(R.id.mapCardSeq); // 보관함 번호
         mapCardQr = findViewById(R.id.mapCardQr); // QR찍기
-
+// 쓰지않을 로직
         // 대여하기 누르면 QR찍기 전환
-        mapCardQr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MapActivity.this, QrActivity.class);
-                startActivity(intent);
-            }
-        });
+//        mapCardQr.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MapActivity.this, QrActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         queue = Volley.newRequestQueue(MapActivity.this);
 
         vo = UserInfo.info;
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/Android/Login";
+        String server_url = "http://192.168.0.3:8081/myapp/Android/Login";
 
         request = new StringRequest(
                 method,
@@ -175,7 +175,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         //맵 포인트 위도경도 설정
         mapPoint = MapPoint.mapPointWithGeoCoord(mCurrentLat, mCurrentLng);
 
-        marker.setItemName("Ubox1,10/10");
+        marker.setItemName("Ubox1");
 
         marker.setTag(0);
         marker.setMapPoint(mapPoint);
@@ -189,7 +189,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
 
         MapPoint mapPoint1 = MapPoint.mapPointWithGeoCoord(35.14953, 126.91937);
 
-        marker1.setItemName("Default Name");
+        marker1.setItemName("Ubox2");
 
         marker1.setTag(0);
         marker1.setMapPoint(mapPoint1);

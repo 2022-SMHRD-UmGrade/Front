@@ -1,54 +1,64 @@
 package com.example.umgrade.main;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
-import androidx.viewpager2.widget.ViewPager2;
 
-import android.app.Activity;
-import android.app.Service;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
 import com.example.umgrade.MoreActivity;
-import com.example.umgrade.MoreFragment;
 import com.example.umgrade.R;
 import com.example.umgrade.community.CommuActivity;
-import com.example.umgrade.communityFrag.CommuFragment;
 import com.example.umgrade.info.UserInfo;
-import com.example.umgrade.mainFrag.MainFragment;
 import com.example.umgrade.notice.NoticeActivity;
 import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.userActivity.MypageActivity;
-import com.example.umgrade.userActivity.MypageFragment;
 import com.example.umgrade.vo.User;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 
-import java.util.List;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import me.relex.circleindicator.CircleIndicator3;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     Button navMain, navCommu, navMypage, navMore;
-    TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard;
+    TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard, tvWeather, dateView, cityView, weatherView, tempView;
     View myPageLayout;
 
     View btnFareLayout;
     User vo;
+
+    Retrofit retrofit;
+    WeatherApi weatherApi;
+    private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
+
+    RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,13 +70,23 @@ public class MainActivity extends AppCompatActivity {
         tvNickMypageCard = findViewById(R.id.tvNickMypageCard);
         tvRatingMypageCard = findViewById(R.id.tvRatingMypageCard);
         tvPointMypageCard = findViewById(R.id.tvPointMypageCard);
+        tvWeather = findViewById(R.id.tvWeather);
 
         tvNickMypageCard.setText(vo.getUser_nick());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
 
+
+        queue = Volley.newRequestQueue(MainActivity.this);
+
+        retrofit = new Retrofit.Builder().baseUrl("https://api.openweathermap.org/").addConverterFactory(GsonConverterFactory.create()).build();
+        weatherApi = retrofit.create(WeatherApi.class);
+        Call<Object> getWeather = weatherApi.getWeather("London",appKey); //나라는 런던 으로 걍 했어용
+
+        tvWeather.setText(String.valueOf(getWeather));
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
+
 
         myPageLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,6 +201,5 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(0, 0);
             }
         });
-
     }
 }

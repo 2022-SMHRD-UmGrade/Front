@@ -2585,6 +2585,7 @@ drawable login_shape_bk
 drawable loginback
 drawable logo
 drawable logotext
+drawable logotext2
 drawable logoumbrella
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -3369,7 +3370,6 @@ id textView24
 id textView25
 id textView26
 id textView27
-id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3496,6 +3496,7 @@ id tvTerms
 id tvUmgSeq
 id tvUsageHistoryTitle
 id tvUserId
+id tvWeather
 id tvWelcomeMypageCard
 id tvWon
 id tvWrite
