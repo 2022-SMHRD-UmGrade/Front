@@ -51,6 +51,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_login_bk
 drawable login_shape_bk
+drawable loginback
 drawable logo
 drawable logotext
 drawable logoumbrella

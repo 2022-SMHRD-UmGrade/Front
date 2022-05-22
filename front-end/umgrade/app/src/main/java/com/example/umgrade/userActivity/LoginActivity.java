@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int method = Request.Method.POST;
                 // 서버 url
-                String server_url = "http://192.168.0.3:8081/myapp/Android/Login";
+                String server_url = "http://220.80.203.18:8081/myapp/Android/Login";
 
                 request = new StringRequest(
                         method,
