@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -21,6 +22,7 @@ import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
 import com.example.umgrade.MoreActivity;
 import com.example.umgrade.R;
+import com.example.umgrade.WeatherData;
 import com.example.umgrade.community.CommuActivity;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.notice.NoticeActivity;
@@ -33,7 +35,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -54,11 +61,8 @@ public class MainActivity extends AppCompatActivity {
     View btnFareLayout;
     User vo;
 
-    Retrofit retrofit;
-    WeatherApi weatherApi;
-    private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
-
     RequestQueue queue;
+    WeatherData data = new WeatherData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,15 +79,11 @@ public class MainActivity extends AppCompatActivity {
         tvNickMypageCard.setText(vo.getUser_nick());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
-
-
+        tvWeather.setText(String.valueOf(data));
+    
         queue = Volley.newRequestQueue(MainActivity.this);
 
-        retrofit = new Retrofit.Builder().baseUrl("https://api.openweathermap.org/").addConverterFactory(GsonConverterFactory.create()).build();
-        weatherApi = retrofit.create(WeatherApi.class);
-        Call<Object> getWeather = weatherApi.getWeather("London",appKey); //나라는 런던 으로 걍 했어용
 
-        tvWeather.setText(String.valueOf(getWeather));
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
 
@@ -203,3 +203,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
+
+
+
