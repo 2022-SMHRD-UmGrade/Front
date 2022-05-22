@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">UM-CYCLE</string>
+    <string name="app_name">UMCYCLE</string>
 
     <!-- activity_intro.xml -->
     <string name="tvIntro">UM-CYCLE</string>
@@ -305,5 +305,15 @@
     <string name="navCommu">커뮤니티</string>
     <string name="navMypage">마이페이지</string>
     <string name="navMore">더보기</string>
+    
+    <!-- map_popup_card.xml -->
+    <string name="mapCardTitle">UmCycle</string>
+    <string name="mapCardLoc">광주 동구 예술길 31-15 3~5</string>
+    <string name="mapCardUmb">우산</string>
+    <string name="mapCardUmbCnt">5개</string>
+    <string name="mapCardUmbChild">어린이 우산</string>
+    <string name="mapCardUmbChildCnt">0개</string>
+    <string name="mapCardSeq">00</string>
+    <string name="mapCardQr">대여하기</string>
 
 </resources>

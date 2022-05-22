@@ -42,7 +42,7 @@
         android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="umgrade"
+        android:label="UmCycle"
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -145,10 +145,10 @@
             android:name="com.example.umgrade.AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.main.MainActivity"
+            android:name="com.example.umgrade.userActivity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.umgrade.userActivity.LoginActivity"
+            android:name="com.example.umgrade.main.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
