@@ -185,6 +185,7 @@ id divider20
 id divider21
 id divider22
 id divider23
+id divider24
 id divider3
 id divider4
 id divider5
@@ -263,6 +264,7 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id imgCardAdd
 id imgCommentProfile
 id imgJoinTitle
@@ -284,6 +286,14 @@ id lvNotice
 id lvUsageHistoryList
 id lvborad
 id mainScroll
+id mapCardLoc
+id mapCardQr
+id mapCardSeq
+id mapCardTitle
+id mapCardUmb
+id mapCardUmbChild
+id mapCardUmbChildCnt
+id mapCardUmbCnt
 id map_View
 id myPageLayout
 id navCommu
@@ -495,6 +505,7 @@ layout fragment_notice
 layout layout_login
 layout layout_register
 layout map_card
+layout map_popup_card
 layout mypage_card
 layout mypage_card2
 layout notice_list
@@ -598,6 +609,14 @@ string fragCommu
 string fragMain
 string fragMore
 string fragMyPage
+string mapCardLoc
+string mapCardQr
+string mapCardSeq
+string mapCardTitle
+string mapCardUmb
+string mapCardUmbChild
+string mapCardUmbChildCnt
+string mapCardUmbCnt
 string navCommu
 string navMain
 string navMore

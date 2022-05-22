@@ -2923,6 +2923,7 @@ int id divider20 0x7f080109
 int id divider21 0x7f08010a
 int id divider22 0x7f08010b
 int id divider23 0x7f08010c
+int id divider24 0x7f080367
 int id divider3 0x7f08010d
 int id divider4 0x7f08010e
 int id divider5 0x7f08010f
@@ -3062,6 +3063,7 @@ int id imageView 0x7f080194
 int id imageView2 0x7f080195
 int id imageView3 0x7f080196
 int id imageView4 0x7f080197
+int id imageView5 0x7f080368
 int id imgCardAdd 0x7f080198
 int id imgCommentProfile 0x7f080199
 int id imgJoinTitle 0x7f08019a
@@ -3107,6 +3109,14 @@ int id lvNotice 0x7f0801c1
 int id lvUsageHistoryList 0x7f0801c2
 int id lvborad 0x7f0801c3
 int id mainScroll 0x7f0801c4
+int id mapCardLoc 0x7f080369
+int id mapCardQr 0x7f08036a
+int id mapCardSeq 0x7f08036b
+int id mapCardTitle 0x7f08036c
+int id mapCardUmb 0x7f08036d
+int id mapCardUmbChild 0x7f08036e
+int id mapCardUmbChildCnt 0x7f08036f
+int id mapCardUmbCnt 0x7f080370
 int id map_View 0x7f0801c5
 int id masked 0x7f0801c6
 int id match_constraint 0x7f0801c7
@@ -3677,6 +3687,7 @@ int layout m3_alert_dialog 0x7f0b005a
 int layout m3_alert_dialog_actions 0x7f0b005b
 int layout m3_alert_dialog_title 0x7f0b005c
 int layout map_card 0x7f0b005d
+int layout map_popup_card 0x7f0b00bb
 int layout material_chip_input_combo 0x7f0b005e
 int layout material_clock_display 0x7f0b005f
 int layout material_clock_display_divider 0x7f0b0060
@@ -3961,6 +3972,14 @@ int string m3_sys_typescale_label_small_font 0x7f1000b2
 int string m3_sys_typescale_title_large_font 0x7f1000b3
 int string m3_sys_typescale_title_medium_font 0x7f1000b4
 int string m3_sys_typescale_title_small_font 0x7f1000b5
+int string mapCardLoc 0x7f10017d
+int string mapCardQr 0x7f10017e
+int string mapCardSeq 0x7f10017f
+int string mapCardTitle 0x7f100180
+int string mapCardUmb 0x7f100181
+int string mapCardUmbChild 0x7f100182
+int string mapCardUmbChildCnt 0x7f100183
+int string mapCardUmbCnt 0x7f100184
 int string material_clock_display_divider 0x7f1000b6
 int string material_clock_toggle_content_description 0x7f1000b7
 int string material_hour_selection 0x7f1000b8
