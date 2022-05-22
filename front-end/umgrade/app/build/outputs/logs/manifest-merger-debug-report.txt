@@ -747,12 +747,12 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:127:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:126:13-44
-activity#com.example.umgrade.IntroActivity
+activity#com.example.umgrade.main.MainActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:128:9-130:40
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:130:13-37
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-42
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:129:13-46
 activity#com.example.umgrade.AccountSettingActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:131:9-133:40
 	android:exported
@@ -765,12 +765,12 @@ ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\Andr
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:136:13-37
 	android:name
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:135:13-55
-activity#com.example.umgrade.main.MainActivity
+activity#com.example.umgrade.IntroActivity
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:137:9-145:20
 	android:exported
 		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:139:13-36
 	android:name
-		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:138:13-46
+		ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:138:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\smhrd\Desktop\project2nd\front-end\umgrade\app\src\main\AndroidManifest.xml:140:13-144:29
 action#android.intent.action.MAIN

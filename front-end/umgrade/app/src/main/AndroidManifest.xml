@@ -126,16 +126,16 @@
             android:name=".PayViewActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".main.MainActivity"
             android:exported="false" />
         <activity
             android:name=".AccountSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".userActivity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".userActivity.LoginActivity"
+            android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

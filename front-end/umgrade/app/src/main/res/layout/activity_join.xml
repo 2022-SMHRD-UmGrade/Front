@@ -48,7 +48,7 @@
                     <ImageView
                         style="@style/parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/ic_login_bk"
+                        android:background="@drawable/loginback"
                         android:contentDescription="login background"
                         android:visibility="visible" />
 
