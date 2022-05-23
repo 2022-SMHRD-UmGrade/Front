@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.android.volley.RequestQueue;
@@ -122,14 +123,22 @@ public class MainActivity extends AppCompatActivity {
 
         btnQrCard = findViewById(R.id.btnQrCard);
         // QR스캔 클릭 시 화면전환
-        btnQrCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, QrActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        if(vo.getUser_type().equals("P")) {
+            btnQrCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, QrActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+        }
+        else {
+            Toast.makeText(this,
+                    "결재정보를 입력해주세요",
+                    Toast.LENGTH_SHORT).show();
+        }
+       
 
 
         imgMypageProfile = (ImageView) findViewById(R.id.imgMypageProfile);

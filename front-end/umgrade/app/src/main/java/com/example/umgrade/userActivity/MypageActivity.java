@@ -45,6 +45,7 @@ public class MypageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mypage);
+        vo = UserInfo.info;
 
         btnProfileUpdate = findViewById(R.id.btnProfileUpdate); //프로필 수정
         imgMypageProfile = findViewById(R.id.imgProfileChange); //프로필이미지
@@ -72,7 +73,6 @@ public class MypageActivity extends AppCompatActivity {
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
         String user_id = vo.getUser_id();
-
 
 
         // 출력된 값과 수정한 값이 다를 때만 닉네임 변경
