@@ -70,7 +70,7 @@ public class PasswordChangeActivity extends AppCompatActivity {
     public void changePw() {
         Log.d("userInfo1", vo.toString());
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3:8081/myapp/Android/PwUpdate";
+        String server_url = "http://220.80.203.18:8081/myapp/Android/PwUpdate";
 
         request = new StringRequest(
                 method,

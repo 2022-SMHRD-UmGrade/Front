@@ -11,18 +11,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
+
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
 import com.example.umgrade.MoreActivity;
 import com.example.umgrade.R;
-import com.example.umgrade.WeatherData;
 import com.example.umgrade.community.CommuActivity;
 import com.example.umgrade.info.UserInfo;
 import com.example.umgrade.notice.NoticeActivity;
@@ -30,25 +25,6 @@ import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.vo.User;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
-import retrofit2.Call;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     User vo;
 
     RequestQueue queue;
-    WeatherData data = new WeatherData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
         tvNickMypageCard.setText(vo.getUser_nick());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
-        tvWeather.setText(String.valueOf(data));
     
         queue = Volley.newRequestQueue(MainActivity.this);
 
+        Intent intent = getIntent();
 
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);

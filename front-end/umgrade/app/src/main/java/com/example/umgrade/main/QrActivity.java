@@ -110,14 +110,14 @@ public class QrActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), barcode, Toast.LENGTH_LONG).show();
         Log.d("barcode", barcode);
         int method = Request.Method.POST;
-        String server_url = "http://192.168.0.3/myapp/Android/Rent?qrNum"+barcode;
+//        String server_url = "http://220.80.203.18/myapp/Android/Rent";
         request = new StringRequest(
                 method,
-                server_url,
+                barcode,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
+                        Log.d("response1", response);
                     }
                 },
                 new Response.ErrorListener() {
@@ -138,6 +138,8 @@ public class QrActivity extends AppCompatActivity {
                 return param;
             }
         };
+
+        queue.add(request);
 
     }
 

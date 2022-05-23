@@ -185,7 +185,7 @@ public class JoinActivity extends AppCompatActivity{
                             "비밀번호 일치",
                             Toast.LENGTH_SHORT).show();
                     int method = Request.Method.POST;
-                    String server_url = "http://192.168.0.3:8081/myapp/Android/Join";
+                    String server_url = "http://220.80.203.18:8081/myapp/Android/Join";
 
                     request = new StringRequest(
                             method,
