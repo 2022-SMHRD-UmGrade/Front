@@ -73,6 +73,7 @@
             android:text="@string/btnKakaoLogin"
             android:textColor="#191919"
             android:textStyle="bold"
+            android:visibility="gone"
             app:cornerRadius="7dp" />
 
         <TextView
