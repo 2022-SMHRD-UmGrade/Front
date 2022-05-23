@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_shape"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="left"
+            android:text="@string/eventTitle"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/eventStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/eventStart"
+            app:layout_constraintStart_toStartOf="@+id/eventTitle"
+            app:layout_constraintTop_toBottomOf="@+id/eventTitle" />
+
+        <TextView
+            android:id="@+id/eventSeq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventSeq"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toBottomOf="@+id/eventTitle" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <TextView
+            android:id="@+id/eventDash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:text="@string/eventDash"
+            app:layout_constraintBottom_toBottomOf="@+id/eventStart"
+            app:layout_constraintStart_toEndOf="@+id/eventStart"
+            app:layout_constraintTop_toTopOf="@+id/eventStart" />
+
+        <TextView
+            android:id="@+id/eventEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:text="@string/eventEnd"
+            app:layout_constraintBottom_toBottomOf="@+id/eventDash"
+            app:layout_constraintStart_toEndOf="@+id/eventDash"
+            app:layout_constraintTop_toTopOf="@+id/eventDash" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

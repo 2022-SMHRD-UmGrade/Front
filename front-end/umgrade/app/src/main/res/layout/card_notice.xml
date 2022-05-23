@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_shape"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/noticeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="left"
+            android:text="@string/noticeTitle"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noticeTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/noticeTime"
+            app:layout_constraintEnd_toEndOf="@+id/noticeTitle"
+            app:layout_constraintStart_toStartOf="@+id/noticeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/noticeTitle" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96107054" />
+
+        <TextView
+            android:id="@+id/noticeSeq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noticeSeq"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/noticeTime"
+            app:layout_constraintTop_toBottomOf="@+id/noticeTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

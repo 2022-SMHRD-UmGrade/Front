@@ -92,7 +92,6 @@ public class MypageActivity extends AppCompatActivity {
                 Log.d("vo2", vo.toString());
                 // 화면전환
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -103,7 +102,6 @@ public class MypageActivity extends AppCompatActivity {
                 Intent intent = new Intent(MypageActivity.this, PaymentActivity.class);
                 intent.putExtra("user_id", user_id);
                 startActivity(intent);
-                finish();
             }
         });
 

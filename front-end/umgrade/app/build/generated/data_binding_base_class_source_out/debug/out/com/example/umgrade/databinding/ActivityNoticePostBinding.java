@@ -57,13 +57,23 @@ public final class ActivityNoticePostBinding implements ViewBinding {
   @NonNull
   public final ScrollView scrollView5;
 
+  @NonNull
+  public final TextView textView3;
+
+  @NonNull
+  public final TextView textView4;
+
+  @NonNull
+  public final TextView textView5;
+
   private ActivityNoticePostBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout4,
       @NonNull View divider7, @NonNull Guideline guideline11, @NonNull TextView noticePost,
       @NonNull TextView noticePost2, @NonNull TextView noticePostCnt,
       @NonNull TextView noticePostContent, @NonNull TextView noticePostSeq,
       @NonNull TextView noticePostTime, @NonNull TextView noticePostTitle,
-      @NonNull ScrollView scrollView5) {
+      @NonNull ScrollView scrollView5, @NonNull TextView textView3, @NonNull TextView textView4,
+      @NonNull TextView textView5) {
     this.rootView = rootView;
     this.constraintLayout2 = constraintLayout2;
     this.constraintLayout4 = constraintLayout4;
@@ -77,6 +87,9 @@ public final class ActivityNoticePostBinding implements ViewBinding {
     this.noticePostTime = noticePostTime;
     this.noticePostTitle = noticePostTitle;
     this.scrollView5 = scrollView5;
+    this.textView3 = textView3;
+    this.textView4 = textView4;
+    this.textView5 = textView5;
   }
 
   @Override
@@ -178,9 +191,28 @@ public final class ActivityNoticePostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
       return new ActivityNoticePostBinding((ConstraintLayout) rootView, constraintLayout2,
           constraintLayout4, divider7, guideline11, noticePost, noticePost2, noticePostCnt,
-          noticePostContent, noticePostSeq, noticePostTime, noticePostTitle, scrollView5);
+          noticePostContent, noticePostSeq, noticePostTime, noticePostTitle, scrollView5, textView3,
+          textView4, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

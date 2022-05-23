@@ -20,10 +20,15 @@ public final class FragmentEventBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final CardEventBinding eventPost;
+
+  @NonNull
   public final ListView lvEvent;
 
-  private FragmentEventBinding(@NonNull ConstraintLayout rootView, @NonNull ListView lvEvent) {
+  private FragmentEventBinding(@NonNull ConstraintLayout rootView,
+      @NonNull CardEventBinding eventPost, @NonNull ListView lvEvent) {
     this.rootView = rootView;
+    this.eventPost = eventPost;
     this.lvEvent = lvEvent;
   }
 
@@ -54,13 +59,20 @@ public final class FragmentEventBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.eventPost;
+      View eventPost = ViewBindings.findChildViewById(rootView, id);
+      if (eventPost == null) {
+        break missingId;
+      }
+      CardEventBinding binding_eventPost = CardEventBinding.bind(eventPost);
+
       id = R.id.lvEvent;
       ListView lvEvent = ViewBindings.findChildViewById(rootView, id);
       if (lvEvent == null) {
         break missingId;
       }
 
-      return new FragmentEventBinding((ConstraintLayout) rootView, lvEvent);
+      return new FragmentEventBinding((ConstraintLayout) rootView, binding_eventPost, lvEvent);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

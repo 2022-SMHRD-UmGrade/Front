@@ -352,6 +352,9 @@ id textView24
 id textView25
 id textView26
 id textView27
+id textView3
+id textView4
+id textView5
 id tvAccountID
 id tvAccountSetting
 id tvAddress
@@ -496,6 +499,8 @@ layout activity_write
 layout address_card
 layout board_list
 layout card_add_card
+layout card_event
+layout card_notice
 layout comment_list
 layout custom_scanner
 layout email_card

@@ -84,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ServiceActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -95,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NoticeActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -106,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -117,12 +114,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SupportActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         btnQrCard = findViewById(R.id.btnQrCard);
         // QR스캔 클릭 시 화면전환
+<<<<<<< HEAD
         if(vo.getUser_type().equals("P")) {
             btnQrCard.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -139,6 +136,15 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
        
+=======
+        btnQrCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, QrActivity.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> 4d065f0dcd64e23d8d7021523484f3c133a0ed70
 
 
         imgMypageProfile = (ImageView) findViewById(R.id.imgMypageProfile);
@@ -152,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
                 // 요금 안내 페이지로 이동
                 Intent intent = new Intent(MainActivity.this, FareActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
         // 페이지 전환

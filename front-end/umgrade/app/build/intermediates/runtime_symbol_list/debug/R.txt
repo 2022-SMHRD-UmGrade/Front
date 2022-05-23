@@ -3369,6 +3369,9 @@ int id textView24 0x7f0802c3
 int id textView25 0x7f0802c4
 int id textView26 0x7f0802c5
 int id textView27 0x7f0802c6
+int id textView3 0x7f080371
+int id textView4 0x7f080372
+int id textView5 0x7f080373
 int id text_input_end_icon 0x7f0802c7
 int id text_input_error_icon 0x7f0802c8
 int id text_input_start_icon 0x7f0802c9
@@ -3659,6 +3662,8 @@ int layout activity_write 0x7f0b003a
 int layout address_card 0x7f0b003b
 int layout board_list 0x7f0b003c
 int layout card_add_card 0x7f0b003d
+int layout card_event 0x7f0b00bc
+int layout card_notice 0x7f0b00bd
 int layout comment_list 0x7f0b003e
 int layout custom_dialog 0x7f0b003f
 int layout custom_scanner 0x7f0b0040

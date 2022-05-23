@@ -22,9 +22,14 @@ public final class FragmentNoticeBinding implements ViewBinding {
   @NonNull
   public final ListView lvNotice;
 
-  private FragmentNoticeBinding(@NonNull ConstraintLayout rootView, @NonNull ListView lvNotice) {
+  @NonNull
+  public final CardNoticeBinding noticePost;
+
+  private FragmentNoticeBinding(@NonNull ConstraintLayout rootView, @NonNull ListView lvNotice,
+      @NonNull CardNoticeBinding noticePost) {
     this.rootView = rootView;
     this.lvNotice = lvNotice;
+    this.noticePost = noticePost;
   }
 
   @Override
@@ -60,7 +65,14 @@ public final class FragmentNoticeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentNoticeBinding((ConstraintLayout) rootView, lvNotice);
+      id = R.id.noticePost;
+      View noticePost = ViewBindings.findChildViewById(rootView, id);
+      if (noticePost == null) {
+        break missingId;
+      }
+      CardNoticeBinding binding_noticePost = CardNoticeBinding.bind(noticePost);
+
+      return new FragmentNoticeBinding((ConstraintLayout) rootView, lvNotice, binding_noticePost);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
