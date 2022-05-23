@@ -93,7 +93,6 @@ public class CommuActivity extends AppCompatActivity {
                 intent.putExtra("article_date", date);
                 intent.putExtra("article_file", file);
                 startActivity(intent);
-                finish();
             }
         });
         recyclerView.setAdapter(adapter);
@@ -107,7 +106,6 @@ public class CommuActivity extends AppCompatActivity {
                 vo = UserInfo.info;
                 Intent intent = new Intent(CommuActivity.this, WriteActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
