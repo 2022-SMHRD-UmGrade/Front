@@ -50,6 +50,7 @@
         android:layout_marginBottom="8dp"
         android:gravity="right"
         android:text="@string/boardSeq"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/boardTime"
         app:layout_constraintEnd_toEndOf="@+id/boardTime" />
 </androidx.constraintlayout.widget.ConstraintLayout>
