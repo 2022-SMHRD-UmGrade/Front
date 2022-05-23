@@ -83,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ServiceActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -94,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NoticeActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -105,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -116,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SupportActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -127,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, QrActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -143,7 +138,6 @@ public class MainActivity extends AppCompatActivity {
                 // 요금 안내 페이지로 이동
                 Intent intent = new Intent(MainActivity.this, FareActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
         // 페이지 전환

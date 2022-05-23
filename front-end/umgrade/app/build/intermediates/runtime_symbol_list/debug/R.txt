@@ -3659,6 +3659,7 @@ int layout activity_write 0x7f0b003a
 int layout address_card 0x7f0b003b
 int layout board_list 0x7f0b003c
 int layout card_add_card 0x7f0b003d
+int layout card_event 0x7f0b00bc
 int layout comment_list 0x7f0b003e
 int layout custom_dialog 0x7f0b003f
 int layout custom_scanner 0x7f0b0040

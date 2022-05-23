@@ -496,6 +496,7 @@ layout activity_write
 layout address_card
 layout board_list
 layout card_add_card
+layout card_event
 layout comment_list
 layout custom_scanner
 layout email_card

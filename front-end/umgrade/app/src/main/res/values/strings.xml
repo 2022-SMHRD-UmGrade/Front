@@ -136,17 +136,17 @@
     <string name="noticeSeq">00</string>
 
     <!-- event_list.xml -->
-    <string name="eventTitle">이벤트 제목</string>
-    <string name="eventStart">2022.05.13</string>
+    <string name="eventTitle">UmCycle 사용 인증 이벤트!</string>
+    <string name="eventStart">2022.05.23</string>
     <string name="eventDash">-</string>
-    <string name="eventEnd">2022.06.01</string>
+    <string name="eventEnd">2022.06.30</string>
     <string name="eventSeq">00</string>
 
     <!-- activity_event_post.xml -->
     <string name="eventPost">이벤트</string>
-    <string name="eventPostTitle">이벤트 글제목</string>
-    <string name="eventPostTime">2022. 05. 13. 16:16</string>
-    <string name="eventPostContent">이벤트 본문</string>
+    <string name="eventPostTitle">UmCycle 사용 인증 이벤트!</string>
+    <string name="eventPostTime">2022. 05. 23. 16:20</string>
+    <string name="eventPostContent">UmCycle 서비스를 이용한 후 고객센터로 인증샷을 보내주시면 추첨을 통해 문화상품권(5천원권)과 UmCycle 이용 시 사용할 수 있는 쿠폰을 드립니다.</string>
     <string name="eventPostSeq">00</string>
     <string name="eventPostCnt">조회 13</string>
 
