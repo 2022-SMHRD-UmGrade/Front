@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnQrCard = findViewById(R.id.btnQrCard);
         // QR스캔 클릭 시 화면전환
-<<<<<<< HEAD
+
         if(vo.getUser_type().equals("P")) {
             btnQrCard.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
        
-=======
+
         btnQrCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
->>>>>>> 4d065f0dcd64e23d8d7021523484f3c133a0ed70
+
 
 
         imgMypageProfile = (ImageView) findViewById(R.id.imgMypageProfile);
