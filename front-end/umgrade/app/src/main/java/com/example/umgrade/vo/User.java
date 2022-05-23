@@ -13,8 +13,9 @@ public class User {
     private String user_type;    // 유저 타입
     private String user_status; // 유저 상태
     private String user_point;  // 유저 포인트
+    private String user_b_key; // 유저 빌링키
 
-    public User(String user_id, String user_pw, String user_name, String user_nick, String user_email, String user_phone, String user_joindate, String user_addr, String user_type, String user_status, String user_point) {
+    public User(String user_id, String user_pw, String user_name, String user_nick, String user_email, String user_phone, String user_joindate, String user_addr, String user_type, String user_status, String user_point, String user_b_key) {
         this.user_id = user_id;
         this.user_pw = user_pw;
         this.user_name = user_name;
@@ -26,6 +27,7 @@ public class User {
         this.user_type = user_type;
         this.user_status = user_status;
         this.user_point = user_point;
+        this.user_b_key = user_b_key;
     }
 
     public String getUser_id() {
@@ -72,6 +74,10 @@ public class User {
         return user_point;
     }
 
+    public String getUser_b_key() {
+        return user_b_key;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -86,6 +92,7 @@ public class User {
                 ", user_type='" + user_type + '\'' +
                 ", user_status='" + user_status + '\'' +
                 ", user_point='" + user_point + '\'' +
+                ", user_b_key='" + user_b_key + '\'' +
                 '}';
     }
 }

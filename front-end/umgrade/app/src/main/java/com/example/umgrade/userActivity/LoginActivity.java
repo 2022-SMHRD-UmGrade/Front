@@ -83,8 +83,8 @@ public class LoginActivity extends AppCompatActivity {
                                         String user_type = jsonObject.getString("user_type");
                                         String user_status = jsonObject.getString("user_status");
                                         String user_point = jsonObject.getString("user_point");
-
-                                        User vo = new User(user_id, user_pw, user_name, user_nick, user_email, user_phone, user_joindate, user_addr, user_type, user_status, user_point);
+                                        String user_b_key = jsonObject.getString("user_b_key");
+                                        User vo = new User(user_id, user_pw, user_name, user_nick, user_email, user_phone, user_joindate, user_addr, user_type, user_status, user_point, user_b_key);
 
 
                                         Log.v("dddddd", vo.toString());
