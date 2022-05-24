@@ -59,8 +59,8 @@ public class QrActivity extends AppCompatActivity {
             public void barcodeResult(BarcodeResult result) {
                 readBarcode(result.toString());
                 Intent intent = new Intent(QrActivity.this, MainActivity.class);
-                intent.putExtra("qrNum",result.toString());
-                intent.putExtra("userId", vo.getUser_id());
+//                intent.putExtra("uboxId",result.toString());
+//                intent.putExtra("userId", vo.getUser_id());
                 startActivity(intent);
                 Log.d("result", result.toString());
                 finish();
@@ -110,10 +110,10 @@ public class QrActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), barcode, Toast.LENGTH_LONG).show();
         Log.d("barcode", barcode);
         int method = Request.Method.POST;
-//        String server_url = "http://220.80.203.18/myapp/Android/Rent";
+        String server_url = "http://220.80.203.18:8081/myapp/Android/Rent";
         request = new StringRequest(
                 method,
-                barcode,
+                server_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -133,7 +133,7 @@ public class QrActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<>();
-                param.put("qrNum", barcode);
+                param.put("uboxId", barcode);
                 param.put("userId", vo.getUser_id());
                 return param;
             }
