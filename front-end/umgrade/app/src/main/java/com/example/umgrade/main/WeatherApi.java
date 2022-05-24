@@ -9,5 +9,5 @@ public interface WeatherApi {
     //쓰면 같아요. 이게 BASE_URL 이 될 수 도 있어요.
 
     @GET("data/2.5/weather") //BASE_URL과 get괄호 안에를 합치면 설명서에 나와있는 주소가 돼요.
-    Call<Object> getWeather(@Query("q") String q, @Query("appid") String appid);
+    Call<Object> getWeather(@Query("Gwangju") String q, @Query("0ce6acbe268f9a28e74c30c6825ec6c6") String appid);
 }

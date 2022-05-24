@@ -4,7 +4,7 @@
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":app" />
-        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="7.1.2" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
         <option name="LAST_KNOWN_AGP_VERSION" value="7.1.2" />
       </configuration>
     </facet>
@@ -60,8 +60,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.4.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.3.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.4.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: C./Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/libs/libDaumMapAndroid.jar" level="project" />
-    <orderEntry type="library" name="Gradle: C./Users/smhrd/Desktop/2nd/front_end/front-end/umgrade/app/libs/llibDaumMapEngineApi.jar" level="project" />
+    <orderEntry type="library" name="Gradle: C./Users/smhrd/Desktop/project2nd/front-end/umgrade/app/libs/libDaumMapAndroid.jar" level="project" />
+    <orderEntry type="library" name="Gradle: C./Users/smhrd/Desktop/project2nd/front-end/umgrade/app/libs/llibDaumMapEngineApi.jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.4.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />

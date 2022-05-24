@@ -1,5 +1,7 @@
 package com.example.umgrade.main;
 
+import static com.google.common.collect.ComparisonChain.start;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -26,6 +28,7 @@ import com.example.umgrade.service.ServiceActivity;
 import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.vo.User;
+//import com.example.umgrade.weather.OpenWeather;
 
 import java.io.IOException;
 
@@ -43,7 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     Retrofit retrofit;
     WeatherApi weatherApi;
+    private final String TAG = "OpenWeatherRepository";
+    public static final String BASE_URL = "https://api.openweathermap.org/";
+    //OpenWeather opw;
     private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
+
 
     View btnFareLayout;
     User vo;
@@ -70,16 +77,17 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-
+        // 날씨 API
         retrofit = new Retrofit.Builder().baseUrl("https://api.openweathermap.org/").addConverterFactory(GsonConverterFactory.create()).build();
         weatherApi = retrofit.create(WeatherApi.class);
-        Call<Object> getWeather = weatherApi.getWeather("London",appKey); //나라는 런던 으로 걍 했어용
+        Call<Object> getWeather = weatherApi.getWeather("Gwangju",appKey);
 
 //        try{
-//            System.out.println(getWeather.execute().body());
+//            Log.d("weather", getWeather.execute().body().toString());
 //        }catch (IOException e){
 //            e.printStackTrace();
 //        }
+        //Log.d("weather", getWeather.toString());
 
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
