@@ -55,6 +55,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView imgUmb;
 
   @NonNull
+  public final ImageView imgWeather;
+
+  @NonNull
   public final SliderCardBinding include2;
 
   @NonNull
@@ -115,7 +118,19 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvTemp;
 
   @NonNull
+  public final TextView tvToday;
+
+  @NonNull
   public final TextView tvWeather;
+
+  @NonNull
+  public final TextView tvWeatherAnd;
+
+  @NonNull
+  public final TextView tvWeatherTemp;
+
+  @NonNull
+  public final TextView tvWeatherWind;
 
   @NonNull
   public final TextView tvWelcomeMypageCard;
@@ -128,16 +143,18 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull FrameLayout container, @NonNull View divider, @NonNull View divider21,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull CircleImageView imgMypageProfile, @NonNull ImageView imgUmb,
-      @NonNull SliderCardBinding include2, @NonNull LinearLayout linearLayout4,
-      @NonNull ScrollView mainScroll, @NonNull ConstraintLayout myPageLayout,
-      @NonNull Button navCommu, @NonNull Button navMain, @NonNull Button navMore,
-      @NonNull Button navMypage, @NonNull TextView tvCarbonMypageCard, @NonNull TextView tvCity,
-      @NonNull TextView tvComment1MypageCard, @NonNull TextView tvComment2MypageCard,
-      @NonNull TextView tvCouponMypageCard, @NonNull TextView tvCouponTextMypageCard,
-      @NonNull TextView tvNickMypageCard, @NonNull TextView tvPointMypageCard,
-      @NonNull TextView tvPointTextMypageCard, @NonNull TextView tvRatingMypageCard,
-      @NonNull TextView tvRatingTextMypageCard, @NonNull TextView tvTemp,
-      @NonNull TextView tvWeather, @NonNull TextView tvWelcomeMypageCard,
+      @NonNull ImageView imgWeather, @NonNull SliderCardBinding include2,
+      @NonNull LinearLayout linearLayout4, @NonNull ScrollView mainScroll,
+      @NonNull ConstraintLayout myPageLayout, @NonNull Button navCommu, @NonNull Button navMain,
+      @NonNull Button navMore, @NonNull Button navMypage, @NonNull TextView tvCarbonMypageCard,
+      @NonNull TextView tvCity, @NonNull TextView tvComment1MypageCard,
+      @NonNull TextView tvComment2MypageCard, @NonNull TextView tvCouponMypageCard,
+      @NonNull TextView tvCouponTextMypageCard, @NonNull TextView tvNickMypageCard,
+      @NonNull TextView tvPointMypageCard, @NonNull TextView tvPointTextMypageCard,
+      @NonNull TextView tvRatingMypageCard, @NonNull TextView tvRatingTextMypageCard,
+      @NonNull TextView tvTemp, @NonNull TextView tvToday, @NonNull TextView tvWeather,
+      @NonNull TextView tvWeatherAnd, @NonNull TextView tvWeatherTemp,
+      @NonNull TextView tvWeatherWind, @NonNull TextView tvWelcomeMypageCard,
       @NonNull TextView tvWind) {
     this.rootView = rootView;
     this.bottomNavMain = bottomNavMain;
@@ -149,6 +166,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.guideline3 = guideline3;
     this.imgMypageProfile = imgMypageProfile;
     this.imgUmb = imgUmb;
+    this.imgWeather = imgWeather;
     this.include2 = include2;
     this.linearLayout4 = linearLayout4;
     this.mainScroll = mainScroll;
@@ -169,7 +187,11 @@ public final class ActivityMainBinding implements ViewBinding {
     this.tvRatingMypageCard = tvRatingMypageCard;
     this.tvRatingTextMypageCard = tvRatingTextMypageCard;
     this.tvTemp = tvTemp;
+    this.tvToday = tvToday;
     this.tvWeather = tvWeather;
+    this.tvWeatherAnd = tvWeatherAnd;
+    this.tvWeatherTemp = tvWeatherTemp;
+    this.tvWeatherWind = tvWeatherWind;
     this.tvWelcomeMypageCard = tvWelcomeMypageCard;
     this.tvWind = tvWind;
   }
@@ -252,6 +274,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.imgUmb;
       ImageView imgUmb = ViewBindings.findChildViewById(rootView, id);
       if (imgUmb == null) {
+        break missingId;
+      }
+
+      id = R.id.imgWeather;
+      ImageView imgWeather = ViewBindings.findChildViewById(rootView, id);
+      if (imgWeather == null) {
         break missingId;
       }
 
@@ -376,9 +404,33 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvToday;
+      TextView tvToday = ViewBindings.findChildViewById(rootView, id);
+      if (tvToday == null) {
+        break missingId;
+      }
+
       id = R.id.tvWeather;
       TextView tvWeather = ViewBindings.findChildViewById(rootView, id);
       if (tvWeather == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWeatherAnd;
+      TextView tvWeatherAnd = ViewBindings.findChildViewById(rootView, id);
+      if (tvWeatherAnd == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWeatherTemp;
+      TextView tvWeatherTemp = ViewBindings.findChildViewById(rootView, id);
+      if (tvWeatherTemp == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWeatherWind;
+      TextView tvWeatherWind = ViewBindings.findChildViewById(rootView, id);
+      if (tvWeatherWind == null) {
         break missingId;
       }
 
@@ -395,12 +447,12 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavMain, btnFare, container,
-          divider, divider21, guideline2, guideline3, imgMypageProfile, imgUmb, binding_include2,
-          linearLayout4, mainScroll, myPageLayout, navCommu, navMain, navMore, navMypage,
-          tvCarbonMypageCard, tvCity, tvComment1MypageCard, tvComment2MypageCard,
+          divider, divider21, guideline2, guideline3, imgMypageProfile, imgUmb, imgWeather,
+          binding_include2, linearLayout4, mainScroll, myPageLayout, navCommu, navMain, navMore,
+          navMypage, tvCarbonMypageCard, tvCity, tvComment1MypageCard, tvComment2MypageCard,
           tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard,
-          tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard, tvTemp, tvWeather,
-          tvWelcomeMypageCard, tvWind);
+          tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard, tvTemp, tvToday,
+          tvWeather, tvWeatherAnd, tvWeatherTemp, tvWeatherWind, tvWelcomeMypageCard, tvWind);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
