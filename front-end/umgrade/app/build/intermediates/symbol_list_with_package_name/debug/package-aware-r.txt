@@ -3405,6 +3405,7 @@ id tvAddressTitle
 id tvCarbonMypageCard
 id tvCardAdd
 id tvCardRegisterTitle
+id tvCity
 id tvComment1MypageCard
 id tvComment2MypageCard
 id tvCommentContent
@@ -3495,12 +3496,14 @@ id tvSupportSet
 id tvSupportTitle
 id tvTel
 id tvTelTitle
+id tvTemp
 id tvTerms
 id tvUmgSeq
 id tvUsageHistoryTitle
 id tvUserId
 id tvWeather
 id tvWelcomeMypageCard
+id tvWind
 id tvWon
 id tvWrite
 id tvWriter

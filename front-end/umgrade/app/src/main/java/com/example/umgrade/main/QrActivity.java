@@ -40,7 +40,7 @@ public class QrActivity extends AppCompatActivity {
     User vo;
     RequestQueue queue;
     StringRequest request;
-    String server_url2 = "http://220.80.203.18:8081/myapp";
+    String server_url2 = "http://172.30.1.24:8081/myapp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +109,7 @@ public class QrActivity extends AppCompatActivity {
 
     public void readBarcode(String barcode){
         vo = UserInfo.info;
-        Toast.makeText(getApplicationContext(), barcode, Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), barcode, Toast.LENGTH_LONG).show();
         Log.d("barcode", barcode);
         int method = Request.Method.POST;
         String server_url = server_url2+"/Android/Rent";
@@ -135,7 +135,7 @@ public class QrActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<>();
-                param.put("uboxId", barcode);
+                param.put("uboxSeq", barcode);
                 param.put("userId", vo.getUser_id());
                 return param;
             }

@@ -23,13 +23,26 @@ public final class WeatherCardBinding implements ViewBinding {
   public final CardView cvWeather;
 
   @NonNull
+  public final TextView tvCity;
+
+  @NonNull
+  public final TextView tvTemp;
+
+  @NonNull
   public final TextView tvWeather;
 
+  @NonNull
+  public final TextView tvWind;
+
   private WeatherCardBinding(@NonNull CardView rootView, @NonNull CardView cvWeather,
-      @NonNull TextView tvWeather) {
+      @NonNull TextView tvCity, @NonNull TextView tvTemp, @NonNull TextView tvWeather,
+      @NonNull TextView tvWind) {
     this.rootView = rootView;
     this.cvWeather = cvWeather;
+    this.tvCity = tvCity;
+    this.tvTemp = tvTemp;
     this.tvWeather = tvWeather;
+    this.tvWind = tvWind;
   }
 
   @Override
@@ -61,13 +74,32 @@ public final class WeatherCardBinding implements ViewBinding {
     missingId: {
       CardView cvWeather = (CardView) rootView;
 
+      id = R.id.tvCity;
+      TextView tvCity = ViewBindings.findChildViewById(rootView, id);
+      if (tvCity == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTemp;
+      TextView tvTemp = ViewBindings.findChildViewById(rootView, id);
+      if (tvTemp == null) {
+        break missingId;
+      }
+
       id = R.id.tvWeather;
       TextView tvWeather = ViewBindings.findChildViewById(rootView, id);
       if (tvWeather == null) {
         break missingId;
       }
 
-      return new WeatherCardBinding((CardView) rootView, cvWeather, tvWeather);
+      id = R.id.tvWind;
+      TextView tvWind = ViewBindings.findChildViewById(rootView, id);
+      if (tvWind == null) {
+        break missingId;
+      }
+
+      return new WeatherCardBinding((CardView) rootView, cvWeather, tvCity, tvTemp, tvWeather,
+          tvWind);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

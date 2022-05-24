@@ -82,6 +82,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvCarbonMypageCard;
 
   @NonNull
+  public final TextView tvCity;
+
+  @NonNull
   public final TextView tvComment1MypageCard;
 
   @NonNull
@@ -109,7 +112,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvRatingTextMypageCard;
 
   @NonNull
+  public final TextView tvTemp;
+
+  @NonNull
+  public final TextView tvWeather;
+
+  @NonNull
   public final TextView tvWelcomeMypageCard;
+
+  @NonNull
+  public final TextView tvWind;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNavMain, @NonNull Button btnFare,
@@ -119,12 +131,14 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull SliderCardBinding include2, @NonNull LinearLayout linearLayout4,
       @NonNull ScrollView mainScroll, @NonNull ConstraintLayout myPageLayout,
       @NonNull Button navCommu, @NonNull Button navMain, @NonNull Button navMore,
-      @NonNull Button navMypage, @NonNull TextView tvCarbonMypageCard,
+      @NonNull Button navMypage, @NonNull TextView tvCarbonMypageCard, @NonNull TextView tvCity,
       @NonNull TextView tvComment1MypageCard, @NonNull TextView tvComment2MypageCard,
       @NonNull TextView tvCouponMypageCard, @NonNull TextView tvCouponTextMypageCard,
       @NonNull TextView tvNickMypageCard, @NonNull TextView tvPointMypageCard,
       @NonNull TextView tvPointTextMypageCard, @NonNull TextView tvRatingMypageCard,
-      @NonNull TextView tvRatingTextMypageCard, @NonNull TextView tvWelcomeMypageCard) {
+      @NonNull TextView tvRatingTextMypageCard, @NonNull TextView tvTemp,
+      @NonNull TextView tvWeather, @NonNull TextView tvWelcomeMypageCard,
+      @NonNull TextView tvWind) {
     this.rootView = rootView;
     this.bottomNavMain = bottomNavMain;
     this.btnFare = btnFare;
@@ -144,6 +158,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.navMore = navMore;
     this.navMypage = navMypage;
     this.tvCarbonMypageCard = tvCarbonMypageCard;
+    this.tvCity = tvCity;
     this.tvComment1MypageCard = tvComment1MypageCard;
     this.tvComment2MypageCard = tvComment2MypageCard;
     this.tvCouponMypageCard = tvCouponMypageCard;
@@ -153,7 +168,10 @@ public final class ActivityMainBinding implements ViewBinding {
     this.tvPointTextMypageCard = tvPointTextMypageCard;
     this.tvRatingMypageCard = tvRatingMypageCard;
     this.tvRatingTextMypageCard = tvRatingTextMypageCard;
+    this.tvTemp = tvTemp;
+    this.tvWeather = tvWeather;
     this.tvWelcomeMypageCard = tvWelcomeMypageCard;
+    this.tvWind = tvWind;
   }
 
   @Override
@@ -292,6 +310,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvCity;
+      TextView tvCity = ViewBindings.findChildViewById(rootView, id);
+      if (tvCity == null) {
+        break missingId;
+      }
+
       id = R.id.tvComment1MypageCard;
       TextView tvComment1MypageCard = ViewBindings.findChildViewById(rootView, id);
       if (tvComment1MypageCard == null) {
@@ -346,18 +370,37 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvTemp;
+      TextView tvTemp = ViewBindings.findChildViewById(rootView, id);
+      if (tvTemp == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWeather;
+      TextView tvWeather = ViewBindings.findChildViewById(rootView, id);
+      if (tvWeather == null) {
+        break missingId;
+      }
+
       id = R.id.tvWelcomeMypageCard;
       TextView tvWelcomeMypageCard = ViewBindings.findChildViewById(rootView, id);
       if (tvWelcomeMypageCard == null) {
         break missingId;
       }
 
+      id = R.id.tvWind;
+      TextView tvWind = ViewBindings.findChildViewById(rootView, id);
+      if (tvWind == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavMain, btnFare, container,
           divider, divider21, guideline2, guideline3, imgMypageProfile, imgUmb, binding_include2,
           linearLayout4, mainScroll, myPageLayout, navCommu, navMain, navMore, navMypage,
-          tvCarbonMypageCard, tvComment1MypageCard, tvComment2MypageCard, tvCouponMypageCard,
-          tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard, tvPointTextMypageCard,
-          tvRatingMypageCard, tvRatingTextMypageCard, tvWelcomeMypageCard);
+          tvCarbonMypageCard, tvCity, tvComment1MypageCard, tvComment2MypageCard,
+          tvCouponMypageCard, tvCouponTextMypageCard, tvNickMypageCard, tvPointMypageCard,
+          tvPointTextMypageCard, tvRatingMypageCard, tvRatingTextMypageCard, tvTemp, tvWeather,
+          tvWelcomeMypageCard, tvWind);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

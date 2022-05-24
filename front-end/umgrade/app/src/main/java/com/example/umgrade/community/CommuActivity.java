@@ -141,7 +141,7 @@ public class CommuActivity extends AppCompatActivity {
 
             public void initBoard() {
                 int method = Request.Method.GET;
-                String server_url = server_url2+"/myapp/BoardList.do";
+                String server_url = server_url2 +"/BoardList.do";
 
                 request = new StringRequest(
                         method,

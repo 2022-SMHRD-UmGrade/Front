@@ -13,7 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.example.umgrade.FareActivity;
@@ -27,6 +31,10 @@ import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.vo.User;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 
 import retrofit2.Call;
@@ -38,17 +46,14 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgMypageProfile;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     Button navMain, navCommu, navMypage, navMore;
-    TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard, tvWeather, dateView, cityView, weatherView, tempView;
+    TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard, tvWeather, tvCity, tvTemp, tvWind;
     View myPageLayout;
-
-    Retrofit retrofit;
-    WeatherApi weatherApi;
-    private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
 
     View btnFareLayout;
     User vo;
 
     RequestQueue queue;
+    StringRequest request;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,25 +66,93 @@ public class MainActivity extends AppCompatActivity {
         tvRatingMypageCard = findViewById(R.id.tvRatingMypageCard);
         tvPointMypageCard = findViewById(R.id.tvPointMypageCard);
         tvWeather = findViewById(R.id.tvWeather);
+        tvCity = findViewById(R.id.tvCity);
+        tvWind = findViewById(R.id.tvWind);
+        tvTemp = findViewById(R.id.tvTemp);
 
         tvNickMypageCard.setText(vo.getUser_nick());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
-    
+
         queue = Volley.newRequestQueue(MainActivity.this);
 
         Intent intent = getIntent();
 
 
-        retrofit = new Retrofit.Builder().baseUrl("https://api.openweathermap.org/").addConverterFactory(GsonConverterFactory.create()).build();
-        weatherApi = retrofit.create(WeatherApi.class);
-        Call<Object> getWeather = weatherApi.getWeather("London",appKey); //나라는 런던 으로 걍 했어용
+        int method = Request.Method.GET;
+        String url = "http://api.openweathermap.org/data/2.5/weather?q=Gwangju&appid=d8cff0a3fa05c7e4447804bb9b4cb398";
 
-//        try{
-//            System.out.println(getWeather.execute().body());
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }
+        request = new StringRequest(
+                method,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            String city ="";
+                            JSONObject obj = new JSONObject(response);
+                            Log.d("res", response);
+                            if(obj.getString("name").equals("Gwangju")){
+                                city = "광주";
+                            }else{
+                                city = "한국";
+                            };
+
+                            JSONArray weatherJson = obj.getJSONArray("weather");
+                            JSONObject weatherObj = weatherJson.getJSONObject(0);
+                            String weather = "";
+                            if(weatherObj.getString("main").equals("Thunderstorm")){
+                                weather = "번개";
+                                //imgWeather.setImageResource(R.drawable.ic_storm);
+                            }else if(weatherObj.getString("main").equals("Drizzle")){
+                                weather ="이슬비";
+                                //imgWeather.setImageResource(R.drawable.ic_drizzel);
+                            }else if(weatherObj.getString("main").equals("Rain")){
+                                weather = "비";
+                                //imgWeather.setImageResource(R.drawable.ic_rain);
+                            }else if(weatherObj.getString("main").equals("Snow")){
+                                weather = "눈";
+                                //imgWeather.setImageResource(R.drawable.ic_snow);
+                            }else if(weatherObj.getString("main").equals("Atmosphere")){
+                                weather = "안개";
+                                //imgWeather.setImageResource(R.drawable.ic_fog);
+                            }else if(weatherObj.getString("main").equals("Clear")){
+                                weather = "맑음";
+                                //imgWeather.setImageResource(R.drawable.ic_clear);
+                            }else if(weatherObj.getString("main").equals("Clouds")){
+                                weather = "구름";
+                                //imgWeather.setImageResource(R.drawable.ic_cloud);
+                            }
+
+
+                            JSONObject tempk = new JSONObject(obj.getString("main"));
+                            double tempDo = (Math.round((tempk.getDouble("temp")-273.15)*100)/100.0);
+
+                            JSONObject wind = new JSONObject(obj.getString("wind"));
+                            double windSpeed = wind.getDouble("speed");
+
+                            tvCity.setText(city);
+                            tvWeather.setText(weather);
+                            tvTemp.setText(tempDo+"°C");
+                            tvWind.setText(windSpeed+"㎧");
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(MainActivity.this,
+                                "실패",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+        queue.add(request);
+
+
 
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
@@ -141,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
         btnQrCard = findViewById(R.id.btnQrCard);
         // QR스캔 클릭 시 화면전환
 
-        if(vo.getUser_type().equals("P")) {
+        if (vo.getUser_type().equals("P")) {
             btnQrCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -150,13 +223,12 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                 }
             });
-        }
-        else {
+        } else {
             Toast.makeText(this,
                     "결재정보를 입력해주세요",
                     Toast.LENGTH_SHORT).show();
         }
-        
+
 
         imgMypageProfile = (ImageView) findViewById(R.id.imgMypageProfile);
         Glide.with(this).load(R.drawable.logoumbrella).circleCrop().into(imgMypageProfile);
