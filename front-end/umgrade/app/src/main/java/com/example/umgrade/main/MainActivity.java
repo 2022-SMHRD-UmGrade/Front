@@ -140,7 +140,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnQrCard = findViewById(R.id.btnQrCard);
         // QR스캔 클릭 시 화면전환
+<<<<<<< HEAD
+=======
 
+>>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
         if(vo.getUser_type().equals("P")) {
             btnQrCard.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -156,7 +159,10 @@ public class MainActivity extends AppCompatActivity {
                     "결재정보를 입력해주세요",
                     Toast.LENGTH_SHORT).show();
         }
+<<<<<<< HEAD
+=======
        
+>>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
 
         btnQrCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,7 +171,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
+=======
 
+>>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
 
 
         imgMypageProfile = (ImageView) findViewById(R.id.imgMypageProfile);
