@@ -75,6 +75,7 @@
         android:textColor="#FFFFFF"
         android:textSize="8sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/tvCommentNick"
         app:layout_constraintStart_toEndOf="@+id/tvCommentNick"
         app:layout_constraintTop_toTopOf="@+id/tvCommentNick" />
