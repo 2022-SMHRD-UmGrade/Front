@@ -20,18 +20,6 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\roundblack.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_support_list.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\support_list.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_round.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\round.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_login_bk.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\ic_login_bk.xml"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_notice.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\notice.png"
     },
@@ -46,36 +34,26 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_home_gray.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\home_gray.png"
->>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_umbrella.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\umbrella.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_loginback.png.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\loginback.png"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_more_blue_xml.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\more_blue_xml.xml"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_arroaright_resize.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\arroaright_resize.xml"
->>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_commu.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_commu.xml"
-    },
-    {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_profile_card.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\profile_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_commu.xml.flat",
+        "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_commu.xml"
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -86,18 +64,6 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_profile_card.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\profile_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_qr.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\activity_qr.xml"
     },
@@ -108,7 +74,6 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
->>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_write.xml.flat",
@@ -131,18 +96,6 @@
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\fragment_more.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_weather_card.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\layout\\weather_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_umbrella_person.png.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\umbrella_person.png"
-    },
-    {
-        "merged": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_home_blue_xml.xml.flat",
-        "source": "C:\\Users\\smhrd\\Desktop\\project2nd\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\home_blue_xml.xml"
-=======
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\drawable_logotext.png.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\drawable\\logotext.png"
     },
@@ -153,7 +106,6 @@
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_service_card.xml.flat",
         "source": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\src\\main\\res\\layout\\service_card.xml"
->>>>>>> 969e19e7c72f57b964c09c4be09935cd0c73c41a
     },
     {
         "merged": "C:\\Users\\smhrd\\Desktop\\2nd\\front_end\\front-end\\umgrade\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
