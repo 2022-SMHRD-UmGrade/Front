@@ -46,14 +46,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imgMypageProfile;
+    ImageView imgMypageProfile, imgWeather;
     Button btnFare, btnServiceCard, btnNoticeEvent, btnMapCard, btnQrCard, btnSupportCard;
     Button navMain, navCommu, navMypage, navMore;
     TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard, tvWeather, tvCity, tvTemp, tvWind;
     View myPageLayout;
 
-<<<<<<< HEAD
-=======
+
     Retrofit retrofit;
     WeatherApi weatherApi;
     private final String TAG = "OpenWeatherRepository";
@@ -61,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
     //OpenWeather opw;
     private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
 
-
->>>>>>> a8640e343a6377ccd640cd92245242331f8ea435
     View btnFareLayout;
     User vo;
 
@@ -84,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         tvWind = findViewById(R.id.tvWind);
         tvTemp = findViewById(R.id.tvTemp);
 
+        imgWeather = findViewById(R.id.imgWeather);
+
         tvNickMypageCard.setText(vo.getUser_nick());
         tvRatingMypageCard.setText(vo.getUser_type());
         tvPointMypageCard.setText(vo.getUser_point());
@@ -92,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-<<<<<<< HEAD
+
 
         int method = Request.Method.GET;
         String url = "http://api.openweathermap.org/data/2.5/weather?q=Gwangju&appid=d8cff0a3fa05c7e4447804bb9b4cb398";
@@ -118,25 +117,25 @@ public class MainActivity extends AppCompatActivity {
                             String weather = "";
                             if(weatherObj.getString("main").equals("Thunderstorm")){
                                 weather = "번개";
-                                //imgWeather.setImageResource(R.drawable.ic_storm);
+                                imgWeather.setImageResource(R.drawable.weather_thunder);
                             }else if(weatherObj.getString("main").equals("Drizzle")){
                                 weather ="이슬비";
-                                //imgWeather.setImageResource(R.drawable.ic_drizzel);
+                                imgWeather.setImageResource(R.drawable.weather_drizzle);
                             }else if(weatherObj.getString("main").equals("Rain")){
                                 weather = "비";
-                                //imgWeather.setImageResource(R.drawable.ic_rain);
+                                imgWeather.setImageResource(R.drawable.weather_rainy);
                             }else if(weatherObj.getString("main").equals("Snow")){
                                 weather = "눈";
-                                //imgWeather.setImageResource(R.drawable.ic_snow);
+                                imgWeather.setImageResource(R.drawable.weather_snowy);
                             }else if(weatherObj.getString("main").equals("Atmosphere")){
                                 weather = "안개";
-                                //imgWeather.setImageResource(R.drawable.ic_fog);
+                                imgWeather.setImageResource(R.drawable.weather_fog);
                             }else if(weatherObj.getString("main").equals("Clear")){
                                 weather = "맑음";
-                                //imgWeather.setImageResource(R.drawable.ic_clear);
+                                imgWeather.setImageResource(R.drawable.weather_sunshine);
                             }else if(weatherObj.getString("main").equals("Clouds")){
                                 weather = "구름";
-                                //imgWeather.setImageResource(R.drawable.ic_cloud);
+                                imgWeather.setImageResource(R.drawable.weather_cloud);
                             }
 
 
@@ -167,20 +166,6 @@ public class MainActivity extends AppCompatActivity {
         );
         queue.add(request);
 
-
-=======
-        // 날씨 API
-        retrofit = new Retrofit.Builder().baseUrl("https://api.openweathermap.org/").addConverterFactory(GsonConverterFactory.create()).build();
-        weatherApi = retrofit.create(WeatherApi.class);
-        Call<Object> getWeather = weatherApi.getWeather("Gwangju",appKey);
-
-//        try{
-//            Log.d("weather", getWeather.execute().body().toString());
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }
-        //Log.d("weather", getWeather.toString());
->>>>>>> a8640e343a6377ccd640cd92245242331f8ea435
 
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);

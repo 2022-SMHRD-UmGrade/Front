@@ -243,9 +243,13 @@
     <string name="tvTel">010-XXXX-XXXX</string>
     <string name="tvTelTitle">전화번호</string>
     <string name="tvTerms">위치기반서비스 이용약관</string>
+    <string name="tvToday">오늘</string>
     <string name="tvUmgSeq">01</string>
     <string name="tvUsageHistoryTitle">이용내역</string>
     <string name="tvUserId">UserID</string>
+    <string name="tvWeatherAnd">은</string>
+    <string name="tvWeatherTemp">현재 기온</string>
+    <string name="tvWeatherWind">현재 풍속</string>
     <string name="tvWelcomeMypageCard">님 환영합니다!</string>
     <string name="tvWon">￦</string>
     <string name="tvWrite">글쓰기</string>

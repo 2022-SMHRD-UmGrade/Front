@@ -30,6 +30,12 @@
     <string name="ckMarketing">마케팅 정보 수신 동의</string>
     <string name="btnJoin">가입하기</string>
 
+    <!-- activity_main -->
+    <string name="tvToday">오늘</string>
+    <string name="tvWeatherAnd">은</string>
+    <string name="tvWeatherTemp">현재 기온</string>
+    <string name="tvWeatherWind">현재 풍속</string>
+
     <!-- frag_menu.xml -->
     <string name="fragMain">홈</string>
     <string name="fragCommu">커뮤니티</string>
