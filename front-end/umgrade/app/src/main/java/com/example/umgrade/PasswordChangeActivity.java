@@ -34,7 +34,7 @@ public class PasswordChangeActivity extends AppCompatActivity {
     Button btnChangePw;
     EditText edtNowPw, edtNewPw, edtNewCkPw;
     User vo = UserInfo.info;
-    String server_url2 = "http://220.80.203.18:8081/myapp";
+    String server_url2 = "http://192.168.43.209:8081/myapp";
 
     RequestQueue queue;
     StringRequest request;
