@@ -57,7 +57,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
 
     RequestQueue queue;
     StringRequest request;
-
+    String server_url2 = "http://220.80.203.18:8081/myapp";
     TextView mapCardLoc, mapCardUmbCnt, mapCardSeq, mapCardQr;
 
     @Override
@@ -84,7 +84,7 @@ public class MapActivity extends AppCompatActivity implements MapView.CurrentLoc
         vo = UserInfo.info;
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/Android/Login";
+        String server_url = server_url2+"/Android/Login";
 
         request = new StringRequest(
                 method,

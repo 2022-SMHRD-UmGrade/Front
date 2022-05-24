@@ -60,7 +60,7 @@ public class CommentActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     CommentAdapter adapter = new CommentAdapter();
     ArrayList<Comment> lists = new ArrayList<>();
-
+    String server_url2 = "http://220.80.203.18:8081/myapp";
     User vo;
 
     @Override
@@ -260,7 +260,7 @@ public class CommentActivity extends AppCompatActivity {
     public void initComment(int article_seq, String content) {
 
         int method = Request.Method.GET;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardComment.do?article_seq=" + article_seq;
+        String server_url =  server_url2+"/BoardComment.do?article_seq=" + article_seq;
 
         request = new StringRequest(
                 method,
@@ -330,7 +330,7 @@ public class CommentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/InsertCmt.do";
+                String server_url = server_url2+"/myapp/InsertCmt.do";
 
                 request = new StringRequest(
                         method,
@@ -379,7 +379,7 @@ public class CommentActivity extends AppCompatActivity {
     //댓글 수정 메서드
     public void updateComment(int cmt_seq, String content) {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/CommentUpdate.do";
+        String server_url = server_url2+"/myapp/CommentUpdate.do";
 
         request = new StringRequest(
                 method,
@@ -416,7 +416,7 @@ public class CommentActivity extends AppCompatActivity {
     //댓글 삭제 메서드
     public void deleteComment(int cmt_seq) {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/CommentDelete.do";
+        String server_url = server_url2+"/myapp/CommentDelete.do";
 
         request = new StringRequest(
                 method,

@@ -54,6 +54,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
 
     RequestQueue queue;
     StringRequest request;
+    String server_url2 = "http://220.80.203.18:8081/myapp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,7 +136,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
     public void updateNick() {
         vo = UserInfo.info;
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/Android/NcikUpdate";
+        String server_url = server_url2+"/Android/NcikUpdate";
 
         request = new StringRequest(
                 method,

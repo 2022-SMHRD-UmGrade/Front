@@ -45,7 +45,7 @@ public class CommuActivity extends AppCompatActivity {
     ArrayList<Board> items = new ArrayList<>();
     RequestQueue queue;
     StringRequest request;
-
+    String server_url2 = "http://220.80.203.18:8081/myapp";
     User vo;
 
     @Override
@@ -141,7 +141,7 @@ public class CommuActivity extends AppCompatActivity {
 
             public void initBoard() {
                 int method = Request.Method.GET;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardList.do";
+                String server_url = server_url2+"/myapp/BoardList.do";
 
                 request = new StringRequest(
                         method,

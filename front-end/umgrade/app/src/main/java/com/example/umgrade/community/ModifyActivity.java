@@ -44,7 +44,7 @@ public class ModifyActivity extends AppCompatActivity {
 
     RequestQueue queue;
     StringRequest request;
-
+    String server_url2 = "http://220.80.203.18:8081/myapp";
     User vo;
     Board dto;
 
@@ -100,7 +100,7 @@ public class ModifyActivity extends AppCompatActivity {
     public void getUpdate(int seq, String title, String content) {
 
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardUpdate.do";
+        String server_url = server_url2+"/myapp/BoardUpdate.do";
 
         request = new StringRequest(
                 method,

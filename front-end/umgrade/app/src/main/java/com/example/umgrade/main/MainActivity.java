@@ -27,6 +27,12 @@ import com.example.umgrade.service.SupportActivity;
 import com.example.umgrade.userActivity.MypageActivity;
 import com.example.umgrade.vo.User;
 
+import java.io.IOException;
+
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView imgMypageProfile;
@@ -34,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     Button navMain, navCommu, navMypage, navMore;
     TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard, tvWeather, dateView, cityView, weatherView, tempView;
     View myPageLayout;
+
+    Retrofit retrofit;
+    WeatherApi weatherApi;
+    private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
 
     View btnFareLayout;
     User vo;
@@ -59,6 +69,17 @@ public class MainActivity extends AppCompatActivity {
         queue = Volley.newRequestQueue(MainActivity.this);
 
         Intent intent = getIntent();
+
+
+        retrofit = new Retrofit.Builder().baseUrl("https://api.openweathermap.org/").addConverterFactory(GsonConverterFactory.create()).build();
+        weatherApi = retrofit.create(WeatherApi.class);
+        Call<Object> getWeather = weatherApi.getWeather("London",appKey); //나라는 런던 으로 걍 했어용
+
+//        try{
+//            System.out.println(getWeather.execute().body());
+//        }catch (IOException e){
+//            e.printStackTrace();
+//        }
 
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);

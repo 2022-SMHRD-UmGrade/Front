@@ -35,7 +35,7 @@ public class WriteActivity extends AppCompatActivity {
 
     RequestQueue queue;
     StringRequest request;
-
+    String server_url2 = "http://220.80.203.18:8081/myapp";
     User vo;
 
     @Override
@@ -77,7 +77,7 @@ public class WriteActivity extends AppCompatActivity {
                 vo = UserInfo.info;
 
                 int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardInsert.do";
+                String server_url = server_url2+"/BoardInsert.do";
 
                 request = new StringRequest(
                         method,

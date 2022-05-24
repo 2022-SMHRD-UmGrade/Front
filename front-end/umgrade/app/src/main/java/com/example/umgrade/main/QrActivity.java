@@ -40,6 +40,8 @@ public class QrActivity extends AppCompatActivity {
     User vo;
     RequestQueue queue;
     StringRequest request;
+    String server_url2 = "http://220.80.203.18:8081/myapp";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,7 +112,7 @@ public class QrActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), barcode, Toast.LENGTH_LONG).show();
         Log.d("barcode", barcode);
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/Android/Rent";
+        String server_url = server_url2+"/Android/Rent";
         request = new StringRequest(
                 method,
                 server_url,

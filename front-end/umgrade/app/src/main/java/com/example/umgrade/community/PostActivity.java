@@ -52,7 +52,7 @@ public class PostActivity extends AppCompatActivity {
     StringRequest request;
     Fragment commuFragment;
     User vo;
-
+    String server_url2 = "http://220.80.203.18:8081/myapp";
     ArrayList<Board> list = new ArrayList<>();
 
     @Override
@@ -98,7 +98,7 @@ public class PostActivity extends AppCompatActivity {
     //단일 게시글 불러오는 메서드
     private void getData(int seq, String title, String nick, String content, String date, String file) {
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/BoardOne.do";
+        String server_url = server_url2+"/BoardOne.do";
 
         request = new StringRequest(
                 method,
@@ -192,7 +192,7 @@ public class PostActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int method = Request.Method.POST;
-                String server_url = "http://220.80.203.18:8081/myapp/BoardDelete.do";
+                String server_url = server_url2+"/BoardDelete.do";
 
                 request = new StringRequest(
                         method,

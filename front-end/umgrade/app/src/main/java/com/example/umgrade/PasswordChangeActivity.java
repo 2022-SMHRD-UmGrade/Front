@@ -34,6 +34,7 @@ public class PasswordChangeActivity extends AppCompatActivity {
     Button btnChangePw;
     EditText edtNowPw, edtNewPw, edtNewCkPw;
     User vo = UserInfo.info;
+    String server_url2 = "http://220.80.203.18:8081/myapp";
 
     RequestQueue queue;
     StringRequest request;
@@ -70,7 +71,7 @@ public class PasswordChangeActivity extends AppCompatActivity {
     public void changePw() {
         Log.d("userInfo1", vo.toString());
         int method = Request.Method.POST;
-        String server_url = "http://220.80.203.18:8081/myapp/Android/PwUpdate";
+        String server_url = server_url2+"/Android/PwUpdate";
 
         request = new StringRequest(
                 method,
