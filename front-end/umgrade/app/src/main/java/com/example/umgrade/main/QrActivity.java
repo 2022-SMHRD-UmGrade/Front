@@ -40,7 +40,7 @@ public class QrActivity extends AppCompatActivity {
     User vo;
     RequestQueue queue;
     StringRequest request;
-    String server_url2 = "http://172.30.1.24:8081/myapp";
+    String server_url2 = "http://192.168.43.209:8081/myapp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

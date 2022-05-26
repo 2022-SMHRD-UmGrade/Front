@@ -17,7 +17,7 @@ import com.example.umgrade.vo.User;
 public class PayViewActivity extends AppCompatActivity {
     WebView webView;
     Button btnPayview;
-    String server_url2 = "http://220.80.203.18:8081/myapp";
+    String server_url2 = "http://192.168.43.209:8081/myapp";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

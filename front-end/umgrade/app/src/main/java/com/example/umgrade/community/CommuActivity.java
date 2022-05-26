@@ -45,7 +45,7 @@ public class CommuActivity extends AppCompatActivity {
     ArrayList<Board> items = new ArrayList<>();
     RequestQueue queue;
     StringRequest request;
-    String server_url2 = "http://220.80.203.18:8081/myapp";
+    String server_url2 = "http://172.30.1.52:8081/myapp";
     User vo;
 
     @Override
@@ -58,7 +58,6 @@ public class CommuActivity extends AppCompatActivity {
         navCommu = findViewById(R.id.navCommu);
         navMypage = findViewById(R.id.navMypage);
         navMore = findViewById(R.id.navMore);
-
 
         queue = Volley.newRequestQueue(CommuActivity.this);
 

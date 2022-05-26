@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvNickMypageCard, tvRatingMypageCard, tvPointMypageCard, tvWeather, tvCity, tvTemp, tvWind;
     View myPageLayout;
 
+<<<<<<< HEAD
 
 
     Retrofit retrofit;
@@ -62,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
     private final static String appKey = "0ce6acbe268f9a28e74c30c6825ec6c6";
 
 
+=======
+>>>>>>> e8589384e3cf8b036c03530fb1bf112bdf486e5e
     View btnFareLayout;
     User vo;
 
@@ -91,10 +94,15 @@ public class MainActivity extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(MainActivity.this);
 
+<<<<<<< HEAD
 
         Intent intent = getIntent();
 
 
+=======
+        Intent intent = getIntent();
+
+>>>>>>> e8589384e3cf8b036c03530fb1bf112bdf486e5e
         int method = Request.Method.GET;
         String url = "http://api.openweathermap.org/data/2.5/weather?q=Gwangju&appid=d8cff0a3fa05c7e4447804bb9b4cb398";
 
@@ -169,7 +177,10 @@ public class MainActivity extends AppCompatActivity {
         );
         queue.add(request);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8589384e3cf8b036c03530fb1bf112bdf486e5e
         // 마이페이지 카드 클릭 시 mypage로 이동
         myPageLayout = findViewById(R.id.myPageLayout);
 
